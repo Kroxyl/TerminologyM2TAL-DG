@@ -3,10 +3,13 @@ Terminology project - M2 TAL - 2020/2021
 
 This repository implements two rule-based identification systems that tag a document with the IOB tagset for multiword terms.
 
-The IOB tagset for multiword terms :
+### The IOB tagset for multiword terms :
+
 - B : Beginning of multiword term
 - I : Inside a multiword term (not at the beginning)
-- 0 : outside a term
+- O : outside a term
+
+## Run
 
 To run this project, you just have to open the TerminologyProject.ipynb in jupyter notebook and run all the cells.
 It will follow the order and instructions bellow.
@@ -38,3 +41,7 @@ For now, our corpus is only 30 articles. You can increase the number by adding .
 ## Acknowledgement 
 
 We have already extract automatically the terms from our corpus with TermSuite. You must provide a .tsv file with the terms you want to annotate for your corpus or you can use the one already in our repository. For more informations : http://termsuite.github.io/ 
+
+## Created by
+
+Axel Didier - M2 TAL  /  Pierre Goncalves - M2 TAL
