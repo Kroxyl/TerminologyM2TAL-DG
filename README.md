@@ -42,7 +42,6 @@ For now, our corpus is only 30 articles. You can increase the number by adding .
 
 We have already extract automatically the terms from our corpus with TermSuite. You must provide a .tsv file with the terms you want to annotate for your corpus or you can use the one already in our repository. For more informations : http://termsuite.github.io/ 
 
-## Created in 2020 
+## Created by
 
-Axel Didier - M2 TAL
-Pierre Goncalves - M2 TAL
+Axel Didier - M2 TAL  /  Pierre Goncalves - M2 TAL
