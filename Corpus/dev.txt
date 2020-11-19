@@ -218,7 +218,7 @@ making I
 . O
 
 Introduction O
-Player O
+Player B
 choice O
 in O
 most O
@@ -420,7 +420,7 @@ and O
 authority O
 . O
 
-Gameplay B
+Gameplay O
 occurs O
 at O
 the O
@@ -1935,7 +1935,7 @@ cards O
 
 For O
 instance O
-Mages B
+Mages O
 gravitate O
 towards O
 control B
@@ -3604,7 +3604,7 @@ expansion O
 ; O
 and O
 , O
-dotted B
+dotted O
 lines O
 signify O
 release O
@@ -3720,7 +3720,7 @@ produce O
 weekly O
 Data O
 Reaper O
-Reports B
+Reports O
 about O
 the O
 state O
@@ -3844,7 +3844,7 @@ above O
 are O
 included O
 for O
-reporting O
+reporting B
 purposes O
 . O
 
@@ -3855,7 +3855,7 @@ are O
 included O
 for O
 frequency O
-reporting B
+reporting O
 so O
 as O
 to O
@@ -3976,7 +3976,7 @@ least O
 twenty O
 times B
 per O
-reporting B
+reporting O
 period O
 . O
 
@@ -4131,7 +4131,7 @@ an O
 expansion O
 ; O
 and O
-dotted B
+dotted O
 lines O
 signify O
 release O
@@ -4738,14 +4738,14 @@ Hunter O
 Burn O
 Mage B
 Elemental O
-Mage B
+Mage O
 Exodia O
-Mage B
+Mage O
 Freeze O
-Mage O
+Mage B
 Secret O
-Mage O
-Control B
+Mage B
+Control O
 Paladin O
 Elemental O
 Paladin O
@@ -4778,7 +4778,7 @@ Warlock O
 Pirate O
 Warrior O
 Taunt O
-Warrior B
+Warrior O
 Archetypes O
 0.05 O
 0.10 O
@@ -5126,7 +5126,7 @@ over O
 each O
 of O
 the O
-reporting B
+reporting O
 periods O
 . O
 
@@ -7803,7 +7803,7 @@ Figure O
 7 O
 is O
 the O
-marked B
+marked O
 difference O
 between O
 the O
@@ -8182,9 +8182,9 @@ not O
 substantially O
 change O
 the O
-decision O
-- O
-making O
+decision B
+- I
+making I
 players B
 employed O
 to O
@@ -9206,7 +9206,7 @@ indicate O
 changes O
 occurring O
 between O
-reporting O
+reporting B
 periods O
 , O
 as O
@@ -9707,7 +9707,7 @@ after O
 , O
 implied O
 a O
-marked O
+marked B
 escalation O
 in O
 deck O
@@ -9833,9 +9833,9 @@ significantly O
 less O
 of O
 their O
-decision O
-- O
-making O
+decision B
+- I
+making I
 on O
 past O
 outcomes O
@@ -12507,7 +12507,7 @@ communication B
 , O
 cheating O
 and O
-matchmaking O
+matchmaking B
 manipulation O
 . O
 
@@ -13315,9 +13315,9 @@ game B
 such O
 as O
 the O
-neutral O
-jungle B
-creeps B
+neutral B
+jungle O
+creeps I
 and O
 runes B
 are O
@@ -13624,7 +13624,7 @@ which O
 ranges B
 from O
 the O
-positions O
+positions B
 of O
 each O
 player B
@@ -14004,7 +14004,7 @@ on O
 the O
 movement B
 and O
-positioning B
+positioning O
 of O
 heroes B
 by O
@@ -14095,7 +14095,7 @@ al O
 ] O
 studied O
 the O
-drafting B
+drafting O
 phase O
 of O
 the O
@@ -14133,7 +14133,7 @@ use O
 a O
 one O
 - O
-hot O
+hot B
 encoding O
 with O
 a O
@@ -14152,7 +14152,7 @@ names O
 Other O
 video B
 games I
-Player O
+Player B
 behaviour O
 in O
 video B
@@ -14207,7 +14207,7 @@ online O
 crime O
 detection O
 for O
-cheating B
+cheating O
 and O
 for O
 autonomous O
@@ -14676,7 +14676,7 @@ buy O
 . O
 
 The O
-position O
+position B
 of O
 the O
 items B
@@ -14813,8 +14813,8 @@ our O
 datasets O
 : O
 • O
-Game B
-mode I
+Game O
+mode O
 : O
 All O
 pick B
@@ -14844,7 +14844,7 @@ existing O
 work O
 ) O
 • O
-Hero O
+Hero B
 i O
 d O
 : O
@@ -15060,7 +15060,7 @@ command O
 4 O
 . O
 
-Spell B
+Spell O
 cast O
 command O
 A O
@@ -15073,7 +15073,7 @@ as O
 a O
 sequence O
 of O
-positions O
+positions B
 . O
 
 Rather O
@@ -15099,7 +15099,7 @@ no O
 change O
 in O
 cursor O
-position O
+position B
 has O
 occurred O
 within O
@@ -15599,14 +15599,14 @@ between O
 the O
 last O
 mouse O
-position O
+position B
 of O
 the O
 movement B
 sequence O
 and O
 mouse O
-position O
+position B
 of O
 the O
 command O
@@ -15622,14 +15622,14 @@ between O
 the O
 last O
 mouse O
-positions O
+positions B
 of O
 the O
 movement B
 sequence O
 and O
 mouse O
-position O
+position B
 of O
 the O
 command O
@@ -15681,7 +15681,7 @@ mouse O
 action O
 . O
 
-Game O
+Game B
 statistic O
 features O
 In B
@@ -15760,7 +15760,7 @@ work O
 are O
 : O
 • O
-Kills B
+Kills O
 • O
 Assists B
 • O
@@ -15798,7 +15798,7 @@ minute O
 Move B
 commands O
 on O
-position O
+position B
 per O
 minute O
 • O
@@ -15812,11 +15812,11 @@ minute O
 Attack B
 commands O
 on O
-position O
+position B
 per O
 minute O
 • O
-Spell B
+Spell O
 cast O
 commands O
 on O
@@ -15824,15 +15824,15 @@ target B
 per O
 minute O
 • O
-Spell B
+Spell O
 cast O
 commands O
 on O
-position O
+position B
 per O
 minute O
 • O
-Spell B
+Spell O
 cast O
 commands O
 with O
@@ -15842,7 +15842,7 @@ per O
 minute O
 • O
 Hold O
-position O
+position B
 commands O
 per O
 minute O
@@ -15960,7 +15960,7 @@ on O
 targets B
 or O
 on O
-positions O
+positions B
 . O
 
 Itemization O
@@ -16046,7 +16046,7 @@ placed O
 into O
 different O
 inventory O
-positions O
+positions B
 , O
 which O
 becomes O
@@ -16072,7 +16072,7 @@ abilities B
 
 The O
 inventory O
-positions O
+positions B
 of O
 the O
 item B
@@ -16104,7 +16104,7 @@ replay O
 so O
 using O
 item B
-positions O
+positions B
 are O
 a O
 4 O
@@ -16133,7 +16133,7 @@ bound O
 to O
 that O
 inventory O
-position O
+position B
 and O
 indicate O
 the O
@@ -16245,7 +16245,7 @@ The O
 items B
 and O
 their O
-positions O
+positions B
 are O
 then O
 encoded O
@@ -16258,13 +16258,13 @@ hashing O
 , O
 one O
 - O
-hot O
+hot B
 encoding O
 , O
 selective O
 one O
 - O
-hot O
+hot B
 encoding O
 and O
 item B
@@ -16274,7 +16274,7 @@ difference O
 Selective O
 one O
 - O
-hot O
+hot B
 encoding O
 only O
 used O
@@ -16352,7 +16352,7 @@ features O
 that O
 one O
 - O
-hot O
+hot B
 encoding O
 generates O
 ( O
@@ -16451,7 +16451,7 @@ active O
 ability B
 makes O
 the O
-position O
+position B
 of O
 the O
 boots O
@@ -16482,7 +16482,7 @@ boots O
 and O
 the O
 inventory O
-positions O
+positions B
 they O
 occupy O
 as O
@@ -16511,7 +16511,7 @@ on O
 the O
 features O
 discussed O
-earlier O
+earlier B
 . O
 
 A O
@@ -16622,23 +16622,23 @@ or O
 not O
 . O
 
-Attack O
+Attack B
 Model O
-Attack O
+Attack B
 actions O
-Move O
+Move B
 Model O
-Move O
+Move B
 actions O
 Spell O
 Model O
-Spell O
+Spell B
 actions O
 Stats O
 Model O
-Game O
+Game B
 statistics O
-Items O
+Items B
 Model O
 Itemization O
 Match B
@@ -17097,7 +17097,7 @@ features O
 Logistic O
 Regression O
 Random O
-Forest O
+Forest B
 Multi O
 - O
 layer O
@@ -17113,9 +17113,9 @@ of O
 mouse O
 movement B
 actions O
-Attack O
+Attack B
 actions O
-Move B
+Move O
 actions O
 Cast O
 actions O
@@ -17155,7 +17155,7 @@ models O
 Logistic O
 Regression O
 Random O
-Forest O
+Forest B
 Multi O
 - O
 layer O
@@ -17311,7 +17311,7 @@ perceptron O
 . O
 
 RESULTS O
-Player O
+Player B
 identification O
 ( O
 experiment O
@@ -17503,7 +17503,7 @@ to O
 how O
 movement B
 and O
-positioning B
+positioning O
 are O
 fundamental O
 parts O
@@ -17791,7 +17791,7 @@ action O
 alone O
 . O
 
-Game O
+Game B
 statistic O
 features O
 Using O
@@ -17970,7 +17970,7 @@ had O
 Logistic O
 Regression O
 Random O
-Forest O
+Forest B
 Multi O
 - O
 layer O
@@ -18049,7 +18049,7 @@ comparison O
 the O
 one O
 - O
-hot O
+hot B
 encoding O
 of O
 only O
@@ -18106,7 +18106,7 @@ items B
 with O
 one O
 - O
-hot O
+hot B
 encoding O
 . O
 
@@ -18289,8 +18289,8 @@ their O
 team B
 , O
 the O
-opposing B
-team I
+opposing O
+team B
 and O
 how O
 well O
@@ -18435,7 +18435,7 @@ statistics O
 and O
 one O
 - O
-hot O
+hot B
 encoding O
 of O
 all O
@@ -18459,7 +18459,7 @@ combination O
 of O
 one O
 - O
-hot O
+hot B
 encoding O
 of O
 items B
@@ -18467,7 +18467,7 @@ and O
 Logistic O
 Regression O
 Random O
-Forest O
+Forest B
 Multi O
 - O
 layer O
@@ -18483,11 +18483,11 @@ Accuracy O
 of O
 itemization O
 features O
-Items O
+Items B
 hashed O
 One O
 - O
-hot O
+hot B
 encoding O
 Starting B
 items B
@@ -18864,7 +18864,7 @@ first O
 one O
 . O
 
-Splitting B
+Splitting O
 the O
 match B
 into O
@@ -18918,7 +18918,7 @@ Features O
 Logistic O
 Regression O
 Random O
-Forest O
+Forest B
 Multi O
 - O
 layer O
@@ -18941,13 +18941,13 @@ Mouse O
 Items O
 one O
 - O
-hot O
+hot B
 0.888 O
 0.606 O
 0.939 O
 Mouse O
 + O
-Starting O
+Starting B
 items B
 0.918 O
 0.617 O
@@ -18959,30 +18959,30 @@ only O
 0.911 O
 0.857 O
 0.908 O
-Stats O
+Stats B
 + O
 Items O
 hashed O
 0.969 O
 0.990 O
 0.868 O
-Stats O
+Stats B
 + O
-Items O
+Items B
 one O
 - O
-hot O
+hot B
 0.969 O
 0.979 O
 0.939 O
-Stats O
+Stats B
 + O
-Starting O
+Starting B
 items B
 0.959 O
 1.0 O
 0.929 O
-Stats O
+Stats B
 + O
 Boots O
 only O
@@ -19005,7 +19005,7 @@ Stats O
 Items O
 one O
 - O
-hot O
+hot B
 0.726 O
 0.769 O
 0.919 O
@@ -19217,7 +19217,7 @@ phases O
 Logistic O
 Regression O
 Random O
-Forest O
+Forest B
 Multi O
 - O
 layer O
@@ -19262,7 +19262,7 @@ matches B
 Logistic O
 Regression O
 Random O
-Forest O
+Forest B
 Multi O
 - O
 layer O
@@ -19349,7 +19349,7 @@ slice O
 0.6 O
 0.7 O
 0.8 O
-Time O
+Time B
 - O
 slice O
 of O
@@ -19409,7 +19409,7 @@ as O
 well O
 . O
 
-Game O
+Game B
 statistic O
 features O
 Figure O
@@ -19612,7 +19612,7 @@ split8 O
 Logistic O
 Regression O
 Random O
-Forest O
+Forest B
 Multi O
 - O
 layer O
@@ -19635,8 +19635,8 @@ Hashed O
 items B
 One O
 - O
-hot O
-Starting O
+hot B
+Starting B
 items B
 Boots O
 only O
@@ -19987,7 +19987,7 @@ not O
 The O
 one O
 - O
-hot O
+hot B
 encoding O
 of O
 all O
@@ -19998,7 +19998,7 @@ to O
 the O
 one O
 - O
-hot O
+hot B
 encoding O
 of O
 only O
@@ -20013,7 +20013,7 @@ because O
 the O
 one O
 - O
-hot O
+hot B
 encoding O
 of O
 all O
@@ -20096,7 +20096,7 @@ only O
 Mouse O
 + O
 items B
-Stats O
+Stats B
 + O
 items B
 Mouse O
@@ -20913,7 +20913,7 @@ universal O
 approach O
 centres O
 around O
-matching B
+matching O
 ( O
 or O
 otherwise O
@@ -21119,7 +21119,7 @@ Lankveld O
 2012 O
 . O
 
-Player O
+Player B
 behavioural O
 modelling O
 for O
@@ -21161,7 +21161,7 @@ Survey O
 on O
 Behavioural O
 Biometric O
-Techniques B
+Techniques O
 : O
 Mouse O
 vs O
@@ -21300,7 +21300,7 @@ Klabajan O
 2014 O
 . O
 
-Skill O
+Skill B
 - O
 based B
 differences O
@@ -21541,7 +21541,7 @@ Classifying O
 Dota O
 2 O
 Hero O
-Characters O
+Characters B
 Based B
 on O
 Player O
@@ -21736,7 +21736,7 @@ Louis O
 2013 O
 . O
 
-Player O
+Player B
 Identification O
 from O
 RTS O
@@ -21884,7 +21884,7 @@ Computer O
 Human O
 Interaction O
 in O
-Play O
+Play B
 ( O
 CHI O
 PLAY O
@@ -21952,7 +21952,7 @@ Steenhuisen O
 2016 O
 . O
 
-Draft O
+Draft B
 - O
 Analysis O
 of O
@@ -21961,7 +21961,7 @@ Ancients O
 : O
 Predicting O
 Draft O
-Picks O
+Picks B
 in O
 DotA O
 2 O
@@ -23885,7 +23885,7 @@ finish O
 within O
 the O
 lowest O
-positions O
+positions B
 in O
 the O
 following O
@@ -23923,7 +23923,7 @@ between O
 the O
 total O
 3 O
-Season O
+Season B
 average O
 points B
 − O
@@ -24926,7 +24926,7 @@ top O
 and O
 top O
 106 O
-positions O
+positions B
 . O
 
 These O
@@ -25419,13 +25419,13 @@ top O
 106 O
 Sum O
 of O
-Points O
+Points B
 from O
 Transfers O
 Distribution O
 of O
 Total O
-Points B
+Points O
 from O
 Transfers O
 ( O
@@ -25642,7 +25642,7 @@ tier B
 5 O
 in O
 the O
-starting B
+starting O
 team B
 , O
 the O
@@ -26287,7 +26287,7 @@ vs. O
 Top O
 1 O
 M O
-Team O
+Team B
 Value O
 Distribution O
 ( O
@@ -26391,7 +26391,7 @@ the O
 top O
 ten O
 thousand O
-positions O
+positions B
 ( O
 i.e. O
 , O
@@ -26599,7 +26599,7 @@ Top O
 10k O
 Distribution O
 of O
-Points O
+Points B
 from O
 Bench O
 Boost O
@@ -26641,7 +26641,7 @@ top B
 ten O
 - I
 thousand I
-positions O
+positions B
 ( O
 Top O
 10k O
@@ -26909,7 +26909,7 @@ their O
 budget O
 by O
 player B
-position O
+position B
 ) O
 . O
 
@@ -27519,7 +27519,7 @@ rather O
 than O
 only O
 the O
-starting B
+starting O
 eleven O
 as O
 is O
@@ -28572,7 +28572,7 @@ at O
 which O
 teams B
 become O
-closer O
+closer B
 to O
 a O
 template O
@@ -29072,7 +29072,7 @@ based B
 upon O
 their O
 final O
-position O
+position B
 in O
 the O
 game B
@@ -29841,7 +29841,7 @@ remain O
 among O
 the O
 top O
-positions O
+positions B
 over O
 several O
 seasons B
@@ -31106,7 +31106,7 @@ A O
 network O
 - O
 based B
-ranking B
+ranking O
 system O
 for O
 US O
@@ -32522,7 +32522,7 @@ by O
 the O
 players B
 ’ O
-position O
+position B
 , O
 for O
 example O
@@ -32559,7 +32559,7 @@ show O
 the O
 points B
 per O
-position O
+position B
 for O
 each O
 of O
@@ -32717,7 +32717,7 @@ another O
 with O
 the O
 same O
-position O
+position B
 . O
 
 Each O
@@ -32795,7 +32795,7 @@ The O
 aforementioned O
 restrictions O
 regarding O
-positions O
+positions B
 , O
 clubs O
 , O
@@ -32940,7 +32940,7 @@ among O
 the O
 top O
 ranked B
-positions O
+positions B
 . O
 
 Summary O
@@ -32984,7 +32984,7 @@ the O
 flow O
 of O
 manager O
-position O
+position B
 in O
 Supplementary O
 Figure O
@@ -33008,7 +33008,7 @@ in O
 the O
 top O
 104 O
-positions O
+positions B
 are O
 shown O
 in O
@@ -33024,7 +33024,7 @@ competition B
 for O
 the O
 top O
-positions O
+positions B
 by O
 the O
 fact O
@@ -33061,7 +33061,7 @@ based B
 on O
 action O
 by O
-position O
+position B
 . O
 
 Action O
@@ -33211,7 +33211,7 @@ top O
 All O
 Managers O
 Total O
-Points O
+Points B
 ( O
 a O
 ) O
@@ -34217,7 +34217,7 @@ coloured O
 by O
 their O
 corresponding O
-position O
+position B
 is O
 provided O
 in O
@@ -34359,7 +34359,7 @@ spend O
 in O
 these O
 three O
-positions O
+positions B
 ( O
 we O
 have O
@@ -34460,7 +34460,7 @@ this O
 study O
 . O
 
-Tier B
+Tier O
 Everyone O
 103 O
 104 O
@@ -35295,7 +35295,7 @@ Number O
 of O
 Previous O
 Seasons O
-Points O
+Points B
 2018/19 O
 1 O
 100 O
@@ -35406,7 +35406,7 @@ GK O
 DEF O
 MID O
 FWD O
-Position O
+Position B
 Average O
 Value O
 Distirbution O
@@ -35518,7 +35518,7 @@ factored O
 by O
 the O
 player B
-position O
+position B
 , O
 we O
 comment O
@@ -35705,7 +35705,7 @@ proportions O
 spent O
 in O
 each O
-position O
+position B
 ( O
 where O
 DEF O
@@ -35765,7 +35765,7 @@ comparison O
 to O
 the O
 usual O
-starting B
+starting O
 11 O
 players B
 . O
@@ -35773,7 +35773,7 @@ players B
 2 O
 . O
 
-Free O
+Free B
 Hit O
 ( O
 FH O
@@ -35958,7 +35958,7 @@ total O
 2 O
 . O
 
-Free O
+Free B
 Hit O
 ( O
 FH O
@@ -37325,7 +37325,7 @@ of O
 managers O
 . O
 
-Tier B
+Tier O
 Gameweek O
 Everyone O
 103 O
@@ -38042,7 +38042,7 @@ Top O
 10k O
 Distribution O
 of O
-Points O
+Points B
 from O
 Bench O
 Boost O
@@ -38471,7 +38471,7 @@ Table O
 Usage O
 and O
 Average O
-Points O
+Points B
 from O
 Bench O
 Boost O
@@ -39023,7 +39023,7 @@ Table O
 Usage O
 and O
 Average O
-Points B
+Points O
 from O
 Free O
 Hit O
@@ -40859,7 +40859,7 @@ and O
 particularly O
 , O
 “ O
-Defense O
+Defense B
 of O
 the O
 Ancients O
@@ -41443,7 +41443,7 @@ they I
 want I
 the O
 game B
-harder O
+harder B
 to O
 show O
 off O
@@ -41548,7 +41548,7 @@ MOBA O
 ) O
 and O
 particularly O
-Defense O
+Defense B
 Of O
 The O
 Ancients O
@@ -42202,42 +42202,42 @@ developed O
 hereafter O
 . O
 
-Team O
+Team B
 1 O
 base B
 Top O
 lane B
 Bottom B
 lane I
-Middle O
-Team O
+Middle B
+Team B
 1 O
 top O
 jungle B
-Team O
+Team B
 1 O
 bottom B
 jungle B
-Team O
+Team B
 2 O
 base B
 Top O
 lane B
-Bottom O
+Bottom B
+lane I
 lane B
-lane B
-Team O
+Team B
 2 O
 top O
 jungle B
-Team O
+Team B
 2 O
 bottom B
 jungle B
 Figure O
 1 O
 : O
-MOBA B
+MOBA O
 map O
 A O
 DOTA2 O
@@ -42345,7 +42345,7 @@ both O
 teams B
 . O
 
-Team O
+Team B
 red O
 ( O
 called B
@@ -42457,7 +42457,7 @@ Like O
 rugby O
 , O
 certain O
-positions O
+positions B
 and O
 moves B
 are O
@@ -42512,7 +42512,7 @@ zones B
 , O
 estimating O
 enemy B
-positions O
+positions B
 and O
 triggering B
 team B
@@ -42588,7 +42588,7 @@ users B
 ’ O
 actions O
 and O
-positions O
+positions B
 as O
 well O
 as O
@@ -42680,7 +42680,7 @@ of O
 information O
 : O
 • O
-Positions O
+Positions B
 : O
 For O
 each O
@@ -42771,7 +42771,7 @@ gold B
 . O
 
 • O
-Gold B
+Gold O
 / O
 Experience B
 time B
@@ -42808,7 +42808,7 @@ actions O
 Global O
 information O
 : O
-Winner B
+Winner O
 team B
 , O
 game B
@@ -43073,7 +43073,7 @@ in O
 Figure O
 2 O
 depicting O
-positions O
+positions B
 as O
 points B
 in O
@@ -43089,7 +43089,7 @@ game B
 for O
 a O
 different O
-MOBA B
+MOBA O
 . O
 
 Zones B
@@ -44366,7 +44366,7 @@ Figure O
 : O
 Early B
 game I
-positions O
+positions B
 in O
 League O
 of O
@@ -44374,7 +44374,7 @@ Legends O
 . O
 
 Such O
-positions O
+positions B
 totally O
 differ O
 in O
@@ -44616,7 +44616,7 @@ describe O
 its O
 states O
 and O
-positions O
+positions B
 throughout O
 the O
 game B
@@ -44657,7 +44657,7 @@ However O
 , O
 when O
 considering O
-positioning O
+positioning B
 it O
 is O
 rather O
@@ -44791,7 +44791,7 @@ later O
 Definition O
 3 O
 ( O
-Player O
+Player B
 trace O
 ) O
 : O
@@ -44994,7 +44994,7 @@ win O
 , O
 lost O
 } O
-Player O
+Player B
 traces O
 are O
 considered O
@@ -45376,7 +45376,7 @@ hero B
 ’s O
 movement B
 and O
-positioning O
+positioning B
 throughout O
 a O
 match B
@@ -46814,14 +46814,14 @@ CHARM O
 It O
 extracts O
 frequent O
-closed O
+closed B
 itemsets O
 . O
 
 An O
 itemset O
 is O
-closed B
+closed O
 if O
 it O
 has O
@@ -47463,7 +47463,7 @@ study O
 which O
 aggregates O
 the O
-positions O
+positions B
 of O
 10 O
 , O
@@ -47564,7 +47564,7 @@ of O
 the O
 game B
 as O
-positioning B
+positioning O
 is O
 crucial O
 at O
@@ -48052,7 +48052,7 @@ ID O
 XXXX30 O
 plays B
 Invoker O
-Players O
+Players B
 by O
 steam O
 i O
@@ -49093,7 +49093,7 @@ wizardry O
 blade O
 mail O
 , O
-healing B
+healing O
 salve O
 for O
 hero B
@@ -49132,8 +49132,8 @@ of O
 their O
 associated O
 low O
-winning O
-chances B
+winning B
+chances I
 . O
 
 We O
@@ -49338,7 +49338,7 @@ build O
 orders O
 , O
 but O
-position O
+position B
 his O
 hero B
 wrongly O
@@ -49371,14 +49371,14 @@ team B
 . O
 
 MOBA O
-games B
+games O
 are O
 based B
 on O
 team B
 cooperation I
 and O
-positions O
+positions B
 are O
 very O
 important O
@@ -49769,7 +49769,7 @@ robe O
 sage O
 mask O
 , O
-healing B
+healing O
 salve O
 and O
 staff O
@@ -50418,7 +50418,7 @@ too O
 low O
 , O
 his O
-positioning B
+positioning O
 is O
 wrong O
 , O
@@ -51020,10 +51020,10 @@ Accessed O
 ] O
 Watch O
 10,000 O
-league B
-of I
-legends I
-games B
+league O
+of O
+legends O
+games O
 in O
 30 O
 seconds O
@@ -51047,7 +51047,7 @@ Accessed O
 [ O
 4 O
 ] O
-Worlds B
+Worlds O
 2015 O
 viewership O
 . O
@@ -51558,7 +51558,7 @@ Surrender B
 at O
 20 O
 ? O
-matchmaking B
+matchmaking O
 in O
 league B
 of I
@@ -51707,7 +51707,7 @@ D. O
 Klabajan O
 . O
 
-Skill O
+Skill B
 - O
 based B
 differences O
@@ -52210,7 +52210,7 @@ Durand O
 Mining O
 Tracks O
 of O
-Competitive O
+Competitive B
 Video O
 Games O
 . O
@@ -52575,7 +52575,7 @@ SECS O
 Mining O
 Tracks O
 of O
-Competitive O
+Competitive B
 Video O
 Games O
 François O
@@ -52740,7 +52740,7 @@ Multiplayer O
   O
 Online O
   O
-Battle B
+Battle O
   O
 Arena O
   O
@@ -52900,9 +52900,9 @@ development O
   O
 of O
   O
-video B
+video O
   O
-games I
+games O
   O
 has O
   O
@@ -53114,7 +53114,7 @@ game B
 with O
 other O
 humans O
-easier B
+easier O
 , O
 by O
 suppressing O
@@ -53488,7 +53488,7 @@ play B
 easier B
 and O
 studying O
-MOBAs B
+MOBAs O
 in O
 the O
 sport O
@@ -53566,9 +53566,9 @@ tracks O
   O
 of O
   O
-video B
+video O
   O
-games I
+games O
   O
 leads B
   O
@@ -53696,9 +53696,9 @@ tracks O
   O
 of O
   O
-video B
+video O
   O
-games I
+games O
   O
 from O
   O
@@ -53722,7 +53722,7 @@ because O
   O
 these O
   O
-games B
+games O
   O
 are O
   O
@@ -54552,7 +54552,7 @@ topological O
 clues O
 about O
 the O
-position O
+position B
   O
 of O
   O
@@ -54611,7 +54611,7 @@ necessary O
 for O
 inferring O
 their O
-positions O
+positions B
 . O
 
 The O
@@ -54631,7 +54631,7 @@ elementary O
 information O
 about O
 the O
-position O
+position B
 of O
 85 O
 François O
@@ -54815,7 +54815,7 @@ the O
   O
 saved O
   O
-games B
+games O
   O
 uploaded O
   O
@@ -55538,7 +55538,7 @@ GatheringInertia O
 Diameter O
                    O
 DistanceVIP(333 O
-matchs O
+matchs B
 ) O
 0.28 O
               O
@@ -55901,7 +55901,7 @@ networks O
   O
 and O
   O
-Support B
+Support O
   O
 Vector O
   O
@@ -56358,7 +56358,7 @@ analysis O
 • O
 the O
 used O
-positions O
+positions B
 of O
 the O
 players B
@@ -56387,7 +56387,7 @@ file O
   O
 The O
   O
-positions O
+positions B
   O
 were O
   O
@@ -56433,7 +56433,7 @@ its O
   O
 rebirth O
   O
-position O
+position B
   O
 was O
   O
@@ -56454,7 +56454,7 @@ analysis O
 of O
 the O
 inferred O
-position O
+position B
 showed O
 that O
 they O
@@ -56481,7 +56481,7 @@ analyzed O
   O
 though O
   O
-surrendering B
+surrendering O
   O
 before O
   O
@@ -56586,7 +56586,7 @@ competitive B
   O
 video I
   I
-games B
+games O
   O
 and O
   O

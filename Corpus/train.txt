@@ -709,7 +709,7 @@ the O
 same O
 idea O
 of O
-leveling O
+leveling B
 of O
 a O
 character B
@@ -791,8 +791,8 @@ our O
 society O
 is O
 the O
-online O
-gaming O
+online B
+gaming I
 addiction O
 on O
 youth O
@@ -1665,7 +1665,7 @@ various O
 type O
 of O
 games B
-Game O
+Game B
 G O
 T O
 GR O
@@ -2076,7 +2076,7 @@ Main O
 Shop O
 , O
 under O
-Consumables O
+Consumables B
 . O
 
 It O
@@ -2135,7 +2135,7 @@ after O
 the O
 emerge O
 of O
-Smoke B
+Smoke O
 items B
 . O
 
@@ -2448,7 +2448,7 @@ short O
 time B
 . O
 
-Runes B
+Runes O
 spawn O
 at O
 two O
@@ -2478,7 +2478,7 @@ can O
 purchase O
 the O
 items B
-earlier O
+earlier B
 than O
 before O
 . O
@@ -3694,9 +3694,7 @@ Online O
 ] O
 . O
 
-http://DOTA2.gamepedia.com O
-/ O
-DOTA2Wiki O
+http://DOTA2.gamepedia.com/DOTA2Wiki O
 15 O
 . O
 
@@ -4141,7 +4139,7 @@ MOBA O
 game B
 1 O
 Introduction O
-Game O
+Game B
 theory O
 is O
 a O
@@ -4341,7 +4339,7 @@ the O
 understanding O
 of O
 current O
-positions O
+positions B
 . O
 
 Another O
@@ -4597,7 +4595,7 @@ those O
 activities O
 . O
 
-Game O
+Game B
 refinement O
 theory O
 has O
@@ -4769,7 +4767,7 @@ games B
 such O
 as O
 sports O
-games O
+games B
 and O
 video B
 games I
@@ -4861,7 +4859,7 @@ of O
 the O
 refinement O
 in O
-games O
+games B
 was O
 proposed O
 [ O
@@ -5732,7 +5730,7 @@ level B
 of O
 game B
 tree O
-times I
+times O
 d. O
 For O
 the O
@@ -7571,7 +7569,7 @@ that O
 Germany O
 had O
 better O
-playing O
+playing B
 skill B
 . O
 
@@ -7905,7 +7903,7 @@ LOL O
 ) O
 , O
 “ O
-Defense O
+Defense B
 of O
 the O
 Ancients O
@@ -7915,7 +7913,7 @@ DotA O
 ) O
 and O
 “ O
-Heroes O
+Heroes B
 of O
 the O
 Storm O
@@ -8024,7 +8022,7 @@ mechanism B
 in O
 DotA O
 and O
-LOL O
+LOL B
 one O
 tower B
 equals O
@@ -8174,7 +8172,7 @@ hollow O
 69.55 O
 100.70 O
 0.083 O
-Battlefield O
+Battlefield B
 of O
 eternity O
 99.30 O
@@ -8361,9 +8359,9 @@ most O
 successful O
 and O
 well O
-balanced O
+balanced B
 MOBA O
-game B
+game I
 in O
 the O
 world B
@@ -8569,7 +8567,7 @@ property O
 ] O
 . O
 
-HotS B
+HotS O
 : O
 For O
 HotS O
@@ -8629,7 +8627,7 @@ temple O
 . O
 
 ‘ O
-Battlefield B
+Battlefield O
 of O
 eternity O
 ’ O
@@ -9176,9 +9174,9 @@ J. O
 Riot B
 games I
 ’ O
-league B
-of I
-legends I
+league O
+of O
+legends O
 officially O
 becomes O
 most O
@@ -10056,7 +10054,7 @@ Analysis O
 of O
 the O
 ” O
-Heroes O
+Heroes B
 of O
 the O
 Storm O
@@ -10086,7 +10084,7 @@ M. O
 . O
 
 Comparing O
-MOBAs B
+MOBAs O
 : O
 League O
 of O
@@ -10712,7 +10710,7 @@ behavior O
 . O
 
 The O
-earliest O
+earliest B
 required O
 direct O
 human O
@@ -12217,7 +12215,7 @@ who O
 are O
 unfamiliar O
 with O
-LoL B
+LoL O
 , O
 we O
 briefly O
@@ -12228,7 +12226,7 @@ gameplay B
 mechanisms B
 , O
 toxic O
-playing B
+playing O
 in O
 LoL O
 , O
@@ -12242,7 +12240,7 @@ system O
 League O
 of O
 Legends O
-LoL B
+LoL O
 is O
 a O
 match B
@@ -12325,7 +12323,7 @@ them O
 The O
 goal B
 of O
-LoL B
+LoL O
 is O
 to O
 penetrate O
@@ -12469,7 +12467,7 @@ lane B
 . O
 
 2.2 O
-Reporting O
+Reporting B
 Toxic O
 Players O
 After O
@@ -12595,8 +12593,8 @@ play B
 happens O
 . O
 
-LoL B
-matches I
+LoL O
+matches B
 do O
 not O
 have O
@@ -12646,7 +12644,7 @@ surrender B
 
 However O
 , O
-surrendering B
+surrendering O
 is O
 allowed O
 only O
@@ -12843,7 +12841,7 @@ the O
 Tribunal4 O
 . O
 
-Riot B
+Riot O
 randomly O
 selects O
 at O
@@ -13111,7 +13109,7 @@ RELATED O
 WORK O
 3.1 O
 Toxic O
-Playing B
+Playing O
 in O
 Online O
 Games O
@@ -13219,7 +13217,7 @@ of O
 Riot O
 . O
 
-Griefing O
+Griefing B
 is O
 a O
 term O
@@ -13285,7 +13283,7 @@ beratement O
 . O
 
 Although O
-griefing O
+griefing B
 is O
 intuitively O
 understood O
@@ -13372,8 +13370,8 @@ few O
 studies O
 have O
 characterized O
-grief B
-playing I
+grief O
+playing O
 . O
 
 Foo O
@@ -13410,7 +13408,7 @@ of O
 behavior O
 and O
 distinguish O
-griefing O
+griefing B
 from O
 greed B
 playing O
@@ -13434,7 +13432,7 @@ players B
 Barnett O
 discovers O
 that O
-griefing O
+griefing B
 is O
 one O
 of O
@@ -13463,8 +13461,8 @@ al O
 correlate O
 personality O
 and O
-grief B
-playing I
+grief O
+playing O
 . O
 
 They O
@@ -13482,8 +13480,8 @@ like O
 the O
 motivation O
 of O
-grief B
-playing I
+grief O
+playing O
 , O
 such O
 as O
@@ -14263,12 +14261,12 @@ Cases O
 590,311 O
 220,614 O
 1,460,344 O
-Matches O
+Matches B
 2,841,906 O
 2,107,522 O
 1,066,618 O
 6,016,046 O
-Reports O
+Reports B
 5,559,968 O
 3,441,557 O
 1,898,433 O
@@ -15474,7 +15472,7 @@ information O
 provided O
 by O
 the O
-Stage O
+Stage B
 1 O
 Tribunal O
 participants O
@@ -15679,7 +15677,7 @@ and O
 assists B
 . O
 
-Kills O
+Kills B
 and O
 deaths B
 are O
@@ -15767,7 +15765,7 @@ teammate B
 that O
 landed O
 the O
-killing O
+killing B
 blow O
 ) O
 within O
@@ -15887,8 +15885,8 @@ can O
 result O
 in O
 a O
-low O
-KDA O
+low B
+KDA I
 not O
 only O
 for O
@@ -15906,8 +15904,8 @@ allies B
 to O
 maintain O
 a O
-good O
-KDA O
+good B
+KDA I
 as O
 well O
 . O
@@ -15967,7 +15965,7 @@ players I
 . O
 
 In O
-LoL B
+LoL O
 , O
 attacks B
 do O
@@ -16227,7 +16225,7 @@ assists B
 and O
 4 O
 ) O
-killing O
+killing B
 creeps B
 , O
 which O
@@ -16715,8 +16713,8 @@ that O
 90 O
 % O
 of O
-LoL B
-players I
+LoL O
+players B
 are O
 male7 O
 , O
@@ -16737,7 +16735,7 @@ often O
 occurs O
 in O
 social O
-games B
+games O
 [ O
 24 O
 ] O
@@ -17825,7 +17823,7 @@ unskilled B
 
  O
 player I
-Stage O
+Stage B
 1 O
 report B
 category O
@@ -18972,7 +18970,7 @@ verbal.abuse.offender.deaths O
 verbal.abuse.enemies.kda.avg.per.player O
 5 O
 verbal.abuse.offender.kda O
-Report O
+Report B
 only O
 1 O
 verbal.abuse.allied.report.count O
@@ -18984,7 +18982,7 @@ intentionally.feeding.allied.report.count O
 intentionally.feeding.allied.report.comment.count O
 5 O
 offensive.language.allied.report.count O
-Chat O
+Chat B
 only O
 1 O
 case.offender.valence O
@@ -18996,7 +18994,7 @@ offensive.language.offender.chat.msgs O
 verbal.abuse.offender.valence O
 5 O
 verbal.abuse.total.chat.msgs O
-Full O
+Full B
 1 O
 case.offender.valence O
 2 O
@@ -19141,7 +19139,7 @@ the O
 offender O
 when O
 the O
-reported B
+reported O
 reason O
 is O
 verbal O
@@ -19989,7 +19987,7 @@ NA O
 In O
 context O
 of O
-LoL B
+LoL O
 , O
 properly O
 dealing O
@@ -20010,7 +20008,7 @@ punished O
 players B
 would O
 leave O
-LoL B
+LoL O
 , O
 while O
 wrongly O
@@ -20046,7 +20044,7 @@ fine O
 for O
 the O
 overall O
-LoL B
+LoL O
 ecosystem O
 . O
 
@@ -20746,7 +20744,7 @@ Riot O
 gave O
 5 O
 Influence O
-Points B
+Points O
 ( O
 IP O
 ) O
@@ -21319,7 +21317,7 @@ that O
 million O
 players B
 play B
-LoL B
+LoL O
 everyday11 O
 and O
 they O
@@ -21587,7 +21585,7 @@ this O
 paper O
 span O
 multiple O
-metas B
+metas O
 and O
 we O
 still O
@@ -21771,7 +21769,7 @@ argue O
 that O
 is O
 a O
-hidden B
+hidden O
 benefit O
 of O
 our O
@@ -21915,7 +21913,7 @@ are I
 exposed O
 to O
 toxic O
-playing B
+playing O
 through O
 adaptive O
 an O
@@ -21948,7 +21946,7 @@ they O
 did O
 as O
 toxic O
-playing B
+playing O
 [ O
 23 O
 ] O
@@ -22015,7 +22013,7 @@ origin O
 of O
 some O
 toxic O
-playing B
+playing O
 , O
 in B
 - I
@@ -22447,7 +22445,7 @@ C O
 Cheaters B
 in O
 a O
-gaming O
+gaming B
 social O
 network O
 . O
@@ -22703,8 +22701,8 @@ Koivisto O
 . O
 
 Defining O
-grief O
-play B
+grief B
+play I
 in O
 MMORPGs O
 : O
@@ -23173,8 +23171,8 @@ eyed O
 player B
 culture O
 : O
-Grief O
-play B
+Grief B
+play I
 and O
 construction O
 of O
@@ -23837,7 +23835,7 @@ setting O
 . O
 
 The O
-Effects B
+Effects O
 of O
 Punishment O
 on O
@@ -24528,7 +24526,7 @@ language O
 is O
 the O
 most O
-reported B
+reported O
 reason O
 across O
 all O
@@ -24549,7 +24547,7 @@ is O
 the O
 second O
 most O
-reported B
+reported O
 reason O
 . O
 
@@ -24877,7 +24875,7 @@ potential O
 victims B
 of O
 toxic O
-playing B
+playing O
 in O
 advance O
 . O
@@ -25445,7 +25443,7 @@ by O
 the O
 programming O
 of O
-LoL B
+LoL O
 , O
 and O
 thus O
@@ -25777,7 +25775,7 @@ isolated O
 the O
 fear O
 of O
-ganks B
+ganks O
 dissipates O
 , O
 and O
@@ -26680,7 +26678,7 @@ behavior O
 . O
 
 In O
-LoL B
+LoL O
 , O
 one O
 of O
@@ -28016,7 +28014,7 @@ potential O
 victims B
 of O
 toxic O
-playing B
+playing O
 in O
 advance O
 . O
@@ -28098,8 +28096,8 @@ system O
 to O
 detect O
 toxic O
-playing B
-earlier O
+playing O
+earlier B
 . O
 
 The O
@@ -28493,8 +28491,8 @@ eyed O
 player B
 culture O
 : O
-Grief O
-play B
+Grief B
+play I
 and O
 construction O
 of O
@@ -28705,11 +28703,11 @@ popular O
 team B
 - O
 based I
-role I
-- I
-playing I
-game I
-developed I
+role B
+- O
+playing B
+game B
+developed O
 by O
 Riot O
 Games O
@@ -28780,7 +28778,7 @@ video B
 games I
 , O
 multiplayer O
-games B
+games O
 , O
 game B
 prediction O
@@ -28819,7 +28817,7 @@ multiplayer O
 online O
 role B
 - O
-playing B
+playing O
 games B
 ( O
 MMORPGs O
@@ -28877,8 +28875,8 @@ objective B
 such O
 as O
 defeating B
-opposing B
-teams I
+opposing O
+teams B
 . O
 
 Due O
@@ -29302,7 +29300,7 @@ players B
 
 Furthermore O
 , O
-LoL B
+LoL O
 is O
 a O
 representative O
@@ -29348,10 +29346,8 @@ game B
 consists O
 of O
 two O
-opposing B
-
- O
-teams I
+opposing O
+teams B
 of O
 five O
 players B
@@ -29375,8 +29371,8 @@ other O
 to O
 destroy O
 the O
-opposing B
-team I
+opposing O
+team B
 ’s O
 “ O
 towers”—structures O
@@ -30551,7 +30547,7 @@ Sc O
 } O
 // O
 centroid O
-updates B
+updates O
 for O
 i O
 = O
@@ -30863,9 +30859,9 @@ consultations O
 with O
 expert O
 , O
-highly B
-- I
-ranked I
+highly O
+- O
+ranked B
 ( O
 top O
 0.2 O
@@ -30960,7 +30956,7 @@ follows O
 . O
 
 • O
-Ranged B
+Ranged O
 physical B
 attacker I
 Clusters O
@@ -31063,7 +31059,7 @@ other O
 behavior O
 clusters O
 • O
-Team B
+Team O
 support B
 Cluster O
 5 O
@@ -31357,7 +31353,7 @@ color O
 IV O
 . O
 
-GAME B
+GAME O
 OUTCOME O
 PREDICTION O
 We O
@@ -32644,7 +32640,7 @@ team B
 based I
 role B
 - O
-playing B
+playing O
 games B
 ) O
 , O
@@ -32908,8 +32904,8 @@ also O
 grateful O
 to O
 the O
-LoL O
-expert B
+LoL B
+expert O
 players I
 who O
 helped O
@@ -33188,7 +33184,7 @@ P. O
 Tassi O
 , O
 “ O
-Riot B
+Riot O
 ’s O
 ‘ O
 League O
@@ -33377,7 +33373,7 @@ to O
 speed O
 training O
 of O
-Support B
+Support O
 Vector O
 Machines O
 , O
@@ -33858,7 +33854,7 @@ computer O
 games B
 . O
 
-Game O
+Game B
 AI O
 must O
 be O
@@ -33971,7 +33967,7 @@ be O
 considered O
 “ O
 AI O
-Hard B
+Hard O
 ” O
 in B
 real O
@@ -34002,7 +33998,7 @@ intelligence O
 course O
 . O
 
-Game B
+Game O
 AI O
 classes B
 emphasize O
@@ -35417,7 +35413,7 @@ http://unity3d.com O
 ) O
 . O
 
-Game O
+Game B
 engines O
 operate O
 as O
@@ -35828,7 +35824,7 @@ engine O
 by O
 sub O
 - O
-classing O
+classing B
 basic O
 components O
 . O
@@ -36135,8 +36131,8 @@ in O
 which O
 players B
 on O
-opposing B
-teams I
+opposing O
+teams B
 attempt O
 to O
 destroy O
@@ -36276,7 +36272,7 @@ AI O
 manifests O
 itself O
 in O
-MOBAs B
+MOBAs O
 in O
 a O
 number O
@@ -36439,7 +36435,7 @@ GridNavigator O
 PathNavigator O
 BehaviorTree O
 BTNode O
-Hero O
+Hero B
 BTAgent O
 ... O
 ... O
@@ -36503,7 +36499,7 @@ behavior O
 more O
 sophisticated O
 than O
-turning B
+turning O
 , O
 shooting O
 , O
@@ -36739,9 +36735,9 @@ shows O
 two O
 strategies B
 for O
-decision B
-- I
-making I
+decision O
+- O
+making O
 : O
 finitestate O
 machines O
@@ -37016,7 +37012,7 @@ which O
 invisible B
 waypoints O
 are O
-positioned O
+positioned B
 at O
 key O
 points B
@@ -37527,11 +37523,11 @@ Retreat B
 Chase O
 Minion B
 Kill B
-Hero O
+Hero B
 Chase O
-Hero O
+Hero B
 Kill B
-Minion B
+Minion O
 Figure O
 3 O
 : O
@@ -37905,7 +37901,7 @@ hero B
 agents O
 . O
 
-Hero O
+Hero B
 agents O
 have O
 different O
@@ -39136,7 +39132,7 @@ algorithmic O
 roots O
 . O
 
-Game O
+Game B
 AI O
 has O
 the O
@@ -40161,8 +40157,8 @@ present O
 real B
 - I
 time I
-video B
-highlighting I
+video O
+highlighting O
 for O
 Yahoo O
 Esports O
@@ -42047,7 +42043,7 @@ function O
 
 3 O
 Model O
-HotS B
+HotS O
 LoL B
 Dota2 O
 AP O
@@ -43605,7 +43601,7 @@ Factorization O
 , O
 to O
 discover O
-hidden O
+hidden B
 correlated O
 behavioral O
 paerns O
@@ -43844,8 +43840,8 @@ players B
 divided O
 in O
 two O
-opposing B
-teams I
+opposing O
+teams B
 , O
 compete O
 against O
@@ -43941,7 +43937,7 @@ this O
 work O
 must O
 be O
-honored O
+honored B
 . O
 
 For O
@@ -44472,7 +44468,7 @@ NTF O
 we O
 study O
 the O
-gaming O
+gaming B
 history O
 of O
 about O
@@ -44824,8 +44820,8 @@ time B
 axis O
 corresponds O
 to O
-LoL B
-matches I
+LoL O
+matches B
 . O
 
 Following O
@@ -44920,7 +44916,7 @@ in O
 her O
 / O
 his O
-gaming O
+gaming B
 history O
 . O
 
@@ -45928,7 +45924,7 @@ Legends O
 and O
 in O
 MOBA O
-games B
+games O
 in O
 general O
 ) O
@@ -46192,13 +46188,13 @@ League O
 of O
 Legends O
 ( O
-LoL B
+LoL O
 ) O
 . O
 
-League B
-of I
-legends I
+League O
+of O
+legends O
 is O
 a O
 match B
@@ -46327,9 +46323,9 @@ actions O
 , O
 such O
 as O
-killing B
+killing O
 or O
-assisting B
+assisting O
 in O
 kills B
 , O
@@ -46487,7 +46483,7 @@ selected O
 the O
 most O
 popular O
-LoL B
+LoL O
 bale O
 arena O
 , O
@@ -46512,7 +46508,7 @@ margin O
 ) O
 the O
 most O
-played B
+played O
 bale O
 arena O
 in O
@@ -47151,7 +47147,7 @@ deaths B
 1 O
 ) O
 , O
-kills O
+kills B
 ( O
 2 O
 ) O
@@ -47521,10 +47517,10 @@ each O
 component O
 . O
 
-Assists O
-Deaths O
+Assists B
+Deaths B
 Kills B
-Gold O
+Gold B
 Component O
 0 O
 X O
@@ -47754,7 +47750,7 @@ factor O
 matrix O
 A. O
 is O
-grouping B
+grouping O
 allows O
 to O
 identify O
@@ -48225,7 +48221,7 @@ Component O
 0.08 O
 Component O
 1 O
-Player O
+Player B
 membership O
 Cluster O
 0 O
@@ -48699,7 +48695,7 @@ players B
 as O
 we O
 mentioned O
-earlier O
+earlier B
 , O
 the O
 amount B
@@ -49064,7 +49060,7 @@ Ferrara O
 60 O
 80 O
 100 O
-Time O
+Time B
 step O
 0.0015 O
 0.0020 O
@@ -49092,7 +49088,7 @@ Component O
 60 O
 80 O
 100 O
-Time O
+Time B
 step O
 0.0020 O
 0.0025 O
@@ -49121,7 +49117,7 @@ Component O
 60 O
 80 O
 100 O
-Time O
+Time B
 step O
 0.0015 O
 0.0020 O
@@ -49255,7 +49251,7 @@ components O
 60 O
 80 O
 100 O
-Time O
+Time B
 step O
 0.16 O
 0.18 O
@@ -49265,7 +49261,7 @@ step O
 0.26 O
 0.28 O
 0.30 O
-Assists O
+Assists B
 # O
 ( O
 a O
@@ -49283,7 +49279,7 @@ Cluster O
 60 O
 80 O
 100 O
-Time O
+Time B
 step O
 0.20 O
 0.22 O
@@ -49293,12 +49289,12 @@ step O
 0.30 O
 0.32 O
 0.34 O
-Deaths O
+Deaths B
 # O
 ( O
 b O
 ) O
-Deaths B
+Deaths O
 Cluster O
 0 O
 Cluster O
@@ -49311,7 +49307,7 @@ Cluster O
 60 O
 80 O
 100 O
-Time O
+Time B
 step O
 0.06 O
 0.08 O
@@ -49326,7 +49322,7 @@ Kills O
 ( O
 c O
 ) O
-Kills B
+Kills O
 Cluster O
 0 O
 Cluster O
@@ -49339,7 +49335,7 @@ Cluster O
 60 O
 80 O
 100 O
-Time O
+Time B
 step O
 0.26 O
 0.27 O
@@ -49351,7 +49347,7 @@ step O
 0.33 O
 0.34 O
 0.35 O
-Gold O
+Gold B
 earned O
 ( O
 d O
@@ -49468,7 +49464,7 @@ Canada O
 60 O
 80 O
 100 O
-Time O
+Time B
 step O
 0.35 O
 0.40 O
@@ -49559,7 +49555,7 @@ one O
 of O
 the O
 three O
-leading B
+leading O
 strategies B
 we O
 highlighted B
@@ -49582,7 +49578,7 @@ continuously O
 in O
 changing O
 their O
-gaming O
+gaming B
 behavior O
 and O
 strategy B
@@ -49641,8 +49637,8 @@ skills I
 to O
 create O
 the O
-opposing B
-teams I
+opposing O
+teams B
 as O
 follows O
 . O
@@ -49931,9 +49927,11 @@ values O
 / O
 wiki O
 / O
-Elo O
-rating B
+Elo B
+rating O
 system I
+
+ I
 4hps://support.riotgames.com O
 /hc O
 / O
@@ -50063,8 +50061,8 @@ used O
 to O
 create O
 the O
-opposing B
-teams I
+opposing O
+teams B
 of O
 a O
 match B
@@ -50346,8 +50344,8 @@ on O
 interviews O
 of O
 experienced O
-LoL B
-players I
+LoL O
+players B
 and O
 found O
 that O
@@ -50391,9 +50389,9 @@ Ferrara O
 Other O
 studies O
 of O
-LoL B
+LoL O
 are O
-focused B
+focused O
 on O
 the O
 analysis O
@@ -50494,7 +50492,7 @@ an O
 unsupervised O
 fashion O
 the O
-playing O
+playing B
 behaviors O
 and O
 the O
@@ -50545,7 +50543,7 @@ on O
 the O
 analysis O
 of O
-LoL B
+LoL O
 from O
 a O
 team B
@@ -51066,7 +51064,7 @@ adapt O
 their O
 strategy B
 and O
-gaming O
+gaming B
 behavior O
 over O
 time B
@@ -51287,7 +51285,7 @@ not O
 necessarily O
 reect O
 the O
-position O
+position B
 / O
 policy O
 of O
@@ -51505,7 +51503,7 @@ Donaldson O
 2015 O
 . O
 
-Mechanics B
+Mechanics O
 and O
 Metagame O
 Exploring O
@@ -51629,8 +51627,8 @@ Koivisto O
 . O
 
 Dening O
-grief O
-play B
+grief B
+play I
 in O
 MMORPGs O
 : O
@@ -52376,7 +52374,7 @@ choices O
 . O
 
 Meaningful O
-Play O
+Play B
 13 O
 ( O
 2012 O
@@ -52664,7 +52662,7 @@ Network O
 and O
 Operating O
 System O
-Support O
+Support B
 on O
 Digital O
 Audio O
@@ -52682,7 +52680,7 @@ Running O
 head O
 : O
 PLAYER O
-SKILL O
+SKILL B
 DECOMPOSITION O
 IN O
 MULTIPLAYER O
@@ -52912,7 +52910,7 @@ League O
 of O
 Legends O
 ( O
-LoL B
+LoL O
 ) O
 and O
 Defense O
@@ -52985,7 +52983,7 @@ two O
 . O
 
 PLAYER O
-SKILL O
+SKILL B
 DECOMPOSITION O
 IN O
 MULTIPLAYER O
@@ -53416,7 +53414,7 @@ words O
 . O
 
 PLAYER O
-SKILL O
+SKILL B
 DECOMPOSITION O
 IN O
 MULTIPLAYER O
@@ -53578,7 +53576,7 @@ essential O
 components O
 comprising O
 MOBA O
-games B
+games O
 ’ O
 play B
 skills B
@@ -53821,7 +53819,7 @@ League O
 of O
 Legends O
 ( O
-LoL B
+LoL O
 ) O
 and O
 Defense O
@@ -53870,7 +53868,7 @@ the O
 proposed O
 skill B
 PLAYER O
-SKILL O
+SKILL B
 DECOMPOSITION O
 IN O
 MULTIPLAYER O
@@ -53946,7 +53944,7 @@ work O
 
 Previous O
 Works O
-Skill O
+Skill B
 Rating O
 and O
 Modeling O
@@ -54308,7 +54306,7 @@ MOBA O
 games B
 . O
 
-Skill O
+Skill B
 modeling O
 belongs O
 to O
@@ -54324,7 +54322,7 @@ long O
 time B
 by O
 PLAYER O
-SKILL O
+SKILL B
 DECOMPOSITION O
 IN O
 MULTIPLAYER O
@@ -54522,8 +54520,8 @@ MOBA O
 games B
 . O
 
-Skill O
-rating O
+Skill B
+rating I
 / O
 modeling O
 are O
@@ -54805,7 +54803,7 @@ friends O
 the O
 player B
 PLAYER O
-SKILL O
+SKILL B
 DECOMPOSITION O
 IN O
 MULTIPLAYER O
@@ -54925,8 +54923,8 @@ or O
 more O
 champions B
 from O
-opposing B
-teams I
+opposing O
+teams B
 are O
 in O
 the O
@@ -55165,7 +55163,7 @@ who O
 have O
 short O
 - O
-ranged B
+ranged O
 attack B
 ability B
 and O
@@ -55753,7 +55751,7 @@ the O
 period O
 of O
 PLAYER O
-SKILL O
+SKILL B
 DECOMPOSITION O
 IN O
 MULTIPLAYER O
@@ -55820,7 +55818,7 @@ or O
 not O
 , O
 including O
-LoL B
+LoL O
 and O
 DOTA2 O
 . O
@@ -56146,7 +56144,7 @@ them O
 . O
 
 PLAYER O
-SKILL O
+SKILL B
 DECOMPOSITION O
 IN O
 MULTIPLAYER O
@@ -56238,9 +56236,11 @@ match B
 outcomes O
 . O
 
-Champion O
-base B
-skill B
+Champion B
+
+ O
+base I
+skill I
 can O
 also O
 be O
@@ -56950,7 +56950,7 @@ starting B
 with O
 the O
 PLAYER O
-SKILL O
+SKILL B
 DECOMPOSITION O
 IN O
 MULTIPLAYER O
@@ -57503,7 +57503,7 @@ respectively O
 . O
 
 PLAYER O
-SKILL O
+SKILL B
 DECOMPOSITION O
 IN O
 MULTIPLAYER O
@@ -57578,7 +57578,7 @@ League O
 of O
 Legends O
 ( O
-LoL B
+LoL O
 ) O
 and O
 Defense O
@@ -57597,7 +57597,7 @@ games B
 we O
 only O
 consider O
-ranked B
+ranked O
 matches B
 from O
 top B
@@ -57609,7 +57609,7 @@ input B
 data O
 . O
 
-Ranked B
+Ranked O
 matches B
 are O
 those O
@@ -57836,9 +57836,9 @@ players B
 . O
 
 In O
-LoL B
+LoL O
 , O
-players I
+players B
 can O
 be O
 rewarded B
@@ -57869,7 +57869,7 @@ related O
 to O
 their O
 public O
-honored O
+honored B
 titles O
 ( O
 termed O
@@ -57928,7 +57928,7 @@ comparisons O
 . O
 
 PLAYER O
-SKILL O
+SKILL B
 DECOMPOSITION O
 IN O
 MULTIPLAYER O
@@ -57957,7 +57957,7 @@ crowned O
 . O
 
 League O
-Points O
+Points B
 as O
 well O
 as O
@@ -58060,7 +58060,7 @@ champions B
 of O
 231212 O
 unique O
-ranked B
+ranked O
 matches B
 played B
 by O
@@ -58106,7 +58106,7 @@ matches B
 collected O
 . O
 
-Defense O
+Defense B
 of O
 the O
 Ancient O
@@ -58139,7 +58139,7 @@ and O
 skill B
 is O
 called B
-Match B
+Match O
 Making O
 Rating O
 ( O
@@ -58150,7 +58150,7 @@ MMR O
 DOTA2 O
 differs O
 with O
-LoL B
+LoL O
 in O
 that O
 player B
@@ -58356,7 +58356,7 @@ an O
 online O
 curated O
 PLAYER O
-SKILL O
+SKILL B
 DECOMPOSITION O
 IN O
 MULTIPLAYER O
@@ -58813,7 +58813,7 @@ list O
 : O
 https://github.com/yasp-dota/yasp/wiki/MMR-Data O
 PLAYER O
-SKILL O
+SKILL B
 DECOMPOSITION O
 IN O
 MULTIPLAYER O
@@ -58961,10 +58961,10 @@ We O
 find O
 that O
 in O
-LoL B
+LoL O
 , O
-player I
-skill B
+player B
+skill I
 can O
 be O
 decomposed O
@@ -59103,7 +59103,7 @@ quality O
 than O
 that O
 in O
-LoL B
+LoL O
 , O
 such O
 that O
@@ -59301,7 +59301,7 @@ players I
 we O
 randomly O
 PLAYER O
-SKILL O
+SKILL B
 DECOMPOSITION O
 IN O
 MULTIPLAYER O
@@ -59315,8 +59315,8 @@ same O
 ratio O
 of O
 the O
-LoL O
-players B
+LoL B
+players I
 as O
 in O
 DOTA2 O
@@ -59360,7 +59360,7 @@ significant O
 in O
 the O
 modified O
-LoL B
+LoL O
 dataset O
 when O
 adding O
@@ -59632,7 +59632,7 @@ team B
 formation I
 is O
 a O
-hot O
+hot B
 topic O
 . O
 
@@ -59761,7 +59761,7 @@ champion B
 specific O
 skill B
 PLAYER O
-SKILL O
+SKILL B
 DECOMPOSITION O
 IN O
 MULTIPLAYER O
@@ -59878,7 +59878,7 @@ genres O
 . O
 
 PLAYER O
-SKILL O
+SKILL B
 DECOMPOSITION O
 IN O
 MULTIPLAYER O
@@ -59957,7 +59957,7 @@ G. O
 ) O
 . O
 
-Player O
+Player B
 behavioural O
 modelling O
 for O
@@ -59989,7 +59989,7 @@ E. O
 ) O
 . O
 
-Rank B
+Rank O
 analysis O
 of O
 incomplete O
@@ -60194,7 +60194,7 @@ Skill O
 Rating O
 : O
 Advanced O
-Matchmaking B
+Matchmaking O
 in O
 Ghost O
 Recon O
@@ -60258,7 +60258,7 @@ October O
 ) O
 . O
 
-Skill O
+Skill B
 - O
 based B
 differences O
@@ -60427,7 +60427,7 @@ dynamic O
 paired O
 comparison O
 PLAYER O
-SKILL O
+SKILL B
 DECOMPOSITION O
 IN O
 MULTIPLAYER O
@@ -60672,7 +60672,7 @@ M. O
 . O
 
 Comparing O
-MOBAs B
+MOBAs O
 : O
 League O
 of O
@@ -60768,7 +60768,7 @@ Techniques O
 for O
 Better O
 Gaming O
-Experience B
+Experience O
 ( O
 Vol O
 . O
@@ -60834,7 +60834,7 @@ of O
 a O
 Multiplayer O
 Online O
-Game O
+Game B
 . O
 
 In O
@@ -60908,7 +60908,7 @@ pp O
 . O
 
 PLAYER O
-SKILL O
+SKILL B
 DECOMPOSITION O
 IN O
 MULTIPLAYER O
@@ -61099,8 +61099,8 @@ M. O
 ) O
 . O
 
-Rating O
-systems O
+Rating B
+systems I
 with O
 multiple O
 factors O
@@ -61143,7 +61143,7 @@ P. O
 ) O
 . O
 
-Riot B
+Riot O
 ’s O
 ’ O
 League O
@@ -61243,7 +61243,7 @@ and O
 computational O
 intelligence O
 in O
-games B
+games O
 ( O
 pp O
 . O
@@ -61381,7 +61381,7 @@ Luiz O
 Chaimowicz2 O
 Abstract O
 — O
-Games B
+Games O
 have O
 always O
 been O
@@ -61620,7 +61620,7 @@ Strategy O
 ( O
 RTS O
 ) O
-Games B
+Games O
 have O
 emerged O
 as O
@@ -61890,7 +61890,7 @@ factors O
 make O
 the O
 research O
-easier O
+easier B
 , O
 and O
 makes O
@@ -62064,7 +62064,7 @@ world B
 surpassing O
 the O
 MMORPG O
-World O
+World B
 of O
 Warcraft O
 [ O
@@ -62077,12 +62077,12 @@ can O
 be O
 considered O
 a O
-sub B
-- I
-genre I
-of I
+sub O
+- O
+genre O
+of O
 the O
-RTS I
+RTS O
 , O
 inheriting O
 some O
@@ -62117,7 +62117,7 @@ known O
 as O
 Macromanagement O
 , O
-MOBAs B
+MOBAs O
 have O
 a O
 strong O
@@ -62464,7 +62464,7 @@ core O
 gameplay B
 of O
 most O
-MOBAs B
+MOBAs O
 is O
 the O
 control B
@@ -63024,7 +63024,7 @@ it O
 involves O
 skills B
 like O
-positioning B
+positioning O
 , O
 skill B
 / O
@@ -63339,7 +63339,7 @@ and O
 Ban O
 Phase O
 Most O
-MOBAs B
+MOBAs O
 offer O
 a O
 large O
@@ -63368,9 +63368,9 @@ heroes B
 an O
 act O
 called B
-counter O
-- O
-picking O
+counter B
+- I
+picking I
 . O
 
 Normally O
@@ -63653,9 +63653,9 @@ screenshot B
 from O
 the O
 pick B
-and O
-ban O
-Phase O
+and I
+ban I
+Phase I
 from O
 the O
 game B
@@ -64005,7 +64005,7 @@ of O
 making O
 the O
 initial O
-positioning B
+positioning O
 on O
 the O
 game B
@@ -64054,8 +64054,8 @@ of O
 trying O
 to O
 kill B
-neutral O
-creeps B
+neutral B
+creeps I
 located O
 at O
 the O
@@ -64331,8 +64331,8 @@ in O
 damaging B
 with O
 its O
-allied O
-creeps B
+allied B
+creeps I
 , O
 allied O
 heroes B
@@ -64400,7 +64400,7 @@ should O
 worry O
 about O
 the O
-positioning B
+positioning O
 of O
 the O
 heroes B
@@ -64413,7 +64413,7 @@ advantage B
 of O
 a O
 bad O
-positioning B
+positioning O
 by O
 increasing B
 the O
@@ -64622,8 +64622,10 @@ heroes B
 that O
 can O
 recruit O
-neutral O
-creeps B
+neutral B
+
+ O
+creeps I
 to O
 fight B
 alongside O
@@ -64678,7 +64680,7 @@ the O
 hero B
 to O
 perform O
-ganks B
+ganks O
 itself O
 performing O
 the O
@@ -64733,7 +64735,7 @@ enemy B
 hero I
 , O
 which O
-positioning B
+positioning O
 is O
 the O
 best O
@@ -64970,7 +64972,7 @@ to O
 gank B
 the O
 enemy B
-heroes I
+heroes O
 one O
 - O
 by O
@@ -65767,7 +65769,7 @@ in O
 MOBA O
 : O
 • O
-Combat B
+Combat O
 Outcome O
 from O
 duels B
@@ -65781,7 +65783,7 @@ team B
 fights I
 ; O
 • O
-Killable B
+Killable O
 enemies B
 from O
 a O
@@ -66560,7 +66562,7 @@ using O
 a O
 Target O
 Selection O
-Strategy O
+Strategy B
 . O
 
 The O
@@ -66572,7 +66574,7 @@ coupled O
 with O
 a O
 good O
-positioning B
+positioning O
 strategy B
 , O
 or O
@@ -66586,7 +66588,7 @@ well O
 
 A O
 good O
-positioning B
+positioning O
 should O
 allow O
 the O
@@ -66615,12 +66617,12 @@ An O
 example O
 of O
 such O
-positioning B
+positioning O
 is O
 to O
 have O
 long O
-ranged B
+ranged O
 units B
 in O
 the O
@@ -66646,7 +66648,7 @@ line O
 is O
 interesting O
 to O
-position O
+position B
 the O
 melee B
 and O
@@ -66679,7 +66681,7 @@ The O
 previous O
 discussion O
 about O
-positioning B
+positioning O
 raises O
 another O
 relevant O
@@ -67931,7 +67933,7 @@ players B
 while O
 planning O
 the O
-positioning B
+positioning O
 , O
 hero B
 groups B
@@ -67998,7 +68000,7 @@ analyze O
 strategic O
 situations O
 and O
-positions O
+positions B
 . O
 
 This O
@@ -68747,7 +68749,7 @@ was O
 already O
 the O
 most O
-played B
+played O
 genre O
 in O
 the O
@@ -68995,7 +68997,7 @@ create O
 intelligent O
 agents O
 for O
-MOBAs B
+MOBAs O
 , O
 which O
 happened O
@@ -69180,7 +69182,7 @@ research O
 interest O
 in O
 MOBA O
-games B
+games O
 is O
 increasing B
 , O
@@ -69730,12 +69732,12 @@ J. O
 Gaudiosi O
 , O
 “ O
-Riot B
-games I
+Riot O
+games B
 ’ O
-league B
-of I
-legends I
+league O
+of O
+legends O
 officially O
 becomes O
 most O
@@ -70210,7 +70212,7 @@ D. O
 Klabajan O
 , O
 “ O
-Skill O
+Skill B
 - O
 based B
 differences O
@@ -70354,7 +70356,7 @@ one O
 of O
 the O
 most O
-played B
+played O
 game B
 genres O
 nowadays O
@@ -70908,7 +70910,7 @@ two O
 main O
 options O
 : O
-HEROES B
+HEROES O
 OF O
 NEWERTH O
 ( O
@@ -70971,9 +70973,9 @@ develop O
 our O
 research O
 using O
-LEAGUE O
-OF O
-LEGENDS O
+LEAGUE B
+OF I
+LEGENDS I
 as O
 testbed O
 . O
@@ -71677,7 +71679,7 @@ cells O
 where O
 they O
 are O
-positioned O
+positioned B
 . O
 
 This O
@@ -72048,7 +72050,7 @@ mode I
 and O
 name O
 it O
-Defense O
+Defense B
 of O
 the O
 Ancients O
@@ -72148,7 +72150,7 @@ than O
 MMORPGs O
 , O
 like O
-World B
+World O
 of O
 Warcraft O
 [ O
@@ -73137,7 +73139,7 @@ Influence O
 Map O
 . O
 
-MOBAs B
+MOBAs O
 , O
 as O
 RTS O
@@ -73604,12 +73606,12 @@ are O
 : O
 heroes B
 , O
-neutral O
-creeps B
+neutral B
+creeps I
 , O
 enemy B
 and O
-allied B
+allied O
 creeps B
 . O
 
@@ -73656,8 +73658,8 @@ bases O
 
 Besides O
 , O
-neutral O
-creeps B
+neutral B
+creeps I
 are O
 born O
 in O
@@ -73817,7 +73819,7 @@ base I
 
 In O
 some O
-MOBAs B
+MOBAs O
 , O
 like O
 Dota2 O
@@ -73954,7 +73956,7 @@ state O
 When O
 attacking B
 the O
-controlled B
+controlled O
 agent O
 it O
 generates O
@@ -74152,7 +74154,7 @@ common O
 game B
 mode I
 in O
-MOBAs B
+MOBAs O
 , O
 each O
 team B
@@ -74571,7 +74573,7 @@ one O
 Support B
 and O
 one O
-Attack B
+Attack O
 Damage O
 Carry O
 ( O
@@ -74584,14 +74586,14 @@ middle B
 lane I
 goes O
 a O
-Mage O
+Mage B
 or O
 Assassin O
 , O
 a O
 Tank O
 or O
-Fighter B
+Fighter O
 in O
 the O
 Jungle O
@@ -74613,7 +74615,7 @@ Front O
 - O
 liner O
 or O
-Tank B
+Tank O
 . O
 
 Metagame O
@@ -74636,7 +74638,7 @@ ADC O
 is O
 a O
 long O
-ranged B
+ranged O
 hero B
 , O
 capable O
@@ -74693,7 +74695,7 @@ the O
 other O
 hand O
 , O
-Assassins O
+Assassins B
 are O
 strong O
 in O
@@ -74839,11 +74841,11 @@ can O
 be O
 classified O
 as O
-Tank B
+Tank O
 , O
 Initiator O
 and O
-Mage O
+Mage B
 . O
 
 3 O
@@ -74899,7 +74901,7 @@ Our O
 agent O
 interfaces B
 with O
-LoL B
+LoL O
 through O
 the O
 use O
@@ -75528,7 +75530,7 @@ list O
 
 In O
 some O
-MOBAs B
+MOBAs O
 , O
 like O
 Dota O
@@ -75568,12 +75570,14 @@ aggressive O
 state O
 . O
 
-Red O
-areas B
+Red B
+
+ O
+areas I
 means O
 more O
 desirable O
-positions O
+positions B
 , O
 while O
 blue B
@@ -75581,7 +75585,7 @@ areas I
 mean O
 less O
 desirable O
-positions O
+positions B
 . O
 
 Note O
@@ -75743,7 +75747,7 @@ noticed O
 that O
 our O
 tactical O
-positioning B
+positioning O
 was O
 failing O
 , O
@@ -75789,7 +75793,7 @@ agent O
 to O
 choose O
 best O
-positions O
+positions B
 based B
 on O
 the O
@@ -76187,7 +76191,7 @@ areas I
 means O
 more O
 desirable O
-positions O
+positions B
 , O
 while O
 blue B
@@ -76195,7 +76199,7 @@ areas I
 mean O
 less O
 desirable O
-positions O
+positions B
 . O
 
 Note O
@@ -76221,7 +76225,7 @@ P(1000,1000 O
 3.1.2 O
 Enemy O
 Creeps O
-Enemy O
+Enemy B
 creeps B
 are O
 the O
@@ -76276,7 +76280,7 @@ changing O
 
 The O
 correct O
-positioning O
+positioning B
 around O
 these O
 units B
@@ -76735,8 +76739,8 @@ hits O
 in O
 enemy B
 or O
-neutral O
-creeps B
+neutral B
+creeps I
 . O
 
 to O
@@ -76810,7 +76814,7 @@ influence O
 equation O
 for O
 allied B
-towers B
+towers I
 based B
 on O
 these O
@@ -76920,7 +76924,7 @@ else O
 ) O
 3.1.4 O
 Heroes O
-Heroes O
+Heroes B
 are O
 the O
 most O
@@ -77596,7 +77600,7 @@ the O
 agent O
 to O
 dangerous O
-positioning B
+positioning O
 during O
 combat B
 or O
@@ -78322,7 +78326,7 @@ the O
 edge O
 of O
 enemy B
-attacking O
+attacking B
 field B
 . O
 
@@ -78379,7 +78383,7 @@ areas I
 means O
 more O
 desirable O
-positions O
+positions B
 , O
 while O
 blue B
@@ -78387,7 +78391,7 @@ areas I
 mean O
 less O
 desirable O
-positions O
+positions B
 . O
 
 In O
@@ -78658,7 +78662,7 @@ based B
 in O
 HP O
 , O
-Unit O
+Unit B
 Tactic B
 characteristics O
 and O
@@ -78812,7 +78816,7 @@ focusing B
 on O
 goal B
 - O
-controlling O
+controlling B
 and O
 on O
 raising O
@@ -79054,7 +79058,7 @@ this O
 work O
 we O
 use O
-LoL B
+LoL O
 as O
 testbed O
 . O
@@ -79233,7 +79237,7 @@ measure O
 for O
 both O
 the O
-positioning B
+positioning O
 is O
 the O
 resource B
@@ -79272,8 +79276,8 @@ by O
 killing B
 enemy B
 or O
-neutral O
-creeps B
+neutral B
+creeps I
 , O
 champions B
 and O
@@ -79379,7 +79383,7 @@ the O
 variable O
 for O
 improving O
-positioning B
+positioning O
 and O
 resource B
 collection O
@@ -79572,7 +79576,7 @@ has O
 to O
 compete O
 with O
-allied O
+allied B
 creeps B
 for O
 last O
@@ -79637,7 +79641,7 @@ Experiment O
 Evaluation O
 Against O
 Human O
-Players O
+Players B
 This O
 experiment O
 deals O
@@ -79774,7 +79778,7 @@ worse O
 than O
 when O
 playing B
-ranged B
+ranged O
 heroes B
 . O
 
@@ -80330,7 +80334,7 @@ C. O
 2001 O
 . O
 
-Gamebots B
+Gamebots O
 : O
 A O
 3d O
@@ -80569,7 +80573,7 @@ D. O
 2014 O
 . O
 
-Skill O
+Skill B
 - O
 based B
 differences O
@@ -81393,7 +81397,7 @@ one O
 of O
 the O
 most O
-played B
+played O
 genres O
 around O
 the O
@@ -81640,7 +81644,7 @@ al O
 ) O
 . O
 
-Games O
+Games B
 are O
 considered O
 a O
@@ -83100,7 +83104,7 @@ is O
 immersed O
 , O
 feeling O
-focused B
+focused O
 , O
 completely O
 involved O
@@ -84100,9 +84104,9 @@ a O
 genre O
 originated O
 from O
-Real O
-- O
-Time O
+Real B
+- I
+Time I
 Strategy O
 ( O
 RTS O
@@ -84175,7 +84179,7 @@ through O
 the O
 improvement O
 of O
-MOBAs B
+MOBAs O
 . O
 
 One O
@@ -84198,7 +84202,7 @@ one O
 of O
 the O
 most O
-played B
+played O
 genres O
 in O
 the O
@@ -84278,7 +84282,7 @@ MOBA O
 games B
 involve O
 fairly O
-focused B
+focused O
 competition B
 with O
 other O
@@ -84753,7 +84757,7 @@ just O
 like O
 in O
 a O
-Role B
+Role O
 Playing O
 Game O
 ( O
@@ -85280,8 +85284,8 @@ the O
 official O
 Valve O
 ’s O
-World B
-Tournament B
+World O
+Tournament O
 of O
 Dota2 O
 called B
@@ -85343,7 +85347,7 @@ other O
 Team B
 1 O
 and O
-Team O
+Team B
 2 O
 . O
 
@@ -85799,8 +85803,8 @@ jungle B
 This O
 is O
 where O
-neutral O
-creeps B
+neutral B
+creeps I
 can O
 be O
 found O
@@ -85841,7 +85845,7 @@ This O
 practice O
 is O
 called B
-jungling O
+jungling B
 . O
 
 During O
@@ -86047,7 +86051,7 @@ get O
 in O
 a O
 bad O
-positioning O
+positioning B
 relatively O
 to O
 the O
@@ -86086,7 +86090,7 @@ the O
 Ancients O
 The O
 game B
-Defense O
+Defense B
 of O
 the O
 Ancients O
@@ -86097,7 +86101,7 @@ is O
 a O
 Multiplayer O
 Online O
-Battle O
+Battle B
 Arena O
 ( O
 MOBA O
@@ -86272,13 +86276,13 @@ work O
 3.5 O
 . O
 
-Game B
+Game O
 Adaptations O
 To O
 use O
 the O
 game B
-Defense O
+Defense B
 of O
 the O
 Ancients O
@@ -86650,7 +86654,7 @@ agent O
 to O
 play B
 MOBA O
-games B
+games O
 is O
 not O
 a O
@@ -86833,7 +86837,7 @@ originated O
 from O
 Real O
 - O
-Time B
+Time O
 Strategy O
 ( O
 RTS O
@@ -87044,7 +87048,7 @@ items B
 
 The O
 spell B
-leveling O
+leveling B
 order O
 , O
 item B
@@ -87448,10 +87452,10 @@ environment O
 There O
 are O
 some O
-MOBAs B
+MOBAs O
 , O
 like O
-Heroes O
+Heroes B
 of O
 the O
 Storm O
@@ -88445,7 +88449,7 @@ strategies B
 to O
 defend O
 allied B
-towers B
+towers I
 and O
 to O
 retreat B
@@ -88614,7 +88618,7 @@ below O
 4.2.1 O
 . O
 
-Game B
+Game O
 Features O
 To O
 evaluate O
@@ -88671,7 +88675,7 @@ are O
 : O
 Hero O
 ’s O
-Level O
+Level B
 , O
 Hero O
 ’s O
@@ -88696,7 +88700,7 @@ paragraphs O
 : O
 Hero O
 ’s O
-Level O
+Level B
 . O
 
 This O
@@ -88772,7 +88776,7 @@ can O
 keep O
 the O
 hero B
-closer O
+closer B
 to O
 battles B
 without O
@@ -88844,7 +88848,7 @@ balance O
 
 Hero O
 ’s O
-Death O
+Death B
 . O
 
 This O
@@ -88970,7 +88974,7 @@ game B
 challenges O
 . O
 
-Towers O
+Towers B
 Destroyed O
 . O
 
@@ -89327,7 +89331,7 @@ measurements O
 at O
 two O
 consecutive O
-times B
+times O
 t O
 and O
 t−1 O
@@ -90279,7 +90283,7 @@ the O
 players B
 ’ O
 performance O
-closer O
+closer B
 to O
 each O
 other O
@@ -91457,7 +91461,7 @@ Figure O
 : O
 Performance O
 of O
-Hard O
+Hard B
 x O
 Adaptive O
 players B
@@ -92064,7 +92068,7 @@ matches B
 of O
 the O
 game B
-Defense O
+Defense B
 of O
 the O
 Ancients O
@@ -92696,9 +92700,9 @@ third O
 place O
 there O
 is O
-Real O
-- O
-Time B
+Real B
+- I
+Time I
 Strategy O
 ( O
 RTS O
@@ -92846,8 +92850,8 @@ Now O
 , O
 regarding O
 MOBA O
-games B
-knowledge I
+games O
+knowledge O
 , O
 all O
 users B
@@ -92917,7 +92921,7 @@ their O
 expertise O
 in O
 MOBA O
-games B
+games O
 in O
 general O
 , O
@@ -93944,7 +93948,7 @@ notice O
 the O
 opponent B
 getting O
-harder O
+harder B
 or O
 easier B
 . O
@@ -94023,7 +94027,7 @@ player B
 will O
 not O
 feel O
-cheated O
+cheated B
 or O
 disappointed O
 during O
@@ -94606,7 +94610,7 @@ beginner B
 , O
 regular O
 and O
-experienced B
+experienced O
 ) O
 , O
 it O
@@ -95582,7 +95586,7 @@ engagement O
 in O
 video B
 game I
-playing B
+playing O
 : O
 Response O
 to O
@@ -95608,9 +95612,9 @@ R. O
 2009 O
 . O
 
-League O
-of O
-legends O
+League B
+of I
+legends I
 . O
 
 Computer O
@@ -95624,12 +95628,12 @@ J. O
 2012 O
 . O
 
-Riot B
-games I
+Riot O
+games B
 ’ O
-league B
-of I
-legends I
+league O
+of O
+legends O
 officially O
 becomes O
 most O
@@ -95895,7 +95899,7 @@ C. O
 2009 O
 . O
 
-Player O
+Player B
 performance O
 , O
 satisfaction O
@@ -96203,11 +96207,11 @@ the O
 Conference O
 on O
 Future O
-Play O
+Play B
 : O
 Research O
 , O
-Play O
+Play B
 , O
 Share O
 . O
@@ -96282,7 +96286,7 @@ S. O
 2004 O
 . O
 
-Trigger B
+Trigger O
 happy O
 : O
 Videogames B
@@ -97413,8 +97417,8 @@ harass O
 enemies B
 , O
 fight B
-neutral O
-creeps B
+neutral B
+creeps I
 , O
 attack B
 , O
@@ -97460,7 +97464,7 @@ these O
 features O
 . O
 
-Games O
+Games B
 often O
 present O
 a O
@@ -98242,8 +98246,8 @@ defeating B
 these O
 creeps B
 , O
-neutral O
-creeps B
+neutral B
+creeps I
 or O
 enemy B
 
@@ -98533,7 +98537,7 @@ system O
 applying O
 Machine O
 Learning O
-Techniques B
+Techniques O
 to O
 arXiv:1706.02832v1 O
 [ O
@@ -98654,7 +98658,7 @@ When O
 the O
 newcomer O
 becomes O
-experienced B
+experienced O
 both O
 , O
 the O
@@ -98786,7 +98790,7 @@ matchmaking B
 system I
 from O
 MOBA O
-games B
+games O
 tries O
 to O
 obtain O
@@ -99404,7 +99408,7 @@ gets O
 frustrated O
 by O
 meeting O
-experienced O
+experienced B
 players B
 playing B
 in O
@@ -99414,7 +99418,7 @@ accounts I
 , O
 called B
 “ O
-smurfs O
+smurfs B
 ” O
 . O
 
@@ -99656,7 +99660,7 @@ League O
 of O
 Legends O
 ( O
-LoL B
+LoL O
 ) O
 as O
 our O
@@ -99854,7 +99858,7 @@ team B
 fights I
 and O
 lane B
-pushing O
+pushing I
 . O
 
 We O
@@ -99862,9 +99866,9 @@ chose O
 Soraka O
 , O
 a O
-LoL B
-support O
-champion I
+LoL O
+support B
+champion B
 that O
 easily O
 fills O
@@ -100157,7 +100161,7 @@ low B
 health I
 or O
 bad O
-positioning B
+positioning O
 . O
 
 A O
@@ -100199,13 +100203,13 @@ also O
 on O
 texts O
 from O
-LoL B
-champion I
+LoL O
+champion B
 pages O
 . O
 
 For O
-positioning B
+positioning O
 , O
 we O
 give O
@@ -100278,7 +100282,7 @@ information O
 in O
 tactical O
 and O
-positioning B
+positioning O
 , O
 attributing O
 them O
@@ -100537,7 +100541,7 @@ and O
 3 O
 matches B
 with O
-supporting B
+supporting O
 and O
 tip O
 system O
@@ -100561,7 +100565,7 @@ solo B
 queue I
 , O
 with O
-matchmaking B
+matchmaking O
 selected O
 team B
 . O
@@ -100589,7 +100593,7 @@ chose O
 the O
 Kill O
 / O
-Death B
+Death O
 / O
 Assists O
 ( O
@@ -100999,7 +101003,7 @@ their O
 gameplay B
 . O
 
-Player O
+Player B
 C O
 presents O
 a O
@@ -101193,14 +101197,14 @@ It O
 also O
 provides O
 an O
-honor O
+honor B
 system O
 , O
 in O
 which O
 partners O
 can O
-honor O
+honor B
 teammates B
 for O
 being O
@@ -101244,7 +101248,7 @@ our O
 tutor O
 got O
 three O
-honors O
+honors B
 , O
 one O
 for O
@@ -101516,7 +101520,7 @@ about O
 their I
 experience I
 with O
-MOBAs B
+MOBAs O
 others O
 than O
 LoL O
@@ -101587,7 +101591,7 @@ were O
 main O
 players B
 of O
-LoL B
+LoL O
 and O
 had O
 experience B
@@ -101610,7 +101614,7 @@ about O
 their I
 experience I
 in O
-LoL B
+LoL O
 with O
 the O
 initial O
@@ -101689,7 +101693,7 @@ of O
 five O
 to O
 the O
-LoL B
+LoL O
 tutorial B
 . O
 
@@ -102196,7 +102200,7 @@ teach O
 advanced O
 features O
 , O
-training O
+training B
 experienced O
 players B
 . O
@@ -102348,9 +102352,9 @@ R. O
 Our O
 games B
 : O
-League B
-of I
-legends I
+League O
+of O
+legends O
 . O
 
 http:// O
@@ -103073,8 +103077,8 @@ matches B
 themselves O
 . O
 
-ESports O
-journalists O
+ESports B
+journalists I
 and O
 fans O
 create O
@@ -103132,7 +103136,7 @@ multimodal O
 grounding O
 . O
 
-Highlight O
+Highlight B
 prediction O
 is O
 about O
@@ -103309,10 +103313,12 @@ Fig O
 and O
 the O
 largest O
-live O
-- O
-streaming O
-platform O
+live B
+- I
+streaming I
+
+ O
+platform I
 for O
 video B
 games I
@@ -104069,8 +104075,8 @@ first O
 languagevision O
 dataset O
 for O
-video B
-highlighting I
+video O
+highlighting O
 that O
 contains O
 audience O
@@ -104225,7 +104231,7 @@ Feature O
 vector O
 of O
 frame B
-Highlight O
+Highlight B
 	
  O
 Template O
@@ -104238,7 +104244,7 @@ video O
  O
 Video O
 	 O
-Matching B
+Matching O
 	 O
 Result O
 		
@@ -104256,7 +104262,7 @@ Matching O
 Figure O
 2 O
 : O
-Highlight O
+Highlight B
 Labeling O
 : O
 ( O
@@ -104346,7 +104352,7 @@ subsets O
 . O
 
 Dataset O
-Train B
+Train O
 Val O
 Testing O
 Total O
@@ -104615,7 +104621,7 @@ need O
 to O
 align O
 the O
-position O
+position B
 of O
 the O
 frames B
@@ -104753,12 +104759,12 @@ window O
 and O
 use O
 template O
-matching B
+matching O
 to O
 find O
 the O
 best O
-matching O
+matching B
 location B
 in O
 the O
@@ -105117,7 +105123,7 @@ Text O
 Window O
 Size O
 Prediction O
-Chat B
+Chat O
 LSTM O
 LSTM O
 LSTM O
@@ -105333,7 +105339,7 @@ from O
 the O
 pre O
 - O
-trained O
+trained B
 version O
 of O
 this O
@@ -108232,8 +108238,8 @@ identify O
 those O
 behaviors O
 and O
-playing B
-styles I
+playing O
+styles O
 that O
 are O
 characteristic O
@@ -108258,7 +108264,7 @@ aim O
 , O
 we O
 study O
-Defense O
+Defense B
 of O
 the O
 ancient O
@@ -108863,7 +108869,7 @@ by O
 long O
 - O
 time B
-experienced O
+experienced B
 players B
 ? O
 What O
@@ -109075,7 +109081,7 @@ most O
 popular O
 Multiplayer O
 Online O
-Battle O
+Battle B
 Arena O
 ( O
 MOBA O
@@ -109168,7 +109174,7 @@ the O
 characters B
 , O
 i.e. O
-heroes O
+heroes B
 available O
 in O
 the O
@@ -109193,8 +109199,8 @@ heroes B
 in O
 the O
 two O
-opposing B
-teams I
+opposing O
+teams B
 makes O
 each O
 match B
@@ -109430,7 +109436,7 @@ matchmaking I
 , O
 Practice O
 , O
-Tournament O
+Tournament B
 , O
 Tutorial O
 , O
@@ -109443,10 +109449,10 @@ AI O
 Team O
 match B
 , O
-Solo B
-queue I
+Solo O
+queue O
 , O
-Ranked B
+Ranked O
 matchmaking B
 , O
 and O
@@ -109469,7 +109475,7 @@ matches B
 with O
 Public O
 or O
-Ranked B
+Ranked O
 matchmaking B
 to O
 ensure O
@@ -109547,7 +109553,7 @@ duration O
 lobby O
 type O
 ( O
-Ranked B
+Ranked O
 matchmaking B
 , O
 Public B
@@ -109634,7 +109640,7 @@ errors O
 some O
 matches B
 end O
-earlier O
+earlier B
 due O
 to O
 connection B
@@ -109710,7 +109716,7 @@ identification O
 . O
 
 • O
-Leaver B
+Leaver O
 status B
 : O
 some O
@@ -110167,11 +110173,11 @@ AND O
 , O
 DIVIDED O
 BY O
-HERO O
+HERO B
 TYPES O
 . O
 
-Hero O
+Hero B
 type B
 Sessions O
 of I
@@ -110191,13 +110197,13 @@ Intelligence O
 34,375 O
 5,860 O
 1,233 O
-Agility O
+Agility B
 3,503,961 O
 200,129 O
 21,508 O
 3,435 O
 712 O
-Strength O
+Strength B
 3,375,104 O
 184,659 O
 18,845 O
@@ -111130,7 +111136,7 @@ kills B
 → O
 ← O
 deaths B
-Agility O
+Agility B
 0.000 O
 0.008 O
 0.016 O
@@ -111181,7 +111187,7 @@ kills B
 → O
 ← O
 deaths B
-Strength O
+Strength B
 0.000 O
 0.008 O
 0.016 O
@@ -111259,13 +111265,13 @@ performed O
 # O
 of O
 kills B
-Strength O
+Strength B
 1 O
 2 O
 3 O
 4 O
 5 O
-Agility O
+Agility B
 1 O
 2 O
 3 O
@@ -111303,7 +111309,7 @@ assists B
 4 O
 5 O
 match B
-position O
+position B
 6.6 O
 6.8 O
 7.0 O
@@ -111318,14 +111324,14 @@ deaths B
 4 O
 5 O
 match B
-position O
+position B
 1 O
 2 O
 3 O
 4 O
 5 O
 match B
-position O
+position B
 1 O
 matches B
 2 O
@@ -111448,7 +111454,7 @@ Intelligence O
 Agility O
 , O
 and O
-Strength O
+Strength B
 and O
 by O
 studying O
@@ -111578,13 +111584,13 @@ distributions O
 # O
 of O
 kills B
-Strength O
+Strength B
 1 O
 2 O
 3 O
 4 O
 5 O
-Agility O
+Agility B
 1 O
 2 O
 3 O
@@ -111621,7 +111627,7 @@ assists B
 4 O
 5 O
 match B
-position O
+position B
 6.6 O
 6.8 O
 7.0 O
@@ -111636,14 +111642,14 @@ deaths B
 4 O
 5 O
 match B
-position O
+position B
 1 O
 2 O
 3 O
 4 O
 5 O
 match B
-position O
+position B
 1 O
 matches B
 2 O
@@ -111660,7 +111666,7 @@ Fig O
 5 O
 . O
 
-Player O
+Player B
 ’s O
 performance O
 in O
@@ -111710,7 +111716,7 @@ types O
 . O
 
 The O
-Agility O
+Agility B
 hero B
 ’s O
 distribution O
@@ -111848,8 +111854,8 @@ alive O
 
 However O
 , O
-Strength O
-heroes O
+Strength B
+heroes B
 are O
 characterized O
 by O
@@ -112199,7 +112205,7 @@ decide O
 to O
 stop O
 their O
-playing O
+playing B
 session B
 , O
 i.e. O
@@ -112330,7 +112336,7 @@ Strength B
 0.316 O
 0.318 O
 Percentage O
-Agility O
+Agility B
 High O
 Exp O
 . O
@@ -112661,7 +112667,7 @@ players I
 and O
 longtime O
 ( O
-experienced B
+experienced O
 ) O
 players B
 . O
@@ -113008,14 +113014,14 @@ STANDARD O
 ERROR O
 OF O
 THE O
-MATCH B
+MATCH O
 DURATIONS O
 DIVIDED O
 BY O
 LOW O
 / O
 HIGH O
-EXPERIENCE B
+EXPERIENCE O
 PLAYERS B
 AND O
 LOW O
@@ -113025,7 +113031,7 @@ TRUESKILL O
 PLAYERS B
 . O
 
-Player O
+Player B
 group B
 mean O
 duration O
@@ -113379,7 +113385,7 @@ kills B
 → O
 ← O
 deaths B
-Agility O
+Agility B
 0.000 O
 0.008 O
 0.016 O
@@ -113430,7 +113436,7 @@ kills B
 → O
 ← O
 deaths B
-Strength O
+Strength B
 0.000 O
 0.008 O
 0.016 O
@@ -113538,7 +113544,7 @@ kills B
 → O
 ← O
 deaths B
-Agility O
+Agility B
 0.000 O
 0.008 O
 0.016 O
@@ -113589,7 +113595,7 @@ kills B
 → O
 ← O
 deaths B
-Strength O
+Strength B
 0.000 O
 0.008 O
 0.016 O
@@ -114152,7 +114158,7 @@ Intelligence O
 Agility O
 , O
 and O
-Strength O
+Strength B
 . O
 
 These O
@@ -114284,8 +114290,8 @@ heroes B
 to O
 assist B
 , O
-Strength O
-heroes B
+Strength B
+heroes O
 to O
 start B
 team B
@@ -114297,7 +114303,7 @@ assisting B
 teammates B
 , O
 and O
-Agility O
+Agility B
 heroes B
 to O
 kill B
@@ -114780,7 +114786,7 @@ not O
 necessarily O
 reflect O
 the O
-position O
+position B
 / O
 policy O
 of O
@@ -115148,7 +115154,7 @@ analyses I
 in O
 soccer O
 using O
-position O
+position B
 data O
 , O
 ” O
@@ -115507,7 +115513,7 @@ Reed O
 Blissfully O
 productive O
 : O
-grouping B
+grouping O
 and O
 cooperation B
 in O
@@ -115724,7 +115730,7 @@ D. O
 Klabajan O
 , O
 “ O
-Skill O
+Skill B
 - O
 based B
 differences O
@@ -116182,7 +116188,7 @@ Intuitively O
 putting O
 together O
 game B
-avatars I
+avatars O
 that O
 complement O
 each O
@@ -116282,7 +116288,7 @@ GAE O
 , O
 to O
 learn O
-avatars B
+avatars O
 ’ O
 numerical O
 representations O
@@ -116501,8 +116507,8 @@ their O
 base B
 . O
 
-Game O
-avatars B
+Game B
+avatars I
 are O
 often O
 designed O
@@ -116803,7 +116809,7 @@ their O
 team B
 ’s O
 game B
-avatars I
+avatars O
 to O
 maximize O
 the O
@@ -116897,9 +116903,9 @@ order O
 to O
 model O
 game B
-avatars I
+avatars O
 ’ O
-synergy I
+synergy O
 and O
 opposition O
 relationships O
@@ -117161,7 +117167,7 @@ similarity O
 search O
 on O
 game B
-avatars I
+avatars O
 , O
 team B
 composition I
@@ -117224,7 +117230,7 @@ model O
 which O
 characterizes O
 game B
-avatars I
+avatars O
 in O
 vectors O
 in O
@@ -117374,7 +117380,7 @@ teambased O
 outcomes O
 for O
 MOBA O
-games B
+games O
 , O
 our O
 work O
@@ -117402,8 +117408,8 @@ methods O
 Team O
 Formation O
 Analysis O
-Team O
-formation O
+Team B
+formation I
 analysis O
 is O
 the O
@@ -117466,7 +117472,7 @@ selected O
 combination O
 of O
 game B
-avatars I
+avatars O
 . O
 
 ( O
@@ -117691,7 +117697,7 @@ rich O
 design O
 of O
 MOBA O
-games B
+games O
 has O
 attracted O
 variety O
@@ -117839,7 +117845,7 @@ cosine O
 distances O
 between O
 game B
-avatars I
+avatars O
 ’ O
 attribute O
 vectors O
@@ -117983,7 +117989,7 @@ dimensional O
 space O
 which O
 encode O
-entities O
+entities B
 ’ O
 characteristics O
 efficiently O
@@ -118453,7 +118459,7 @@ line O
 ups O
 of O
 M. O
-Match O
+Match B
 outcomes O
 are O
 marked B
@@ -119430,7 +119436,7 @@ ensure O
 that O
 only O
 sufficiently O
-experienced B
+experienced O
 players B
 with I
 similar I
@@ -119875,7 +119881,7 @@ vi+N O
 ) O
 . O
 
-Dot O
+Dot B
 productions O
 in O
 Eqn O
@@ -120522,7 +120528,7 @@ values O
 . O
 
 Models O
-HotS B
+HotS O
 HoN O
 DOTA2 O
 LR O
@@ -120886,7 +120892,7 @@ and O
 opposition O
 between O
 game B
-avatars I
+avatars O
 . O
 
 GBDT O
@@ -121908,7 +121914,7 @@ results O
 , O
 the O
 three O
-seasoned O
+seasoned B
 DOTA2 O
 players B
 all O
@@ -122303,9 +122309,9 @@ elongate O
 the O
 game B
 when O
-Anti B
-- I
-mage I
+Anti O
+- O
+mage B
 will O
 show O
 his O
@@ -122356,7 +122362,7 @@ Ursa O
 , O
 as O
 both O
-heroes B
+heroes O
 output O
 high B
 burst I
@@ -122478,7 +122484,7 @@ opposition O
 relationships O
 between O
 game B
-avatars I
+avatars O
 is O
 an O
 important O
@@ -122515,7 +122521,7 @@ opposition O
 relationships O
 with O
 game B
-avatars I
+avatars O
 encoded O
 as O
 vector O
@@ -123410,7 +123416,7 @@ M. O
 . O
 
 Comparing O
-MOBAs B
+MOBAs O
 : O
 League O
 of O
@@ -123483,12 +123489,12 @@ N. O
 2015 O
 . O
 
-Team B
+Team O
 vs. O
 team B
 : O
-Success O
-factors O
+Success B
+factors I
 in O
 a O
 multiplayer O
@@ -123553,7 +123559,7 @@ Techniques O
 for O
 Better O
 Gaming O
-Experience B
+Experience O
 , O
 volume O
 2 O
@@ -123967,7 +123973,7 @@ P. O
 2016 O
 . O
 
-Riot B
+Riot O
 ’s O
 ’ O
 League O
@@ -124318,7 +124324,7 @@ in O
 the O
 Go O
 - O
-playing B
+playing O
 AI O
 AlphaGo O
 ( O
@@ -124594,7 +124600,7 @@ approximations O
 ( O
 Gelly O
 & O
-Silver O
+Silver B
 , O
 2007 O
 ) O
@@ -131175,8 +131181,8 @@ are O
 divided O
 into O
 two O
-opposing B
-teams I
+opposing O
+teams B
 and O
 each O
 team B
@@ -131245,8 +131251,8 @@ and O
 eventually O
 destroy O
 the O
-opposing B
-team I
+opposing O
+team B
 ’s O
 “ O
 crystal B
@@ -131802,7 +131808,7 @@ with O
 five O
 and O
 two O
-hidden O
+hidden B
 layers O
 , O
 respectively O
@@ -132270,7 +132276,7 @@ Game O
 1.0 O
 1.5 O
 2.0 O
-Gold O
+Gold B
 Ratio O
 vs. O
 NR O
@@ -132604,7 +132610,7 @@ Figure O
 
 Number O
 of O
-Frames B
+Frames O
 to O
 Defeat B
 Marksman O
@@ -134454,7 +134460,7 @@ and O
 Hassabis O
 , O
 D. O
-Mastering B
+Mastering O
 the O
 game B
 of O
@@ -138593,7 +138599,7 @@ with O
 five O
 and O
 two O
-hidden O
+hidden B
 layers O
 , O
 respectively O
@@ -138672,7 +138678,7 @@ action O
 The O
 first O
 two O
-hidden O
+hidden B
 layers O
 are O
 shared O
@@ -138696,7 +138702,7 @@ a O
 set O
 of O
 three O
-hidden O
+hidden B
 layers O
 with O
 80 O
@@ -138827,7 +138833,7 @@ information O
 on O
 the O
 relative O
-positions O
+positions B
 of O
 the O
 other O
@@ -138929,7 +138935,7 @@ spring O
 Total O
 HP O
 of O
-allied O
+allied B
 minions B
 1 O
 14 O
@@ -138941,7 +138947,7 @@ Hero O
 1 O
 3 O
 15 O
-Hero O
+Hero B
 1 O
 in O
 range B
@@ -139271,10 +139277,10 @@ Learning O
 The O
 Art O
 of O
-Drafting B
+Drafting O
 : O
 A O
-Team O
+Team B
 - O
 Oriented O
 Hero O
@@ -139491,7 +139497,7 @@ opponents B
 . O
 
 Hero B
-drafting B
+drafting O
 is O
 therefore O
 a O
@@ -139621,7 +139627,7 @@ Battle O
 Arena O
 , O
 Hero O
-Pick O
+Pick B
 Permission O
 to O
 make O
@@ -139687,7 +139693,7 @@ than O
 ACM O
 must O
 be O
-honored O
+honored B
 . O
 
 Abstracting O
@@ -139808,10 +139814,10 @@ Nasr O
 The O
 Art O
 of O
-Drafting B
+Drafting O
 : O
 A O
-Team O
+Team B
 - O
 Oriented O
 Hero O
@@ -139877,11 +139883,11 @@ League O
 of O
 Legends O
 ( O
-Riot B
+Riot O
 Games O
 ) O
 and O
-DOTA O
+DOTA B
 2 O
 ( O
 Valve O
@@ -140942,7 +140948,7 @@ formal O
 formulation O
 of O
 the O
-drafting B
+drafting O
 process O
 in O
 MOBA O
@@ -141282,7 +141288,7 @@ picks B
 within O
 the O
 player B
-communities O
+communities B
 1 O
 2 O
 . O
@@ -141350,7 +141356,7 @@ match B
 Note O
 that O
 the O
-drafting B
+drafting O
 rules B
 described O
 here O
@@ -141358,7 +141364,7 @@ are O
 based B
 on O
 “ O
-Ranked B
+Ranked O
 All O
 Pick O
 ” O
@@ -141594,10 +141600,10 @@ roes/ O
 The O
 Art O
 of O
-Drafting B
+Drafting O
 : O
 A O
-Team O
+Team B
 - O
 Oriented O
 Hero O
@@ -142524,7 +142530,7 @@ Search O
 to O
 Find O
 Optimal O
-Pick B
+Pick O
 Many O
 classic O
 games B
@@ -143243,7 +143249,7 @@ the O
 total O
 number O
 of O
-times B
+times O
 s O
 is O
 visited O
@@ -143866,10 +143872,10 @@ training O
 The O
 Art O
 of O
-Drafting B
+Drafting O
 : O
 A O
-Team O
+Team B
 - O
 Oriented O
 Hero O
@@ -144277,7 +144283,7 @@ classification O
 models O
 , O
 Gradient O
-Boosted B
+Boosted O
 Decision O
 Tree O
 ( O
@@ -145033,7 +145039,7 @@ term O
 c. O
 • O
 Association O
-Rules B
+Rules O
 ( O
 AR O
 ) O
@@ -146321,7 +146327,7 @@ of O
 match B
 mode O
 All O
-Ranked B
+Ranked O
 in O
 DOTA O
 2 O
@@ -146440,10 +146446,10 @@ happen O
 The O
 Art O
 of O
-Drafting B
+Drafting O
 : O
 A O
-Team O
+Team B
 - O
 Oriented O
 Hero O
@@ -146611,7 +146617,7 @@ match B
 mode O
 “ O
 All O
-Ranked B
+Ranked O
 ” O
 . O
 
@@ -146649,8 +146655,8 @@ to O
 right O
 . O
 
-Win B
-rates I
+Win O
+rates O
 symmetric O
 to O
 diagonal O
@@ -146749,7 +146755,7 @@ match B
 mode O
 : O
 All O
-Ranked B
+Ranked O
 ) O
 . O
 
@@ -147012,7 +147018,7 @@ the O
 case O
 of O
 All O
-Ranked B
+Ranked O
 . O
 
 The O
@@ -147072,7 +147078,7 @@ to O
 that O
 in O
 All O
-Ranked B
+Ranked O
 matches B
 but O
 with O
@@ -147311,7 +147317,7 @@ updated B
 to O
 reflect O
 the O
-drafting B
+drafting O
 order O
 in O
 Figure O
@@ -147507,7 +147513,7 @@ kick O
 off O
 after O
 the O
-starting B
+starting O
 root O
 node O
 is O
@@ -147557,7 +147563,7 @@ same O
 as O
 in O
 All O
-Ranked B
+Ranked O
 experiments O
 . O
 
@@ -147630,7 +147636,7 @@ the O
 counterparts O
 in O
 All O
-Ranked B
+Ranked O
 experiments O
 . O
 
@@ -147667,7 +147673,7 @@ HW O
 R O
 in O
 All O
-Ranked B
+Ranked O
 ( O
 61.1 O
 % O
@@ -147736,7 +147742,7 @@ as O
 compared O
 to O
 All O
-Ranked B
+Ranked O
 ( O
 Table O
 4 O
@@ -148102,7 +148108,7 @@ scenarios O
 such O
 as O
 player B
-drafting B
+drafting O
 in O
 sports O
 [ O
@@ -148473,10 +148479,10 @@ Springer O
 The O
 Art O
 of O
-Drafting B
+Drafting O
 : O
 A O
-Team O
+Team B
 - O
 Oriented O
 Hero O
@@ -148530,7 +148536,7 @@ Klabajan O
 2014 O
 . O
 
-Skill O
+Skill B
 - O
 based B
 differences O
@@ -148630,7 +148636,7 @@ a O
 statistical O
 view O
 of O
-boosting O
+boosting B
 . O
 
 Annals O
@@ -148663,7 +148669,7 @@ approximation O
 : O
 a O
 gradient O
-boosting B
+boosting O
 machine O
 . O
 
@@ -148686,7 +148692,7 @@ Gamepedia O
 2018 O
 . O
 
-DOTA O
+DOTA B
 2 O
 wiki O
 - O
@@ -149022,7 +149028,7 @@ Minotti O
 . O
 
 Comparing O
-MOBAs B
+MOBAs O
 : O
 League O
 of O
@@ -149033,7 +149039,7 @@ Dota O
 vs. O
 Smite O
 vs. O
-Heroes O
+Heroes B
 of O
 the O
 Storm O
@@ -149086,7 +149092,7 @@ Contractor O
 2015 O
 . O
 
-Team B
+Team O
 vs. O
 team B
 : O
@@ -149504,8 +149510,10 @@ Lachlan O
 2006 O
 . O
 
-Video O
-game B
+Video B
+
+ O
+game I
 uses O
 and O
 gratifications O
@@ -149585,7 +149593,7 @@ ACM O
 Conference O
 on O
 Computer O
-Supported O
+Supported B
 Cooperative O
 Work O
 & O
@@ -149751,7 +149759,7 @@ Why O
 draft B
 order O
 affects O
-playing O
+playing B
 time B
 and O
 survival O
@@ -149836,7 +149844,7 @@ Tassi O
 2016 O
 . O
 
-Riot B
+Riot O
 ’s O
 ’ O
 League O
@@ -150013,8 +150021,8 @@ Tencent O
 Corporation O
 alexcheng@tencent.com O
 ABSTRACT O
-Team O
-composition O
+Team B
+composition I
 is O
 a O
 central O
@@ -150466,7 +150474,7 @@ Kings O
 1 O
 ) O
 a O
-matching O
+matching B
 system O
 groups B
 10 O
@@ -150551,8 +150559,10 @@ of O
 effectiveness O
 . O
 
-Team O
-performance O
+Team B
+
+ O
+performance I
 is O
 the O
 most O
@@ -151631,7 +151641,7 @@ MOBA O
 ) O
 game B
 : O
-Honor O
+Honor B
 of O
 Kings O
 , O
@@ -151816,7 +151826,7 @@ analyses O
 are O
 based B
 on O
-ranked O
+ranked B
 games B
 . O
 
@@ -152138,7 +152148,7 @@ grow O
 
 25.7 O
 assassin B
-Assassins O
+Assassins B
 are O
 explosive O
 and O
@@ -152167,7 +152177,7 @@ team B
 
 11.5 O
 support B
-Supports O
+Supports B
 always O
 aid O
 teammates B
@@ -152331,8 +152341,8 @@ for O
 details O
 . O
 
-Team O
-roles B
+Team B
+roles I
 . O
 
 There O
@@ -152340,7 +152350,7 @@ are O
 five O
 roles B
 in O
-Honor O
+Honor B
 of O
 Kings O
 : O
@@ -152470,8 +152480,8 @@ role B
 combinations O
 with O
 its O
-winning B
-rate I
+winning O
+rate O
 and O
 frequency O
 . O
@@ -152516,7 +152526,7 @@ dataset O
 . O
 
 3 O
-TEAM O
+TEAM B
 COMPOSITION O
 AND O
 WINNING O
@@ -152546,7 +152556,7 @@ performance I
 
 Although O
 the O
-matching O
+matching B
 system O
 in O
 online O
@@ -152608,9 +152618,9 @@ there O
 exist O
 winning O
 and O
-losing B
-team I
-compositions O
+losing O
+team B
+compositions I
 ( O
 Fig O
 . O
@@ -152635,8 +152645,8 @@ straightforward O
 to O
 estimate O
 the O
-winning B
-rate I
+winning O
+rate O
 of O
 each O
 team B
@@ -152669,7 +152679,7 @@ Overall O
 statistics O
 # O
 ranked B
-games B
+games O
 54 O
 , O
 434 O
@@ -152839,7 +152849,7 @@ who O
 have O
 played B
 ranked B
-games B
+games O
 1 O
 , O
 173 O
@@ -152929,10 +152939,8 @@ Fig O
 shows O
 that O
 the O
-winning B
-
- O
-rate I
+winning O
+rate O
 of O
 different O
 team B
@@ -152984,10 +152992,8 @@ which O
 suggests O
 that O
 most O
-losing B
-
- O
-teams I
+losing O
+teams B
 do O
 not O
 occur O
@@ -153004,7 +153010,7 @@ also O
 be O
 made O
 for O
-surrendering B
+surrendering O
 and O
 abusing O
 and O
@@ -153020,8 +153026,8 @@ different O
 shapes O
 . O
 
-Team O
-compositions O
+Team B
+compositions I
 Win O
 rate O
 Used O
@@ -153449,7 +153455,7 @@ compositions I
 
 Although O
 a O
-matching O
+matching B
 system O
 is O
 designed O
@@ -153521,8 +153527,8 @@ subtract O
 the O
 result O
 of O
-losing B
-team I
+losing O
+team B
 from O
 that O
 of O
@@ -153650,9 +153656,9 @@ further O
 illustrate O
 winning O
 and O
-losing B
-team I
-compositions O
+losing O
+team B
+compositions I
 , O
 we O
 present O
@@ -153686,8 +153692,8 @@ careful O
 examination O
 , O
 these O
-losing B
-teams I
+losing O
+teams B
 do O
 not O
 often O
@@ -153965,7 +153971,7 @@ indicates O
 a O
 player B
 ’s O
-gaming O
+gaming B
 skill B
 and O
 ranges B
@@ -154008,9 +154014,11 @@ Fig O
 3a O
 that O
 the O
-losing B
-team I
-compositions O
+losing O
+team B
+
+ O
+compositions I
 on O
 the O
 left O
@@ -154021,10 +154029,10 @@ used O
 . O
 
 4 O
-TEAM O
+TEAM B
 COMPOSITION O
 AND O
-SURRENDERING O
+SURRENDERING B
 As O
 nothing O
 worth B
@@ -154394,7 +154402,7 @@ small O
 std O
 ; O
 middle B
-games O
+games I
 ( O
 11 O
 < O
@@ -155409,7 +155417,7 @@ rate I
 . O
 
 5 O
-TEAM O
+TEAM B
 COMPOSITION O
 AND O
 ABUSIVE B
@@ -155495,14 +155503,14 @@ use O
 . O
 
 5.1 O
-Team O
+Team B
 - O
 level B
-Abusive O
-Language O
+Abusive B
+Language I
 Use O
-Team O
-compositions O
+Team B
+compositions I
 vary O
 in O
 abusing O
@@ -155757,8 +155765,8 @@ prob.(% O
 ) O
 win O
 team B
-lose B
-team I
+lose O
+team B
 ( O
 c O
 ) O
@@ -155918,8 +155926,8 @@ in O
 5.2 O
 . O
 
-Losing B
-teams I
+Losing O
+teams B
 are O
 more O
 likely O
@@ -155936,8 +155944,8 @@ Fig O
 We O
 hypothesize O
 that O
-losing B
-teams I
+losing O
+teams B
 are O
 more O
 likely O
@@ -155990,8 +155998,8 @@ between O
 winning O
 teams B
 and O
-losing B
-teams I
+losing O
+teams B
 . O
 
 Diverse O
@@ -156038,8 +156046,8 @@ in O
 winning O
 teams B
 and O
-losing B
-teams I
+losing O
+teams B
 . O
 
 When O
@@ -156073,8 +156081,8 @@ loses O
 Individual O
 - O
 level B
-Abusive O
-Language O
+Abusive B
+Language I
 Use O
 Different O
 from O
@@ -156176,7 +156184,7 @@ on O
 the O
 fraction O
 of O
-games O
+games B
 that O
 a O
 player B
@@ -156399,8 +156407,8 @@ values O
 for O
 winning O
 and O
-losing B
-teams I
+losing O
+teams B
 , O
 where O
 win O
@@ -156682,7 +156690,7 @@ experienced B
 assassin B
 players B
 , O
-experienced O
+experienced B
 warrior B
 players B
 , O
@@ -156720,7 +156728,7 @@ We O
 observe O
 that O
 these O
-experienced B
+experienced O
 assassin B
 players B
 are O
@@ -156799,7 +156807,7 @@ assassins B
 If O
 anything O
 , O
-experienced B
+experienced O
 mages B
 and O
 experienced O
@@ -156871,7 +156879,7 @@ Assa O
 Warr O
 . O
 
-Mage O
+Mage B
 Mark O
 . O
 
@@ -156907,7 +156915,7 @@ Assa O
 Warr O
 . O
 
-Mage O
+Mage B
 . O
 
 Mark O
@@ -156926,7 +156934,7 @@ individual O
 abusing O
 prob.(% O
 ) O
-experienced B
+experienced O
 assassins B
 others O
 ( O
@@ -156949,7 +156957,7 @@ Assa O
 Warr O
 . O
 
-Mage O
+Mage B
 . O
 
 Mark O
@@ -156959,7 +156967,7 @@ Supp O
 . O
 
 experienced B
-role B
+role I
 6 O
 8 O
 10 O
@@ -157111,7 +157119,7 @@ errors O
 % O
 70 O
 % O
-experienced B
+experienced O
 threshold O
 2 O
 6 O
@@ -157125,7 +157133,7 @@ prob.(% O
 inexperienced B
 role I
 experienced B
-role B
+role I
 ( O
 a O
 ) O
@@ -157171,7 +157179,7 @@ probability O
 vs. O
 # O
 experienced B
-roles I
+roles B
 in O
 teammates B
 . O
@@ -157248,7 +157256,7 @@ Overall O
 our O
 results O
 in O
-Honor O
+Honor B
 of O
 Kings O
 support B
@@ -157821,7 +157829,7 @@ encoded O
 as O
 one O
 - O
-hot O
+hot B
 vectors O
 . O
 
@@ -159261,8 +159269,8 @@ three O
 strands O
 . O
 
-Team O
-formation O
+Team B
+formation I
 . O
 
 Researchers O
@@ -159468,7 +159476,7 @@ In O
 the O
 context O
 of O
-gaming O
+gaming B
 , O
 Stetina O
 et O
@@ -159594,8 +159602,8 @@ studies O
 ] O
 . O
 
-Team O
-performance O
+Team B
+performance I
 is O
 the O
 most O
@@ -159804,7 +159812,7 @@ MOBA O
 ) O
 game B
 : O
-Honor O
+Honor B
 of O
 Kings O
 . O
@@ -160687,10 +160695,10 @@ Bailey O
 
 What O
 Makes O
-Teams B
+Teams O
 Work O
 : O
-Group O
+Group B
 Effectiveness O
 Research O
 from O
@@ -161532,7 +161540,7 @@ Niebuhr O
 Group B
 variables O
 and O
-gaming B
+gaming O
 success O
 . O
 
@@ -161635,7 +161643,7 @@ the O
 Study O
 of O
 Online O
-Gaming O
+Gaming B
 in O
 Information O
 Systems O
@@ -162057,7 +162065,7 @@ Uzzi O
 . O
 
 The O
-Increasing O
+Increasing B
 Dominance O
 of O
 Teams O
@@ -162114,7 +162122,7 @@ Ancients O
 2 O
 . O
 
-Games O
+Games B
 and O
 Culture O
 ( O
@@ -162245,8 +162253,8 @@ AAAI’15 O
 . O
 
 10 O
-Team O
-compositions O
+Team B
+compositions I
 Abusing O
 prob O
 . O
@@ -162619,8 +162627,8 @@ Table O
 7 O
 . O
 
-Team O
-compositions O
+Team B
+compositions I
 Surrender O
 prob O
 . O
@@ -163205,12 +163213,12 @@ League O
 of O
 Legends O
 ( O
-LoL B
+LoL O
 ) O
 . O
 
 In O
-LoL B
+LoL O
 game B
 scenario O
 , O
@@ -163236,7 +163244,7 @@ not O
 necessarily O
 reflect O
 the O
-position O
+position B
 / O
 policy O
 of O
@@ -163587,7 +163595,7 @@ we O
 apply O
 Linear O
 Mixed O
-Effects O
+Effects B
 ( O
 LME O
 ) O
@@ -163763,7 +163771,7 @@ framework O
 to O
 automatically O
 collect O
-playing B
+playing O
 behaviors O
 in O
 Neverwinter O
@@ -163963,7 +163971,7 @@ to O
 be O
 connected O
 to O
-playing O
+playing B
 motivations O
 . O
 
@@ -163976,7 +163984,7 @@ there O
 are O
 also O
 works O
-reporting B
+reporting O
 inconsistencies O
 between O
 personality O
@@ -164059,12 +164067,13 @@ League O
 of O
 Legends O
 ( O
-LoL B
+LoL O
 ) O
-players I
+players B
 . O
+We I
 
-We O
+ I
 first O
 collect O
 personality O
@@ -164114,7 +164123,7 @@ League O
 of O
 Legends O
 ( O
-LoL B
+LoL O
 ) O
 As O
 one O
@@ -164226,7 +164235,7 @@ unique O
 characters B
 ( O
 i.e. O
-champions B
+champions O
 in O
 LoL O
 ) O
@@ -164393,7 +164402,7 @@ vision O
 . O
 
 • O
-Control B
+Control O
 : O
 “ O
 ability B
@@ -164467,7 +164476,7 @@ popular O
 game B
 mode I
 of O
-LoL B
+LoL O
 ) O
 requires O
 two O
@@ -164500,8 +164509,8 @@ the O
 champion B
 selection O
 and O
-playing O
-style O
+playing B
+style I
 are O
 critical O
 to O
@@ -165316,9 +165325,7 @@ behavior O
 
 7https://na.leagueoflegends.com/en/game-info/summoners/ O
 8https://na.leagueoflegends.com/en/game-info/champions/ O
-9https://boards.na.leagueoflegends.com O
-/ O
-en/ O
+9https://boards.na.leagueoflegends.com/en/ O
 TABLE O
 II O
 DEMOGRAPHIC O
@@ -165643,7 +165650,7 @@ and O
 openness O
 . O
 
-Champion O
+Champion B
 features O
 : O
 we O
@@ -165891,7 +165898,7 @@ features O
 ( O
 e.g. O
 , O
-kills O
+kills B
 , O
 doubleKills B
 , O
@@ -165927,7 +165934,7 @@ most O
 relevant O
 to O
 the O
-playing O
+playing B
 behavior O
 , O
 we O
@@ -166556,7 +166563,7 @@ RELATIONSHIP O
 BETWEEN O
 ROLE B
 AND O
-MATCH O
+MATCH B
 BEHAVIOR O
 Players B
 choose O
@@ -166750,12 +166757,12 @@ relation O
 TABLE O
 III O
 INFERRED O
-CHAMPION B
-ATTRIBUTES I
+CHAMPION O
+ATTRIBUTES O
 FROM O
-MATCH O
+MATCH B
 BEHAVIOR O
-Control B
+Control O
 Damage O
 Difficulty O
 Mobility O
@@ -167005,7 +167012,7 @@ early B
 stages B
 of O
 their O
-gaming O
+gaming B
 history O
 . O
 
@@ -167437,11 +167444,11 @@ MATCH O
 BEHAVIORS O
 ACCORDING O
 TO O
-CHAMPION B
-ATTRIBUTES I
+CHAMPION O
+ATTRIBUTES O
 Kills O
 Assists O
-TotalDamageTaken B
+TotalDamageTaken O
 TotalHeal O
 Random O
 Effects O
@@ -167503,7 +167510,7 @@ kills B
 , O
 assists B
 , O
-totalDamageTaken B
+totalDamageTaken O
 and O
 totalHeal O
 . O
@@ -167970,7 +167977,7 @@ players B
 ’ O
 personality O
 and O
-playing O
+playing B
 behaviors O
 in O
 online B
@@ -168343,8 +168350,8 @@ BIG-5 O
 PERSONALITY O
 TRAITS O
 FROM O
-CHAMPION B
-ATTRIBUTES I
+CHAMPION O
+ATTRIBUTES O
 AND O
 MATCH O
 BEHAVIOR O
@@ -168514,7 +168521,7 @@ characterized O
 by O
 a O
 strong O
-killing O
+killing B
 behavior O
 and O
 fewer O
@@ -169134,7 +169141,7 @@ relationships O
 between O
 personality O
 and O
-playing O
+playing B
 behaviors O
 while O
 taking O
@@ -169210,7 +169217,7 @@ expected O
 to O
 have O
 more O
-killing B
+killing O
 behaviors O
 . O
 
@@ -169547,7 +169554,7 @@ Psyops O
 Personality O
 assessment O
 through O
-gaming O
+gaming B
 behavior O
 . O
 
@@ -169753,9 +169760,9 @@ Legends O
 The O
 art O
 of O
-league B
-of I
-legends I
+league O
+of O
+legends O
 . O
 
 https://universe O
@@ -169785,7 +169792,7 @@ A. O
 Arntz O
 . O
 
-Games O
+Games B
 as O
 personality O
 profiling O
@@ -170257,7 +170264,7 @@ and O
 idiosyncratic O
 game B
 - O
-playing O
+playing B
 experience B
 . O
 
@@ -170433,9 +170440,9 @@ surges/. O
 [ O
 23 O
 ] O
-LoL B
+LoL O
 new O
-player I
+player B
 guide O
 . O
 
@@ -170726,7 +170733,7 @@ Effects B
 Models O
 Using O
 S4 O
-Classes B
+Classes O
 , O
 volume O
 0.999375 O
@@ -170762,7 +170769,7 @@ R. O
 Found O
 . O
 
-Stat B
+Stat O
 . O
 
 Comput O

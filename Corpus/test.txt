@@ -1924,7 +1924,7 @@ a O
 recurrent O
 ) O
 Tensor O
-Train B
+Train O
 layer O
 , O
 directly O
@@ -2708,7 +2708,7 @@ base B
 . O
 
 Dead O
-Killed B
+Killed O
 and O
 is O
 awaiting O
@@ -4356,7 +4356,7 @@ Out O
 Face O
 Image O
 In O
-Game B
+Game O
 Image O
 In O
 Conv O
@@ -4874,7 +4874,7 @@ constructed O
 before O
 the O
 Tensor O
-Train B
+Train O
 layer O
 . O
 
@@ -4963,7 +4963,7 @@ Therefore O
 , O
 a O
 Tensor O
-Train B
+Train O
 layer O
 [ O
 4 O
@@ -5085,7 +5085,7 @@ of O
 
 The O
 Tensor O
-Train B
+Train O
 layer O
 extracts O
 384 O
@@ -5554,7 +5554,7 @@ Train O
 Fusion O
 Affect O
 + O
-Game O
+Game B
 9,382,029 O
 6,629,517 O
 6,640,939 O
@@ -5562,7 +5562,7 @@ Affect O
 9,331,717 O
 6,579,205 O
 6,590,627 O
-Game O
+Game B
 9,282,824 O
 6,530,312 O
 6,541,734 O
@@ -6072,7 +6072,7 @@ BEST O
 RESULT O
 FOR O
 EACH O
-CLASS B
+CLASS O
 IN O
 BOLD O
 . O
@@ -6094,11 +6094,11 @@ Lane O
 Shopping O
 Returning O
 Roaming O
-Fighting B
+Fighting O
 Pushing O
 Defending O
 Dead O
-Early O
+Early B
 Fusion O
 Joint O
 0.194 O
@@ -6208,7 +6208,7 @@ Pushing O
 Defending O
 Dead O
 Average O
-Class O
+Class B
 0.15 O
 0.10 O
 0.05 O
@@ -6392,7 +6392,7 @@ range B
 from O
 0.667 O
 ( O
-Early O
+Early B
 Fusion O
 , O
 ‘ O
@@ -6491,7 +6491,7 @@ base B
 
 Only O
 the O
-positioning B
+positioning O
 of O
 the O
 two O
@@ -6623,7 +6623,7 @@ both O
 the O
 change O
 in O
-Early O
+Early B
 Fusion O
 and O
 Late O
@@ -7055,7 +7055,7 @@ proposed O
 approach O
 generally O
 outperforms O
-Early O
+Early B
 Fusion O
 and O
 is O
@@ -7378,7 +7378,7 @@ Tresp O
 “ O
 Tensor O
 - O
-Train B
+Train O
 Recurrent O
 Neural O
 Networks O
@@ -9321,7 +9321,7 @@ genre O
 , O
 of O
 which O
-LoL B
+LoL O
 is O
 firmly O
 situated O
@@ -9439,7 +9439,7 @@ system O
 for O
 items B
 in O
-LoL B
+LoL O
 , O
 allowing O
 a O
@@ -9503,7 +9503,7 @@ win B
 - O
 rate I
 in O
-MOBAs B
+MOBAs O
 . O
 
 With O
@@ -9801,7 +9801,7 @@ engagement O
 III O
 . O
 
-CHAMPION O
+CHAMPION B
 RECOMMENDATION O
 SYSTEM O
 A. O
@@ -10452,7 +10452,7 @@ played B
 recently O
 ) O
 using O
-Riots O
+Riots B
 official O
 API O
 [ O
@@ -10706,11 +10706,11 @@ EXAMPLE O
 LIST O
 OF O
 A O
-PLAYER B
+PLAYER O
 ’S O
 TOP O
 5 O
-CHAMPIONS O
+CHAMPIONS B
 AND O
 THEIR O
 CMP O
@@ -12192,7 +12192,7 @@ https://goo.gl/iCo4sa O
 2 O
 ] O
 “ O
-Champions B
+Champions O
 . O
 
 ” O
@@ -12429,7 +12429,7 @@ predicting O
 game B
 outcome O
 from O
-drafts O
+drafts B
 in O
 dota B
 2 O
@@ -12504,9 +12504,9 @@ for O
 recommending O
 items B
 in O
-league B
-of I
-legends I
+league O
+of O
+legends O
 , O
 ” O
 2019 O
@@ -12742,7 +12742,7 @@ Riot O
 Games O
 , O
 “ O
-Riot B
+Riot O
 developer O
 api O
 . O
@@ -12847,9 +12847,9 @@ Exploring O
 binary O
 expertise O
 in O
-league B
-of I
-legends I
+league O
+of O
+legends O
 , O
 ” O
 Games O
@@ -12874,30 +12874,6 @@ pp O
 2017 O
 . O
 
-[ O
-20 O
-] O
-“ O
-Champion O
-updates B
-, O
-” O
-2018 O
-. O
-
-[ O
-Online O
-] O
-. O
-
-Available O
-: O
-https://support-leagueoflegends.riotgames.com/hc/en-us/articles/ O
-202294884-Champion O
-- O
-Update B
-- O
-Schedule O
 A O
 Confidence O
 - O
@@ -13412,7 +13388,7 @@ histograms O
 of O
 Cifar10 O
 and O
-LoL B
+LoL O
 dataset O
 . O
 
@@ -13556,7 +13532,7 @@ confidence O
 distribution O
 of O
 the O
-LoL O
+LoL B
 datasets O
 seems O
 evenly O
@@ -13603,7 +13579,7 @@ calibration O
 methods O
 to O
 the O
-LoL O
+LoL B
 dataset O
 . O
 
@@ -13673,7 +13649,7 @@ certain O
 team B
 in O
 the O
-LoL B
+LoL O
 game B
 . O
 
@@ -16664,9 +16640,9 @@ arXiv:1412.6980 O
 . O
 
 Interpretable O
-Real O
-- O
-Time O
+Real B
+- I
+Time I
 Win O
 Prediction O
 for O
@@ -16992,7 +16968,7 @@ highest O
 - O
 grossing O
 MOBA O
-games B
+games O
 Honor O
 of O
 Kings O
@@ -17043,7 +17019,7 @@ of O
 / O
 wiki O
 / O
-Honor O
+Honor B
 of O
 Kings O
 Figure O
@@ -17059,7 +17035,7 @@ prediction O
 model O
 in O
 the O
-LoL O
+LoL B
 2019 O
 World O
 Championship O
@@ -17438,7 +17414,7 @@ prediction O
 model O
 used O
 in O
-LoL B
+LoL O
 2019 O
 World O
 Championship O
@@ -18275,7 +18251,7 @@ this O
 example O
 , O
 the O
-Gold O
+Gold B
 feature O
 ’s O
 importance O
@@ -19100,7 +19076,7 @@ mitigate O
 the O
 ineciency O
 of O
-training O
+training B
 data O
 . O
 
@@ -19478,7 +19454,7 @@ two O
 teams B
 of O
 ve O
-heroes B
+heroes O
 combat B
 against O
 each O
@@ -19989,7 +19965,7 @@ Resource O
 Soldier O
 , O
 and O
-Heroes O
+Heroes B
 . O
 
 en O
@@ -20617,7 +20593,7 @@ front O
 middle B
 , O
 and O
-Crystal O
+Crystal B
 towers B
 ) O
 . O
@@ -20737,7 +20713,7 @@ to O
 the O
 rival O
 “ O
-Crystal O
+Crystal B
 ” O
 . O
 
@@ -20764,7 +20740,7 @@ settings O
 . O
 
 • O
-Heroes O
+Heroes B
 : O
 e O
 i O
@@ -20937,7 +20913,7 @@ feature O
 groups B
 ( O
 Wild O
-Resource O
+Resource B
 , O
 Soldier O
 , O
@@ -21106,7 +21082,7 @@ groups B
 4.3 O
 Temporal O
 - O
-Stage O
+Stage B
 e O
 Temporal O
 - O
@@ -21452,7 +21428,7 @@ for O
 numerical O
 feature O
 groups B
-Gold O
+Gold B
 , O
 Kill O
 , O
@@ -21776,7 +21752,7 @@ model O
 We O
 design O
 four O
-hidden O
+hidden B
 layers O
 for O
 this O
@@ -21796,7 +21772,7 @@ respectively O
 
 Aer O
 each O
-hidden B
+hidden O
 layer O
 , O
 we O
@@ -22738,7 +22714,7 @@ late B
 - I
 stage O
 games I
-harder O
+harder B
 to O
 predict O
 . O
@@ -22898,7 +22874,7 @@ Spatial O
 - O
 model O
 is O
-Gold O
+Gold B
 , O
 which O
 is O
@@ -23349,7 +23325,7 @@ time I
 comments O
 for O
 HoK O
-games B
+games O
 , O
 and O
 a O
@@ -23819,7 +23795,7 @@ advantage B
 in O
 terms O
 of O
-Gold O
+Gold B
 . O
 
 Currently O
@@ -24116,9 +24092,9 @@ been O
 implemented O
 in O
 an O
-AI O
-commentator B
-system O
+AI B
+commentator O
+system I
 for O
 HoK O
 and O
@@ -24370,7 +24346,7 @@ Block O
 2019 O
 . O
 
-Role B
+Role O
 Identication O
 for O
 Accurate O
@@ -24495,7 +24471,7 @@ player I
 online O
 bale O
 arena O
-games O
+games B
 . O
 
 arXiv O
@@ -24620,7 +24596,7 @@ Time B
 to O
 Die O
 : O
-Death B
+Death O
 Prediction O
 in O
 Dota O
@@ -25064,7 +25040,7 @@ Tstarbots O
 : O
 Defeating B
 the O
-cheating B
+cheating O
 level B
 builtin O
 ai O
@@ -25208,10 +25184,10 @@ League O
 of O
 Legends O
 ( O
-LoL B
+LoL O
 ) O
 eSports O
-Tournaments B
+Tournaments O
 . O
 
 ( O
@@ -25228,7 +25204,7 @@ Wikipedia O
 2019 O
 . O
 
-Honor O
+Honor B
 of O
 Kings O
 — O
@@ -25258,7 +25234,7 @@ Kings O
 hps://en.wikipedia.org O
 / O
 wiki/ O
-Honor O
+Honor B
 of O
 Kings O
 [ O
@@ -26272,7 +26248,7 @@ applying O
 a O
 weight O
 to O
-positions O
+positions B
 . O
 
 This O
@@ -27022,7 +26998,7 @@ rank B
 considers O
 the O
 rank B
-positions O
+positions B
 of O
 relevant O
 documents O
@@ -27224,7 +27200,7 @@ III O
 . O
 
 PREDICTING O
-RANK O
+RANK B
 Predicting O
 rank B
 in O
@@ -28849,7 +28825,7 @@ TrueSkill O
 is O
 a O
 Bayesian O
-ranking B
+ranking O
 system O
 developed O
 by O
@@ -29685,7 +29661,7 @@ Accuracy O
 The O
 problem O
 of O
-ranking B
+ranking O
 may O
 be O
 viewed O
@@ -29714,7 +29690,7 @@ evaluation O
 metric O
 for O
 a O
-ranking B
+ranking O
 problem O
 with O
 only O
@@ -30398,7 +30374,7 @@ were O
 predicted O
 to O
 have O
-ranks B
+ranks O
 5 O
 and O
 10 O
@@ -30729,7 +30705,7 @@ retrieval O
 
 Given O
 a O
-ranked O
+ranked B
 list O
 of O
 generated O
@@ -30832,7 +30808,7 @@ to O
 the O
 i O
 th O
-position O
+position B
 and O
 errori O
 is O
@@ -30868,7 +30844,7 @@ relevance O
 scores O
 for O
 each O
-position O
+position B
 with O
 the O
 overall O
@@ -30877,7 +30853,7 @@ value O
 up O
 to O
 that O
-position O
+position B
 . O
 
 Using O
@@ -31008,7 +30984,7 @@ retrieval O
 
 Given O
 a O
-ranked O
+ranked B
 list O
 of O
 responses O
@@ -31031,7 +31007,7 @@ relevance O
 score O
 and O
 weighted O
-position O
+position B
 in O
 the O
 list O
@@ -31142,7 +31118,7 @@ to O
 the O
 i O
 th O
-position O
+position B
 , O
 and O
 IDCG O
@@ -31154,9 +31130,9 @@ Metric O
 All O
 Players B
 Best O
-Players O
+Players B
 Frequent O
-Players O
+Players B
 Binned O
 Ranks O
 Accuracy O
@@ -31240,7 +31216,7 @@ the O
 evaluation O
 of O
 each O
-position O
+position B
 . O
 
 However O
@@ -32084,7 +32060,7 @@ six O
 evaluation O
 metrics O
 discussed O
-earlier O
+earlier B
 . O
 
 Finally O
@@ -33009,7 +32985,7 @@ does O
 not O
 consider O
 rank B
-positions O
+positions B
 , O
 it O
 can O
@@ -33438,7 +33414,7 @@ games B
 based B
 on O
 their O
-playing O
+playing B
 behavior O
 and O
 frequency O
@@ -33749,7 +33725,7 @@ the O
 prediction O
 error O
 ’s O
-position O
+position B
 may O
 better O
 benefit O
@@ -34017,7 +33993,7 @@ Second O
 it O
 considers O
 rank B
-positions O
+positions B
 when O
 evaluating O
 predictions O
@@ -34084,7 +34060,7 @@ relative O
 importance O
 of O
 each O
-position O
+position B
 . O
 
 These O
@@ -34377,7 +34353,7 @@ directly O
 based B
 on O
 the O
-positions O
+positions B
 . O
 
 Therefore O
@@ -35652,7 +35628,7 @@ further O
 development O
 of O
 trueskill O
-ranking O
+ranking B
 in O
 sports O
 , O
@@ -35682,7 +35658,7 @@ for O
 balancing O
 human O
 computation O
-games B
+games O
 : O
 testing O
 the O
@@ -35736,7 +35712,7 @@ models O
 for O
 educational O
 and O
-gaming O
+gaming B
 data O
 , O
 ” O
