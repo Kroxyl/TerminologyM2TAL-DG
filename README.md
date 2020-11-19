@@ -26,7 +26,7 @@ The second rule-based identification system is created with the flair framework 
 
 Check https://github.com/flairNLP/flair for more informations about this framework.
 
-First, we load our Training Data which come from our own sequence labeling Dataset (created with the first rule-based identification system). The column format is constitute by two column, the first column is the word itself and the second is the IOB-annotated tags for Terms. Empty line separates sentences. To read such a dataset, define the column structure as a dictionary and instantiate a "ColumnCorpus".
+First, we load our Training Data which come from our own Sequence Labeling Dataset (created with the first rule-based identification system). The column format is constituted by two columns. The first column is the word itself and the second is the IOB-annotated tags for Terms. Empty line separates sentences. To read such a dataset, define the column structure as a dictionary and instantiate a "ColumnCorpus".
 
 This gives you a Corpus object that contains the train, dev and test splits, each has a list of Sentence.
 
