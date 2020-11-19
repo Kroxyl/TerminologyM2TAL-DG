@@ -1,0 +1,511 @@
+#	type	key	freq
+1	T	n: moba	351
+2	T	n: avatar	278
+3	T	nn: game avatar	198
+3	V[s]	nnn: game avatar embeddings	27
+4	T	nn: moba game	183
+5	T	n: vector	102
+6	T	an: toxic player	96
+7	T	n: algorithm	93
+8	T	nn: player skill	83
+8	V[s]	nnn: player skill decomposition	27
+9	T	an: artificial intelligence	82
+10	T	nn: team composition	150
+11	T	n: ieee	67
+12	T	n: dota2	132
+13	T	n: dota	61
+14	T	n: tensor	57
+15	T	n: classifier	57
+16	T	n: creeps	56
+17	T	an: human player	49
+18	T	an: toxic behavior	95
+19	T	nn: match outcome	47
+19	V[s]	nnn: match outcome prediction	17
+20	T	nn: team formation	43
+20	V[s]	nnn: team formation analysis	18
+21	T	ncnn: synergy and opposition relationship	42
+22	T	n: dataset	84
+23	T	nnn: game refinement measure	40
+24	T	an: online game	74
+24	V[s]	nan: multiplayer online game	28
+25	T	n: embeddings	36
+26	T	nn: difficulty adjustment	36
+26	V[s]	ann: dynamic difficulty adjustment	22
+27	T	n: crowdsourcing	36
+28	T	n: hots	36
+29	T	nn: skill decomposition	35
+29	V[s]	nnn: player skill decomposition	27
+30	T	a: adaptive	33
+31	T	nn: hero type	32
+32	T	n: mobas	32
+33	T	an: future work	31
+34	T	a: di?erent	31
+35	T	an: typical player	30
+36	T	n: datasets	30
+37	T	n: gameplay	89
+38	T	npn: league of legend	118
+39	T	nn: game engine	29
+40	T	n: starcraft	29
+41	T	a: predictive	29
+42	T	n: k-means	29
+43	T	nn: enemy team	28
+44	T	nn: factorization machine	27
+45	T	nnn: player skill decomposition	27
+46	T	nnn: game avatar embeddings	27
+47	T	nn: team fight	27
+48	T	n: defense	26
+49	T	nn: game behavior	26
+50	T	n: regression	26
+51	T	npnn: effect of team composition	26
+52	T	a: in-game	52
+53	T	nn: riot game	24
+54	T	nn: game progress	24
+54	V[s]	nnn: game information progress	16
+55	T	an: blue team	24
+56	T	n: esports	48
+57	T	nn: match behavior	24
+58	T	nn: outcome prediction	48
+58	V[s]	nnn: match outcome prediction	17
+59	T	an: human rating	24
+60	T	nn: player information	24
+61	T	nn: enemy hero	23
+62	T	an: social network	22
+63	T	nn: surrender probability	22
+64	T	an: standard deviation	22
+65	T	ann: dynamic difficulty adjustment	22
+66	T	an: tactical analysis	22
+67	T	nn: influence map	21
+68	T	nn: similarity search	21
+69	T	nnn: game refinement theory	21
+70	T	an: related work	21
+71	T	an: downstream task	21
+72	T	nn: resource collection	20
+73	T	nn: game outcome	20
+74	T	n: valence	20
+75	T	n: computation	20
+76	T	nn: game design	20
+77	T	an: toxic playing	20
+78	T	nn: base skill	40
+79	T	n: predictor	20
+80	T	a: gradient	20
+81	T	an: late game	19
+82	T	nn: personality trait	37
+83	T	nn: game feature	18
+84	T	nn: player behavior	18
+85	T	nn: classification performance	18
+86	T	nn: formation analysis	18
+87	T	an: dota2 player	18
+88	T	n: maaten	18
+89	T	n: micromanagement	18
+90	T	an: logistic regression	18
+91	T	nnn: team formation analysis	18
+92	T	n: ursa	18
+93	T	ann: continuous movement game	17
+94	T	n: prize	17
+95	T	npn: hero of storm	17
+96	T	nn: machine learning	17
+97	T	nnn: match outcome prediction	17
+98	T	nn: champion attribute	17
+99	T	an: digital game	16
+100	T	an: adaptive player	16
+101	T	nnn: game information progress	16
+102	T	an: online gaming	16
+103	T	nn: feature vector	16
+104	T	nn: recommendation system	16
+105	T	nn: behavior tree	16
+106	T	an: crowdsourced decision	15
+107	T	a: demographic	29
+108	T	nan: multiplayer online game	28
+109	T	n: minion	27
+110	T	n: trueskill	27
+111	T	n: gaige	26
+112	T	n: matchmaking	23
+113	T	nn: game genre	23
+114	T	ann: artificial intelligence agent	22
+115	T	n: testbed	22
+116	T	nann: multiplayer online battle arena	76
+117	T	npn: defense of ancient	21
+118	T	an: rts game	20
+119	T	n: bi-grams	17
+120	T	an: real-time strategy	25
+121	T	n: boardgames	33
+122	T	ann: non-negative tensor factorization	16
+123	T	a: binary	16
+124	T	nn: player experience	16
+125	T	a: real-time	76
+126	T	nn: game mode	17
+127	T	n: matrix	54
+128	T	n: assist	52
+129	T	n: baseline	51
+130	T	n: synergy	124
+131	T	nn: intelligence agent	31
+131	V[s]	ann: artificial intelligence agent	22
+132	T	an: abusive language	20
+133	T	an: video game	43
+134	T	n: cluster	108
+135	T	nn: team performance	29
+136	T	an: early game	15
+137	T	nn: skill level	37
+138	T	a: tactical	47
+139	T	nn: computer science	20
+140	T	n: chen	16
+141	T	n: hypothesis	39
+142	T	n: interaction	83
+143	T	n: evaluation	77
+144	T	n: kill	55
+145	T	n: positioning	20
+146	T	n: data	38
+147	T	an: international conference	53
+148	T	n: probability	99
+149	T	an: experienced player	28
+150	T	a: linguistic	33
+151	T	an: overwhelming majority	22
+152	T	n: agility	24
+153	T	n: parameter	49
+154	T	a: abusive	43
+155	T	n: graph	25
+156	T	n: springer	20
+157	T	n: turret	26
+158	T	n: navigation	27
+159	T	n: tutorial	22
+160	T	an: verbal abuse	20
+161	T	n: attribute	56
+162	T	n: correlation	18
+163	T	n: variable	48
+164	T	n: classification	41
+165	T	n: metric	18
+166	T	n: assignment	65
+167	T	r: lastly	25
+168	T	nn: computer game	34
+169	T	n: chat	77
+170	T	a: random	42
+171	T	n: similarity	66
+172	T	n: tenacity	18
+173	T	n: characteristic	96
+174	T	n: analysis	235
+175	T	n: domain	39
+176	T	n: chess	21
+177	T	n: assassin	38
+178	T	n: combat	45
+179	T	n: component	133
+180	T	nan: world wide web	15
+181	T	nn: team member	23
+182	T	n: hero	442
+183	T	n: pick	32
+184	T	n: genre	57
+185	T	n: adjustment	57
+186	T	n: enemy	212
+187	T	n: highlight	87
+188	T	n: model	440
+189	T	n: mechanic	36
+190	T	n: behavior	418
+191	T	n: summary	19
+192	T	a: large-scale	19
+193	T	n: feature	309
+194	T	n: accuracy	50
+195	T	n: effectiveness	40
+196	T	n: reviewer	34
+197	T	n: tutor	28
+198	T	a: skilled	18
+199	T	a: human	170
+200	T	n: datum	175
+201	T	n: layer	34
+202	T	n: ancient	32
+203	T	n: silva	17
+204	T	n: experiment	100
+205	T	n: surrender	46
+206	T	n: frequency	24
+207	T	n: user	173
+208	T	n: evolution	23
+209	T	n: agent	347
+210	T	a: neutral	19
+211	T	n: personality	125
+212	T	n: curve	24
+213	T	n: distribution	66
+214	T	n: entity	33
+215	T	n: query	17
+216	T	n: riot	50
+217	T	n: skill	391
+218	T	a: winning	49
+219	T	n: video	147
+220	T	n: game	2103
+221	T	n: psychology	20
+222	T	n: measurement	17
+223	T	a: similar	127
+224	T	n: player	1781
+225	T	n: phase	65
+226	T	n: gender	18
+227	T	r: commonly	21
+228	T	n: lane	89
+229	T	n: mechanism	58
+230	T	n: dimension	42
+231	T	n: journal	38
+232	T	a: negative	26
+233	T	n: teammate	47
+234	T	n: implementation	21
+235	T	n: novice	16
+236	T	n: tower	72
+237	T	n: proceeding	85
+238	T	n: jungle	16
+239	T	n: soccer	16
+240	T	n: consistency	19
+241	T	a: initial	16
+242	T	n: scenario	53
+243	T	a: single	63
+244	T	n: input	28
+245	T	n: match	610
+246	T	n: preference	30
+247	T	a: basic	26
+248	T	n: entertainment	63
+249	T	n: equation	15
+250	T	a: advanced	16
+251	T	n: threshold	18
+252	T	n: strategy	154
+253	T	n: computer	105
+254	T	n: technique	80
+255	T	n: task	150
+256	T	n: likelihood	16
+257	T	n: gold	62
+258	T	n: sequence	19
+259	T	n: interpretation	24
+260	T	a: complex	27
+261	T	n: team	887
+262	T	n: motivation	17
+263	T	n: framework	25
+264	T	a: aggressive	16
+265	T	a: popular	79
+266	T	n: science	58
+267	T	n: context	42
+268	T	n: method	80
+269	T	n: influence	75
+270	T	n: text	33
+271	T	n: popularity	22
+272	T	n: ally	40
+273	T	n: opposition	120
+274	T	a: competitive	32
+275	T	n: section	95
+276	T	n: machine	97
+277	T	n: performance	298
+278	T	n: champion	207
+279	T	n: observation	21
+280	T	n: relationship	113
+281	T	n: role	234
+282	T	n: aspect	47
+283	T	a: individual	102
+284	T	n: frame	46
+285	T	a: real	46
+286	T	n: participant	24
+287	T	n: tribunal	74
+288	T	n: representation	36
+289	T	n: statistic	53
+290	T	n: flow	24
+291	T	n: label	36
+292	T	a: regular	20
+293	T	n: table	120
+294	T	n: research	139
+295	T	n: category	42
+296	T	a: consistent	17
+297	T	n: opponent	73
+298	T	n: base	106
+299	T	n: perception	23
+300	T	n: understanding	31
+301	T	n: item	67
+302	T	n: language	81
+303	T	n: information	197
+304	T	n: knowledge	57
+305	T	n: sample	24
+306	T	n: experience	181
+307	T	a: average	63
+308	T	n: battle	97
+309	T	a: significant	27
+310	T	n: researcher	24
+311	T	a: high	174
+312	T	a: maximum	18
+313	T	n: frustration	16
+314	T	n: tool	18
+315	T	n: pair	49
+316	T	n: communication	29
+317	T	n: spell	27
+318	T	n: structure	65
+319	T	n: introduction	24
+320	T	n: developer	24
+321	T	n: factor	94
+322	T	a: simple	39
+323	T	n: study	98
+324	T	n: approach	119
+325	T	n: damage	91
+326	T	n: perspective	19
+327	T	n: strength	56
+328	T	n: ability	77
+329	T	r: automatically	16
+330	T	n: utility	23
+331	T	n: level	206
+332	T	a: effective	27
+333	T	n: workshop	19
+334	T	a: powerful	15
+335	T	a: large	71
+336	T	n: conclusion	33
+337	T	n: pattern	29
+338	T	n: character	71
+339	T	n: finding	30
+340	T	n: focus	21
+341	T	n: challenge	93
+342	T	a: successful	47
+343	T	n: offender	17
+344	T	r: specifically	17
+345	T	n: majority	55
+346	T	a: common	56
+347	T	n: platform	26
+348	T	a: important	103
+349	T	n: result	217
+350	T	n: advance	31
+351	T	n: instance	36
+352	T	n: peak	18
+353	T	a: capable	30
+354	T	r: directly	33
+355	T	n: plot	19
+356	T	n: difference	67
+357	T	a: prior	16
+358	T	n: paper	88
+359	T	n: resource	52
+360	T	n: expertise	19
+361	T	a: objective	24
+362	T	n: length	21
+363	T	n: author	25
+364	T	r: strongly	31
+365	T	n: reference	25
+366	T	n: fight	48
+367	T	n: comparison	16
+368	T	r: finally	59
+369	T	n: expert	45
+370	T	n: version	27
+371	T	n: application	47
+372	T	n: effect	96
+373	T	n: play	78
+374	T	n: test	76
+375	T	n: distance	23
+376	T	n: impact	37
+377	T	n: advantage	46
+378	T	n: system	185
+379	T	n: figure	157
+380	T	n: unit	73
+381	T	n: difficulty	132
+382	T	n: balance	28
+383	T	a: positive	16
+384	T	a: strong	41
+385	T	n: range	48
+386	T	a: potential	33
+387	T	n: session	43
+388	T	n: path	17
+389	T	a: total	56
+390	T	n: direction	27
+391	T	n: number	219
+392	T	n: kind	35
+393	T	n: addition	37
+394	T	r: successfully	16
+395	T	n: page	28
+396	T	r: highly	28
+397	T	n: scene	46
+398	T	a: general	32
+399	T	n: target	38
+400	T	n: status	22
+401	T	a: early	46
+402	T	n: order	82
+403	T	a: hard	43
+404	T	n: movement	33
+405	T	n: relation	21
+406	T	a: great	42
+407	T	n: sport	50
+408	T	a: small	35
+409	T	n: survey	34
+410	T	n: message	31
+411	T	n: student	53
+412	T	n: choice	34
+413	T	n: death	69
+414	T	a: easy	38
+415	T	n: work	176
+416	T	n: solution	20
+417	T	n: note	23
+418	T	a: future	66
+419	T	n: competition	43
+420	T	n: word	60
+421	T	n: class	32
+422	T	n: step	34
+423	T	n: nature	18
+424	T	n: decision	98
+425	T	n: goal	59
+426	T	n: medium	21
+427	T	n: control	42
+428	T	n: agreement	30
+429	T	n: case	139
+430	T	n: review	16
+431	T	n: action	84
+432	T	a: present	29
+433	T	n: community	50
+434	T	n: image	20
+435	T	n: term	50
+436	T	n: rate	68
+437	T	a: interested	18
+438	T	n: account	31
+439	T	n: training	26
+440	T	r: generally	15
+441	T	n: question	61
+442	T	n: king	21
+443	T	a: long	24
+444	T	n: development	50
+445	T	n: rule	31
+446	T	n: success	43
+447	T	n: world	99
+448	T	n: attention	21
+449	T	a: full	20
+450	T	n: region	32
+451	T	n: report	80
+452	T	n: show	38
+453	T	n: source	18
+454	T	n: support	44
+455	T	a: responsible	16
+456	T	n: history	27
+457	T	a: close	22
+458	T	a: short	19
+459	T	n: response	19
+460	T	n: management	24
+461	T	n: candidate	17
+462	T	n: list	16
+463	T	n: detail	19
+464	T	n: process	31
+465	T	n: vote	23
+466	T	n: activity	24
+467	T	n: sense	16
+468	T	n: point	65
+469	T	n: problem	76
+470	T	n: hand	38
+471	T	n: part	52
+472	T	n: title	25
+473	T	n: stage	26
+474	T	n: time	234
+475	T	n: attack	28
+476	T	n: group	78
+477	T	n: moment	22
+478	T	n: situation	24
+479	T	n: victim	16
+480	T	n: field	18
+481	T	n: period	20
+482	T	n: education	16
+483	T	n: chance	26
+484	T	n: victory	24
+485	T	n: power	28
+486	T	n: reason	24
+487	T	n: effort	17
+488	T	n: product	16
+489	T	a: public	21
+490	T	r: simply	16
+491	T	n: area	44
+492	T	a: clear	16
+493	T	a: official	18
+494	T	n: cost	17
+495	T	n: interest	19
+496	T	n: minute	20
+497	T	n: event	16
+498	T	n: fact	20
+499	T	n: people	28
+500	T	n: year	25

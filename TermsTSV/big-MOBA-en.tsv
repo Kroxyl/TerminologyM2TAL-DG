@@ -1,0 +1,5342 @@
+#	type	key	freq
+1	T	n: moba	351
+2	T	n: avatar	278
+3	T	nn: game avatar	198
+3	V[s]	nnn: game avatar embeddings	27
+3	V[s]	nnn: game avatar vector	12
+3	V[s]	nnnn: gae model game avatar	3
+3	V[s]	nnn: game avatar synergy	3
+4	T	nn: moba game	183
+4	V[s]	ann: commercial moba game	12
+4	V[s]	ann: popular moba game	11
+4	V[s]	nnn: moba game research	7
+5	T	n: vector	102
+6	T	an: toxic player	96
+6	V[s]	acan: toxic and typical player	11
+6	V[s]	acan: toxic and normal player	2
+6	V[s]	acan: typical and toxic player	4
+7	T	n: algorithm	93
+8	T	nn: player skill	83
+8	V[s]	nnn: player base skill	7
+8	V[s]	nnn: player skill decomposition	27
+8	V[s]	nnn: player skill composition	7
+8	V[s]	nnn: player skill evaluation	3
+8	V[s]	nnn: player skill formation	3
+8	V[s]	nnn: player skill rating	3
+8	V[s]	nnn: player skill analysis	2
+9	T	an: artificial intelligence	82
+9	V[s]	aan: introductory artificial intelligence	4
+10	T	nn: team composition	150
+10	V[s]	ann: optimal team composition	5
+10	V[s]	ann: infrequent team composition	3
+10	V[s]	nnn: team composition analysis	3
+10	V[s]	nnn: team composition feature	3
+11	T	n: ieee	67
+12	T	n: dota2	132
+13	T	n: dota	61
+14	T	n: tensor	57
+15	T	n: classifier	57
+16	T	n: creeps	56
+17	T	an: human player	49
+17	V[s]	aan: experienced human player	3
+17	V[s]	aan: competitive human player	2
+18	T	an: toxic behavior	95
+19	T	nn: match outcome	47
+19	V[s]	nnn: match outcome prediction	17
+19	V[s]	ann: observed match outcome	6
+20	T	nn: team formation	43
+20	V[s]	nnn: team formation analysis	18
+20	V[s]	ann: online team formation	4
+20	V[s]	ann: successful team formation	8
+21	T	ncnn: synergy and opposition relationship	42
+22	T	n: dataset	84
+23	T	nnn: game refinement measure	40
+23	V[s]	annn: relative game refinement measure	4
+24	T	npn: league of legend	117
+24	V[s]	ncnpn: moba and league of legend	6
+24	V[s]	ncnpn: dota2 and league of legend	2
+25	T	an: online game	74
+25	V[s]	annn: online battle arena game	8
+25	V[s]	nan: multiplayer online game	28
+25	V[s]	aan: massive-multiplayer online game	6
+25	V[s]	aan: role-based online game	2
+26	T	n: embeddings	36
+27	T	nn: difficulty adjustment	36
+27	V[s]	ann: dynamic difficulty adjustment	22
+27	V[s]+	nnn: difficulty adjustment mechanism	6
+28	T	n: crowdsourcing	36
+29	T	n: hots	36
+30	T	nn: skill decomposition	35
+30	V[s]	nnn: player skill decomposition	27
+30	V[s]	nnnn: skill player skill decomposition	2
+31	T	a: adaptive	33
+32	T	nn: hero type	32
+33	T	n: mobas	32
+34	T	an: future work	31
+35	T	a: di?erent	31
+36	T	an: typical player	30
+36	V[s]	acan: typical and toxic player	4
+36	V[s]	acan: toxic and typical player	11
+37	T	n: datasets	30
+38	T	n: gameplay	89
+39	T	nn: game engine	29
+39	V[s]	nnn: python game engine	2
+39	V[s]	ann: commercial game engine	2
+40	T	n: starcraft	29
+41	T	a: predictive	29
+42	T	n: k-means	29
+43	T	nn: enemy team	28
+44	T	nn: factorization machine	27
+44	V[s]	ann: 2-way factorization machine	9
+44	V[s]	nnn: factorization machine model	6
+45	T	nnn: player skill decomposition	27
+46	T	nnn: game avatar embeddings	27
+47	T	nn: team fight	27
+47	V[s]	nnn: team fight capability	3
+47	V[s]	nnn: team fight model	2
+48	T	n: defense	26
+49	T	nn: game behavior	26
+50	T	n: regression	26
+51	T	npnn: effect of team composition	26
+52	T	a: in-game	52
+53	T	nn: riot game	24
+53	V[s]	nnn: riot game api	4
+54	T	nn: game progress	24
+54	V[s]	nnn: game information progress	16
+54	V[s]	nnn: game progress model	6
+55	T	an: blue team	24
+55	V[s]	acan: red and blue team	6
+56	T	n: esports	48
+57	T	nn: match behavior	24
+57	V[s]	ann: specific match behavior	2
+58	T	nn: outcome prediction	48
+58	V[s]	nnn: outcome prediction auc	3
+58	V[s]	nnn: match outcome prediction	17
+59	T	an: human rating	24
+60	T	nn: player information	24
+60	V[s]	ann: role-based player information	2
+60	V[s]	aann: sensitive human player information	3
+61	T	nn: enemy hero	23
+62	T	an: social network	22
+63	T	nn: surrender probability	22
+64	T	an: standard deviation	22
+65	T	ann: dynamic difficulty adjustment	22
+66	T	an: tactical analysis	22
+67	T	nn: influence map	21
+67	V[s]	nnn: influence map layer	2
+68	T	nn: similarity search	21
+69	T	nnn: game refinement theory	21
+70	T	an: related work	21
+71	T	an: downstream task	21
+72	T	nn: resource collection	20
+73	T	nn: game outcome	20
+73	V[s]	nnn: game outcome predictor	4
+74	T	n: valence	20
+75	T	n: computation	20
+76	T	nn: game design	20
+77	T	an: toxic playing	20
+78	T	nn: base skill	40
+78	V[s]	nnpn: base skill of champion	10
+79	T	n: predictor	20
+80	T	a: gradient	20
+81	T	an: late game	19
+82	T	nn: personality trait	37
+82	V[s]	ann: big-5 personality trait	12
+82	V[s]	ann: neutral personality trait	2
+83	T	nn: game feature	18
+83	V[s]	npnn: feature of moba game	2
+84	T	nn: player behavior	18
+84	V[s]	npan: behavior of actual player	2
+84	V[s]	npan: behavior of toxic player	2
+85	T	nn: classification performance	18
+85	V[s]	nnpn: classification performance of model	6
+85	V[s]	nnn: classification performance measurement	3
+85	V[s]	ann: similar classification performance	3
+86	T	nn: formation analysis	18
+87	T	an: dota2 player	18
+87	V[s]	aan: seasoned dota2 player	6
+88	T	n: maaten	18
+89	T	n: micromanagement	18
+90	T	an: logistic regression	18
+91	T	nnn: team formation analysis	18
+92	T	n: ursa	18
+93	T	ann: continuous movement game	17
+94	T	n: prize	17
+95	T	npn: hero of storm	17
+96	T	nn: machine learning	17
+96	V[s]	ann: crowd-assisted machine learning	2
+97	T	nnn: match outcome prediction	17
+98	T	nn: champion attribute	17
+99	T	an: digital game	16
+100	T	an: adaptive player	16
+101	T	nnn: game information progress	16
+102	T	an: online gaming	16
+103	T	nn: feature vector	16
+103	V[s]	nnn: feature vector xz	3
+103	V[s]	ann: latent feature vector	3
+104	T	nn: recommendation system	16
+104	V[s]	nnnn: avatar pick recommendation system	6
+104	V[s]	ann: data-driven recommendation system	3
+105	T	nn: behavior tree	16
+106	T	an: crowdsourced decision	15
+107	T	an: opposite team	15
+108	T	nn: play style	15
+108	V[s]	ann: stealthy play style	3
+109	T	nn: decision tree	15
+110	T	n: validation	15
+111	T	nn: scene type	15
+111	V[s]	nnn: scene type classifier	6
+111	V[s]	nnn: scene type label	2
+112	T	nn: chat log	15
+112	V[s]	ann: entire chat log	2
+113	T	n: csikszentmihalyi	15
+114	T	nn: user report	15
+114	V[s]	nnn: user report model	5
+115	T	a: demographic	29
+116	T	nan: multiplayer online game	28
+117	T	an: diverse team	14
+118	T	n: speci?c	14
+119	T	an: red team	14
+119	V[s]	acan: red and blue team	6
+120	T	an: random effect	14
+121	T	a: supervised	14
+122	T	npn: honor of king	14
+123	T	an: experienced role	14
+123	V[gp]	an: inexperienced role	3
+124	T	n: minion	27
+125	T	n: trueskill	27
+126	T	nn: team effectiveness	13
+127	T	an: virtual world	13
+128	T	npnn: measure of game refinement	13
+129	T	n: mana	13
+130	T	r: intuitively	13
+131	T	n: gaige	26
+132	T	an: easy mode	13
+133	T	nn: valence score	13
+134	T	n: informatic	13
+135	T	n: yahoo	13
+136	T	nn: role combination	13
+137	T	an: normal player	13
+137	V[s]	acan: toxic and normal player	2
+138	T	nn: novice player	13
+139	T	n: agarwala	13
+140	T	n: kwak	13
+141	T	nn: lol player	13
+142	T	nn: game match	12
+143	T	nn: factor matrix	12
+144	T	nn: roc curve	12
+145	T	nnn: game avatar vector	12
+146	T	nn: enemy base	12
+147	T	n: sven	12
+148	T	npnn: pair of game avatar	12
+149	T	an: average number	12
+149	V[s]	anpn: average number of kill	2
+149	V[s]	anpn: average number of chat	2
+150	T	n: noob	12
+151	T	a: optimal	12
+152	T	n: liemhetcharat	12
+153	T	an: regular mode	12
+154	T	nnn: avatar pick recommendation	12
+155	T	n: twitter	12
+156	T	nn: time step	12
+157	T	nn: player performance	12
+158	T	n: mage	12
+159	T	n: naix	12
+160	T	an: computational intelligence	12
+161	T	a: observed	12
+162	T	ann: commercial moba game	12
+163	T	n: annotation	12
+164	T	an: downstream application	12
+164	V[s]	aan: direct downstream application	3
+165	T	n: matchmaking	23
+166	T	nn: game genre	23
+166	V[s]	ann: video game genre	3
+166	V[s]	npnn: genre of computer game	2
+166	V[s]	ann: popular game genre	3
+167	T	nn: prediction task	11
+167	V[s]	nnnn: match outcome prediction task	3
+168	T	n: agreeableness	11
+169	T	nn: skill rating	11
+170	T	an: winning rate	11
+170	V[s]	aan: low winning rate	3
+171	T	an: human factor	11
+172	T	an: important variable	11
+173	T	nn: game designer	11
+174	T	ann: popular moba game	11
+175	T	ann: artificial intelligence agent	22
+176	T	nn: game title	11
+176	V[s]	ann: popular game title	3
+177	T	n: summarization	11
+178	T	n: testbed	22
+179	T	an: standard error	11
+179	V[s]	aan: related standard error	3
+180	T	r: dynamically	11
+181	T	n: affirmative	11
+182	T	n: dp-means	11
+183	T	an: offensive language	11
+184	T	n: ferrara	11
+185	T	acan: toxic and typical player	11
+186	T	npn: defense of ancient	21
+187	T	nn: data mining	10
+188	T	n: cyberbullying	10
+189	T	nn: team diversity	10
+190	T	n: annotator	10
+191	T	nn: team success	10
+192	T	nn: data collection	10
+193	T	n: functionality	10
+194	T	an: rts game	20
+195	T	nn: entertainment computing	10
+196	T	an: popular game	10
+196	V[s]	aann: popular match-based competition game	3
+197	T	nn: enemy tower	10
+198	T	an: hard mode	10
+199	T	ann: high skill player	10
+200	T	nn: sport game	10
+201	T	nn: test accuracy	10
+202	T	nn: laning phase	10
+203	T	an: daily player	10
+203	V[s]	aan: unique daily player	4
+204	T	n: activation	10
+205	T	nn: role property	10
+206	T	n: lr-p	10
+207	T	n: lr-c	10
+208	T	an: main goal	10
+209	T	npn: set of experiment	10
+210	T	nn: target selection	10
+211	T	nn: game research	10
+211	V[s]	nnn: moba game research	7
+212	T	a: stochastic	10
+213	T	an: predictive model	10
+214	T	nva: agent be capable	10
+215	T	an: intentional feeding	10
+216	T	n: gamers	10
+217	T	nn: game replay	10
+218	T	an: pairwise synergy	9
+219	T	nn: two-role combination	9
+220	T	npnn: characteristic of game avatar	9
+221	T	a: base	9
+222	T	nn: game developer	9
+223	T	nn: gae return	9
+223	V[s]	nnn: hero gae return	3
+224	T	n: aaai	9
+225	T	an: human behavior	9
+226	T	ann: 2-way factorization machine	9
+227	T	n: hazan	9
+228	T	nn: information processing	9
+229	T	n: visualization	9
+230	T	nn: opponent team	9
+231	T	an: winning outcome	9
+232	T	nn: team role	9
+233	T	n: clockwerk	9
+234	T	an: low-dimensional space	9
+234	V[s]	aan: low-dimensional latent space	3
+234	V[s]	aan: continuous low-dimensional space	3
+235	T	nn: opposition query	9
+236	T	nn: factorization technique	9
+236	V[s]	nnn: matrix factorization technique	3
+237	T	n: hagelback	9
+238	T	n: bhattacharya	9
+239	T	npn: level of membership	9
+239	V[s]	nn: membership level	3
+240	T	ann: similar avatar search	9
+241	T	n: nalcs	9
+242	T	a: multimodal	9
+243	T	npn: amount of gold	9
+244	T	nn: tensor decomposition	9
+244	V[s]	nnn: tensor decomposition technique	4
+245	T	n: suznjevic	9
+246	T	nn: warcraft iii	9
+247	T	an: social dynamics	9
+248	T	nn: player modeling	9
+249	T	nn: game sophistication	9
+250	T	a: skillful	9
+251	T	an: main structure	9
+252	T	nn: strength hero	9
+253	T	an: pairwise interaction	9
+254	T	n: kittur	9
+255	T	nn: gameplay style	9
+256	T	n: i?tz,r	9
+257	T	an: neutral creeps	9
+258	T	n: grad-gyenge	9
+259	T	an: autonomous agent	9
+260	T	n: centroid	9
+261	T	nn: rating system	9
+261	V[s]	nnn: elo rating system	2
+262	T	aan: latent variable model	9
+263	T	an: statistical analysis	9
+263	V[s]	anpn: statistical analysis of multiplayer	8
+264	T	nn: computing system	9
+265	T	npn: world of warcraft	9
+266	T	n: anti-mage	9
+267	T	npn: performance of player	9
+267	V[s]	nn: player performance	12
+268	T	a: matijasevic	9
+269	T	an: individual bias	9
+270	T	nn: ai agent	9
+271	T	ann: similar skill level	9
+272	T	nn: adjustment mechanism	9
+272	V[s]	annn: dynamic difficulty adjustment mechanism	5
+273	T	n: bi-grams	17
+274	T	an: real-time strategy	25
+275	T	n: boardgames	33
+276	T	nan: ieee 15th conference	8
+277	T	an: real match	8
+278	T	ann: finite state machine	8
+279	T	an: mechanical turk	8
+279	V[s]	nan: amazon mechanical turk	4
+280	T	n: cyberpsychology	8
+281	T	n: waypoints	8
+282	T	ann: non-negative tensor factorization	16
+283	T	nn: moba gameplay	8
+284	T	nan: champion specific skill	8
+285	T	an: principal component	8
+286	T	an: objective function	8
+287	T	n: keywords	8
+288	T	n: notation	8
+289	T	an: high damage	8
+290	T	nn: cross validation	8
+290	V[s]	nnn: 10-fold cross validation	4
+291	T	a: skill-based	8
+292	T	nn: time strategy	8
+293	T	n: toxicity	8
+294	T	a: binary	16
+295	T	nn: team tenacity	8
+296	T	an: opposing team	8
+297	T	nn: moba domain	8
+298	T	an: bad behavior	8
+299	T	an: winning probability	8
+300	T	nnn: champion base skill	8
+301	T	nn: tip system	8
+302	T	nn: team win	8
+302	V[s]	ann: red team win	3
+303	T	a: bilinear	8
+304	T	an: technical report	8
+305	T	nn: player experience	16
+305	V[s]	ann: adaptive player experience	3
+306	T	nn: expert player	8
+307	T	n: regularization	8
+308	T	nn: game duration	8
+309	T	ann: overwhelming majority pardon	8
+310	T	an: demographic factor	8
+311	T	an: effective team	8
+312	T	n: mmorpgs	8
+313	T	n: cvpr	8
+314	T	a: heterogeneous	8
+315	T	nn: yahoo esports	8
+316	T	n: pobiedina	8
+317	T	npn: beginning of match	8
+318	T	nn: model parameter	8
+319	T	n: kolda	8
+320	T	ann: successful team formation	8
+321	T	nn: business informatic	8
+322	T	nva: match be independent	8
+323	T	anpn: statistical analysis of multiplayer	8
+324	T	nann: multiplayer online battle arena	79
+325	T	n: color	15
+326	T	n: l-char-lstm	15
+327	T	an: in-game performance	15
+328	T	nn: game environment	15
+328	V[s]	aan: online game environment	2
+329	T	an: historical information	7
+330	T	nnn: player skill composition	7
+331	T	an: computational linguistics	7
+332	T	nn: ieee transaction	7
+333	T	an: good knowledge	7
+334	T	nnn: player base skill	7
+335	T	a: cognitive	7
+336	T	n: gaussians	7
+337	T	an: virtual environment	7
+338	T	npan: foundation of digital game	7
+339	T	an: strong majority	7
+340	T	ann: principal component analysis	7
+341	T	nnn: game play scene	7
+342	T	nn: likelihood function	7
+343	T	nn: research question	7
+344	T	nn: evaluation function	7
+345	T	n: conscientiousness	7
+346	T	nn: prediction approach	7
+347	T	nn: ba?le arena	7
+348	T	n: lr-p-c	7
+349	T	nn: game session	7
+350	T	a: modular	7
+351	T	an: skilled player	7
+351	V[p]	an: unskilled player	4
+352	T	nn: haewoon kwak	7
+353	T	an: full model	7
+354	T	npn: group of user	7
+355	T	n: lappas	7
+356	T	a: game	7
+357	T	nnn: game character draft	7
+358	T	nn: post-test questionnaire	7
+359	T	ann: discriminative uni -	7
+360	T	n: bader	7
+361	T	a: generative	7
+362	T	n: iteration	7
+363	T	npn: level of agreement	7
+363	V[s]	nn: agreement level	2
+364	T	nn: window size	7
+364	V[s]	nnn: text window size	4
+365	T	a: nonnegative	7
+366	T	nn: datum collection	7
+366	V[s]	nnn: datum collection phase	3
+367	T	nn: game playing	7
+368	T	nn: role prop	7
+369	T	nn: enemy creeps	7
+370	T	ann: high skill level	7
+371	T	an: temporal activity	7
+371	V[s]	anpn: temporal activity of component	2
+372	T	nn: gaming history	7
+373	T	nn: game mechanic	7
+374	T	nnn: information science institute	7
+375	T	nn: agility hero	7
+376	T	nnn: moba game research	7
+377	T	nn: game challenge	7
+378	T	nn: difficulty balance	7
+378	V[s]	ann: dynamic difficulty balance	2
+379	T	npn: result of match	7
+380	T	nn: acm conference	7
+380	V[s]	aann: 33rd annual acm conference	2
+381	T	nn: navigation mesh	7
+382	T	an: predictive power	7
+382	V[s]	aan: extra predictive power	2
+383	T	nn: highlight prediction	7
+383	V[s]	ann: video highlight prediction	2
+384	T	an: social medium	7
+385	T	n: extraversion	7
+386	T	an: sigmoid function	7
+387	T	ncnn: personality and game behavior	7
+388	T	nn: emilio ferrara	7
+389	T	nn: game scenario	7
+390	T	an: plausible candidate	7
+391	T	an: consecutive match	7
+392	T	an: dota2 series	7
+393	T	npn: academy of management	7
+394	T	nn: health point	7
+395	T	an: core consistency	13
+396	T	nn: game character	13
+396	V[s]	nnn: game character draft	7
+397	T	a: team-based	13
+397	V[m]	nn: team base	6
+398	T	n: veloso	12
+399	T	nn: valve corporation	6
+400	T	n: prob	6
+401	T	ncan: design and complex interaction	6
+402	T	a: cross-validation	6
+402	V[mg]+	nn: cross validation	8
+403	T	nn: difficulty level	6
+404	T	aan: 22nd international conference	6
+405	T	nn: ai research	6
+406	T	a: multiagent	12
+407	T	npnn: factor of team success	6
+408	T	nn: opposition matrix	6
+409	T	nn: alessandro bessi	6
+410	T	nn: match datum	6
+410	V[s]	ann: real match datum	3
+411	T	nn: hero agent	6
+412	T	nva: exception be hon	6
+413	T	an: winning chance	6
+414	T	an: desirable position	6
+415	T	an: personal expertise	6
+416	T	nn: tribunal case	6
+417	T	nn: flow theory	6
+418	T	npn: utility of gae	6
+419	T	npncnn: understanding of synergy and opposition relationship	6
+420	T	anpnn: numerical representation of game avatar	6
+421	T	an: in-game period	6
+422	T	nn: model synergy	6
+423	T	acan: red and blue team	6
+424	T	ann: low skill player	6
+425	T	an: pairwise relationship	6
+426	T	ncnn: search and avatar pick	6
+427	T	an: commercial game	6
+428	T	nnn: game progress model	6
+429	T	n: ganks	6
+430	T	nn: team base	6
+431	T	aan: seasoned dota2 player	6
+432	T	aan: linear mixed effect	6
+433	T	nnn: factorization machine model	6
+434	T	nn: sentiment analysis	6
+435	T	nn: report type	6
+436	T	an: intricate design	6
+437	T	nn: lstm lstm	6
+438	T	nn: cosine similarity	6
+439	T	an: deep understanding	6
+440	T	n: sabik	6
+441	T	an: cumulative distribution	6
+442	T	nnn: scene type classifier	6
+443	T	nn: behavior cluster	6
+444	T	nn: second-order interaction	6
+445	T	nn: game experience	6
+446	T	npn: prediction of match	6
+447	T	nn: hero pool	6
+448	T	an: local maximum	6
+449	T	nn: vector representation	6
+450	T	npn: hero of newerth	6
+451	T	an: potential field	6
+452	T	an: cooperative work	6
+453	T	an: entire team	6
+454	T	n: robotic	12
+455	T	ann: big-5 personality trait	12
+456	T	nn: match mz	6
+457	T	an: traditional chinese	6
+458	T	nn: gaming experience	6
+459	T	an: selected champion	6
+460	T	an: good hyperparameters	6
+461	T	an: good decision	6
+462	T	nn: language model	6
+463	T	nan: burst physical damage	6
+464	T	n: bl-mc	6
+465	T	npn: pair of avatar	6
+466	T	nn: match feature	6
+467	T	an: evolutionary change	6
+467	V[s]	anpn: evolutionary change of dota2	3
+468	T	nn: user experience	6
+469	T	n: clinkz	6
+470	T	nnnn: avatar pick recommendation system	6
+471	T	nn: dot product	6
+472	T	nnpn: classification performance of model	6
+473	T	an: bilinear model	6
+474	T	a: j?tz,b	12
+475	T	nn: intelligence hero	6
+476	T	nn: performance improvement	6
+477	T	a: 10-fold	12
+478	T	n: gank	6
+479	T	nan: ieee international conference	6
+480	T	nn: prediction experiment	6
+481	T	nn: majority case	6
+482	T	nn: skill component	6
+483	T	n: sbgames	6
+484	T	nn: highlight clip	6
+485	T	ncnpn: moba and league of legend	6
+486	T	nn: match position	6
+487	T	an: mid game	6
+488	T	an: bottom lane	6
+489	T	n: deja	6
+490	T	nn: combat scenario	6
+491	T	n: gamelogs	6
+492	T	ann: observed match outcome	6
+493	T	aan: important downstream task	6
+494	T	npn: kind of relationship	6
+495	T	nn: combat outcome	6
+496	T	n: initiator	6
+497	T	an: high synergy	6
+498	T	annn: neural information processing system	6
+499	T	an: trivial task	6
+500	T	an: non-game scene	6
+501	T	nn: test auc	6
+502	T	an: rank level	12
+503	T	nn: micromanagement layer	6
+504	T	nn: feature engineering	6
+504	V[s]	ann: manual feature engineering	3
+505	T	ncnn: synergy and opposition query	6
+506	T	an: single match	6
+507	T	a: konfic	6
+508	T	n: tamara	6
+509	T	npn: journal of machine	6
+510	T	nnn: difficulty adjustment mechanism	6
+510	V[s]	annn: dynamic difficulty adjustment mechanism	5
+511	T	an: linguistic analysis	11
+512	T	an: matchmaking system	11
+513	T	n: metagame	11
+514	T	nn: game mode	16
+515	T	ncan: conclusion and future work	5
+516	T	npan: analysis of toxic behavior	5
+517	T	n: belbin	5
+518	T	n: ducheneaut	5
+519	T	an: conventional play	5
+520	T	an: present work	5
+520	V[s]	aan: present related work	3
+521	T	an: abusive player	5
+522	T	an: static feature	5
+522	V[s]	acan: dynamic and static feature	2
+523	T	a: correlate	10
+524	T	n: minotti	5
+525	T	nn: audience chat	5
+526	T	nn: team prediction	5
+526	V[s]	ann: winning team prediction	3
+527	T	nn: ieee conference	5
+527	V[s]	nan: ieee international conference	6
+527	V[s]	nan: ieee 15th conference	8
+528	T	n: meta	5
+529	T	npan: player with high skill	5
+530	T	an: human expert	5
+531	T	nn: game player	5
+532	T	an: single unit	5
+533	T	an: important characteristic	5
+534	T	an: partial information	5
+535	T	a: 1-hot	5
+536	T	n: tassi	5
+537	T	npn: level of player	5
+538	T	nn: game type	5
+538	V[s]	npnn: type of game game	2
+539	T	an: red area	5
+540	T	an: champion-specific skill	5
+541	T	nn: optimization problem	5
+542	T	n: tech	5
+543	T	nn: speci?c component	5
+544	T	anpnn: ranking factor of team success	5
+545	T	n: panumate	5
+546	T	nn: target game	5
+547	T	n: uni-grams	10
+548	T	nn: tribunal reviewer	5
+549	T	nn: problem definition	5
+550	T	n: mmorpg	5
+551	T	annn: dynamic difficulty adjustment mechanism	5
+552	T	nn: test datasets	10
+553	T	nn: feature selection	5
+554	T	n: castillo	5
+555	T	npn: membership of user	5
+555	V[s]	nn: user membership	4
+556	T	a: role-based	5
+557	T	nn: ally hero	5
+558	T	nn: moba map	5
+559	T	nn: error bar	5
+560	T	n: mateas	5
+561	T	an: similar feature	5
+562	T	an: online community	5
+563	T	nn: datum mining	5
+564	T	nn: prediction game	5
+565	T	nn: gae model	10
+566	T	nnn: game developer conference	5
+567	T	nn: player statistic	5
+568	T	npnn: measure of team effectiveness	5
+569	T	n: griefing	5
+570	T	npan: player of similar skill	5
+571	T	n: subset	5
+572	T	npn: aeon of strife	5
+573	T	an: main characteristic	5
+574	T	nn: game theory	5
+574	V[s]	nnn: game refinement theory	21
+575	T	n: non-highlight	5
+576	T	nn: classification model	5
+577	T	nn: anna sapienza	10
+577	V[s]	nnn: canada anna sapienza	4
+578	T	nnn: user report model	5
+579	T	n: nexus	5
+580	T	ann: logistic regression model	5
+581	T	nn: game world	5
+582	T	n: coefficient	5
+583	T	r: qualitatively	5
+584	T	a: null	5
+585	T	nn: experience point	5
+586	T	an: previous section	5
+587	T	nn: support role	5
+588	T	an: single model	5
+589	T	nn: crc press	5
+590	T	a: shared	5
+591	T	n: buro	5
+592	T	nn: minas gerais	5
+593	T	nn: ai algorithm	5
+594	T	nn: ti championship	5
+595	T	nn: tribunal decision	5
+596	T	an: social interaction	5
+597	T	nn: team design	5
+597	V[s]	ann: virtual team design	4
+598	T	n: favor	5
+599	T	an: overwhelming pardon	5
+600	T	nn: trash talk	5
+601	T	ann: optimal team composition	5
+602	T	nn: moba player	5
+603	T	an: supervised learning	5
+604	T	an: original datum	5
+605	T	n: modders	5
+606	T	nn: graph search	5
+606	V[s]	nnn: graph search algorithm	2
+607	T	nn: performance evaluation	10
+608	T	nn: mode player	10
+609	T	nn: vision model	5
+610	T	nn: utility rating	5
+611	T	npn: evolution of chess	5
+612	T	nn: prediction result	5
+612	V[s]	nnn: outcome prediction result	3
+613	T	nnpn: game defense of ancient	5
+614	T	nnpn: base skill of champion	10
+615	T	r: linearly	5
+616	T	nn: research challenge	5
+616	V[s]	nnn: ai research challenge	2
+617	T	a: hierarchical	5
+618	T	n: lr-p-c-pc	5
+619	T	an: international journal	5
+620	T	n: offense	5
+621	T	nn: domain knowledge	5
+622	T	a: real-time	76
+623	T	a: favorite	9
+624	T	nn: game state	9
+625	T	a: non-game	9
+626	T	an: rank gap	9
+627	T	a: intra-team	9
+628	T	an: anonymous player	9
+628	V[s]	aan: universal anonymous player	2
+629	T	nnn: kernel density estimation	4
+630	T	nn: lol match	4
+631	T	an: human effort	4
+632	T	npn: team of player	4
+633	T	an: knowledgeable player	4
+634	T	an: negative peak	4
+635	T	an: random player	4
+636	T	nn: five-factor model	4
+637	T	nn: computer vision	4
+637	V[s]	nnn: computer vision technique	2
+638	T	an: individual match	4
+639	T	nn: first-person shooter	4
+640	T	an: linear summation	4
+641	T	nn: research topic	4
+642	T	n: r-value	4
+643	T	an: online disinhibition	4
+644	T	an: team-based task	4
+645	T	nnan: aaai symposium educational advance	4
+646	T	nn: chi conference	4
+647	T	nn: evaluation process	4
+648	T	an: selected player	4
+649	T	n: sigkdd	4
+650	T	an: international foundation	4
+651	T	nn: player immersion	4
+652	T	nn: performance model	4
+652	V[s]	ann: in-game performance model	2
+653	T	n: btnode	4
+654	T	n: p-values	4
+655	T	nan: amazon mechanical turk	4
+656	T	nn: starcraft ii	4
+657	T	npn: million of player	4
+658	T	an: meaningful play	4
+659	T	a: ?rst	4
+660	T	anpn: great amount of gold	4
+661	T	an: simple game	4
+662	T	nn: bradley-terry model	4
+663	T	npnn: proceeding of vldb endowment	4
+664	T	nn: hypothesis construction	4
+665	T	nn: programming assignment	4
+666	T	npn: effectiveness of team	4
+666	V[s]	nn: team effectiveness	13
+667	T	n: pmid	4
+668	T	n: itemization	4
+669	T	aan: introductory artificial intelligence	4
+670	T	npan: development of intelligent agent	4
+671	T	nn: cluster centroid	4
+672	T	n: p-val	4
+673	T	n: recherche	4
+674	T	n: diff	4
+675	T	nn: table ii	8
+676	T	npn: phase of game	4
+676	V[s]	nn: game phase	3
+677	T	an: online ba?le	4
+678	T	nn: grief play	4
+679	T	nn: magy seif	4
+680	T	an: knowledge-intensive crowdsourcing	4
+681	T	an: neutral unit	4
+682	T	n: screenshot	4
+683	T	nn: skill analysis	4
+684	T	n: emnlp	4
+685	T	a: team-level	8
+686	T	an: multiple language	4
+687	T	nn: lol champion	4
+688	T	ncnn: kwak and jeremy blackburn	4
+689	T	nn: dota map	4
+690	T	aan: unique daily player	4
+691	T	nn: vldb journal	4
+692	T	annn: online battle arena game	8
+693	T	an: di?erent cluster	4
+694	T	nnn: tensor decomposition technique	4
+695	T	nn: abuse prediction	4
+696	T	an: high experience	4
+697	T	a: symmetric	4
+698	T	nn: highlight score	4
+699	T	npn: performance of model	8
+700	T	n: ablation	4
+701	T	an: deep analysis	4
+702	T	an: skilled champion	4
+703	T	n: jaimes	4
+704	T	nn: moba match	4
+705	T	an: dynamic environment	4
+706	T	npn: set of affirmative	4
+707	T	n: truong-huy	4
+708	T	n: rahman	4
+709	T	an: dota2 datum	4
+710	T	nn: player entertainment	4
+711	T	an: stochastic optimization	4
+712	T	an: dota2 dataset	4
+713	T	npnn: model of game refinement	4
+714	T	nn: gaming behavior	4
+715	T	n: websites	4
+716	T	an: popular multiplayer	4
+717	T	n: troll	4
+718	T	nn: team behavior	4
+719	T	a: analytics-based	4
+720	T	n: jungler	4
+721	T	an: main challenge	4
+722	T	n: abbreviation	4
+723	T	an: meaningful information	4
+724	T	nn: tower range	4
+725	T	n: rioult	4
+726	T	an: allied creeps	4
+727	T	nn: moba agent	4
+728	T	ann: high damage rating	4
+729	T	n: verification	4
+730	T	n: scelles	4
+731	T	an: powerful unit	4
+732	T	nn: hero selection	4
+733	T	nann: world wide web companion	4
+734	T	n: crowdflow	4
+735	T	npan: category of toxic behavior	4
+736	T	ann: online team formation	4
+737	T	an: unskilled player	4
+738	T	nn: match history	4
+739	T	nn: k-means algorithm	4
+740	T	n: subsection	4
+741	T	nn: difficulty evaluation	4
+742	T	nn: result prediction	4
+743	T	nn: user membership	4
+744	T	nn: research direction	4
+745	T	nn: path network	4
+746	T	an: interesting finding	4
+747	T	n: offline	4
+748	T	nn: tournament mode	4
+749	T	nn: knowledge discovery	4
+750	T	ncan: agent and multiagent system	4
+751	T	nn: game scene	4
+751	V[s]	nnn: game play scene	7
+752	T	nn: game highlight	4
+753	T	an: solo queue	4
+754	T	nn: brazilian symposium	8
+755	T	ann: virtual team design	4
+756	T	an: human reviewer	4
+757	T	nn: game strategy	4
+758	T	nnn: task assignment optimization	4
+759	T	nn: team skill	4
+760	T	n: danforth	4
+761	T	nn: skill model	4
+762	T	nnpn: base skill of player	8
+763	T	aann: static artificial intelligence agent	4
+764	T	n: multi-fold	4
+765	T	npn: rest of paper	4
+766	T	nn: game map	4
+767	T	annn: relative game refinement measure	4
+768	T	a: unsupervised	4
+769	T	nn: vector machine	4
+770	T	a: semi-dynamic	4
+771	T	nn: mind sport	4
+772	T	n: helleu	4
+773	T	nn: chat model	4
+774	T	an: strategic advantage	4
+775	T	npnpn: level of membership of feature	4
+776	T	an: conscientious player	4
+777	T	n: aiide	4
+778	T	nn: agent development	4
+778	V[s]	npan: development of intelligent agent	4
+779	T	ann: natural language processing	4
+780	T	nn: hit point	4
+780	V[s]	ann: low hit point	3
+781	T	nn: champion ability	4
+782	T	an: dynamic agent	4
+782	V[s]	aann: dynamic artificial intelligence agent	2
+783	T	nn: player transition	4
+784	T	an: specific hero	4
+785	T	nn: pathnode network	8
+786	T	nn: champion choice	4
+787	T	an: adaptive ai	4
+788	T	n: labelers	4
+789	T	ncan: game and digital entertainment	4
+790	T	n: durand	4
+791	T	n: icwsm	4
+792	T	an: crowdsourced datum	4
+793	T	nn: trueskill player	4
+794	T	an: similar approach	4
+795	T	nn: real-world problem	4
+796	T	nn: datum set	4
+797	T	n: universidade	4
+798	T	an: linguistic feature	4
+799	T	an: high prize	4
+800	T	npn: type of hero	4
+800	V[s]	nn: hero type	32
+801	T	ncan: abuse or offensive language	4
+802	T	an: di?erent strategy	4
+803	T	an: positive peak	4
+804	T	nnn: text window size	4
+805	T	ncan: personality and social psychology	4
+806	T	an: major game	4
+807	T	ncnn: pick and ban phase	4
+808	T	nnpn: game league of legend	4
+809	T	an: original game	4
+810	T	an: sophisticated game	4
+811	T	nn: nicolas ducheneaut	4
+812	T	ann: real-time strategy game	12
+813	T	r: ?erefore	4
+814	T	nn: acm crossroad	4
+815	T	nn: confidence level	4
+816	T	npn: proceeding of foundation	4
+817	T	ann: mixed effect model	4
+818	T	ann: good gaming experience	4
+819	T	nn: split push	4
+820	T	a: multilingual	4
+821	T	nn: target selector	4
+822	T	an: international workshop	4
+823	T	n: preprocessing	4
+824	T	ann: easy mode player	4
+825	T	npnn: mixture of gaussians model	4
+826	T	nnn: worker skill estimation	4
+827	T	an: concurrent user	4
+828	T	n: t-test	4
+829	T	nnn: riot game api	4
+830	T	nn: likert scale	4
+830	V[s]	ann: 5-point likert scale	3
+831	T	an: 16min slope	4
+832	T	nnn: game medium entertainment	4
+833	T	an: skill-based difference	4
+834	T	an: previous research	4
+835	T	a: disjoint	4
+836	T	an: video summarization	4
+837	T	npn: set of action	4
+838	T	nn: stfu noob	4
+839	T	a: high-level	4
+839	V[mg]	an: high level	8
+839	V[m]	ann: high skill level	7
+840	T	nn: experiment setup	4
+841	T	nn: game tutorial	4
+842	T	nn: research community	4
+843	T	acan: typical and toxic player	4
+844	T	ncan: agent and multiagent systems-volume	4
+845	T	nn: moba genre	4
+846	T	n: ?gure	4
+847	T	an: high accuracy	4
+848	T	nn: analysis approach	4
+849	T	nn: log likelihood	4
+849	V[s]	ann: negative log likelihood	3
+850	T	n: orbwalker	4
+851	T	nnn: canada anna sapienza	4
+852	T	npan: university of southern california	4
+853	T	npnnn: meaning of game refinement measure	4
+854	T	nn: k-means result	4
+854	V[s]	ann: 12-clusters k-means result	2
+855	T	n: epoch	4
+856	T	n: matrix	54
+857	T	an: successful player	7
+858	T	n: pathfinding	7
+859	T	a: heuristic	7
+860	T	nn: jeremy blackburn	7
+861	T	ann: online video game	7
+862	T	nn: role-playing game	7
+862	V[s]	ann: team-based role-playing game	2
+863	T	an: qualitative evaluation	7
+863	V[s]	acan: quantitative and qualitative evaluation	3
+864	T	an: personalized recommendation	7
+865	T	a: spatio-temporal	7
+866	T	n: assist	52
+867	T	nn: parameter learning	3
+868	T	an: teambased outcome	3
+869	T	nn: tower diving	3
+870	T	ann: latent space dimension	3
+871	T	nn: off-the-shelf machine	3
+872	T	nn: player awareness	3
+873	T	npn: extension of gae	3
+874	T	ncnn: evaluation and case study	3
+875	T	an: blue area	3
+876	T	an: visual classifier	3
+877	T	nn: moba characteristic	3
+877	V[s]	ann: basic moba characteristic	2
+878	T	acan: quantitative and qualitative evaluation	3
+879	T	an: top recommendation	3
+880	T	an: official api	3
+881	T	npnn: calculation of team diversity	3
+882	T	nn: word vector	3
+883	T	anpn: annual meeting of association	3
+884	T	nn: similarity query	3
+885	T	an: limited attack	3
+886	T	ann: data-driven recommendation system	3
+887	T	npn: outcome of match	3
+887	V[s]+	nn: match outcome	47
+888	T	npn: fraction of game	3
+889	T	nan: report only model	3
+890	T	an: empirical study	3
+891	T	nn: phase transition	3
+892	T	nnn: player skill formation	3
+893	T	npan: gamers with similar skill	3
+894	T	npncn: representation of word and phrase	3
+895	T	an: northeastern university	3
+896	T	nn: hon dataset	3
+897	T	nnn: outcome prediction result	3
+898	T	an: di?erent component	3
+899	T	anpnn: deep understanding of role communication	3
+900	T	an: binary vector	3
+901	T	ncnn: expertise and team congruency	3
+902	T	an: suitable choice	3
+903	T	an: incompetent player	3
+904	T	n: silencer	3
+905	T	an: special ability	3
+906	T	n: chaimowicz	6
+907	T	npn: match of game	3
+907	V[s]	nn: game match	12
+908	T	an: human interaction	3
+909	T	nn: health factor	3
+910	T	nnn: lstm lstm lstm	3
+911	T	an: ternary plot	3
+912	T	nn: synergy matrix	3
+913	T	a: hybrid	3
+914	T	npn: variety of research	3
+915	T	aan: 16th international conference	3
+916	T	nn: image processing	3
+917	T	an: extended break	3
+918	T	n: semenov	3
+919	T	aan: 11th international conference	3
+920	T	npncn: extent of synergy and opposition	3
+921	T	npan: breakdown of individual bias	3
+922	T	nnnnn: usc information science institute marina	3
+923	T	a: killable	3
+924	T	ncnn: agility and strength hero	3
+925	T	ncnn: sun3 and magy seif	3
+926	T	npn: equivalence of ai	3
+927	T	nn: game knowledge	3
+928	T	n: variability	3
+929	T	nva: player be low	3
+930	T	an: manual effort	3
+931	T	n: theorycraft	3
+932	T	nnn: similarity evaluation pair	3
+933	T	n: co-occurrence	3
+934	T	npn: kind of application	3
+935	T	anpnn: valid pair of game avatar	3
+936	T	an: top tier	3
+937	T	an: non-zero feature	3
+938	T	an: middle game	3
+938	V[s]	acan: middle and late game	2
+939	T	npan: player with similar skill	3
+940	T	nn: calatrava moreno	3
+940	V[s]	nnn: carman calatrava moreno	2
+941	T	nn: chat volume	3
+942	T	nn: reinforcement learning	3
+943	T	an: complicated relationship	3
+944	T	nn: tribunal deal	3
+945	T	ann: great escape capability	3
+946	T	anpn: in-depth understanding of synergy	3
+947	T	ncan: progress and final outcome	3
+948	T	n: koren	3
+949	T	an: multiple agent	3
+950	T	anann: international world wide web conference	3
+951	T	an: subjective perception	3
+952	T	ann: real match datum	3
+953	T	nn: skill modeling	3
+954	T	ncnpn: quality and utility of gae	3
+955	T	npan: view of red team	3
+956	T	nn: model specification	3
+957	T	nnnnn: model hots hon dota2 lr	3
+958	T	an: large damage	3
+959	T	rann: significantly high test auc	3
+960	T	anpnn: respective row of win-ratio matrix	3
+961	T	npnn: proceeding of sigchi conference	3
+962	T	an: similar game	3
+963	T	nnn: team composition analysis	3
+964	T	nnn: hero gae return	3
+965	T	acann: low and high experience player	3
+966	T	n: mikolov	3
+967	T	ncnn: information and computer science	3
+968	T	an: advanced model	3
+969	T	n: autograder	6
+970	T	nn: game start	3
+971	T	a: x-axis	3
+972	T	n: shogi	3
+973	T	nn: team combat	3
+974	T	aan: good overall synergy	3
+975	T	n: testbeds	3
+976	T	n: zink	3
+977	T	ncan: boardgames and continuous movement	6
+978	T	nn: lv-lstm model	3
+979	T	an: human labor	3
+980	T	ann: adaptive player experience	3
+981	T	an: potential cost	3
+982	T	a: non-trivial	3
+983	T	npnn: result of evaluation function	3
+984	T	npn: effectiveness of model	3
+985	T	nnn: player skill rating	3
+986	T	n: tz,r	3
+987	T	an: salient advantage	3
+988	T	a: 3department	3
+989	T	ann: similar classification performance	3
+990	T	an: numerical evaluation	3
+991	T	n: tz,b	3
+992	T	ann: major game update	3
+993	T	an: personal prioritization	3
+994	T	ann: human language technologies-volume	3
+995	T	n: medusa	3
+996	T	an: cognitive science	3
+997	T	an: related model	3
+998	T	an: pairwise term	3
+999	T	nnnn: gae model game avatar	3
+1000	T	ann: 5-point likert scale	3
+1001	T	an: virtual entity	3
+1002	T	nnn: team composition feature	3
+1003	T	an: single hero	3
+1004	T	ann: online disinhibition effect	3
+1005	T	nn: mana resource	3
+1006	T	nn: death agility	3
+1007	T	an: early test	3
+1008	T	an: specific challenge	3
+1009	T	an: j?tz,b bj	3
+1010	T	aann: sensitive human player information	3
+1011	T	ann: left hand side	3
+1012	T	an: similar word	3
+1013	T	ann: personalized avatar recommendation	3
+1014	T	ann: popular game title	3
+1015	T	nnpn: m-th dimension of ai	3
+1016	T	n: compositionality	3
+1017	T	n: koster	3
+1018	T	n: pudge	3
+1019	T	n: volinsky	3
+1020	T	an: yale song	3
+1021	T	an: unbalanced match	3
+1022	T	an: heuristic function	3
+1023	T	nnnn: match outcome prediction performance	3
+1024	T	nn: match transition	3
+1025	T	aan: low-dimensional latent space	3
+1026	T	nnpn: rate pair of game	3
+1027	T	nn: moba outcome	3
+1028	T	nn: pilot test	3
+1029	T	npnn: column of factor matrix	3
+1030	T	npn: sum of difference	3
+1031	T	an: heavy damage	3
+1032	T	ncnn: firstorder and second-order parameter	3
+1033	T	annnn: southern california information science institute	3
+1034	T	ncnn: prediction and avatar pick	3
+1035	T	ncnn: effort and domain knowledge	3
+1036	T	an: real implementation	3
+1037	T	npan: rating with high pearson	3
+1038	T	nnn: dot product operation	3
+1039	T	ann: unique game avatar	3
+1040	T	n: i,j?tz,r	3
+1041	T	aan: related standard error	3
+1042	T	nn: ciro ca?uto	3
+1043	T	n: anls	3
+1044	T	an: entire game	3
+1045	T	aan: successful selected combination	3
+1046	T	npan: datum with rich player	3
+1047	T	nn: entity vector	3
+1048	T	npn: level of opposition	3
+1049	T	an: lowdimensional vector	3
+1050	T	an: minimum winrate	3
+1051	T	npnn: advantage of factorization technique	3
+1052	T	nn: death intelligence	3
+1053	T	nnn: difficulty evaluation process	3
+1054	T	n: jolliffe	3
+1055	T	npn: level of similarity	3
+1056	T	nnn: team competition game	3
+1057	T	r: quantitatively	3
+1058	T	anpnn: linear summation of first-order bias	3
+1059	T	nnn: mana burn skill	3
+1060	T	nnnnn: formation analysis team formation analysis	3
+1061	T	npan: advancement of artificial intelligence	3
+1062	T	an: english word	3
+1063	T	nn: computer-human interaction	3
+1064	T	nn: regularization penalty	3
+1065	T	npnn: analysis of moba game	3
+1066	T	n: lme4	3
+1067	T	aan: continuous low-dimensional space	3
+1068	T	nn: enemy structure	3
+1069	T	an: comparable auc	3
+1070	T	n: crawler	3
+1071	T	nnn: feature vector xz	3
+1072	T	n: cscw	3
+1073	T	npn: analysis of image	3
+1074	T	n: viui	3
+1075	T	nn: word sequence	3
+1076	T	n: griefers	3
+1077	T	nn: status increase	3
+1078	T	ann: rank level gap	3
+1079	T	ncnn: synergy and opposition matrix	3
+1080	T	nn: start time	3
+1081	T	ncnn: synergy and opposition search	3
+1082	T	ann: red team win	3
+1083	T	an: proper number	3
+1084	T	nn: application context	3
+1084	V[s]	npan: context of practical application	3
+1085	T	anpn: small batch of match	3
+1086	T	n: necrophos	3
+1087	T	nn: section relation	3
+1088	T	n: iccv	3
+1089	T	an: good correlation	3
+1090	T	an: good approximation	3
+1091	T	nn: performance change	3
+1092	T	n: interpretability	3
+1093	T	nn: computer chess	3
+1094	T	nn: gae recommendation	3
+1095	T	anpn: high synergy with naix	3
+1096	T	n: ipeirotis	3
+1097	T	an: online learning	3
+1098	T	nn: cpu time	3
+1099	T	aan: wiley online library	3
+1100	T	an: visual cue	3
+1101	T	an: baseline model	3
+1102	T	nnn: game avatar line-up	3
+1103	T	npan: relationship with 2-way factorization	3
+1104	T	nn: grief playing	3
+1105	T	ann: late game carry	3
+1106	T	nn: player role	3
+1107	T	nan: candidate random effect	3
+1108	T	n: fapemig	3
+1109	T	npan: hero with low hit	3
+1110	T	nn: killing behavior	3
+1111	T	an: intricate relationship	3
+1112	T	nnn: classification performance measurement	3
+1113	T	an: final measurement	3
+1114	T	npncn: term of ap and recall	3
+1115	T	anpnn: rich design of moba game	3
+1116	T	nn: surrender prediction	3
+1117	T	nnpn: probability function of match	3
+1118	T	ncnn: intrateam and inter-team interaction	3
+1119	T	ann: video game genre	3
+1120	T	an: previous model	3
+1121	T	n: tang	3
+1122	T	an: average skill	3
+1123	T	an: good accuracy	3
+1124	T	nn: success factor	3
+1124	V[s]	npnn: factor of team success	6
+1125	T	an: in-game information	3
+1126	T	npan: dimension of latent space	3
+1127	T	ann: video game datum	3
+1128	T	n: turing	3
+1129	T	n: xmin	3
+1130	T	npn: annals of statistic	3
+1131	T	an: prior study	3
+1132	T	anpn: numerical representation of entity	3
+1133	T	nn: grid search	3
+1134	T	nn: avatar clockwerk	3
+1135	T	nn: role category	3
+1136	T	annn: similar outcome prediction performance	3
+1137	T	a: pre-defined	3
+1138	T	nn: validation dataset	3
+1139	T	an: numerical experiment	3
+1140	T	nnnn: datasets hots hon dota2	3
+1141	T	anpn: temporal activation of component	3
+1142	T	an: similar embeddings	3
+1143	T	ncan: player and normal player	3
+1144	T	nn: user behavior	3
+1145	T	nn: grief behavior	3
+1146	T	nn: troll warlord	3
+1147	T	ncnn: tensor and tensor operation	3
+1148	T	ann: popular game genre	3
+1149	T	n: 2013a	3
+1150	T	nn: user-item matrix	3
+1151	T	npnnn: statistic of datasets hots hon	3
+1152	T	an: low-dimensional vector	3
+1152	V[g]	an: lowdimensional vector	3
+1153	T	ann: latent feature matrix	3
+1154	T	npn: trueskill of player	3
+1155	T	npan: correlate with human rating	3
+1156	T	an: social networking	3
+1157	T	an: aggressive state	3
+1157	V[s]	aan: passive aggressive state	2
+1158	T	ann: pairwise cosine distance	3
+1159	T	an: random forest	3
+1160	T	a: 2013b	6
+1161	T	an: human evaluation	3
+1162	T	npn: domain of boardgames	3
+1163	T	nn: code base	3
+1164	T	an: real-time esports	3
+1165	T	n: optimizer	3
+1166	T	npn: hierarchy of model	3
+1167	T	nva: pair be selected	3
+1168	T	an: pre-test questionnaire	3
+1169	T	nnn: datum sparsity problem	3
+1170	T	nn: mit press	3
+1171	T	nn: qmn measure	3
+1172	T	nva: feature be important	3
+1172	V[s]	an: important feature	10
+1173	T	ann: manual feature engineering	3
+1174	T	nn: combat analysis	3
+1175	T	nn: acm sigchi	3
+1176	T	ann: greedy function approximation	3
+1177	T	n: wi,j	3
+1178	T	ann: negative log likelihood	3
+1179	T	ncan: m-th and n-th dimension	3
+1180	T	nn: research platform	3
+1181	T	aan: present related work	3
+1182	T	ann: proprietary matchmaking system	3
+1183	T	a: signi?cant	3
+1184	T	npn: quartet of parameter	3
+1185	T	npan: expression of toxic behavior	3
+1186	T	a: boldface	3
+1187	T	nn: robert kraut	3
+1188	T	ann: common report type	3
+1189	T	an: online platform	3
+1190	T	annn: embeddingbased method model synergy	3
+1191	T	nn: identification question	3
+1192	T	nnn: game avatar synergy	3
+1193	T	anann: popular multiplayer online battle arena	3
+1194	T	an: linguistic signature	3
+1195	T	nnn: dimension reduction technique	3
+1196	T	a: 3111–	3
+1197	T	nnnn: factorization machine model gae	3
+1198	T	npn: variety of attribute	3
+1199	T	nnn: input hero clinkz	3
+1200	T	aan: adaptive subgradient method	3
+1201	T	nn: term moba	3
+1202	T	npn: effectiveness of gae	3
+1203	T	n: baseline	51
+1204	T	nn: avatar anti-mage	3
+1205	T	an: cristian danescu-niculescu-mizil	3
+1206	T	anpn: n-th dimension of aj	3
+1207	T	nnnnn: similarity synergy opposition win-ratio matrix	3
+1208	T	npn: characteristic of moba	3
+1208	V[s]+	nn: moba characteristic	3
+1209	T	npn: type of skill	3
+1210	T	nva: problem be present	3
+1211	T	aan: experienced human player	3
+1212	T	ann: individual skill level	3
+1213	T	an: multiple measure	3
+1214	T	ann: rich player information	3
+1215	T	n: lvms	3
+1216	T	nnnn: match outcome prediction task	3
+1217	T	aan: 10-fold cross-validation procedure	3
+1218	T	an: durable capability	3
+1219	T	nnn: impact team performance	3
+1220	T	nnnn: game avatar benefit player	3
+1221	T	an: real-time performance	3
+1222	T	ncnn: computer and information science	3
+1223	T	nn: elo system	3
+1223	V[s]	nnn: elo rating system	2
+1224	T	npn: set of skill	3
+1224	V[s]	nn: skill set	2
+1225	T	an: linear function	3
+1226	T	an: interesting challenge	3
+1227	T	nn: agreement case	3
+1228	T	ran: statistically bad result	3
+1229	T	aann: linear mixed effect model	3
+1230	T	npan: context of practical application	3
+1231	T	an: natural opposition	3
+1232	T	npn: type of map	3
+1233	T	an: middle lane	3
+1234	T	nnn: datum collection phase	3
+1235	T	npnn: uncertainty of game outcome	3
+1236	T	a: embedding-based	3
+1237	T	an: public release	3
+1238	T	nn: hero status	3
+1239	T	an: advantageous team	3
+1240	T	nnn: matrix factorization technique	3
+1241	T	npnn: relationship with factorization machine	3
+1242	T	nnn: springer berlin heidelberg	3
+1243	T	nn: dhruv batra	3
+1244	T	ann: 15th acm sigkdd	3
+1245	T	annnn: personalized avatar pick recommendation system	3
+1246	T	an: long zuo	6
+1247	T	nnn: application - similarity	3
+1248	T	a: t-sne	6
+1249	T	n: nguyen	3
+1250	T	npan: series of linguistic analysis	3
+1251	T	npan: player with different personality	3
+1252	T	nnn: ad-hoc baseline method	3
+1253	T	nva: sven be similar	3
+1254	T	n: emoticons	3
+1255	T	an: single role	3
+1256	T	n: t-tests	3
+1257	T	nn: opposition intensity	3
+1258	T	an: previous analysis	3
+1259	T	aan: 21st international conference	3
+1260	T	an: independent variable	3
+1261	T	nn: non-player character	3
+1262	T	n: trade-offs	3
+1263	T	npan: level of pairwise relationship	3
+1264	T	n: terzi	3
+1265	T	npan: session of different length	3
+1266	T	nva: player be familiar	3
+1267	T	n: assa	3
+1268	T	npan: input of sigmoid function	3
+1269	T	anpnn: selected combination of game avatar	3
+1270	T	npn: hour of video	3
+1271	T	anpn: evolutionary change of dota2	3
+1272	T	nn: synergy strength	3
+1273	T	n: yashkov	3
+1274	T	npncn: similarity of fm and gae	3
+1275	T	npn: advantage of technique	3
+1276	T	ann: bad classification auc	3
+1277	T	an: strong relation	3
+1278	T	ann: latent feature vector	3
+1279	T	nva: hero be strong	3
+1280	T	n: tipi	3
+1281	T	an: state-of-the-art method	3
+1282	T	npn: characteristic of hon	3
+1283	T	npn: type of match	3
+1284	T	r: computationally	3
+1285	T	an: allied tower	3
+1286	T	npnpn: analysis of league of legend	3
+1287	T	ann: stealthy play style	3
+1288	T	nn: information gain	3
+1289	T	an: competitive setting	3
+1290	T	npn: characteristic of ai	3
+1291	T	an: promising result	3
+1292	T	nn: kda factor	3
+1293	T	npnn: function of match outcome	3
+1294	T	an: individual behavior	3
+1295	T	npnn: chacacterization of team member	3
+1296	T	ann: infrequent team composition	3
+1297	T	nnn: tank carry hero	3
+1298	T	an: tree-based model	3
+1299	T	nn: laetitia gauvin	3
+1300	T	npan: formation with heterogeneous agent	3
+1301	T	an: temporal behavior	3
+1302	T	nn: ablation study	3
+1303	T	nn: analysis methodology	3
+1304	T	nn: ursa pick	3
+1305	T	ncnn: information and model player	3
+1306	T	raan: similarly skillful dota2 player	3
+1307	T	nn: training data	3
+1308	T	nnpn: gae model with detail	3
+1309	T	an: basic information	3
+1310	T	nnn: vectormatrix-vector product form	3
+1311	T	nnn: time strategy game	3
+1312	T	n: youtube	3
+1313	T	aan: meaningful numerical representation	3
+1314	T	npn: characteristic of entity	3
+1315	T	an: initial analysis	3
+1316	T	nn: fm model	3
+1317	T	an: linear breakdown	3
+1318	T	n: riedl	3
+1319	T	an: official riot	3
+1320	T	nn: navigation layer	3
+1321	T	r: interchangeably	3
+1322	T	nn: flow state	3
+1323	T	nn: feature analysis	3
+1324	T	an: real datum	3
+1325	T	an: static agent	3
+1325	V[s]	aann: static artificial intelligence agent	4
+1326	T	an: supervised learner	3
+1327	T	npnn: relationship with game avatar	3
+1328	T	an: linguistic behavior	3
+1329	T	ann: ideal game avatar	3
+1330	T	nn: game phase	3
+1331	T	an: baseline correlate	3
+1332	T	npn: outcome of game	3
+1332	V[s]+	nn: game outcome	20
+1333	T	nn: recommender system	3
+1334	T	nnpn: evaluation set of pair	3
+1335	T	nn: dota game	3
+1336	T	nn: input datum	3
+1337	T	ncan: limitation and future work	3
+1338	T	nnn: section performance evaluation	3
+1339	T	nnan: arena game zhengxing chen1	3
+1340	T	nn: section iii	6
+1341	T	an: real-time game	3
+1342	T	anpnn: good prediction of match event	3
+1343	T	anan: high burst physical damage	3
+1344	T	an: good reusability	3
+1345	T	n: uiui	3
+1346	T	an: expensive task	3
+1347	T	nn: membership level	3
+1348	T	nn: white-box tool	3
+1349	T	npncn: player with choice and option	3
+1350	T	nnnnn: team formation analysis team formation	3
+1351	T	nn: game study	3
+1352	T	n: uriarte	3
+1353	T	n: mmogs	3
+1354	T	ann: visual question answering	3
+1355	T	npn: effect of gender	3
+1356	T	npn: session of length	3
+1356	V[s]	npan: session of different length	3
+1357	T	aann: popular match-based competition game	3
+1358	T	nn: trueskill score	3
+1359	T	ann: good in-game choice	3
+1360	T	an: gradient descent	3
+1361	T	n: maas	3
+1362	T	an: helpful teammate	3
+1363	T	nnn: avatar pick recommender	3
+1364	T	nva: author be grateful	3
+1365	T	npn: list of hero	3
+1366	T	an: special power	3
+1367	T	nn: enemy unit	3
+1368	T	nann: - personalized recommendation kim	3
+1369	T	n: parameterization	3
+1370	T	acan: quantitative and qualitative analysis	3
+1371	T	aan: low winning rate	3
+1372	T	nn: evaluation metric	3
+1373	T	an: higher-order relationship	3
+1374	T	nn: feature winner	3
+1375	T	npncn: term of synergy and opposition	3
+1376	T	n: skillfulness	3
+1377	T	n: analytics	6
+1378	T	nn: fordham university	3
+1379	T	aan: pure predictive algorithm	3
+1380	T	nn: yuyu xu1	3
+1381	T	an: unlimited distribution	3
+1382	T	n: pickoff	3
+1383	T	ann: cumulative distribution function	3
+1384	T	nnan: application - personalized recommendation	3
+1385	T	n: §iii	3
+1386	T	nn: personality test	3
+1387	T	npn: mechanic of game	3
+1387	V[s]	nn: game mechanic	7
+1388	T	npn: chance of result	3
+1389	T	nnan: hero output high burst	3
+1390	T	an: well-known baseline	3
+1391	T	nn: player guide	3
+1392	T	nn: agent behavior	3
+1393	T	aan: 49th annual meeting	3
+1394	T	nn: hero range	3
+1395	T	nnn: player skill evaluation	3
+1396	T	npan: recruitment of knowledgeable player	3
+1397	T	npnn: degree of game sophistication	3
+1398	T	nn: death strength	3
+1399	T	an: similar context	3
+1400	T	anpn: large number of kill	3
+1401	T	aan: interactive digital entertainment	3
+1402	T	ann: high order interaction	3
+1403	T	ncnn: synergy and opposition level	3
+1404	T	nn: computation time	3
+1405	T	ncnpn: implementation and verification of idea	3
+1406	T	an: modular design	3
+1407	T	nn: enemy analysis	3
+1408	T	anpn: total number of match	3
+1409	T	npnn: understanding of game avatar	3
+1410	T	nan: springer international publishing	3
+1411	T	n: bayes	3
+1412	T	n: pham	3
+1413	T	nnn: outcome prediction auc	3
+1414	T	n: website	3
+1415	T	an: vague nature	3
+1416	T	npan: model with good hyperparameters	3
+1417	T	npn: term of similarity	3
+1418	T	nn: train dataset	3
+1419	T	nnan: team competition online game	3
+1420	T	nn: moba environment	3
+1421	T	an: previous method	3
+1422	T	a: 2department	3
+1423	T	nn: test acc	3
+1424	T	npan: information of pairwise synergy	3
+1425	T	n: p-value	3
+1426	T	nn: max advantage	3
+1427	T	npnnn: dimension of game avatar embeddings	3
+1428	T	nn: hero-versus-hero combat	3
+1429	T	nn: game speed	3
+1430	T	nn: classification strength	3
+1431	T	an: losing team	3
+1432	T	npnn: measure of team performance	3
+1433	T	npnn: vector of game avatar	3
+1434	T	npnpn: level of membership of user	3
+1435	T	anpn: comprehensive understanding of synergy	3
+1436	T	a: fast-paced	3
+1436	V[m]	an: fast pace	3
+1437	T	nn: survey participant	3
+1438	T	ncnn: discovery and data mining	3
+1439	T	npan: proceeding of 15th acm	3
+1440	T	n: junglers	3
+1441	T	npn: pair of interaction	3
+1442	T	an: clear similarity	3
+1443	T	nn: yubo kou	3
+1444	T	an: specific role	3
+1445	T	nn: team synergy	3
+1446	T	ncnn: player and game avatar	3
+1447	T	nn: agent architecture	3
+1448	T	nn: gaming industry	3
+1449	T	annn: third-party game log website3	3
+1450	T	nn: ai technique	3
+1451	T	npn: expertise of player	3
+1452	T	npan: nature of toxic behavior	3
+1453	T	an: video highlight	6
+1453	V[s]	aan: real-time video highlight	2
+1454	T	npn: decision with model	3
+1455	T	npn: family of model	3
+1456	T	npn: configuration of hyperparameters	3
+1457	T	ncnn: synergy and opposition interaction	3
+1458	T	npan: learning of particular pair	3
+1459	T	npan: term of intra-team interaction	3
+1460	T	nnpn: skill level of player	3
+1461	T	nn: target destination	3
+1462	T	ann: low death rate	3
+1463	T	nnpn: evaluation result of gae	3
+1464	T	an: multiple player	3
+1465	T	nnn: team fight capability	3
+1466	T	ann: intrinsic control difficulty	3
+1467	T	n: suler	3
+1468	T	ann: quantitative evaluation result	3
+1469	T	ann: hard mode player	3
+1470	T	anpn: limited mobility of naix	3
+1471	T	aan: direct downstream application	3
+1472	T	nn: sand king	3
+1473	T	an: familiar hero	3
+1474	T	an: subtle difference	3
+1475	T	ann: low hit point	3
+1476	T	an: linguistic component	3
+1477	T	an: worldwide popularity	3
+1478	T	anpnn: important characteristic of game avatar	3
+1479	T	ncnn: bias and second-order interaction	3
+1480	T	npn: pair of co-occurrences	3
+1481	T	ncan: learning and stochastic optimization	3
+1482	T	nnn: resource collection task	3
+1483	T	nn: skill familiarity	3
+1484	T	an: bad positioning	3
+1485	T	n: wikipedia	3
+1486	T	nn: attribute vector	3
+1487	T	npan: signature of toxic player	3
+1488	T	npnpn: distribution of number of match	3
+1489	T	nn: warm-up effect	3
+1490	T	ncan: avatar and personalized avatar	3
+1491	T	nn: multiplayer game	12
+1491	V[s]	nan: multiplayer online game	28
+1491	V[s]+	ann: online multiplayer game	2
+1492	T	npan: function of observed match	3
+1493	T	an: small improvement	3
+1494	T	npn: percentage of kill	3
+1495	T	nn: person shooter	3
+1496	T	nn: text message	3
+1497	T	npnn: set of game avatar	3
+1498	T	annn: winning chance fit player	3
+1499	T	npan: model with different configuration	3
+1500	T	an: unique token	3
+1501	T	aan: deep neural network	3
+1502	T	nn: map layer	3
+1503	T	ncnn: improvement and computation overhead	3
+1504	T	nn: skill weight	3
+1505	T	ann: efficient fighting duo	3
+1506	T	nn: challenge level	3
+1507	T	npn: level of synergy	3
+1508	T	nn: image annotation	3
+1509	T	nn: dot production	3
+1510	T	n: netgames	3
+1511	T	nn: offender performance	3
+1512	T	nnpn: prediction performance of gae	3
+1513	T	nnpn: opposition relationship with game	3
+1514	T	npnnn: dimension of team member characterization	3
+1515	T	npnn: term of outcome prediction	3
+1516	T	nn: production environment	3
+1517	T	an: practical implication	3
+1518	T	n: lerman	3
+1519	T	an: extra interpretation	3
+1520	T	nn: counter aj	3
+1521	T	nva: model be twofold	3
+1522	T	n: duchi	3
+1523	T	n: increment	3
+1524	T	an: teamrelated characteristic	3
+1525	T	anpn: abundant attribute of entity	3
+1526	T	npn: subset of match	3
+1527	T	npn: performance of machine	3
+1528	T	a: i,j?tz,b	6
+1529	T	n: gamification	3
+1530	T	nnpn: hand side of eqn	3
+1531	T	nn: team expansion	3
+1532	T	ann: experienced assassin player	3
+1533	T	nn: report system	3
+1534	T	npnn: academy of management proceeding	3
+1535	T	nn: ember spirit	3
+1536	T	n: synergy	124
+1537	T	an: behavioral pa?ern	14
+1537	V[s]	aan: human behavioral pa?ern	9
+1538	T	nn: gae result	5
+1539	T	n: computer-mediated-communication	5
+1540	T	nn: game agent	5
+1541	T	an: emotional stability	5
+1542	T	nnan: introduction multiplayer online battle	5
+1543	T	an: large-scale study	5
+1544	T	an: quantitative experiment	5
+1545	T	nn: dota match	5
+1546	T	an: favorite champion	5
+1547	T	an: intermediary player	5
+1548	T	n: vtext	5
+1549	T	an: in-game avatar	5
+1550	T	a: exponential	5
+1551	T	a: wiley	5
+1552	T	n: bradley-terry	5
+1553	T	aan: high winning rate	5
+1554	T	nn: activity pa?erns	5
+1554	V[s]	ann: temporal activity pa?erns	2
+1555	T	n: pathnode	10
+1556	T	nann: multi-user online battle arena	5
+1557	T	nnan: acm sigkdd international conference	5
+1558	T	nn: highlight detection	5
+1559	T	an: in-game character	5
+1560	T	aann: human behavioral pa?ern mining	7
+1561	T	n: v-cnn-lstm	7
+1562	T	n: rabindra	2
+1563	T	an: controlled agent	2
+1564	T	an: discrete part	2
+1565	T	nnn: baseline player info	4
+1566	T	npn: basic of game	2
+1567	T	nn: nascimento silva	4
+1568	T	nn: game difficulty	2
+1569	T	ann: common game mode	2
+1570	T	nn: information retrieval	2
+1571	T	nn: instructor solution	2
+1572	T	n: rüger	2
+1573	T	an: public matchmaking	2
+1574	T	nn: datum structure	2
+1575	T	nn: eric nickell	2
+1576	T	nn: role allocation	2
+1577	T	nnn: scene type label	2
+1578	T	nn: time gaige	2
+1579	T	n: wiener	2
+1580	T	nn: prize money	2
+1581	T	npn: score of message	2
+1582	T	n: synnaeve	2
+1583	T	nn: ground truth	4
+1584	T	n: level6	2
+1585	T	an: previous assignment	2
+1586	T	nn: agent performance	2
+1587	T	nva: tutorial be sufficient	2
+1588	T	npnnn: source of player skill composition	2
+1589	T	npnn: skill of player matter	2
+1590	T	n: actuator	2
+1591	T	nnn: game duration increase	2
+1592	T	an: good portability	2
+1592	V[m]	ann: good control ability	2
+1593	T	npnnn: overview of game refinement theory	2
+1594	T	n: adversarial	2
+1595	T	an: online popularity	2
+1596	T	nnn: python game engine	2
+1597	T	an: 48-dim vector	2
+1598	T	nn: moba history	2
+1599	T	an: demographic group	2
+1600	T	an: previous study	2
+1601	T	nn: feature membership	2
+1602	T	nnpn: dp mixture of gaussians	2
+1603	T	npn: part of tribunal	2
+1604	T	npn: accuracy of tribunal	2
+1605	T	npn: region of world	2
+1606	T	nn: lane map	2
+1607	T	ncnn: machine and behavior tree	2
+1608	T	an: numerical result	2
+1609	T	nnnn: laboratoires public ou privés	2
+1610	T	nnn: ai research challenge	2
+1611	T	n: linearity	2
+1612	T	n: karpathy	2
+1613	T	ncnn: silva and luiz chaimowicz	4
+1614	T	nn: player satisfaction	2
+1615	T	nn: game starcraft	2
+1616	T	an: relevant statistic	2
+1617	T	nn: warm-up period	2
+1618	T	npnn: league of legend championship	2
+1619	T	nn: kill strength	2
+1620	T	npn: stage of match	2
+1621	T	n: pacman	2
+1622	T	an: qualitative analysis	4
+1622	V[s]	acan: quantitative and qualitative analysis	3
+1623	T	nn: lol tribunal	2
+1624	T	npn: sophistication of game	2
+1624	V[s]	nn: game sophistication	9
+1625	T	an: single character	2
+1626	T	aan: 23rd international conference	2
+1627	T	an: successful killing	2
+1628	T	an: social system	2
+1629	T	nnn: probability density function	2
+1630	T	npn: reign of chaos	2
+1631	T	an: reasonable strategy	2
+1632	T	an: crowdsourced solution	2
+1633	T	nn: game history	2
+1634	T	npnpn: deviation of number of kill	2
+1635	T	n: champandard	2
+1636	T	npn: million of user	2
+1637	T	nn: opponent level	2
+1638	T	nn: text overlay	2
+1639	T	nn: game control	2
+1640	T	npn: sum of individual	2
+1641	T	an: innocent player	2
+1642	T	an: entire community	2
+1643	T	ncnn: player and developer perception	2
+1644	T	an: match-based game	2
+1645	T	npn: type of behavior	2
+1646	T	an: individual action	2
+1647	T	an: informative feature	2
+1648	T	an: random score	2
+1649	T	npan: survey of real-time strategy	2
+1650	T	ran: emotionally stable player	2
+1651	T	nn: player feel	2
+1652	T	an: unranked game	2
+1653	T	an: temporal dimension	2
+1654	T	an: abusive communication	2
+1655	T	an: mathematical framework	2
+1656	T	n: nakamura	2
+1657	T	a: deterministic	2
+1658	T	an: current model	2
+1659	T	nn: agent decision-making	2
+1660	T	nn: image feature	2
+1661	T	aan: universal anonymous player	2
+1662	T	npan: psychology of popular medium	2
+1663	T	nnn: team fight model	2
+1664	T	npn: result of gae	4
+1664	V[s]	nn: gae result	5
+1665	T	an: di?erent feature	2
+1666	T	npn: popularity of moba	2
+1667	T	an: random hero	2
+1668	T	an: previous result	2
+1669	T	n: i×j×k	2
+1670	T	ann: individual player information	2
+1671	T	nva: duel be hard	2
+1672	T	n: klimmt	2
+1673	T	nva: behavior be unique	2
+1674	T	an: single cpu	2
+1675	T	ncnn: property and player information	2
+1676	T	n: tvsum	2
+1677	T	an: basic statistic	2
+1678	T	nn: answer percentage	2
+1679	T	aann: interactive digital entertainment conference	2
+1680	T	ncnn: gold and experience point	2
+1681	T	an: present paper	2
+1682	T	r: temporally	2
+1683	T	an: common technique	2
+1684	T	ncan: mode and hard mode	2
+1685	T	nn: champion feature	2
+1686	T	n: pong	2
+1687	T	an: exciting moment	2
+1688	T	nn: highlight moment	2
+1689	T	nva: game be stochastic	2
+1690	T	npn: strength of player	2
+1691	T	nn: hero development	2
+1692	T	an: extrovert player	2
+1693	T	nnn: player skill analysis	2
+1694	T	aan: team-level abusive language	2
+1695	T	nva: game be simple	2
+1695	V[s]	an: simple game	4
+1696	T	nn: game goal	2
+1697	T	an: full game	2
+1698	T	nn: ai system	2
+1699	T	anpn: social side of gaming	2
+1700	T	nn: aristides gionis	2
+1701	T	a: silhoue?e	2
+1702	T	anpnn: multiple measure of team effectiveness	2
+1703	T	an: current performance	2
+1704	T	nnn: information processing society	2
+1705	T	nn: proficiency-congruency dilemma	4
+1706	T	an: theoretical model	2
+1707	T	an: previous literature	2
+1708	T	ncnn: personality and game aspect	2
+1709	T	npn: type of scene	2
+1709	V[s]+	nn: scene type	15
+1710	T	n: preuss	2
+1711	T	n: voorhees	2
+1712	T	ann: global esports market	2
+1713	T	anpn: great amount of damage	2
+1714	T	nn: stefano leonardi	2
+1715	T	a: statist	2
+1716	T	nn: soccer video	2
+1717	T	npn: meaning of difficulty	2
+1718	T	n: metivier	2
+1719	T	n: single-player	4
+1720	T	an: complex gameplay	2
+1721	T	n: darpa	2
+1722	T	nn: role diversity	2
+1723	T	nn: k-role prop	2
+1724	T	n: facebook	2
+1725	T	an: gijsbert stoet	2
+1726	T	nn: trueskill distribution	2
+1727	T	n: klabajan	2
+1728	T	npan: champion with high control	2
+1729	T	an: high entertainment	2
+1730	T	an: grid-based navigation	2
+1731	T	npn: information of game	2
+1732	T	an: temporal trajectory	2
+1733	T	ncan: enemy or neutral creeps	2
+1734	T	an: specific action	2
+1735	T	nnn: information system journal	2
+1736	T	nn: training set	2
+1737	T	aann: adaptive artificial intelligence agent	2
+1738	T	nn: player engagement	2
+1739	T	an: demographic effect	2
+1740	T	an: valid response	2
+1741	T	nn: agreement level	2
+1742	T	nn: eduardo salas	2
+1743	T	aan: long short-term memory	2
+1744	T	an: empirical support	2
+1745	T	nn: classifier portability	2
+1746	T	npnn: genre of computer game	2
+1747	T	nnn: navigation mesh generation	2
+1748	T	an: conditional distribution	2
+1749	T	nnn: game design element	2
+1750	T	nn: moba competition	2
+1751	T	anpn: linear function of time	2
+1752	T	npn: characteristic of role	2
+1753	T	an: related feature	2
+1754	T	nn: game community	2
+1755	T	ann: scientific research document	2
+1756	T	a: attribution	4
+1757	T	npnn: aspect of player immersion	2
+1758	T	an: difficult case	2
+1759	T	npn: ability of champion	2
+1759	V[s]	nn: champion ability	4
+1760	T	n: plos	2
+1761	T	nn: color intensity	2
+1762	T	nn: table iv	2
+1763	T	a: outperform	2
+1764	T	n: khosla	2
+1765	T	n: koivisto	2
+1766	T	nn: sport engineering	2
+1767	T	an: qualitative test	2
+1768	T	r: colloquially	2
+1769	T	ncnn: intelligence and strength hero	2
+1770	T	nnn: game information acceleration	2
+1771	T	an: high trueskill	2
+1772	T	npn: implementation of game	2
+1773	T	npncn: influence of anonymity and immersion	2
+1774	T	nn: reaction time	2
+1775	T	nn: nataliia pobiedina	2
+1776	T	nn: douglas bate	2
+1777	T	nn: chat record	2
+1778	T	n: optimum	2
+1779	T	n: ?lmn	2
+1780	T	n: r×r×r	2
+1781	T	n: løvoll	2
+1782	T	acan: english and traditional chinese	2
+1783	T	an: powerful item	2
+1784	T	an: main idea	2
+1785	T	ann: artificial intelligence behavior	2
+1786	T	an: frozen throne	2
+1787	T	an: temporal pattern	2
+1788	T	n: cascade-binary	2
+1789	T	npncnn: rule of sport and mind sport	2
+1790	T	nn: decision space	2
+1791	T	nnn: computer game environment	2
+1792	T	nn: luca becchetti	2
+1793	T	nn: disaster response	2
+1794	T	nva: work be promising	2
+1795	T	n: comon	2
+1796	T	an: convex hull	2
+1797	T	nn: game record	2
+1798	T	an: active player	2
+1799	T	ann: general moba map	2
+1800	T	n: dz,j	2
+1801	T	ann: official riot game	2
+1802	T	ncnn: personality and offline behavior	2
+1803	T	anpn: average skill of player	2
+1804	T	npan: slope of core consistency	2
+1805	T	an: magic attacker	2
+1806	T	n: keyword	2
+1807	T	npn: set of behavior	2
+1808	T	nn: jungle invasion	2
+1809	T	nnn: ghz intel core	2
+1810	T	npn: statistic of datasets	4
+1811	T	nn: team rapport	2
+1812	T	ann: descriptive video service	2
+1813	T	npn: control of agent	2
+1814	T	n: superdata	2
+1815	T	r: ?rst	2
+1816	T	acan: social and behavioral science	2
+1817	T	n: khatib	2
+1818	T	n: replanning	2
+1819	T	npan: difficulty of adaptive player	2
+1820	T	n: scalability	2
+1821	T	nn: personality score	2
+1822	T	npn: probability of victory	2
+1823	T	npan: list of discriminative uni	2
+1824	T	npan: champion with good control	2
+1825	T	nn: em algorithm	2
+1826	T	an: major characteristic	2
+1827	T	nva: match be essential	2
+1828	T	nn: ieee trans	2
+1829	T	nn: datum quality	2
+1830	T	an: virtual agent	2
+1831	T	nn: defense strategy	2
+1832	T	anpn: average number of attempt	2
+1833	T	nva: unit be responsible	2
+1834	T	nnpn: attribute rating of player	2
+1835	T	nn: oriol vinyals	2
+1836	T	npn: case of player	2
+1837	T	nn: component space	2
+1838	T	nn: document scientifiques	4
+1839	T	npn: entertainment of boardgames	2
+1840	T	npn: proceeding of ieee	2
+1841	T	nn: radar plot	2
+1842	T	an: noisy sample	2
+1843	T	anpnn: mathematical model of game refinement	2
+1844	T	npnn: feature of moba game	2
+1845	T	an: broad interest	2
+1846	T	nn: tribunal participant	2
+1847	T	nn: sky temple	2
+1848	T	an: correct vote	2
+1849	T	an: low agreeableness	2
+1850	T	an: effortless attention	2
+1851	T	npan: player with low skill	2
+1852	T	n: analyzing	2
+1853	T	acan: dynamic and static feature	2
+1854	T	n: di?erence	2
+1855	T	an: boring game	2
+1856	T	a: spred	4
+1857	T	an: positive training	2
+1858	T	acan: toxic and normal player	2
+1859	T	npan: behavior of actual player	2
+1860	T	ann: low control rating	2
+1861	T	ann: temporal activity pa?erns	2
+1862	T	npn: battlefield of eternity	2
+1863	T	nn: jure leskovec	2
+1864	T	nn: knowledge extraction	2
+1865	T	ann: spatio-temporal team behaviour	4
+1866	T	n: newbie	2
+1867	T	npan: level of artificial intelligence	2
+1868	T	an: veteran player	2
+1869	T	an: demographic information	2
+1870	T	an: concurrent player	2
+1871	T	n: icdmw	2
+1872	T	n: antol	2
+1873	T	n: icml	2
+1874	T	n: icme	2
+1875	T	n: naacl	4
+1876	T	ann: bic score difference	2
+1877	T	nva: system be capable	2
+1878	T	nnpn: player information with role	2
+1879	T	anpnn: standard deviation of surrender probability	2
+1880	T	an: demographic feature	2
+1881	T	n: araujo	2
+1882	T	n: ufmg	2
+1883	T	nn: game dota	2
+1884	T	nva: video be live	2
+1885	T	n: >16min	2
+1886	T	an: weak hero	2
+1887	T	npn: difficulty of opponent	2
+1888	T	n: icec	2
+1889	T	a: y-axis	2
+1890	T	nn: player group	2
+1891	T	aan: high standard deviation	2
+1892	T	npnn: percentage of hero type	2
+1893	T	an: temporal information	2
+1894	T	r: procedurally	2
+1895	T	aan: individual-level abusive language	2
+1896	T	an: low frequency	2
+1897	T	an: social behavior	2
+1898	T	an: interesting fact	2
+1899	T	nn: den herik	2
+1900	T	nn: difficulty -	2
+1901	T	nn: l-char-lstm model	2
+1902	T	an: average duration	4
+1903	T	n: kumar	2
+1904	T	nn: nichola yee	2
+1905	T	n: last-hit	4
+1906	T	an: valid player	2
+1907	T	an: entire match	2
+1908	T	nn: resolution loss	2
+1909	T	nnpn: title league of legend	2
+1910	T	ann: video highlight prediction	2
+1911	T	nn: turret damage	2
+1912	T	an: esports video	4
+1913	T	nnn: computer vision technique	2
+1914	T	ncnn: training and testing set	2
+1915	T	npan: bi-grams of toxic player	2
+1916	T	an: cognitive system	2
+1917	T	nnn: show roc curve	2
+1918	T	nn: champion level	2
+1919	T	n: aggressiveness	2
+1920	T	an: binary feature	2
+1921	T	n: identi?cation	2
+1922	T	nnnn: skill player skill decomposition	2
+1923	T	n: outlier	2
+1924	T	an: constant parameter	2
+1925	T	nn: classification algorithm	2
+1926	T	n: bangay	2
+1927	T	npn: categorization of player	2
+1928	T	nn: andre panisson	2
+1929	T	n: userbase	2
+1930	T	an: destinée au	2
+1931	T	ann: overwhelming pardon decision	2
+1932	T	nan: game artificial intelligence	2
+1933	T	nnn: audience chat reaction	2
+1934	T	an: david stillwell	2
+1935	T	ncan: player and toxic player	2
+1936	T	ann: good control ability	2
+1937	T	nn: game functionality	2
+1938	T	nnn: agent base distance	2
+1939	T	nn: role attribute	2
+1940	T	ann: specific match behavior	2
+1941	T	nn: match fig	2
+1942	T	ann: human resource management	2
+1943	T	aan: 10th international conference	2
+1944	T	npan: dissemination of scientific research	2
+1945	T	nn: game company	2
+1946	T	nn: game balance	2
+1947	T	npn: frequency of tip	2
+1948	T	an: tremendous cost	2
+1949	T	nva: player be toxic	2
+1949	V[s]+	an: toxic player	96
+1950	T	an: good positioning	2
+1951	T	nnn: test accuracy population	2
+1952	T	nn: group competition	2
+1953	T	nn: mining track	2
+1954	T	an: important moment	2
+1955	T	n: xmax	2
+1956	T	nn: outcome variable	2
+1957	T	a: hand-authored	4
+1958	T	aann: 33rd annual acm conference	2
+1959	T	ann: open research challenge	2
+1960	T	nn: creeps influence	2
+1961	T	n: karimi	2
+1962	T	nnn: image window size	2
+1963	T	an: main gameplay	2
+1964	T	n: euw1	2
+1965	T	an: 3b show	2
+1966	T	n: kulis	2
+1967	T	nva: behavior be prevalent	2
+1968	T	nn: player enjoyment	2
+1969	T	an: all-pairs shortest-path	2
+1970	T	ann: high quality label	2
+1971	T	nn: distortion function	2
+1972	T	an: common approach	2
+1973	T	n: single-random	2
+1974	T	an: intelligent technology	2
+1975	T	nn: test set	2
+1976	T	a: matthew	2
+1977	T	ann: steep learning curve	2
+1978	T	nn: experiment result	2
+1979	T	npn: ratio of challenge	2
+1980	T	nn: highlight classifier	2
+1981	T	n: cascade-regression	2
+1982	T	a: 2015b	2
+1983	T	an: good kda	2
+1984	T	nn: computer programming	2
+1985	T	anpnn: historical information of team member	2
+1986	T	ncnn: skill and chance aspect	2
+1987	T	nn: hannes werthner	2
+1988	T	n: cnpq	2
+1989	T	nn: influence range	2
+1990	T	n: cnns	2
+1991	T	npn: set of player	2
+1992	T	an: single target	2
+1993	T	anann: large multiplayer online battle arena	2
+1994	T	an: non-linguistic feature	2
+1995	T	aan: role-based online game	2
+1996	T	acann: public or private research center	2
+1997	T	an: multiple match	2
+1998	T	n: game-structure	4
+1999	T	ncnn: vision and language model	2
+2000	T	nn: hero group	2
+2001	T	n: pro?les	2
+2002	T	nva: feature be predictive	2
+2003	T	an: unique label	2
+2004	T	nn: report category	2
+2005	T	npn: state of play	2
+2006	T	ncnpn: beginning and end of match	2
+2007	T	n: ?rough	2
+2008	T	nnpn: feature representation of frame	2
+2009	T	an: experimental study	2
+2010	T	nn: player motivation	2
+2011	T	n: krause	2
+2012	T	nn: player preference	2
+2013	T	an: complete game	2
+2014	T	nn: batch normalization	2
+2015	T	nn: performance dynamics	2
+2016	T	an: specific place	2
+2017	T	aan: real-time video highlight	2
+2018	T	npn: series of action	2
+2019	T	nn: user influence	2
+2020	T	npan: pattern of linguistic signature	2
+2021	T	nn: utility -	2
+2022	T	npan: component of toxic behavior	2
+2023	T	n: ?16min	2
+2024	T	ncnn: teaching and research institution	2
+2025	T	ncnn: rate and surrender probability	2
+2026	T	nn: evaluation criterion	2
+2027	T	a: sub-optimal	2
+2028	T	nva: characteristic be essential	2
+2029	T	a: driven	2
+2030	T	nn: research goal	2
+2031	T	nn: connection error	2
+2032	T	n: ijcai	2
+2033	T	n: checkers	2
+2034	T	aan: convolutional neural network	2
+2035	T	an: total damage	2
+2036	T	an: linguistic approach	2
+2037	T	npan: video of esports game	2
+2038	T	npn: middle of lane	2
+2039	T	nnn: team fight strategy	2
+2040	T	npn: perspective of observer	2
+2041	T	an: primary goal	2
+2042	T	nn: attribution theory	2
+2043	T	nn: pearson education	2
+2044	T	a: stent	2
+2045	T	ann: core consistency curve	2
+2046	T	an: academic research	2
+2047	T	nn: game runtime	2
+2048	T	an: diverse skill	2
+2049	T	an: low health	2
+2050	T	an: specific champion	2
+2051	T	an: zhengxing chen1	4
+2052	T	n: linux	2
+2053	T	npnnn: perspective of game refinement theory	2
+2054	T	nn: parafac model	2
+2055	T	nn: carlos castillo	2
+2056	T	ann: future research direction	2
+2057	T	nn: datum visualization	4
+2058	T	ncnn: engineering and computer science	2
+2059	T	ann: random forest classifier	2
+2060	T	an: demographic variable	2
+2061	T	npn: corner of map	2
+2062	T	nn: game industry	2
+2063	T	nn: ntf analysis	2
+2064	T	an: red circle	2
+2065	T	nn: john wiley	2
+2066	T	an: small range	2
+2067	T	an: n-gram analysis	2
+2068	T	npan: sophistication of dota2 series	2
+2069	T	nn: group performance	2
+2070	T	nn: floyd-warshall algorithm	2
+2071	T	an: 1-hot vector	2
+2072	T	aan: extra predictive power	2
+2073	T	npan: behavior of toxic player	2
+2074	T	npn: scope of paper	2
+2075	T	an: popular genre	2
+2076	T	nnn: team skill level	2
+2077	T	nnnn: prediction baseline player info	2
+2078	T	ncan: behavior and optimal team	2
+2079	T	npn: rule of dota2	2
+2080	T	nann: game-structure sensitive matchmaking system	2
+2081	T	nn: nick yee	2
+2082	T	ann: basic moba characteristic	2
+2083	T	nnn: game refinement measurement	2
+2084	T	nnn: game outcome predictor	4
+2085	T	nn: evaluation method	2
+2086	T	nn: user interface	2
+2087	T	an: di?erent level	2
+2088	T	aan: passive aggressive state	2
+2089	T	ncnn: behavior and personality trait	2
+2090	T	ann: effective team formation	2
+2091	T	nn: ccs concept	2
+2092	T	ann: north america region	2
+2093	T	ann: overwhelming majority decision	2
+2094	T	npn: sum of player	2
+2095	T	anpn: integral part of game	2
+2096	T	an: blind mode	2
+2097	T	anpnn: realistic model of game information	2
+2098	T	npnn: application of game-refinement theory	2
+2099	T	nva: orbwalker be responsible	2
+2100	T	n: jong	2
+2101	T	npn: splash of light	2
+2102	T	ann: gaussian discriminant analysis	2
+2103	T	nn: opponent player	2
+2104	T	n: generality	2
+2105	T	nva: equation be simple	2
+2106	T	an: verbal violence	2
+2107	T	n: chesney	2
+2108	T	nnn: application programming interface	2
+2109	T	anpn: social dynamics of player	2
+2110	T	nn: hero level	2
+2111	T	ncan: composition and abusive language	2
+2112	T	a: homogeneous	2
+2113	T	n: histogram	2
+2114	T	ann: crowd-assisted machine learning	2
+2115	T	n: ?gures	2
+2116	T	nva: lane be essential	2
+2117	T	n: a?ention	2
+2118	T	npn: illusion of intelligence	2
+2119	T	npnpn: distribution of number of session	2
+2120	T	nva: information be incomplete	2
+2121	T	n: cascade-random	2
+2122	T	n: mapping	2
+2123	T	nn: game length	2
+2124	T	ann: linear mixed-effects model	2
+2124	V[img]	aann: linear mixed effect model	3
+2124	V[im]	aan: linear mixed effect	6
+2125	T	nn: champion usage	2
+2126	T	ann: online competition game	2
+2127	T	nn: ally tower	2
+2128	T	n: amer-yahia	2
+2129	T	an: official endorsement	2
+2130	T	npan: champion with high damage	2
+2131	T	npan: victim of toxic playing	2
+2132	T	n: ratan	2
+2133	T	an: selected match	2
+2134	T	nn: team cooperation	2
+2135	T	n: timestamp	4
+2136	T	nn: acm multimedia	2
+2137	T	nn: lol dataset	2
+2138	T	n: ubiquity	2
+2139	T	nn: report noob	2
+2140	T	an: dynamic feature	2
+2140	V[s]	acan: dynamic and static feature	2
+2141	T	nn: team push	2
+2142	T	nn: interaction analysis	2
+2143	T	n: salen	2
+2144	T	nn: person-situation debate	2
+2145	T	an: international license	2
+2146	T	an: individual difference	2
+2147	T	nn: lawrence zitnick	2
+2148	T	npn: proceeding of workshop	2
+2149	T	an: crowdsourced system	2
+2150	T	an: borderline case	2
+2151	T	ann: popular medium culture	2
+2152	T	npn: department of computing	2
+2153	T	a: white-eyed	2
+2154	T	npan: estimation of plausible candidate	2
+2155	T	nn: martin mchler	2
+2156	T	nn: preference list	2
+2157	T	ann: large moba game	2
+2158	T	ncnpn: dota2 and league of legend	2
+2159	T	nnn: de recherche français	2
+2160	T	anpn: 5th frame of video	2
+2161	T	npan: player with high openness	2
+2162	T	ran: highly skill-based game	2
+2163	T	nn: game style	2
+2164	T	nn: dimensionality reduction	2
+2165	T	nn: item building	2
+2166	T	nn: log distortion	2
+2167	T	an: effective agent	2
+2168	T	a: object-oriented	2
+2169	T	an: related research	2
+2170	T	nn: player id	2
+2171	T	npnnn: advantage of tensor decomposition technique	2
+2172	T	ncnpn: play and construction of deviance	2
+2173	T	nn: sentence compression	2
+2174	T	an: multiple user	2
+2175	T	npnn: type of game game	2
+2176	T	an: genetic algorithm	2
+2177	T	nn: soccer league	2
+2178	T	an: common measure	2
+2179	T	npn: match of session	2
+2180	T	n: cheater	2
+2181	T	nn: task allocation	2
+2182	T	npn: wealth of information	2
+2183	T	aan: recurrent neural network	2
+2184	T	nn: game development	2
+2185	T	nn: vector ar	2
+2186	T	r: anecdotally	2
+2187	T	an: physical attacker	2
+2188	T	nn: game game	2
+2189	T	nn: game interface	2
+2190	T	npan: control of single unit	2
+2191	T	npn: difficulty of game	2
+2191	V[s]	nn: game difficulty	2
+2192	T	aann: multi-disciplinary open access archive	2
+2193	T	nn: speci?c feature	2
+2194	T	nn: player community	2
+2195	T	r: signi?cantly	2
+2196	T	n: sutskever	4
+2197	T	an: descriptive power	2
+2198	T	nnn: 10-fold cross validation	4
+2199	T	nva: score be equal	2
+2200	T	an: null model	2
+2201	T	nva: paper be twofold	2
+2202	T	an: clear-cut case	2
+2203	T	npn: sense of accomplishment	2
+2204	T	a: team-oriented	2
+2205	T	nn: li fei-fei	2
+2206	T	nva: game be sophisticated	2
+2206	V[s]	an: sophisticated game	4
+2207	T	nn: deal damage	2
+2208	T	nn: feature set	2
+2209	T	nva: reason be verbal	2
+2210	T	an: creative common	2
+2211	T	n: matchup	2
+2212	T	n: beratement	2
+2213	T	n: aram	2
+2214	T	an: social game	2
+2215	T	nnn: carman calatrava moreno	2
+2216	T	nn: tutor agent	2
+2217	T	npn: threshold of report	2
+2218	T	nn: web video	2
+2219	T	nn: movement system	2
+2220	T	an: good predictor	2
+2221	T	an: face-to-face communication	2
+2222	T	nn: product ar	2
+2223	T	nn: smile emoticons	2
+2224	T	n: coursework	2
+2225	T	ncnn: role and two-role combination	2
+2226	T	nn: time point	2
+2227	T	nn: moba context	2
+2228	T	an: common strategy	2
+2229	T	an: bad choice	2
+2230	T	anann: functional multi-user online battle arena	2
+2231	T	anpn: specific skill of player	2
+2232	T	an: regular attack	2
+2233	T	an: personal goal	2
+2234	T	ann: north american dataset	2
+2235	T	nnn: behavior research method	2
+2236	T	an: electronic channel	2
+2237	T	ann: online gaming addiction	2
+2238	T	n: jl;a	2
+2239	T	nn: den hoogen	2
+2240	T	nn: player ability	2
+2241	T	an: scientific report	2
+2242	T	aan: imagenet large scale	2
+2243	T	an: online violence	2
+2244	T	nn: demon witch	2
+2245	T	npn: quality of game	2
+2246	T	nn: game dataset	4
+2247	T	n: apsp	2
+2248	T	an: 10th frame	2
+2249	T	nn: kill streak	2
+2250	T	nn: game time	2
+2251	T	npn: bot of legend	2
+2252	T	n: bakkes	2
+2253	T	nva: situation be hard	2
+2254	T	npn: level of uncertainty	2
+2255	T	n: ghallab	2
+2256	T	n: apis	2
+2257	T	nn: vector xf	2
+2258	T	anann: large scale visual recognition challenge	2
+2259	T	npnn: aspect of moba game	2
+2260	T	an: similar performance	2
+2260	V[s]	annn: similar outcome prediction performance	3
+2261	T	n: jossey-bass	2
+2262	T	n: generalizability	2
+2263	T	npan: distribution of rank gap	2
+2264	T	npnn: relationship with game behavior	2
+2265	T	an: challenging task	2
+2266	T	an: successful strategy	2
+2267	T	npnn: information with role combination	2
+2268	T	an: statistical term	2
+2269	T	an: significant correlation	2
+2270	T	nnn: computer entertainment technology	4
+2271	T	nnnnn: la diffusion de document scientifiques	2
+2272	T	npnn: evolution of chess variant	2
+2273	T	nn: time difference	2
+2274	T	nn: chat room	2
+2275	T	an: average damage	2
+2276	T	nn: behavior representation	2
+2277	T	an: deep insight	2
+2278	T	n: matlab	2
+2279	T	nn: custom map	2
+2280	T	an: interactive entertainment	2
+2280	V[s]	aan: interactive digital entertainment	3
+2281	T	ann: high death rate	2
+2282	T	nn: game domain	2
+2283	T	an: discriminative bi-grams	2
+2284	T	n: zhang	2
+2285	T	anpn: temporal activity of component	2
+2286	T	an: online behavior	2
+2287	T	nn: team abuse	2
+2288	T	npnn: definition of team effectiveness	2
+2289	T	an: neural computation	2
+2290	T	n: late-bi-gram	4
+2291	T	nn: section vi	4
+2292	T	ann: strong majority case	2
+2293	T	n: codebase	2
+2293	V[mg]	nn: code base	3
+2294	T	an: discrete model	2
+2295	T	nva: form be responsible	2
+2296	T	an: historical match	2
+2297	T	aan: 3rd international conference	2
+2298	T	a: imagenet	4
+2299	T	nva: combination be sufficient	2
+2300	T	n: intercept	2
+2301	T	nn: aishwarya agrawal	2
+2302	T	nn: player culture	2
+2303	T	ann: neutral personality trait	2
+2304	T	n: econometrics	2
+2305	T	ann: in-game performance model	2
+2306	T	n: macromanagement	2
+2307	T	an: overlapping label	2
+2308	T	npn: piece of text	2
+2309	T	an: binary classifier	2
+2310	T	npnnn: model of game information progress	2
+2311	T	ann: good matching score	2
+2312	T	n: x-value	2
+2313	T	nn: section iv	2
+2314	T	an: 3d show	2
+2315	T	ann: core consistency diagnostic	2
+2316	T	nn: group player	2
+2317	T	nn: memory network	2
+2318	T	an: large impact	2
+2319	T	n: ganker	2
+2320	T	an: minion agent	2
+2321	T	an: average membership	2
+2322	T	an: affective norm	2
+2323	T	nnn: moba game victor	2
+2324	T	npn: perception of grief	2
+2325	T	aan: procedural content generation	2
+2326	T	an: general model	2
+2327	T	a: analogous	2
+2328	T	npan: perception of toxic behavior	2
+2329	T	an: behavioral change	4
+2330	T	ncan: work & social computing	2
+2331	T	nn: tutor system	2
+2332	T	n: area-of-effect	2
+2333	T	npnn: acceleration of information progress	2
+2334	T	n: respawn	2
+2335	T	an: language-based model	2
+2336	T	ann: 12-clusters k-means result	2
+2337	T	nn: item manipulation	2
+2338	T	ann: top tier player	2
+2339	T	ann: good game experience	2
+2340	T	n: movshovitz-attias	2
+2341	T	ann: binary space partition	2
+2342	T	an: psychological experiment	2
+2343	T	n: lr-pc	2
+2344	T	n: non-player	4
+2345	T	anpn: large number of player	2
+2346	T	nva: number be large	2
+2347	T	nnn: influence map layer	2
+2348	T	n: rnns	2
+2349	T	nn: influence equation	2
+2350	T	nn: tamara berg	2
+2351	T	nn: building human-level	2
+2352	T	anpn: small number of assist	2
+2353	T	nn: victim protection	2
+2354	T	r: nebulously	2
+2355	T	ann: entire chat log	2
+2356	T	npn: stage of tribunal	2
+2357	T	an: mobile device	2
+2358	T	an: powerful skill	2
+2359	T	aan: competitive human player	2
+2360	T	ann: online multiplayer game	2
+2360	V[s]	nan: multiplayer online game	28
+2361	T	an: single layer	2
+2362	T	nva: assignment be optional	2
+2363	T	an: core tensor	2
+2364	T	nva: player be proportional	2
+2365	T	an: dynamic adjustment	2
+2366	T	nn: user study	2
+2367	T	n: yang	2
+2368	T	n: asahidai	2
+2369	T	an: naive baseline	2
+2370	T	n: petter	2
+2371	T	an: human computation	2
+2372	T	an: normal distribution	2
+2373	T	an: held-out set	2
+2374	T	anpn: great amount of work	2
+2375	T	nn: speed performance	2
+2376	T	an: heterogeneous architecture	2
+2377	T	n: falling	2
+2378	T	aan: low bic score	2
+2379	T	npan: potential of virtual world	2
+2380	T	an: dedicated module	2
+2381	T	npn: probability of player	2
+2382	T	ann: commercial game engine	2
+2383	T	anpn: low number of kill	2
+2384	T	anpn: standard deviation of number	2
+2385	T	an: distinct level	2
+2386	T	nn: tracy kennedy	2
+2387	T	an: reported reason	2
+2388	T	an: main attribute	2
+2389	T	ncan: game and late game	2
+2390	T	npn: cluster of user	2
+2391	T	n: omnipress	2
+2392	T	an: constant update	2
+2393	T	an: real-time reasoning	4
+2394	T	an: qualitative approach	2
+2395	T	ncan: abuse and offensive language	2
+2396	T	an: low extraversion	2
+2397	T	npn: set of feature	2
+2397	V[s]	nn: feature set	2
+2398	T	nn: time penalty	2
+2399	T	a: character-level	2
+2400	T	an: main hero	2
+2401	T	a: delayed	2
+2402	T	nva: task be natural	2
+2403	T	nn: aasri conference	2
+2404	T	aann: dynamic artificial intelligence agent	2
+2405	T	npn: datum of player	2
+2406	T	nn: editor role	2
+2407	T	an: single case	2
+2408	T	a: hold-out	2
+2409	T	npn: performance of agent	2
+2409	V[s]	nn: agent performance	2
+2410	T	nn: publiés ou	2
+2411	T	acan: middle and late game	2
+2412	T	nn: starcraft agent	2
+2413	T	an: low damage	2
+2414	T	nn: yizhou sun3	4
+2415	T	nn: toughness -	2
+2416	T	nn: power play	2
+2417	T	npan: rate of different team	2
+2418	T	ran: roughly 100k match	2
+2419	T	n: coordinate	2
+2420	T	ann: low level account	2
+2421	T	an: online discussion	2
+2422	T	nn: summary result	2
+2423	T	nn: bounty rune	2
+2424	T	npn: journal of personality	2
+2425	T	a: mean1	2
+2426	T	nnn: elo rating system	2
+2427	T	nva: platform be ideal	2
+2428	T	npnnn: acceleration of game information progress	2
+2429	T	n: grauman	2
+2430	T	nn: pa?ern mining	8
+2430	V[s]	aann: human behavioral pa?ern mining	7
+2431	T	an: rational behavior	2
+2432	T	nnn: graph search algorithm	2
+2433	T	nn: computing science	2
+2434	T	nn: activity population	2
+2435	T	npnnn: department of computer science universidade	2
+2436	T	n: x?si	2
+2437	T	n: richoux	2
+2438	T	an: balanced game	2
+2439	T	nn: performance function	2
+2440	T	an: discriminative word	2
+2441	T	nn: personality questionnaire	2
+2442	T	nn: mohit bansal	2
+2443	T	nva: mechanism be successful	2
+2444	T	nn: sport video	2
+2445	T	an: historical game	2
+2446	T	ran: fully functional multi-user	2
+2447	T	ann: real-time obstacle avoidance	2
+2448	T	nn: class diagram	2
+2449	T	nn: hero unit	2
+2450	T	an: specific gameplay	2
+2451	T	npnnn: divergence of player skill composition	2
+2452	T	an: random variable	2
+2453	T	npn: excess of adjustment	2
+2454	T	n: pickoffs	2
+2455	T	an: social informatic	2
+2456	T	ann: low skill level	2
+2457	T	nn: crowdsourcing platform	2
+2458	T	npan: champion with low control	2
+2459	T	ann: average match duration	2
+2460	T	n: jsps	2
+2461	T	an: strong result	2
+2462	T	nva: bigrams be bad	2
+2463	T	an: common type	2
+2464	T	ann: role-based player information	2
+2465	T	nn: skill set	2
+2466	T	n: nowak	2
+2467	T	nva: hypothesis be correct	2
+2468	T	npn: popularity of genre	2
+2469	T	n: avontuur	2
+2470	T	an: basic concept	2
+2471	T	ann: degrading champion status	2
+2472	T	nn: moba phase	2
+2473	T	nn: tsukuba city	2
+2474	T	nnpn: information progress with focus	2
+2475	T	ann: complex game information	2
+2476	T	nnpn: processing society of japan	2
+2477	T	nn: smoke item	2
+2478	T	nn: meredith belbin	2
+2479	T	n: labeler	2
+2480	T	an: short path	2
+2481	T	anpn: suitable number of component	2
+2482	T	anpn: average number of chat	2
+2483	T	npn: suspension of disbelief	2
+2484	T	ann: binary search tree	2
+2485	T	a: nossal	2
+2486	T	a: diagnostic	4
+2487	T	ann: team-based role-playing game	2
+2488	T	anpn: high number of kill	2
+2489	T	n: a,b,c	2
+2490	T	npn: journal of management	2
+2491	T	nn: leadership behavior	2
+2492	T	nn: aaai conference	2
+2493	T	a: separable	2
+2494	T	nnpn: team composition of champion	2
+2495	T	nn: devi parikh	2
+2496	T	nn: bachelor thesis	2
+2497	T	nn: van lankveld	2
+2498	T	an: euclidean distance	2
+2499	T	an: 11min slope	2
+2500	T	npn: type of unit	2
+2501	T	ann: potential cost saving	2
+2502	T	n: bernoulli	4
+2503	T	n: psytoolkit	2
+2504	T	anpn: modular nature of gaige	2
+2505	T	n: takahara	2
+2506	T	nva: tribunal be comparable	2
+2507	T	an: outermost structure	2
+2508	T	npan: proceeding of international conference	2
+2509	T	anpnn: unique case of moba game	2
+2510	T	npnn: league of legend match	2
+2511	T	nn: intelligence agent	31
+2511	V[s]	ann: artificial intelligence agent	22
+2511	V[s]	aann: static artificial intelligence agent	4
+2511	V[s]	aann: adaptive artificial intelligence agent	2
+2511	V[s]	aann: dynamic artificial intelligence agent	2
+2512	T	an: abusive language	20
+2512	V[s]	aan: team-level abusive language	2
+2512	V[s]	aan: individual-level abusive language	2
+2513	T	aan: human behavioral pa?ern	9
+2514	T	an: video game	43
+2514	V[s]	aan: competitive video game	3
+2515	T	n: summoner	7
+2516	T	npnn: department of computer science	5
+2517	T	n: cluster	108
+2518	T	nn: team performance	29
+2519	T	npn: combination of hero	3
+2520	T	n: early-bi-gram	3
+2521	T	nnpn: chaimowicz department of computer	3
+2522	T	npncn: institute of science and technology	3
+2523	T	an: early game	15
+2524	T	npnn: level of game tree	3
+2525	T	anpn: advanced institute of science	3
+2526	T	n: l-word-lstm	3
+2527	T	nn: esports market	3
+2527	V[s]	ann: global esports market	2
+2528	T	an: detailed statistic	3
+2529	T	n: teamfights	3
+2529	V[m]+	nn: team fight	27
+2530	T	nn: party tool	3
+2531	T	an: intelligent system	3
+2532	T	ann: winning team prediction	3
+2533	T	nn: information acceleration	3
+2534	T	npn: loss of information	3
+2535	T	nn: resnet-34 lstm	3
+2536	T	n: quantile	3
+2537	T	a: totalheal	3
+2538	T	an: dynamic unit	3
+2539	T	n: scalar	3
+2540	T	nnn: luiz chaimowicz department	3
+2541	T	nn: prediction accuracy	3
+2542	T	an: specific strategy	3
+2543	T	nn: shot attempt	3
+2544	T	aan: competitive video game	3
+2545	T	an: homegrown game	3
+2546	T	nn: dp mixture	3
+2546	V[s]	nnpn: dp mixture of gaussians	2
+2547	T	a: tencent	3
+2548	T	nann: multiplayer online role-playing game	3
+2549	T	an: inexperienced role	3
+2550	T	an: esports game	6
+2551	T	n: late-game	3
+2551	V[mg]	an: late game	19
+2552	T	nn: pre-warning system	3
+2553	T	nn: r-th component	3
+2554	T	an: expert analysis	3
+2555	T	n: person-situation	3
+2556	T	a: 11min	3
+2557	T	an: behavioral feature	3
+2558	T	nn: skill level	37
+2558	V[s]	ann: low skill level	2
+2558	V[s]	ann: similar skill level	9
+2559	T	a: tactical	47
+2560	T	nn: computer science	20
+2561	T	n: chen	16
+2562	T	a: individual-level	4
+2562	V[m]	ann: individual skill level	3
+2563	T	an: non-negative constraint	4
+2564	T	an: finite-state machine	5
+2564	V[img]	ann: finite state machine	8
+2565	T	n: immersion	13
+2566	T	n: hypothesis	39
+2567	T	n: interaction	83
+2568	T	n: evaluation	77
+2569	T	n: auto-attack	2
+2570	T	a: sequencebased	1
+2571	T	n: hellerstedt	1
+2572	T	an: animal laboratory	1
+2573	T	n: ?nding	1
+2574	T	n: sqlite	1
+2575	T	ann: large esport game	2
+2576	T	n: eggert	1
+2577	T	n: explosiveness	1
+2578	T	n: willich	1
+2579	T	n: hefner	1
+2580	T	n: diagonal	1
+2581	T	n: fog-of-war	1
+2582	T	a: imposing	1
+2583	T	npn: co-op with ai	1
+2584	T	n: vorderer	1
+2585	T	nnn: mz log dz	1
+2586	T	an: opponent base	2
+2587	T	an: baseline algorithm	2
+2588	T	npn: ranking of scientist	1
+2589	T	n: proc	1
+2590	T	n: quoc	1
+2591	T	a: follow-on	1
+2592	T	a: multi-linear	2
+2593	T	nn: cyrus rashtchian	1
+2594	T	an: real-life scenario	2
+2595	T	n: laners	1
+2596	T	n: stopwords	1
+2597	T	n: actuation	1
+2598	T	nn: barry brown	1
+2599	T	n: minimizer	1
+2600	T	n: tiwary	1
+2601	T	n: hochreiter	1
+2602	T	ann: non-overlapped uni -	1
+2603	T	n: gesellschaftsspiele	1
+2604	T	r: experimentally	1
+2605	T	n: champions8	1
+2606	T	n: pytorch	1
+2607	T	an: in-game action	2
+2608	T	n: cybernetics	1
+2609	T	n: ballinger	1
+2610	T	a: vittersø	2
+2611	T	n: lutkepohl	1
+2612	T	a: michal	1
+2613	T	a: self-explanatory	1
+2614	T	a: dickey	1
+2615	T	an: variable dpm	1
+2616	T	n: kass	1
+2617	T	a: f-score	2
+2618	T	nn: mouton publisher	1
+2619	T	n: cyber	1
+2620	T	r: monetarily	1
+2621	T	n: colorbar	1
+2622	T	nn: olivier marin	1
+2623	T	n: faloutsos	1
+2624	T	nn: laura dabbish	1
+2625	T	n: drachen	1
+2626	T	n: crowdsynth	1
+2627	T	n: burghardt	1
+2628	T	an: abrupt jump	1
+2629	T	n: malphite	1
+2630	T	n: loiacono	1
+2631	T	nnn: compara - ble	1
+2632	T	nnn: marc merrill q&a	1
+2633	T	n: epps	1
+2634	T	an: 6a present	1
+2635	T	n: kenect	1
+2636	T	nn: convolution filter	1
+2637	T	n: takatalo	1
+2638	T	n: armory	1
+2639	T	n: gamepedia	1
+2640	T	n: metadata	1
+2641	T	n: optimality	1
+2642	T	n: bene?t	1
+2643	T	an: summary key-frames	1
+2644	T	n: coulson	1
+2645	T	n: referitgame	1
+2646	T	nn: palash goyal	1
+2647	T	n: ‡telefonica	1
+2648	T	n: cikm	1
+2649	T	n: microsoft,6	1
+2650	T	an: esports journalist	1
+2651	T	a: supporting	1
+2652	T	n: mid-laner	1
+2653	T	a: rafal	1
+2654	T	a: std2	1
+2655	T	a: std1	1
+2656	T	nn: ben bolker	1
+2657	T	a: jcmc1021	1
+2658	T	n: two-fold	1
+2659	T	nnn: professor andrew ng	1
+2660	T	n: sampaio	1
+2661	T	an: ian sheer	1
+2662	T	a: gopal	1
+2663	T	an: strategic decision-making	2
+2664	T	n: lykourentzou	1
+2665	T	an: spiritual successor	1
+2666	T	nn: psychologie applique	1
+2667	T	nn: ghost recon	1
+2668	T	an: individualistic player	2
+2669	T	n: high-rank	2
+2670	T	n: bi-gram	1
+2671	T	an: plain meanness	1
+2672	T	an: low kda	1
+2673	T	an: endless replayability	1
+2674	T	n: chng	1
+2675	T	n: otica	1
+2676	T	n: top-laners	2
+2677	T	nn: enrique alfonseca	1
+2678	T	n: broderick	1
+2679	T	n: salazar	1
+2680	T	n: stackexchange	1
+2681	T	nn: sergio davalos	1
+2682	T	n: chao	1
+2683	T	a: ingrid	1
+2684	T	n: farming3	1
+2685	T	a: stefan	2
+2686	T	n: hunicke	1
+2687	T	n: time1	1
+2688	T	nn: telefonica research	2
+2689	T	anpn: average number of kill	2
+2690	T	n: opencv	1
+2691	T	n: kingma	1
+2692	T	n: haddadi	1
+2693	T	a: modded	1
+2694	T	n: lans	1
+2695	T	n: newzoo	1
+2696	T	aan: japan advanced institute	3
+2697	T	n: banaji	1
+2698	T	a: quantifiable	1
+2699	T	n: mahdavi	1
+2700	T	a: birgit	1
+2701	T	n: non-professionals	1
+2702	T	nn: onta n˜on	1
+2703	T	aan: online game environment	2
+2704	T	n: sigmod	1
+2705	T	n: mad-bayes	1
+2706	T	n: broadband	1
+2707	T	an: mechanical challenge	2
+2708	T	n: iwt003	1
+2709	T	n: de?ne	1
+2710	T	a: favorable	1
+2711	T	nn: predecessor rts	1
+2712	T	n: svms	1
+2713	T	a: configurable	1
+2714	T	n: typo	1
+2715	T	n: pineau	1
+2716	T	r: interactively	1
+2717	T	n: tyka	1
+2718	T	an: matchmaking rating	2
+2719	T	n: zaidan	1
+2720	T	nn: rts map	1
+2721	T	a: amendable	1
+2722	T	n: rtsmate	1
+2723	T	n: hoane	1
+2724	T	n: glennon	1
+2725	T	n: hyperplane	1
+2726	T	an: performer player	2
+2727	T	n: laborer	1
+2728	T	nann: schrader randy boone michael	1
+2729	T	nn: gideon schwarz	1
+2730	T	nn: jon crowcroft	1
+2731	T	an: maxime veron	1
+2732	T	n: scholer	1
+2733	T	nn: raquel urtasun	1
+2734	T	an: 2d platformers	1
+2735	T	n: reitter	1
+2736	T	n: doublekills	1
+2737	T	an: timestamp ts	1
+2738	T	n: ?lmn	1
+2739	T	n: callison-burch	1
+2740	T	n: ramesh	1
+2741	T	n: gamefulness	1
+2742	T	nn: sonny schreurs	1
+2743	T	n: alunos	1
+2744	T	nn: piotr dollr	1
+2745	T	n: xbox	1
+2746	T	ncnn: kou and xinning gui	1
+2747	T	a: crowd1	1
+2748	T	n: prasertsakul	1
+2749	T	an: sunil deolalikar2	1
+2750	T	an: successful shoot	2
+2751	T	n: zuolong	1
+2752	T	a: word-level	1
+2753	T	nn: amt demographic	1
+2754	T	an: lillian lee	1
+2755	T	n: ekin	1
+2756	T	a: non-significant	1
+2757	T	a: one-by-one	1
+2758	T	an: liangyue li	1
+2759	T	n: gummadi	1
+2760	T	an: peng3 abstract—	1
+2761	T	n: kourtellis	1
+2762	T	n: welpe	1
+2763	T	a: preconditionated	1
+2764	T	n: lchar-lstm	1
+2765	T	nn: team outcome	2
+2766	T	nn: totalheal -	1
+2767	T	a: 7alternatively	1
+2768	T	n: randomforest	1
+2768	V[mg]	an: random forest	3
+2769	T	nnn: reinout w wiers	1
+2770	T	nn: bing xiang	1
+2771	T	n: sub-categories	1
+2772	T	n: fulmer	1
+2773	T	nn: naomi mcarthur	1
+2774	T	n: vespignani	1
+2775	T	n: garena	1
+2776	T	n: olweus	1
+2777	T	an: 2-dimensional projection	1
+2778	T	n: nacke	1
+2779	T	n: jurafsky	1
+2780	T	n: dz,i	1
+2781	T	n: integer	1
+2782	T	an: experienced individual	1
+2783	T	an: zoran popovi?	1
+2784	T	n: colmenares	1
+2785	T	n: narnia	1
+2786	T	n: ventura	1
+2787	T	n: sprinkhuizen-kuyper	1
+2788	T	n: last-hitting	1
+2789	T	r: stealthily	1
+2790	T	an: good component	2
+2791	T	n: re-implement	1
+2792	T	n: d,e,f	1
+2793	T	an: rts genre	2
+2794	T	n: flores	1
+2795	T	nn: jacob devlin	1
+2796	T	n: team-fight	2
+2796	V[mg]+	nn: team fight	27
+2797	T	an: video portal	1
+2798	T	n: conmy	1
+2799	T	n: grant-in-aid	2
+2800	T	n: punyawee	1
+2801	T	n: funge	1
+2802	T	n: hapy	1
+2803	T	n: hard	1
+2804	T	r: analogously	1
+2805	T	a: chance-based	1
+2806	T	n: huang	1
+2807	T	n: sub?gures	1
+2808	T	n: micro-transactions	1
+2809	T	n: conll	1
+2810	T	n: jennett	1
+2811	T	nn: tinnawat nuangjumnong	1
+2812	T	n: amts	1
+2813	T	nnn: kristina l swanenburg	1
+2814	T	n: ?ght	1
+2815	T	n: arajo	1
+2816	T	n: germany-who	1
+2817	T	n: glickman	1
+2818	T	nn: serge belongie	1
+2819	T	nn: huy phan	1
+2820	T	nn: ming liu	1
+2821	T	an: rts player	2
+2822	T	nnn: nancy j cooke	1
+2823	T	a: lvl2	1
+2824	T	a: perceivable	1
+2825	T	nn: li-jia li	1
+2826	T	n: goldspent	1
+2827	T	nn: marcus rohrbach	1
+2828	T	n: self-efficacy	1
+2829	T	nn: jooyeon kim	1
+2830	T	nn: chiou-ting hsu	1
+2831	T	n: zimmerman	1
+2832	T	n: icmr	1
+2833	T	n: fortunato	1
+2834	T	npn: statistic of team	2
+2835	T	nn: fernando kuipers	1
+2836	T	a: massive-multiplayer	7
+2837	T	n: stackoverflow	1
+2838	T	an: minion behavior	2
+2839	T	an: infernal shrine	1
+2840	T	n: moro	1
+2841	T	n: homoscedasticity	1
+2842	T	n: whats	1
+2843	T	n: bartle	1
+2844	T	n: vifi	1
+2845	T	n: kier	1
+2846	T	n: counter-picking	1
+2847	T	n: commonality	1
+2848	T	nn: phil ammirato	1
+2849	T	npn: antonym of neuroticism	1
+2850	T	n: e86028	1
+2851	T	n: takeuchi	1
+2852	T	a: run-time	1
+2853	T	nn: solo-queue mmr	2
+2854	T	n: rosen	1
+2855	T	a: non-desirable	1
+2856	T	n: two-stage	1
+2857	T	nn: a&m university-commerce	1
+2858	T	a: unsatisfied	1
+2859	T	ncan: game and video game	2
+2860	T	nn: chance-and-skill aspect	2
+2861	T	an: three-lane map	1
+2862	T	npn: sub-genre of rts	1
+2863	T	nn: rts ancestor	1
+2864	T	a: mispelled	1
+2865	T	nn: dragon shire	1
+2866	T	n: chiewvanichakorn	1
+2867	T	nn: francis ferraro	1
+2868	T	n: topology	1
+2869	T	n: aatrox	1
+2870	T	nn: berkeley pac-man	2
+2871	T	npn: pa?erns of play	2
+2872	T	nn: daniele quercia	1
+2873	T	n: thibodeau-laufer	1
+2874	T	nnn: adele lu jia	1
+2875	T	a: rewri?en	1
+2876	T	npn: analysis of log	2
+2877	T	nn: galaxy zoo	1
+2878	T	aan: massive-multiplayer online game	6
+2879	T	n: leveling	1
+2880	T	a: non-negligible	1
+2881	T	an: separate session	2
+2882	T	n: spotts	1
+2883	T	n: so?wares	1
+2884	T	ann: dynamic difficulty balance	2
+2885	T	n: google	1
+2886	T	n: silva1	1
+2887	T	a: y-value	2
+2888	T	n: deterding	1
+2889	T	nn: shun-ichi amari	1
+2890	T	a: headless	1
+2891	T	n: panneershelvam	1
+2892	T	n: overlord	1
+2893	T	nn: ebastien monnet	1
+2894	T	r: empirically	1
+2895	T	naan: astarnavigator stateagent minion statemachine	1
+2896	T	n: fantini	1
+2897	T	n: raftery	1
+2898	T	n: solla	1
+2899	T	n: subjectivity	1
+2900	T	n: vapnik	1
+2901	T	n: fast—but	1
+2902	T	n: timespan	1
+2903	T	nn: arco pub	1
+2904	T	n: consumable	1
+2905	T	r: sequentially	1
+2906	T	n: honors	1
+2907	T	n: cgames	1
+2908	T	r: numerously	1
+2909	T	a: 2000s	1
+2910	T	n: dasgupta	1
+2911	T	an: graphical rendering	2
+2912	T	n: graepel	1
+2913	T	n: rationality	1
+2914	T	n: aamas	1
+2915	T	n: ioffe	1
+2916	T	n: pleasantness	1
+2917	T	n: liaw	1
+2918	T	n: world4	1
+2919	T	n: mylak	1
+2920	T	a: henk	1
+2921	T	a: totaldamagetaken	2
+2921	V[m]	an: total damage	2
+2922	T	nn: aron culotta1	1
+2923	T	a: oswald	1
+2924	T	n: footsoldiers	1
+2925	T	an: moba community	2
+2926	T	n: 12-groups	1
+2927	T	n: ?ere	1
+2928	T	n: ?ese	1
+2929	T	n: thresholding	1
+2930	T	n: inverse	1
+2931	T	n: denero	1
+2932	T	nn: joon lee	1
+2933	T	nnn: luc van gool	1
+2934	T	n: video2gif	1
+2935	T	n: hinton	1
+2936	T	n: videogames	1
+2936	V[m]+	an: video game	43
+2937	T	n: survivability	1
+2938	T	nn: jon kleinberg	1
+2939	T	an: video co-summarization	1
+2940	T	n: im2text	1
+2941	T	nn: jameson hogan	1
+2942	T	nn: speed-cost-quality flexibility	1
+2943	T	n: e0161636	1
+2944	T	a: consolidated	1
+2945	T	a: assuming	1
+2946	T	n: stringer	1
+2947	T	nn: golnoosh farnadi	1
+2948	T	n: counter-strike	1
+2949	T	n: param	1
+2950	T	a: incipient	1
+2951	T	an: convenient hook	1
+2952	T	n: bruya	1
+2953	T	nn: niket tandon	1
+2954	T	n: champlevel	1
+2954	V[m]	nn: champion level	2
+2955	T	an: tzu-hsuan chiu	1
+2956	T	a: mbansal	1
+2957	T	nnn: bruce j biddle	1
+2958	T	a: varus	1
+2959	T	n: langford	1
+2960	T	nn: champion master	2
+2961	T	a: zero-out	1
+2962	T	n: servedio	1
+2963	T	a: sepia	2
+2964	T	n: dropout	1
+2965	T	n: competitive—all	1
+2966	T	a: purchasable	1
+2967	T	n: sub-states	1
+2968	T	a: self-reported	2
+2969	T	n: mccreery	1
+2970	T	n: sollitto	1
+2971	T	n: rentfrow	1
+2972	T	an: esports fan	1
+2973	T	n: zaphiris	1
+2974	T	nnn: intraand inter-group conflict	1
+2975	T	n: corcondia	1
+2976	T	n: recidivism	1
+2977	T	nn: s˜ao paulo	1
+2978	T	an: dota2 boring	1
+2979	T	n: crowddb	1
+2980	T	nn: jean-philip royer	1
+2981	T	n: aai3121279	1
+2982	T	nn: ronggang zhou	1
+2983	T	n: emojis	1
+2984	T	r: iteratively	1
+2985	T	an: graduate student	2
+2986	T	n: deville	1
+2987	T	n: gupta	1
+2988	T	nn: katja filippova	1
+2989	T	an: multiple support	2
+2990	T	ncan: partington and hilary harris	1
+2991	T	a: 3farming	1
+2992	T	n: make-work	1
+2993	T	nn: kevin conley	1
+2994	T	nn: ching-wei lee	1
+2995	T	a: 3honor	1
+2996	T	an: in-game behavior	3
+2997	T	nnn: benjamin f jones	1
+2998	T	nn: lol currency	1
+2999	T	n: plaat@uvt	1
+3000	T	an: core functionality	2
+3001	T	ncnn: szell and stefan thurner	1
+3002	T	n: earnings	1
+3003	T	n: quadrakills	1
+3004	T	n: nunziati	1
+3005	T	n: tencent3	1
+3006	T	n: millington	1
+3007	T	an: rts gameplay	2
+3008	T	a: ?lmn	1
+3009	T	n: ?elds	1
+3010	T	a: ontan˜	1
+3011	T	n: regina	1
+3012	T	r: averagely	1
+3013	T	n: auli	1
+3014	T	n: jurgelionis	1
+3015	T	n: bessiere	1
+3016	T	nn: juanzi li	1
+3017	T	n: mcmahan	1
+3018	T	n: aucs	1
+3019	T	n: question-mark	1
+3020	T	r: monotonically	1
+3021	T	a: single-binary	2
+3022	T	n: pro?ciency-congruency	1
+3023	T	n: bioengineering	1
+3024	T	n: rede	1
+3025	T	ncan: lee and ivan ramler	1
+3026	T	n: movieqa	1
+3027	T	n: condi¸c˜ao	1
+3028	T	n: shen	1
+3029	T	n: benefield	1
+3030	T	nn: two-character unicode	1
+3031	T	n: onivia,4	1
+3032	T	n: ?nds	1
+3033	T	a: nonstatic	1
+3034	T	a: spamming	1
+3035	T	a: decimal	1
+3036	T	a: name7	1
+3037	T	an: sco? donaldson	1
+3038	T	nn: pushmeet kohli	1
+3039	T	n: callbacks	1
+3040	T	n: profit-making	1
+3041	T	a: 200000	1
+3042	T	a: visionscore	1
+3043	T	nn: ground-truth label	2
+3044	T	n: non-offenders	1
+3045	T	an: lane push	2
+3046	T	an: elo-like rating3	1
+3047	T	n: xvalue	1
+3048	T	an: haesun park	2
+3049	T	n: paluri	1
+3050	T	n: legends1	1
+3051	T	a: inhouse	1
+3052	T	n: btnodes	1
+3053	T	n: raptr	1
+3054	T	npn: average of objective	1
+3055	T	n: potential-field	1
+3055	V[mg]	an: potential field	6
+3056	T	a: zero-valued	1
+3057	T	n: wsdm	1
+3058	T	aan: average rank level	2
+3059	T	nn: trevor darrell	1
+3060	T	n: legends2	1
+3061	T	n: azpurua	1
+3062	T	an: comparable performance	2
+3063	T	n: top-5	1
+3064	T	n: top-2	1
+3065	T	n: daylength	1
+3066	T	n: intransitivity	1
+3067	T	an: anti-social behavior	2
+3068	T	nnpn: aminimum age of lol	1
+3069	T	n: tijs	1
+3070	T	a: cnpq	1
+3071	T	an: aggressive play	2
+3072	T	nn: game-tree search	2
+3073	T	n: nyman	1
+3074	T	n: non-overlapping	1
+3075	T	n: competition,3	1
+3076	T	r: inclusively	1
+3077	T	n: nagapan	1
+3078	T	n: s2games	1
+3079	T	n: tian	1
+3080	T	n: teams6	1
+3081	T	n: aigamedev	1
+3082	T	r: sarcastically	1
+3083	T	r: optionally	1
+3084	T	n: bregions	1
+3085	T	n: poels	1
+3086	T	n: tomai	1
+3087	T	an: base damage	2
+3088	T	n: buch	1
+3089	T	n: aral	1
+3090	T	an: esports editor	2
+3091	T	n: blogs	1
+3092	T	a: mid-game	2
+3092	V[m]	an: mid game	6
+3093	T	n: ratier	1
+3094	T	an: important feature	10
+3095	T	n: mehrotra	1
+3096	T	n: heer	1
+3097	T	nn: wangzhe rongyao	1
+3098	T	npnn: top of minimap ui	1
+3099	T	n: subregion	1
+3100	T	n: reddit	1
+3101	T	n: iciap	1
+3102	T	n: ozok	1
+3103	T	n: frame-level	2
+3104	T	n: per-frame	1
+3105	T	n: szuster	1
+3106	T	n: sparseness	1
+3107	T	nn: q&a site	1
+3108	T	n: pascal-voc	1
+3109	T	nn: den driessche	1
+3110	T	nn: log dz	1
+3110	V[s]	nnn: mz log dz	1
+3111	T	npn: normality of residual	1
+3112	T	nn: james hay	1
+3113	T	n: makin	1
+3114	T	a: shaped	1
+3115	T	n: pabuse	1
+3116	T	an: dota2 ver	1
+3117	T	npn: experience with moba	2
+3118	T	n: non-negativity	1
+3119	T	n: 2016-league-legends-world-championship-numbers	1
+3120	T	nn: alexandru losup	1
+3121	T	n: $463m	1
+3122	T	r: maximally	1
+3123	T	n: expectationmaximization	2
+3124	T	npn: garden of terror	1
+3125	T	n: estimator	1
+3126	T	n: aaf5239	1
+3127	T	r: statically	1
+3128	T	nn: bang xia	1
+3129	T	a: programac¸	1
+3130	T	n: bellotti	1
+3131	T	n: tavares	1
+3132	T	n: lope	1
+3133	T	n: dhoparee	1
+3134	T	n: teleoper	1
+3135	T	n: saturation	1
+3136	T	a: highly-ranked	1
+3137	T	nn: courtenay honeycutt	1
+3138	T	n: ?11min	1
+3139	T	an: girish kulkarni	1
+3140	T	n: lr-p6	1
+3141	T	a: aldrich	1
+3142	T	n: malaka	1
+3143	T	n: logh?	1
+3144	T	n: macy	1
+3145	T	n: cdfs	1
+3146	T	n: imperfect	1
+3147	T	n: interdonato	1
+3148	T	n: alipourfard	1
+3149	T	anpn: small pool of health	2
+3150	T	n: acero	1
+3151	T	n: sub-samples	1
+3152	T	nn: van houten	1
+3153	T	n: kondo	1
+3154	T	n: ffhal-01771253ff	1
+3155	T	n: o?en	1
+3156	T	n: ting-hao	1
+3157	T	an: color channel	2
+3158	T	a: ?x?si	1
+3159	T	n: report8	1
+3160	T	n: timeseries	2
+3161	T	nn: jingu kim	1
+3162	T	a: khaled	1
+3163	T	n: cunha	1
+3164	T	nn: lester nelson	1
+3165	T	a: blurry	1
+3166	T	n: postma	1
+3167	T	a: divergent	1
+3168	T	n: xgboost	1
+3169	T	n: kooti	1
+3170	T	n: roth	1
+3171	T	a: discriminating	1
+3172	T	n: alexnet	1
+3173	T	n: subgraph	1
+3174	T	nn: geetha sitaraman	1
+3175	T	n: triplekills	1
+3176	T	a: incoming	2
+3177	T	nn: lek-heng lim	1
+3178	T	nn: shoshannah tekofsky	1
+3179	T	nn: hyunsoo kim	1
+3180	T	n: groot	1
+3181	T	n: front-liner	1
+3182	T	r: optimally	1
+3183	T	nn: jorik louws	1
+3184	T	n: synchronism	1
+3185	T	n: xiaodong	1
+3186	T	n: tozour	1
+3187	T	nn: university-commerce affiliation	2
+3188	T	an: lone wolf	1
+3189	T	n: joachims	2
+3190	T	n: groll	1
+3191	T	a: ong1	1
+3192	T	n: markines	1
+3193	T	n: deva	1
+3194	T	n: cbrs	1
+3195	T	a: skewed	1
+3196	T	n: bioinformatics	1
+3197	T	nn: eduard hovy	1
+3198	T	a: internet-style	2
+3199	T	nn: lukasz kaiser	1
+3200	T	n: million2	1
+3201	T	n: million1	1
+3202	T	n: psychophysiology	1
+3203	T	n: benevenuto	1
+3204	T	n: schmidhuber	1
+3205	T	ncnn: delhove and tobias greitemeyer	1
+3206	T	a: quan	1
+3207	T	n: pokemon	1
+3208	T	an: core gameplay	2
+3209	T	n: ghosh	1
+3210	T	n: cattell	1
+3211	T	n: psyops	1
+3212	T	a: hal-01771292	1
+3213	T	nn: guo freeman	1
+3214	T	a: general-purpose	2
+3215	T	an: in-house team	2
+3216	T	n: stability,6	1
+3217	T	nn: marco ?aggio?o	1
+3218	T	a: combatplayerscore	1
+3219	T	nn: winston hsu	1
+3220	T	a: hal-01771253	1
+3221	T	nn: bernt schiele	1
+3222	T	a: big5	1
+3223	T	n: surveys1	1
+3224	T	an: live-streaming platform	2
+3225	T	nn: sanja fidler	1
+3226	T	n: ackerman	1
+3227	T	a: non-aggressive	1
+3228	T	nn: kate ehrlich	1
+3229	T	nnn: daria j kuss	1
+3230	T	a: 5-seconds	1
+3231	T	nn: lol everyday11	1
+3232	T	ann: investigac¸ao˜ da melhoria	1
+3233	T	npnn: study of interaction pattern	2
+3234	T	nn: nadege ?irion-moreau	1
+3235	T	n: search-space	2
+3236	T	n: amant	1
+3237	T	a: generalizable	1
+3238	T	a: ingame	2
+3239	T	a: multilevel	1
+3240	T	nnan: refinement measure long zuo	2
+3241	T	nn: rainer stiefelhagen	1
+3242	T	r: incrementally	1
+3243	T	nn: hugo larochelle	1
+3244	T	an: rts hype	1
+3245	T	n: ocsc	1
+3246	T	n: abigail	1
+3247	T	n: game-tree	3
+3248	T	nn: totaldamagedealt -	1
+3249	T	a: nonparametric	2
+3250	T	n: iamnitchi	1
+3251	T	a: self-proclaimed	1
+3252	T	a: team-specific	1
+3253	T	nn: rasmus bro	1
+3254	T	a: ?xing	1
+3255	T	nn: rick audas	1
+3256	T	ncnn: filippova and yasemin altun	1
+3257	T	nn: yuke zhu	1
+3258	T	n: soni	1
+3259	T	nn: follower fallacy	1
+3260	T	a: r-th	1
+3261	T	nan: individual 11all individual	1
+3262	T	nn: micah hodosh	1
+3263	T	npn: rest of experiment	2
+3264	T	n: comput	1
+3265	T	n: goodchild	1
+3266	T	n: contal	1
+3267	T	n: tria	1
+3268	T	nn: ilse kryspinexner	1
+3269	T	a: single-multiclass	2
+3270	T	n: micro-tasks	1
+3271	T	n: undead	1
+3272	T	n: armor	1
+3273	T	nn: log-likelihood function	2
+3274	T	a: extrinsic	1
+3275	T	nn: anthony bean	1
+3276	T	n: steenkiste	1
+3277	T	n: behavior-control	2
+3278	T	a: residual	2
+3279	T	a: multiclass	1
+3280	T	n: lr-player	1
+3281	T	a: mean2	2
+3282	T	n: lindley	1
+3283	T	n: warrior-mage	1
+3284	T	n: icsai	1
+3285	T	n: szegedy	1
+3286	T	n: 5-fold	1
+3287	T	n: pendragon	1
+3288	T	r: appealingly	1
+3289	T	nnn: kurt t dirk	1
+3290	T	nn: hanghang tong	1
+3291	T	n: bainbridge	1
+3292	T	an: - april-2015	1
+3293	T	n: hallam	1
+3294	T	n: mescon10	1
+3295	T	n: smurf	1
+3296	T	an: caglar gulcehre	1
+3297	T	n: digman	1
+3298	T	an: jian sun	1
+3299	T	annn: online computing gameplay time	2
+3300	T	an: 2-layer mlp	1
+3301	T	n: crossvalidations	1
+3301	V[m]+	nn: cross validation	8
+3302	T	n: tekalp	1
+3303	T	an: goldearned -	1
+3304	T	a: digestible	1
+3305	T	a: sub-classed	1
+3306	T	ncnn: search and data mining	2
+3307	T	n: lemmink	1
+3308	T	an: weekly rotation	1
+3309	T	n: barrick	1
+3310	T	nn: yu-ru lin	1
+3311	T	a: elden	1
+3312	T	a: approximate	1
+3313	T	npn: frequency of role	2
+3314	T	an: lvl1 high	2
+3315	T	n: infographics	1
+3316	T	nnn: tammie d hertel	1
+3317	T	n: yannakakis	1
+3318	T	a: 50000	1
+3319	T	n: lyte	1
+3320	T	a: harperperennial	1
+3321	T	n: nalcs12	1
+3322	T	n: nalcs23	1
+3323	T	n: ontan˜on	1
+3324	T	n: proquest	1
+3325	T	n: cyberworlds	1
+3326	T	n: goal-controlling	1
+3327	T	an: minion ai	1
+3328	T	n: joystick	1
+3329	T	n: sheng	1
+3330	T	n: shamma	1
+3331	T	n: mid-bi-gram	2
+3332	T	an: haunted mine	1
+3333	T	an: analytic qp	1
+3334	T	n: perrin	1
+3335	T	n: timeline	1
+3336	T	n: ?rst	1
+3337	T	n: ecai	1
+3338	T	n: gamebots	1
+3339	T	nn: erin bradner	1
+3340	T	nn: choong-soo lee	1
+3341	T	n: base-building	1
+3342	T	n: mid-season	1
+3343	T	n: mcallester	1
+3344	T	nn: ross girshick	1
+3345	T	a: multi-dimensional	2
+3346	T	n: bederson	1
+3347	T	n: bostock	1
+3348	T	n: jungling	1
+3349	T	nn: marie-francine moens	1
+3350	T	n: question-answering	1
+3351	T	n: nphard	1
+3352	T	n: herbrich	1
+3353	T	a: nosrati	2
+3354	T	an: magenta asterisk	1
+3355	T	n: kill	55
+3356	T	n: positioning	20
+3357	T	n: data	38
+3358	T	an: individual player	10
+3359	T	an: international conference	53
+3359	V[s]	aan: 3rd international conference	2
+3359	V[s]	nan: ieee international conference	6
+3359	V[s]	aan: 22nd international conference	6
+3359	V[s]	aan: 16th international conference	3
+3359	V[s]	aan: 21st international conference	3
+3359	V[s]	aan: 11th international conference	3
+3359	V[s]	aan: 23rd international conference	2
+3359	V[s]	aan: 10th international conference	2
+3360	T	n: probability	99
+3361	T	an: experienced player	28
+3361	V[s]	aan: experienced human player	3
+3362	T	a: linguistic	33
+3363	T	an: overwhelming majority	22
+3364	T	n: agility	24
+3365	T	npn: type of game	13
+3365	V[s]+	nn: game type	5
+3366	T	n: parameter	49
+3367	T	an: individual skill	8
+3368	T	a: abusive	43
+3369	T	n: graph	25
+3370	T	n: node	10
+3371	T	n: springer	20
+3372	T	n: turret	26
+3373	T	n: navigation	27
+3374	T	n: tutorial	22
+3375	T	an: verbal abuse	20
+3376	T	n: approximation	9
+3377	T	an: physical damage	7
+3377	V[s]	nan: burst physical damage	6
+3378	T	n: attribute	56
+3379	T	n: correlation	18
+3380	T	n: variable	48
+3381	T	n: classification	41
+3382	T	n: metric	18
+3383	T	n: assignment	65
+3384	T	an: competitive game	6
+3384	V[s]	aan: competitive video game	3
+3385	T	npn: amount of damage	6
+3386	T	a: tenacious	7
+3387	T	an: future direction	7
+3388	T	a: evolutionary	7
+3389	T	r: lastly	25
+3390	T	npn: group of player	10
+3390	V[s]	nn: player group	2
+3391	T	an: hard task	6
+3392	T	an: potential victim	5
+3393	T	nn: computer game	34
+3394	T	n: chat	77
+3395	T	a: random	42
+3396	T	n: similarity	66
+3397	T	n: tenacity	18
+3398	T	n: characteristic	96
+3399	T	n: analysis	235
+3400	T	n: domain	39
+3401	T	n: chess	21
+3402	T	an: bad word	6
+3403	T	n: simulation	14
+3404	T	n: assassin	38
+3405	T	an: current state	5
+3406	T	n: combat	45
+3407	T	n: component	133
+3408	T	nn: case study	14
+3409	T	n: cooperation	11
+3410	T	nan: world wide web	15
+3411	T	nn: team member	23
+3412	T	an: visual effect	4
+3413	T	a: collaborative	4
+3414	T	n: hero	442
+3415	T	n: intuition	6
+3416	T	n: pick	32
+3417	T	an: total number	7
+3418	T	npn: team of expert	4
+3419	T	r: randomly	10
+3420	T	n: genre	57
+3421	T	n: methodology	10
+3422	T	n: adjustment	57
+3423	T	n: enemy	212
+3424	T	n: highlight	87
+3425	T	n: model	440
+3426	T	nn: resource management	5
+3426	V[s]	ann: human resource management	2
+3427	T	a: interactive	10
+3428	T	an: previous work	5
+3429	T	n: interface	14
+3430	T	n: rectangle	4
+3431	T	n: balancing	4
+3432	T	n: mechanic	36
+3433	T	n: toughness	7
+3434	T	a: preliminary	10
+3435	T	n: behavior	418
+3436	T	n: summary	19
+3437	T	a: large-scale	19
+3438	T	r: anew	9
+3439	T	a: registered	5
+3440	T	n: feature	309
+3441	T	n: accuracy	50
+3442	T	n: diagram	6
+3443	T	nn: league point	4
+3444	T	n: effectiveness	40
+3445	T	npn: part of game	7
+3445	V[s]	anpn: integral part of game	2
+3446	T	n: amazon	5
+3447	T	n: reviewer	34
+3448	T	n: server	11
+3449	T	n: tutor	28
+3450	T	a: skilled	18
+3451	T	a: human	170
+3452	T	n: datum	175
+3453	T	nn: support system	6
+3454	T	n: attractiveness	4
+3455	T	an: winning team	5
+3456	T	a: losing	5
+3457	T	an: professional player	6
+3458	T	n: audio	5
+3459	T	npn: university of california	4
+3459	V[s]	npan: university of southern california	4
+3460	T	n: carry	10
+3461	T	n: layer	34
+3462	T	n: ancient	32
+3463	T	n: silva	17
+3464	T	a: extrovert	5
+3465	T	npn: kind of game	4
+3466	T	n: experiment	100
+3467	T	n: surrender	46
+3468	T	a: intuitive	3
+3469	T	a: intermediate	3
+3470	T	nn: test result	3
+3471	T	npn: end of match	3
+3472	T	n: formulation	5
+3473	T	n: rune	6
+3474	T	n: feeder	6
+3475	T	nn: majority vote	4
+3476	T	n: python	7
+3477	T	a: passive	5
+3478	T	an: early end	3
+3479	T	nn: nova scotia	10
+3480	T	n: frequency	24
+3481	T	r: mechanically	4
+3482	T	n: academia	4
+3483	T	n: template	5
+3484	T	n: user	173
+3485	T	r: robustly	6
+3486	T	n: juggernaut	6
+3487	T	n: evolution	23
+3488	T	n: marksman	8
+3489	T	n: andrade	3
+3490	T	n: melee	5
+3491	T	n: measuring	2
+3492	T	n: center	5
+3493	T	r: reliably	4
+3494	T	an: actual cost	2
+3495	T	an: negative attitude	3
+3496	T	n: individualist	3
+3497	T	n: puck	3
+3498	T	nn: majority rule	3
+3499	T	an: valuable information	2
+3500	T	npn: lack of space	2
+3501	T	r: massively	10
+3502	T	r: statistically	9
+3503	T	n: agent	347
+3504	T	a: neutral	19
+3505	T	n: personality	125
+3506	T	an: fast pace	3
+3507	T	nn: table tennis	3
+3508	T	n: curve	24
+3509	T	n: mobility	11
+3510	T	n: anna	13
+3511	T	an: bad game	2
+3512	T	a: longtime	2
+3512	V[mg]	an: long time	4
+3513	T	n: andre	4
+3514	T	n: variant	6
+3515	T	n: distribution	66
+3516	T	n: entity	33
+3517	T	n: query	17
+3518	T	n: rapport	9
+3519	T	a: everyday	7
+3520	T	n: riot	50
+3521	T	n: teamwork	11
+3522	T	an: individual performance	2
+3523	T	n: multimedia	5
+3524	T	npn: lot of damage	2
+3525	T	n: overview	6
+3526	T	n: aggro	2
+3527	T	n: cascade	3
+3528	T	n: friedman	3
+3529	T	n: acknowledgment	4
+3529	V[g]	n: acknowledgement	4
+3530	T	n: skill	391
+3531	T	a: winning	49
+3532	T	n: reasoning	11
+3533	T	n: reveal	5
+3534	T	a: external	5
+3535	T	an: good balance	4
+3536	T	an: strong team	4
+3537	T	n: video	147
+3538	T	a: challenging	11
+3539	T	n: game	2103
+3540	T	n: berg	7
+3541	T	n: psychology	20
+3542	T	an: main task	3
+3543	T	nn: rule change	5
+3544	T	a: unfriendly	2
+3545	T	nn: time period	2
+3546	T	n: robustness	2
+3547	T	n: measurement	17
+3548	T	a: defensive	7
+3549	T	an: important task	3
+3549	V[s]	aan: important downstream task	6
+3550	T	an: normal level	3
+3551	T	an: straight line	4
+3552	T	nn: response time	4
+3553	T	n: cyberspace	3
+3554	T	n: navigator	7
+3555	T	n: stat	2
+3556	T	an: great difference	2
+3557	T	a: durable	6
+3558	T	r: passively	2
+3559	T	r: conservatively	2
+3560	T	a: high-performance	2
+3561	T	a: similar	127
+3562	T	n: potts	3
+3563	T	n: player	1781
+3564	T	n: phase	65
+3565	T	n: efficacy	2
+3566	T	an: final result	4
+3567	T	n: gender	18
+3568	T	n: accomplishment	4
+3569	T	r: negatively	2
+3570	T	an: general trend	2
+3571	T	a: ambient	2
+3572	T	r: commonly	21
+3573	T	n: tier	8
+3574	T	n: slang	3
+3575	T	an: poor performance	6
+3576	T	n: lane	89
+3577	T	a: trivial	7
+3578	T	n: mechanism	58
+3579	T	n: dimension	42
+3580	T	an: main feature	2
+3581	T	n: wyeth	2
+3582	T	n: gosling	2
+3583	T	n: dungeon	2
+3584	T	n: journal	38
+3585	T	a: negative	26
+3586	T	n: duel	10
+3587	T	a: implicit	5
+3588	T	n: teammate	47
+3589	T	n: implementation	21
+3590	T	n: novice	16
+3591	T	n: tower	72
+3592	T	n: pearce	10
+3593	T	npn: state of art	2
+3594	T	n: triplet	2
+3595	T	n: keegan	4
+3596	T	n: coco	2
+3597	T	an: high degree	2
+3598	T	an: interesting question	2
+3599	T	an: facial expression	2
+3600	T	npn: part of strategy	2
+3601	T	an: modern game	3
+3602	T	n: update	10
+3603	T	n: proceeding	85
+3604	T	n: jungle	16
+3605	T	an: dangerous situation	2
+3606	T	npn: goal of game	2
+3606	V[s]	nn: game goal	2
+3607	T	n: twitch	2
+3608	T	a: customary	3
+3609	T	n: valve	10
+3610	T	a: automatic	9
+3611	T	a: brent	4
+3612	T	n: soccer	16
+3613	T	a: intermediary	6
+3614	T	n: real-world	14
+3615	T	n: consistency	19
+3616	T	n: beginner	10
+3617	T	n: routledge	2
+3618	T	n: sentinel	2
+3619	T	a: initial	16
+3620	T	n: scenario	53
+3621	T	a: constant	14
+3622	T	a: single	63
+3623	T	n: input	28
+3624	T	r: correspondingly	1
+3625	T	r: exponentially	1
+3626	T	n: match	610
+3627	T	n: weighting	3
+3628	T	a: monthly	6
+3629	T	an: important aspect	3
+3630	T	n: preference	30
+3631	T	a: basic	26
+3632	T	n: entertainment	63
+3633	T	n: brim	2
+3634	T	a: hidden	4
+3635	T	an: safe place	2
+3636	T	an: simple task	2
+3637	T	n: equation	15
+3638	T	a: on-line	5
+3639	T	a: global	9
+3640	T	a: balanced	9
+3641	T	a: advanced	16
+3642	T	n: threshold	18
+3643	T	n: progression	8
+3644	T	a: indicative	5
+3645	T	n: romero	1
+3646	T	n: mute	1
+3647	T	r: consecutively	1
+3648	T	a: clear-cut	4
+3649	T	an: common practice	2
+3650	T	an: key feature	2
+3651	T	n: strategy	154
+3652	T	n: computer	105
+3653	T	n: technique	80
+3654	T	an: significant improvement	3
+3655	T	n: wong	3
+3656	T	n: task	150
+3657	T	n: clip	11
+3658	T	a: gold	5
+3659	T	a: compatible	5
+3660	T	r: additionally	10
+3661	T	n: baseball	5
+3662	T	n: likelihood	16
+3663	T	a: outgoing	2
+3664	T	an: negative impact	2
+3665	T	n: interplay	2
+3666	T	an: real money	2
+3667	T	a: problematic	5
+3668	T	a: federal	5
+3669	T	n: reinforcement	8
+3670	T	an: recent research	3
+3671	T	n: basketball	7
+3672	T	n: draft	11
+3673	T	r: explicitly	6
+3674	T	n: coop	1
+3675	T	n: pang	1
+3676	T	n: electrode	1
+3677	T	a: impracticable	1
+3678	T	a: pervasive	1
+3679	T	n: decision-making	14
+3680	T	n: gold	62
+3681	T	n: diversity	14
+3682	T	n: limitation	13
+3683	T	n: sequence	19
+3684	T	an: special interest	3
+3685	T	an: social science	2
+3685	V[s]	acan: social and behavioral science	2
+3686	T	n: perm	2
+3687	T	n: interpretation	24
+3688	T	n: batch	11
+3689	T	nn: body language	3
+3690	T	a: complex	27
+3691	T	n: copyright	5
+3692	T	n: team	887
+3693	T	n: bonnie	2
+3694	T	r: earliest	1
+3695	T	r: pragmatically	1
+3696	T	n: scourge	2
+3697	T	an: main target	2
+3698	T	n: diving	4
+3699	T	n: impatient	1
+3700	T	n: facet	3
+3701	T	n: isla	1
+3702	T	a: pristine	1
+3703	T	n: convergence	2
+3704	T	n: motivation	17
+3705	T	n: combo	3
+3706	T	n: framework	25
+3707	T	a: sophisticated	15
+3708	T	n: fortress	4
+3709	T	n: weber	6
+3710	T	n: bystander	4
+3711	T	a: david	9
+3712	T	a: aggressive	16
+3713	T	a: popular	79
+3714	T	an: human resource	4
+3715	T	n: anonymity	6
+3716	T	n: replay	14
+3717	T	n: conjecture	2
+3718	T	n: brevity	1
+3719	T	n: physics	2
+3720	T	n: seniority	1
+3721	T	n: syntax	1
+3722	T	r: erroneously	1
+3723	T	a: prevalent	6
+3724	T	n: science	58
+3725	T	n: thesis	6
+3726	T	n: disparity	3
+3727	T	a: reliable	9
+3728	T	n: context	42
+3729	T	n: method	80
+3730	T	a: antisocial	2
+3731	T	n: acknowledgement	4
+3732	T	n: influence	75
+3733	T	n: text	33
+3734	T	n: popularity	22
+3735	T	n: adversity	5
+3736	T	n: animation	5
+3737	T	n: graphics	7
+3738	T	n: storytelling	2
+3739	T	n: mario	1
+3740	T	n: glitch	1
+3741	T	r: intentionally	3
+3742	T	n: terrain	7
+3743	T	n: cortes	2
+3744	T	n: badminton	3
+3745	T	a: well-known	8
+3746	T	n: ally	40
+3747	T	r: competitively	3
+3748	T	n: opposition	120
+3749	T	n: perseverance	2
+3750	T	n: feedback	6
+3751	T	a: competitive	32
+3752	T	r: partially	12
+3753	T	an: good game	5
+3754	T	n: section	95
+3755	T	n: machine	97
+3756	T	a: repulsive	1
+3757	T	n: browser	1
+3758	T	r: conventionally	1
+3759	T	a: susan	1
+3760	T	n: openness	6
+3761	T	n: performance	298
+3762	T	n: champion	207
+3763	T	n: observation	21
+3764	T	a: selective	5
+3765	T	n: complexity	9
+3766	T	an: detailed information	2
+3767	T	an: great challenge	2
+3768	T	an: significant difference	2
+3769	T	n: relationship	113
+3770	T	n: role	234
+3771	T	n: aspect	47
+3772	T	a: individual	102
+3773	T	a: influential	6
+3774	T	n: frame	46
+3775	T	n: console	1
+3776	T	a: creative	7
+3777	T	r: intrinsically	1
+3778	T	r: solo	1
+3779	T	n: critique	2
+3780	T	n: boredom	5
+3781	T	n: samuel	4
+3782	T	a: real	46
+3783	T	n: participant	24
+3784	T	n: tribunal	74
+3785	T	an: good performance	12
+3786	T	n: representation	36
+3787	T	n: statistic	53
+3788	T	n: flow	24
+3789	T	an: close relationship	3
+3790	T	a: representative	4
+3791	T	an: important role	6
+3792	T	n: label	36
+3793	T	r: informally	2
+3794	T	r: separately	10
+3795	T	n: proficiency	1
+3796	T	n: badness	1
+3797	T	n: ramadan	1
+3798	T	n: champ	2
+3799	T	a: calculated	1
+3800	T	n: affirmation	1
+3801	T	a: regular	20
+3802	T	n: table	120
+3803	T	n: research	139
+3804	T	n: category	42
+3805	T	a: consistent	17
+3806	T	n: enhancement	2
+3807	T	n: appendix	2
+3808	T	n: sensor	3
+3809	T	n: modification	4
+3810	T	n: grid	12
+3811	T	n: opponent	73
+3812	T	n: base	106
+3813	T	n: zombie	1
+3814	T	n: tick	2
+3815	T	n: rand	2
+3816	T	an: san diego	1
+3817	T	a: fruitful	1
+3818	T	a: intrusive	1
+3819	T	n: kearns	1
+3820	T	n: perception	23
+3821	T	n: understanding	31
+3822	T	n: item	67
+3823	T	n: blink	1
+3824	T	an: main player	2
+3825	T	a: turkish	1
+3826	T	a: idle	3
+3827	T	n: tion	1
+3828	T	a: inherent	4
+3829	T	npn: part of team	2
+3830	T	r: insufficiently	1
+3831	T	n: mcalister	1
+3832	T	a: applicable	3
+3833	T	a: relative	9
+3834	T	n: fraction	5
+3835	T	n: illustration	8
+3836	T	n: alpha	3
+3837	T	n: language	81
+3838	T	n: information	197
+3839	T	n: mcgee	2
+3840	T	n: angela	2
+3841	T	n: collaboration	10
+3842	T	n: enjoyment	8
+3843	T	r: efficiently	8
+3844	T	a: korean	3
+3845	T	a: indifferent	3
+3846	T	a: valuable	10
+3847	T	a: ranking	14
+3848	T	n: knowledge	57
+3849	T	a: helpful	15
+3850	T	a: fluid	2
+3851	T	a: scarlet	1
+3852	T	n: forecasting	1
+3853	T	n: bilbao	1
+3854	T	n: roach	1
+3855	T	an: easy task	2
+3856	T	n: norm	10
+3857	T	n: sample	24
+3858	T	n: capability	14
+3859	T	n: experience	181
+3860	T	a: average	63
+3861	T	n: battle	97
+3862	T	a: significant	27
+3863	T	r: alternately	1
+3864	T	n: dill	1
+3865	T	n: potion	2
+3866	T	n: discrepancy	4
+3867	T	n: bimbo	1
+3868	T	n: default	3
+3869	T	n: researcher	24
+3870	T	a: robust	6
+3871	T	n: adversary	3
+3872	T	r: systematically	3
+3873	T	n: plateau	2
+3874	T	a: high	174
+3875	T	r: interestingly	5
+3876	T	a: complicated	5
+3877	T	nn: cost saving	3
+3878	T	a: maximum	18
+3879	T	n: frustration	16
+3880	T	n: tool	18
+3881	T	n: pair	49
+3882	T	n: communication	29
+3883	T	an: difficult task	2
+3884	T	a: explicit	3
+3885	T	n: spell	27
+3886	T	n: structure	65
+3887	T	n: database	7
+3888	T	an: great number	3
+3889	T	a: controlled	8
+3890	T	a: unstable	2
+3891	T	n: introduction	24
+3892	T	a: stable	15
+3893	T	n: developer	24
+3894	T	n: meaning	12
+3895	T	n: factor	94
+3896	T	a: suitable	15
+3897	T	a: idiosyncratic	1
+3898	T	n: blackburn	10
+3899	T	n: halo	1
+3900	T	r: triple	1
+3901	T	n: leaving	1
+3902	T	a: simple	39
+3903	T	n: study	98
+3904	T	n: approach	119
+3905	T	n: damage	91
+3906	T	a: intriguing	4
+3907	T	n: perspective	19
+3908	T	an: short period	3
+3909	T	a: marginal	3
+3910	T	n: recall	7
+3911	T	n: engagement	11
+3912	T	a: straightforward	7
+3913	T	a: separate	10
+3914	T	r: manually	1
+3915	T	an: good option	2
+3916	T	n: brazil	14
+3917	T	n: acronym	2
+3918	T	n: strength	56
+3919	T	r: simultaneously	9
+3920	T	n: crystal	6
+3921	T	n: ability	77
+3922	T	n: obstacle	10
+3923	T	n: displeasure	1
+3924	T	n: wang	1
+3925	T	r: thereof	1
+3926	T	an: good measure	2
+3927	T	a: adrian	1
+3928	T	n: roster	1
+3929	T	r: automatically	16
+3930	T	n: architecture	15
+3931	T	n: utility	23
+3932	T	n: ferrari	4
+3933	T	n: carlos	4
+3934	T	n: level	206
+3935	T	a: effective	27
+3936	T	an: key role	4
+3937	T	r: blissfully	1
+3938	T	n: fold	4
+3939	T	r: henceforth	1
+3940	T	r: likewise	7
+3941	T	n: chinese	9
+3942	T	n: workshop	19
+3943	T	n: instructor	6
+3944	T	r: continuously	3
+3945	T	n: daly	3
+3946	T	a: insufficient	3
+3947	T	a: prominent	5
+3948	T	r: emotionally	6
+3949	T	r: roughly	9
+3950	T	n: spite	9
+3951	T	n: creativity	5
+3952	T	a: relevant	11
+3953	T	n: chunk	3
+3954	T	an: north america	9
+3955	T	n: grandmaster	1
+3956	T	a: tentative	1
+3957	T	r: aesthetically	1
+3958	T	a: wholesale	1
+3959	T	a: dissimilar	1
+3960	T	n: volleyball	2
+3961	T	n: core	10
+3962	T	a: powerful	15
+3963	T	n: harrison	6
+3964	T	n: module	4
+3965	T	a: accurate	10
+3966	T	n: cheating	3
+3967	T	n: program	4
+3968	T	n: battlefield	4
+3969	T	r: alternatively	5
+3970	T	a: large	71
+3971	T	n: sustainability	1
+3972	T	n: traps	2
+3973	T	an: short time	6
+3974	T	n: conclusion	33
+3975	T	n: pattern	29
+3976	T	n: expression	12
+3977	T	n: character	71
+3978	T	r: consistently	14
+3979	T	a: persistent	2
+3980	T	n: signature	7
+3981	T	n: finding	30
+3982	T	r: objectively	1
+3983	T	an: fairy tale	1
+3984	T	n: sociology	2
+3985	T	n: fallout	1
+3986	T	n: focus	21
+3987	T	n: challenge	93
+3988	T	n: decrease	5
+3989	T	a: unclear	5
+3990	T	n: leaver	2
+3991	T	n: autonomy	4
+3992	T	n: weaver	3
+3993	T	n: dominance	3
+3994	T	n: curiosity	4
+3995	T	a: successful	47
+3996	T	n: sentiment	13
+3997	T	n: offender	17
+3998	T	n: davison	1
+3999	T	a: undetected	1
+4000	T	a: pertinent	1
+4001	T	r: specifically	17
+4002	T	n: dependency	3
+4003	T	n: hacker	1
+4004	T	a: entertaining	5
+4005	T	n: majority	55
+4006	T	an: key factor	2
+4007	T	n: montreal	2
+4008	T	a: common	56
+4009	T	a: astonishing	5
+4010	T	n: platform	26
+4011	T	n: slope	9
+4012	T	a: boring	5
+4013	T	n: feasibility	1
+4014	T	a: noticeable	4
+4015	T	a: unchecked	1
+4016	T	n: diane	1
+4017	T	a: important	103
+4018	T	a: equal	12
+4019	T	n: result	217
+4020	T	an: wide range	6
+4021	T	n: buff	3
+4022	T	n: advance	31
+4023	T	n: instance	36
+4024	T	n: warrior	7
+4025	T	r: extensively	4
+4026	T	n: happiness	6
+4027	T	n: correction	2
+4028	T	an: great opportunity	2
+4029	T	n: quinn	1
+4030	T	n: cock	1
+4031	T	a: rational	4
+4032	T	an: low level	6
+4033	T	a: weak	14
+4034	T	n: setting	15
+4035	T	n: peak	18
+4036	T	a: capable	30
+4037	T	n: weakness	15
+4038	T	r: directly	33
+4039	T	n: variation	10
+4040	T	n: topic	9
+4041	T	an: good result	5
+4042	T	a: sufficient	11
+4043	T	n: plot	19
+4044	T	r: typically	8
+4045	T	n: difference	67
+4046	T	n: competitiveness	5
+4047	T	n: prototype	2
+4048	T	an: good quality	2
+4049	T	a: fitting	2
+4050	T	a: academic	4
+4051	T	a: realistic	7
+4052	T	n: shannon	2
+4053	T	n: lucas	2
+4054	T	n: poole	2
+4055	T	an: virtual reality	2
+4056	T	n: paper	88
+4057	T	n: resource	52
+4058	T	a: reasonable	11
+4059	T	n: expertise	19
+4060	T	n: insight	12
+4061	T	r: globally	1
+4062	T	r: prominently	2
+4063	T	n: precursor	1
+4064	T	n: code	15
+4065	T	a: objective	24
+4066	T	a: fast	13
+4067	T	n: hollow	2
+4068	T	a: invisible	2
+4069	T	n: length	21
+4070	T	n: author	25
+4071	T	a: superior	4
+4072	T	n: aversion	1
+4073	T	n: wrinkle	1
+4074	T	a: graphic	1
+4075	T	n: reliability	2
+4076	T	n: malone	3
+4077	T	r: strongly	31
+4078	T	a: prior	15
+4079	T	a: universal	3
+4080	T	n: newcomer	6
+4081	T	n: vocabulary	3
+4082	T	n: caption	2
+4083	T	n: reference	25
+4084	T	n: parallel	5
+4085	T	a: active	10
+4086	T	n: fight	48
+4087	T	n: capture	2
+4088	T	r: implicitly	1
+4089	T	n: grouping	3
+4090	T	n: serie	2
+4091	T	n: comparison	16
+4092	T	a: male	5
+4093	T	r: potentially	10
+4094	T	r: finally	59
+4095	T	n: making	6
+4096	T	n: arrow	2
+4097	T	a: principal	10
+4098	T	n: expert	45
+4099	T	n: version	27
+4100	T	r: differently	7
+4101	T	a: bottom	14
+4102	T	n: inconsistency	2
+4103	T	n: application	47
+4104	T	n: effect	96
+4105	T	n: play	78
+4106	T	a: compact	1
+4107	T	n: brew	2
+4108	T	n: sandra	1
+4109	T	an: bad guy	1
+4110	T	n: quarrel	1
+4111	T	r: poorly	5
+4112	T	npn: period of time	3
+4112	V[s]	nn: time period	2
+4113	T	n: substitution	1
+4114	T	n: test	76
+4115	T	r: similarly	12
+4116	T	n: portion	3
+4117	T	n: fundamental	4
+4118	T	n: spike	2
+4119	T	n: distance	23
+4120	T	r: periodically	1
+4121	T	n: internet	11
+4122	T	r: indirectly	2
+4123	T	a: feasible	2
+4124	T	n: object	12
+4125	T	n: impact	37
+4126	T	n: advantage	46
+4127	T	r: individually	4
+4128	T	a: extra	12
+4129	T	a: huge	9
+4130	T	n: system	185
+4131	T	n: volunteer	12
+4132	T	n: monitoring	3
+4133	T	n: collision	5
+4134	T	n: figure	157
+4135	T	n: mulligan	1
+4136	T	a: unrelated	1
+4137	T	n: reliance	2
+4138	T	n: interviewee	1
+4139	T	n: franklin	1
+4140	T	n: unit	73
+4141	T	r: ostensibly	2
+4142	T	n: custom	7
+4143	T	n: precision	3
+4144	T	n: difficulty	131
+4145	T	n: collaborator	1
+4146	T	n: empathy	1
+4147	T	r: momentarily	1
+4148	T	n: million	13
+4149	T	n: balance	28
+4150	T	a: positive	16
+4151	T	a: decisive	2
+4152	T	a: innocent	6
+4153	T	a: strong	41
+4154	T	n: uncertainty	14
+4155	T	n: psychiatry	1
+4156	T	n: amanda	1
+4157	T	n: grit	1
+4158	T	a: productive	2
+4159	T	a: naive	4
+4160	T	n: flurry	1
+4161	T	n: cape	2
+4162	T	a: fellow	1
+4163	T	n: range	48
+4164	T	n: robert	8
+4165	T	a: efficient	7
+4166	T	r: firstly	2
+4167	T	n: farming	9
+4168	T	n: split	8
+4169	T	a: potential	33
+4170	T	a: logical	2
+4171	T	a: spanish	2
+4172	T	n: harpercollins	2
+4173	T	n: coyne	2
+4174	T	n: accordance	1
+4175	T	n: punishment	11
+4176	T	n: harassment	4
+4177	T	n: session	43
+4178	T	n: tendency	8
+4179	T	n: victor	4
+4180	T	a: familiar	11
+4181	T	a: unused	1
+4182	T	a: frustrated	1
+4183	T	n: klein	1
+4184	T	n: path	17
+4185	T	n: tank	11
+4186	T	a: total	56
+4187	T	n: benchmark	2
+4188	T	n: blizzard	2
+4189	T	n: companion	7
+4190	T	r: anymore	2
+4191	T	r: progressively	2
+4192	T	a: live	7
+4193	T	n: locke	1
+4194	T	n: direction	27
+4195	T	a: minimum	9
+4196	T	n: exploration	4
+4197	T	an: important factor	2
+4198	T	n: dolan	1
+4199	T	n: viewpoint	3
+4199	V[m]	npn: point of view	2
+4200	T	n: number	219
+4201	T	n: kind	35
+4202	T	n: phenomenon	7
+4203	T	a: coherent	1
+4204	T	n: urge	2
+4205	T	r: naturally	14
+4206	T	n: handle	2
+4207	T	a: sean	1
+4208	T	n: addition	37
+4209	T	n: beginning	13
+4210	T	n: dodds	4
+4211	T	r: successfully	16
+4212	T	a: involved	2
+4213	T	r: necessarily	13
+4214	T	n: page	28
+4215	T	r: faster	7
+4216	T	n: detector	2
+4217	T	a: crucial	9
+4218	T	r: significantly	14
+4219	T	r: overwhelmingly	3
+4220	T	n: jeffrey	2
+4221	T	n: female	9
+4222	T	n: bradley	2
+4223	T	n: healing	1
+4224	T	n: counter	5
+4225	T	an: high level	8
+4226	T	n: nationality	3
+4227	T	n: fairness	3
+4228	T	r: highly	28
+4229	T	a: real-life	5
+4230	T	a: lenient	1
+4231	T	a: japanese	1
+4232	T	n: dissatisfaction	1
+4233	T	r: overly	1
+4234	T	an: difficult time	2
+4235	T	n: scratch	5
+4236	T	a: blind	4
+4237	T	n: scene	46
+4238	T	n: ethic	3
+4239	T	n: paragraph	2
+4240	T	a: general	32
+4241	T	n: cell	13
+4242	T	n: target	38
+4243	T	n: lean	1
+4244	T	a: conspicuous	1
+4245	T	n: tester	1
+4246	T	n: prerequisite	1
+4247	T	a: unknown	5
+4248	T	a: careful	8
+4249	T	n: status	22
+4250	T	a: smart	4
+4251	T	a: imbalanced	2
+4252	T	n: contractor	9
+4253	T	a: early	46
+4254	T	n: criterion	9
+4255	T	n: roberts	6
+4256	T	an: annual conference	3
+4257	T	r: distinctly	2
+4258	T	n: order	82
+4259	T	r: versa	1
+4260	T	a: hard	43
+4261	T	n: awareness	6
+4262	T	n: keyboard	2
+4263	T	n: goodness	2
+4264	T	n: movement	33
+4265	T	n: badge	3
+4266	T	n: concept	13
+4267	T	a: exciting	8
+4268	T	n: cane	1
+4269	T	a: uncertain	3
+4270	T	an: early stage	4
+4271	T	a: incomprehensible	1
+4272	T	n: governance	1
+4273	T	n: godfather	1
+4274	T	a: flexible	4
+4275	T	a: worldwide	8
+4276	T	n: content	15
+4277	T	n: mouse	3
+4278	T	n: relation	21
+4279	T	r: farther	1
+4280	T	n: wheat	2
+4281	T	n: weight	15
+4282	T	a: great	42
+4283	T	n: sport	50
+4284	T	n: bowman	2
+4285	T	a: small	35
+4286	T	n: survey	34
+4287	T	n: inaccuracy	1
+4288	T	a: middle	12
+4289	T	a: oblivious	1
+4290	T	n: rift	2
+4291	T	n: rank	12
+4292	T	n: lion	6
+4293	T	n: dictionary	2
+4294	T	n: churchill	3
+4295	T	a: heather	1
+4296	T	n: inadequacy	1
+4297	T	a: inappropriate	3
+4298	T	n: bryant	1
+4299	T	n: fluctuation	1
+4300	T	n: chang	1
+4301	T	n: instruction	8
+4302	T	an: main reason	2
+4303	T	an: important part	2
+4304	T	a: patient	1
+4305	T	n: innocence	4
+4306	T	n: commentator	5
+4307	T	n: tactic	9
+4308	T	n: message	31
+4309	T	n: student	53
+4310	T	n: singer	10
+4311	T	n: greg	1
+4312	T	a: perfect	6
+4313	T	n: helper	1
+4314	T	n: choice	34
+4315	T	n: death	69
+4316	T	n: presence	15
+4317	T	a: unfamiliar	1
+4318	T	a: non-existent	1
+4319	T	a: easy	38
+4320	T	n: work	176
+4321	T	n: solution	20
+4322	T	n: contrary	7
+4323	T	a: visible	3
+4324	T	n: significance	5
+4325	T	n: efficiency	7
+4326	T	n: note	23
+4327	T	n: watershed	1
+4328	T	n: resilience	1
+4329	T	a: michael	4
+4330	T	n: chandler	1
+4331	T	r: closer	7
+4332	T	a: complete	10
+4333	T	a: beneficial	2
+4334	T	n: literature	6
+4335	T	a: future	66
+4336	T	n: competition	43
+4337	T	a: uniform	4
+4338	T	a: amateur	2
+4339	T	r: psychologically	1
+4340	T	n: consideration	13
+4341	T	n: word	60
+4342	T	a: minor	2
+4343	T	r: greatly	8
+4344	T	n: reynolds	3
+4345	T	n: class	32
+4346	T	n: fighter	7
+4347	T	n: aggression	3
+4348	T	n: step	34
+4349	T	n: stimulus	1
+4350	T	n: practitioner	3
+4351	T	n: hundred	5
+4352	T	n: flaw	2
+4353	T	n: starter	3
+4354	T	n: library	8
+4355	T	n: nature	18
+4356	T	n: explanation	9
+4357	T	n: lens	2
+4358	T	an: hard time	2
+4359	T	r: exclusively	4
+4360	T	n: profile	7
+4361	T	n: implication	10
+4362	T	n: decision	98
+4363	T	n: forbes	4
+4364	T	n: terry	2
+4365	T	n: barbara	1
+4366	T	n: male	5
+4367	T	r: sufficiently	4
+4368	T	n: goal	59
+4369	T	n: stays	1
+4370	T	n: medium	21
+4371	T	r: nowadays	6
+4372	T	n: control	42
+4373	T	n: patch	3
+4374	T	n: contrast	12
+4375	T	a: prone	2
+4376	T	n: agreement	30
+4377	T	n: volume	12
+4378	T	n: case	139
+4379	T	a: extreme	4
+4380	T	n: pace	11
+4381	T	n: review	16
+4382	T	n: extension	8
+4383	T	n: action	84
+4384	T	a: present	29
+4385	T	n: remark	10
+4386	T	n: community	50
+4387	T	r: reportedly	3
+4388	T	n: retention	1
+4389	T	r: effectively	15
+4390	T	r: frequently	7
+4391	T	n: image	20
+4392	T	n: lease	3
+4393	T	a: unnoticed	1
+4394	T	r: visibly	1
+4395	T	n: term	50
+4396	T	n: existence	7
+4397	T	r: fast	9
+4398	T	n: bard	1
+4399	T	n: purpose	14
+4400	T	r: approximately	4
+4401	T	n: testing	6
+4402	T	n: column	7
+4403	T	n: rate	68
+4404	T	n: expectation	12
+4405	T	n: completion	3
+4406	T	r: visually	1
+4407	T	n: discussion	15
+4408	T	r: briefly	3
+4409	T	n: execution	4
+4410	T	an: safe area	2
+4411	T	n: barcelona	3
+4412	T	r: calmly	1
+4413	T	a: interested	18
+4414	T	n: fantasy	4
+4415	T	n: account	31
+4416	T	r: easier	1
+4417	T	n: training	26
+4418	T	r: generally	15
+4419	T	a: quick	7
+4420	T	a: friendly	6
+4421	T	a: french	1
+4422	T	n: question	61
+4423	T	n: king	21
+4424	T	n: channel	12
+4425	T	n: limit	13
+4426	T	n: planning	7
+4427	T	n: scoreboard	1
+4428	T	a: fascinating	2
+4429	T	r: widely	11
+4430	T	a: conservative	3
+4431	T	n: degree	11
+4432	T	n: assumption	4
+4433	T	n: killing	7
+4434	T	n: smoke	4
+4435	T	a: long	24
+4436	T	r: primarily	3
+4437	T	an: western europe	1
+4438	T	n: entry	11
+4439	T	a: poor	11
+4440	T	a: comfortable	6
+4441	T	a: secure	3
+4442	T	n: sacrifice	2
+4443	T	n: connection	10
+4444	T	n: bell	13
+4445	T	n: anomaly	1
+4446	T	n: jordan	3
+4447	T	n: importance	9
+4448	T	r: initially	8
+4449	T	r: notoriously	1
+4450	T	n: formality	1
+4451	T	a: kelly	1
+4452	T	n: tomb	1
+4453	T	n: development	50
+4454	T	n: judgment	11
+4455	T	n: cohen	1
+4456	T	n: alternative	11
+4457	T	r: accurately	2
+4458	T	n: hint	3
+4459	T	n: expansion	7
+4460	T	r: higher	2
+4461	T	n: berlin	4
+4462	T	n: trigger	1
+4463	T	n: logic	3
+4464	T	n: surge	2
+4465	T	n: puzzle	1
+4466	T	n: assessment	6
+4467	T	n: rule	31
+4468	T	n: success	43
+4469	T	n: creation	6
+4470	T	n: editor	6
+4471	T	n: steve	2
+4472	T	r: collectively	1
+4473	T	r: wrongly	2
+4474	T	a: useless	1
+4475	T	n: world	99
+4476	T	a: frank	2
+4477	T	n: count	5
+4478	T	n: satisfaction	4
+4479	T	n: attention	21
+4480	T	r: freely	2
+4481	T	a: full	20
+4482	T	a: half	2
+4483	T	n: resolution	5
+4484	T	n: master	8
+4485	T	a: striking	1
+4486	T	r: temporarily	2
+4487	T	r: positively	3
+4488	T	r: actively	3
+4489	T	n: region	32
+4490	T	n: report	80
+4491	T	n: cool	1
+4492	T	n: superiority	1
+4493	T	n: drawback	1
+4494	T	n: show	38
+4495	T	n: deposit	2
+4496	T	n: greed	2
+4497	T	n: protein	1
+4498	T	n: guilt	3
+4499	T	a: vice	1
+4500	T	n: alexander	4
+4501	T	n: christopher	2
+4502	T	r: correctly	2
+4503	T	n: dennis	1
+4504	T	n: root	5
+4505	T	n: participation	3
+4506	T	n: chemistry	1
+4507	T	n: distraction	1
+4508	T	a: surprising	5
+4509	T	a: instrumental	1
+4510	T	n: make	1
+4511	T	n: provost	2
+4512	T	n: walter	1
+4513	T	r: suitably	1
+4514	T	r: easy	1
+4515	T	n: gateway	1
+4516	T	n: source	18
+4517	T	n: symbol	2
+4518	T	n: sinatra	1
+4519	T	a: distant	1
+4520	T	n: support	44
+4521	T	a: responsible	16
+4522	T	n: background	9
+4523	T	n: dollar	8
+4524	T	r: universally	1
+4525	T	n: reaction	11
+4526	T	r: surprisingly	4
+4527	T	n: dozen	3
+4528	T	n: flock	1
+4529	T	n: stronghold	1
+4530	T	r: broadly	2
+4531	T	n: edge	8
+4532	T	r: deep	2
+4533	T	n: pioneer	1
+4534	T	n: quest	2
+4535	T	n: history	27
+4536	T	a: close	22
+4537	T	n: excitement	3
+4538	T	n: shopkeeper	1
+4539	T	a: short	19
+4540	T	r: properly	10
+4541	T	n: response	19
+4542	T	n: griffiths	2
+4543	T	n: management	24
+4544	T	r: ultimately	5
+4545	T	n: candidate	17
+4546	T	n: dash	1
+4547	T	n: list	16
+4548	T	n: circle	5
+4549	T	n: detail	19
+4550	T	n: process	31
+4551	T	n: zone	6
+4552	T	n: grade	3
+4553	T	n: vote	23
+4554	T	n: activity	24
+4555	T	n: foreman	1
+4556	T	n: device	6
+4557	T	n: spread	2
+4558	T	n: incentive	4
+4559	T	n: louis	1
+4560	T	r: fundamentally	1
+4561	T	n: reflection	2
+4562	T	n: extent	8
+4563	T	n: culture	12
+4564	T	n: sense	16
+4565	T	a: attractive	5
+4566	T	n: square	8
+4567	T	r: solely	2
+4568	T	n: routine	2
+4569	T	a: severe	2
+4570	T	n: mcneill	1
+4571	T	n: window	13
+4572	T	n: point	65
+4573	T	an: high education	2
+4574	T	n: problem	76
+4575	T	n: canada	6
+4576	T	n: means	3
+4577	T	n: encounter	3
+4578	T	n: hostility	2
+4579	T	n: blake	1
+4580	T	n: hand	38
+4581	T	r: subsequently	4
+4582	T	n: reward	5
+4583	T	a: central	4
+4584	T	n: reed	1
+4585	T	n: contribution	13
+4586	T	n: crowd	11
+4587	T	n: dean	3
+4588	T	n: rush	2
+4589	T	n: mare	2
+4590	T	r: purely	2
+4591	T	n: morale	2
+4592	T	n: noise	4
+4593	T	a: long-term	4
+4594	T	n: index	7
+4595	T	n: trend	9
+4596	T	n: location	8
+4597	T	n: privacy	2
+4598	T	n: part	52
+4599	T	n: guess	1
+4600	T	r: adequately	1
+4601	T	r: socially	1
+4602	T	r: inside	6
+4603	T	n: title	25
+4604	T	r: officially	4
+4605	T	n: stage	26
+4606	T	n: tournament	14
+4607	T	n: time	234
+4608	T	n: johnson	3
+4609	T	n: attack	28
+4610	T	n: script	4
+4611	T	n: group	78
+4612	T	r: independently	1
+4613	T	r: supposedly	1
+4614	T	n: moment	22
+4615	T	r: basically	3
+4616	T	a: considerable	4
+4617	T	n: song	12
+4618	T	n: situation	24
+4619	T	n: bush	2
+4620	T	a: english	11
+4621	T	n: icon	1
+4622	T	n: revision	1
+4623	T	r: readily	2
+4624	T	n: unity	2
+4625	T	n: memory	8
+4626	T	n: victim	16
+4627	T	r: historically	1
+4628	T	n: mckenna	1
+4629	T	n: guarantee	3
+4630	T	n: field	18
+4631	T	a: german	1
+4632	T	n: momentum	2
+4633	T	n: insider	1
+4634	T	n: possibility	9
+4635	T	a: acceptable	3
+4636	T	n: performer	4
+4637	T	n: survival	3
+4638	T	r: easily	9
+4639	T	a: incapable	1
+4640	T	a: premier	2
+4641	T	n: wave	3
+4642	T	r: largely	8
+4643	T	r: speci?cally	2
+4644	T	n: manner	6
+4645	T	n: merit	3
+4646	T	n: turn	7
+4647	T	a: open	13
+4648	T	n: period	20
+4649	T	a: evident	2
+4650	T	n: strand	1
+4651	T	n: chart	1
+4652	T	n: cairn	2
+4653	T	n: disagreement	1
+4654	T	an: long time	4
+4655	T	a: painful	1
+4656	T	n: warner	1
+4657	T	a: uncomfortable	1
+4658	T	n: depression	2
+4659	T	a: pleasant	1
+4660	T	n: steam	1
+4661	T	n: shape	4
+4662	T	a: green	3
+4663	T	n: access	10
+4664	T	n: alert	1
+4665	T	a: unnecessary	1
+4666	T	r: substantially	2
+4667	T	n: answer	11
+4668	T	r: increasingly	7
+4669	T	n: practice	11
+4670	T	n: education	16
+4671	T	r: open	1
+4672	T	n: chance	26
+4673	T	n: fashion	5
+4674	T	n: japan	10
+4675	T	a: apparent	2
+4676	T	n: forest	4
+4677	T	n: interview	8
+4678	T	n: thompson	2
+4679	T	a: accountable	1
+4680	T	n: bearing	1
+4681	T	n: comment	11
+4682	T	n: copy	3
+4683	T	n: victory	24
+4684	T	n: boxing	2
+4685	T	n: matthews	1
+4686	T	n: power	28
+4687	T	n: procedure	8
+4688	T	r: constantly	3
+4689	T	npn: point of view	2
+4690	T	n: richard	2
+4691	T	a: obvious	4
+4692	T	r: slightly	6
+4693	T	n: instrument	2
+4694	T	r: permanently	1
+4695	T	n: rest	10
+4696	T	n: origin	2
+4697	T	n: reason	24
+4698	T	n: brain	3
+4699	T	n: effort	17
+4700	T	r: personally	3
+4701	T	n: guide	5
+4702	T	n: planner	1
+4703	T	a: safe	6
+4704	T	n: suit	5
+4705	T	n: apology	2
+4706	T	r: unanimously	1
+4707	T	n: benefit	15
+4708	T	n: option	13
+4709	T	n: examination	3
+4710	T	n: product	16
+4711	T	n: corner	6
+4712	T	n: angeles	2
+4713	T	a: genuine	1
+4714	T	n: mistake	6
+4715	T	a: public	21
+4716	T	a: dependent	2
+4717	T	r: hard	6
+4718	T	n: infrastructure	2
+4719	T	n: stress	3
+4720	T	n: classroom	1
+4721	T	r: continually	1
+4722	T	n: adam	1
+4723	T	n: millennium	1
+4724	T	n: train	9
+4725	T	a: straight	5
+4726	T	a: fair	4
+4727	T	n: warren	1
+4728	T	n: retreat	1
+4729	T	n: track	6
+4730	T	n: light	9
+4731	T	r: completely	6
+4732	T	a: massive	1
+4733	T	n: angle	1
+4734	T	r: heavily	4
+4735	T	n: cure	1
+4736	T	r: simply	16
+4737	T	n: area	44
+4738	T	a: august	11
+4739	T	an: recent year	4
+4740	T	r: quickly	9
+4741	T	n: suspicion	2
+4742	T	n: casualty	2
+4743	T	n: quantity	1
+4744	T	n: patience	1
+4745	T	n: association	15
+4746	T	n: production	11
+4747	T	n: exposure	2
+4748	T	n: american	8
+4749	T	n: parker	2
+4750	T	n: respect	5
+4751	T	n: loss	12
+4752	T	n: mark	10
+4753	T	n: interval	2
+4754	T	r: deliberately	2
+4755	T	n: misery	1
+4756	T	n: penalty	8
+4757	T	n: viewer	2
+4758	T	a: clear	16
+4759	T	a: accessible	1
+4760	T	a: chase	2
+4761	T	n: drawing	1
+4762	T	r: instantly	1
+4763	T	r: harder	1
+4764	T	n: piece	8
+4765	T	n: discipline	2
+4766	T	n: subject	9
+4767	T	a: official	18
+4768	T	n: rider	1
+4769	T	r: previously	5
+4770	T	n: peter	4
+4771	T	n: disadvantage	1
+4772	T	r: strictly	1
+4773	T	n: grave	2
+4774	T	n: walton	1
+4775	T	n: fisher	1
+4776	T	n: request	3
+4777	T	n: bailey	1
+4778	T	n: spirit	4
+4779	T	n: lesson	3
+4780	T	n: opinion	7
+4781	T	n: opening	3
+4782	T	n: dixon	1
+4783	T	r: jointly	1
+4784	T	n: administrator	1
+4785	T	n: protection	3
+4786	T	r: closely	3
+4787	T	n: desire	3
+4788	T	n: link	6
+4789	T	n: idea	15
+4790	T	n: army	6
+4791	T	n: sleep	1
+4792	T	n: occupation	1
+4793	T	n: logan	2
+4794	T	r: fully	6
+4795	T	n: virtue	1
+4796	T	r: importantly	1
+4797	T	n: credit	3
+4798	T	r: partly	3
+4799	T	n: host	2
+4800	T	n: start	8
+4801	T	n: verdict	3
+4802	T	a: black	3
+4803	T	n: contact	3
+4804	T	n: screen	3
+4805	T	n: herd	1
+4806	T	n: intention	4
+4807	T	n: mind	10
+4808	T	n: attempt	10
+4809	T	a: guilty	5
+4810	T	n: spring	4
+4811	T	n: proportion	2
+4812	T	r: rapidly	2
+4813	T	n: hong	1
+4814	T	n: cost	17
+4815	T	n: interest	19
+4816	T	n: enthusiast	1
+4817	T	a: olive	1
+4818	T	n: increase	13
+4819	T	n: loser	1
+4820	T	n: timing	1
+4821	T	n: silver	1
+4822	T	n: hold	1
+4823	T	n: partner	6
+4824	T	a: equivalent	2
+4825	T	n: guideline	2
+4826	T	n: decade	5
+4827	T	n: phillip	1
+4828	T	n: winner	8
+4829	T	r: recently	12
+4830	T	n: opportunity	13
+4831	T	n: blue	2
+4832	T	n: shield	1
+4833	T	n: anxiety	1
+4834	T	n: snow	2
+4835	T	n: attitude	5
+4836	T	n: motive	1
+4837	T	n: notice	2
+4838	T	a: worth	7
+4839	T	n: minute	20
+4840	T	n: transfer	2
+4841	T	n: championship	12
+4842	T	r: severely	1
+4843	T	n: lecture	1
+4844	T	n: anger	2
+4845	T	n: movie	3
+4846	T	r: fairly	2
+4847	T	r: fourth	2
+4848	T	n: flame	1
+4849	T	a: february	3
+4850	T	n: harm	1
+4851	T	n: entrance	1
+4852	T	n: event	16
+4853	T	n: mood	2
+4854	T	a: cheap	2
+4855	T	n: reporter	3
+4856	T	a: alive	2
+4857	T	n: shore	1
+4858	T	n: photograph	2
+4859	T	n: talk	8
+4860	T	n: move	11
+4861	T	n: debate	7
+4862	T	n: reader	3
+4863	T	n: brand	2
+4864	T	n: meantime	1
+4865	T	r: totally	3
+4866	T	n: stranger	1
+4867	T	n: murphy	1
+4868	T	a: tough	2
+4869	T	n: debut	2
+4870	T	r: carefully	2
+4871	T	n: fact	20
+4872	T	a: senior	1
+4873	T	n: supporter	5
+4874	T	r: literally	1
+4875	T	a: excellent	1
+4876	T	n: magazine	3
+4877	T	n: recipe	1
+4878	T	r: extremely	3
+4879	T	r: longer	6
+4880	T	n: basis	5
+4881	T	n: revenue	3
+4882	T	n: record	10
+4883	T	n: premise	2
+4884	T	n: sentence	5
+4885	T	n: drop	2
+4886	T	n: hour	14
+4887	T	n: rise	6
+4888	T	n: grant	5
+4889	T	n: heath	1
+4890	T	a: unusual	1
+4891	T	n: prise	3
+4892	T	n: blow	2
+4893	T	n: issue	13
+4894	T	n: danger	4
+4895	T	n: consequence	2
+4896	T	n: reality	3
+4897	T	n: spectator	1
+4898	T	r: regularly	2
+4899	T	n: lindsay	1
+4900	T	a: inevitable	1
+4901	T	r: dramatically	1
+4902	T	n: acquisition	2
+4903	T	a: free	4
+4904	T	n: margaret	1
+4905	T	n: camera	2
+4906	T	a: true	4
+4907	T	n: fall	3
+4908	T	r: ironically	1
+4909	T	n: society	10
+4910	T	n: germany	5
+4911	T	n: norman	1
+4912	T	n: park	11
+4913	T	n: worker	8
+4914	T	n: risk	5
+4915	T	n: estimate	1
+4916	T	a: past	6
+4917	T	n: rabin	1
+4918	T	n: sight	2
+4919	T	n: demonstration	1
+4920	T	n: trial	7
+4921	T	n: view	10
+4922	T	n: burden	1
+4923	T	r: long	7
+4924	T	n: energy	2
+4925	T	r: pretty	2
+4926	T	n: ford	1
+4927	T	n: confusion	1
+4928	T	n: regard	1
+4929	T	n: coach	3
+4930	T	a: confident	3
+4931	T	n: china	2
+4932	T	a: aware	4
+4933	T	n: failure	3
+4934	T	r: occasionally	1
+4935	T	r: equally	2
+4936	T	n: equipment	3
+4937	T	n: lewis	2
+4938	T	a: slow	1
+4939	T	n: boost	1
+4940	T	r: abroad	2
+4941	T	n: belief	2
+4942	T	a: andrew	2
+4943	T	n: farm	3
+4944	T	n: skin	1
+4945	T	n: story	5
+4946	T	n: killer	1
+4947	T	n: adams	2
+4948	T	n: recovery	2
+4949	T	n: habit	1
+4950	T	n: bridge	4
+4951	T	n: davies	2
+4952	T	n: defence	4
+4953	T	n: spain	3
+4954	T	n: william	1
+4955	T	n: passion	1
+4956	T	a: young	5
+4957	T	n: medal	1
+4958	T	n: left	1
+4959	T	n: stand	2
+4960	T	n: material	3
+4961	T	n: fault	1
+4962	T	r: undoubtedly	1
+4963	T	a: famous	1
+4964	T	n: cooper	1
+4965	T	n: suggestion	2
+4966	T	a: anxious	1
+4967	T	n: industry	11
+4968	T	n: football	4
+4969	T	r: july	3
+4970	T	n: boss	1
+4971	T	n: absence	1
+4972	T	n: speaker	1
+4973	T	n: front	3
+4974	T	r: possibly	2
+4975	T	n: fine	1
+4976	T	n: thought	2
+4977	T	n: chair	1
+4978	T	n: controversy	1
+4979	T	n: walker	2
+4980	T	n: feeling	2
+4981	T	n: thomas	1
+4982	T	n: taylor	1
+4983	T	n: responsibility	3
+4984	T	n: letter	4
+4985	T	n: address	1
+4986	T	n: september	3
+4987	T	n: involvement	1
+4988	T	n: convention	1
+4989	T	n: june	2
+4990	T	r: firmly	1
+4991	T	n: teenager	1
+4992	T	n: friend	5
+4993	T	n: medicine	1
+4994	T	n: traffic	1
+4995	T	n: permission	1
+4996	T	n: october	3
+4997	T	n: evidence	5
+4998	T	n: castle	2
+4999	T	n: project	5
+5000	T	n: rain	1
+5001	T	n: matter	5
+5002	T	n: charles	1
+5003	T	n: door	3
+5004	T	n: mission	1
+5005	T	n: trophy	1
+5006	T	n: smith	5
+5007	T	n: ward	1
+5008	T	n: analyst	1
+5009	T	n: argument	2
+5010	T	r: eventually	2
+5011	T	n: youth	1
+5012	T	n: december	2
+5013	T	r: originally	1
+5014	T	r: immediately	2
+5015	T	n: regulation	1
+5016	T	n: river	1
+5017	T	n: people	28
+5018	T	n: commitment	2
+5019	T	a: january	1
+5020	T	n: lead	2
+5021	T	r: earlier	4
+5022	T	n: draw	1
+5023	T	n: november	2
+5024	T	n: room	4
+5025	T	n: money	8
+5026	T	n: spot	1
+5027	T	r: badly	1
+5028	T	n: concern	3
+5029	T	n: announcement	1
+5030	T	n: criticism	1
+5031	T	n: hill	2
+5032	T	n: life	10
+5033	T	n: graham	1
+5034	T	n: warning	1
+5035	T	n: talent	1
+5036	T	n: west	2
+5037	T	n: condition	3
+5038	T	n: week	14
+5039	T	n: award	2
+5040	T	n: judge	2
+5041	T	n: school	6
+5042	T	n: call	2
+5043	T	n: complaint	1
+5044	T	n: place	9
+5045	T	n: appearance	1
+5046	T	n: round	3
+5047	T	n: news	2
+5048	T	n: season	5
+5049	T	n: half	2
+5050	T	n: murray	1
+5051	T	n: article	1
+5052	T	r: apparently	1
+5053	T	n: month	10
+5054	T	n: march	2
+5055	T	n: scheme	3
+5056	T	n: committee	3
+5057	T	n: plan	4
+5058	T	n: demand	2
+5059	T	n: offer	2
+5060	T	r: forward	2
+5061	T	n: soldier	1
+5062	T	a: ready	1
+5063	T	n: stewart	1
+5064	T	n: staff	3
+5065	T	n: troop	1
+5066	T	a: lang	1
+5067	T	n: board	3
+5068	T	n: defeat	1
+5069	T	n: share	3
+5070	T	n: child	6
+5071	T	n: trouble	1
+5072	T	n: rugby	1
+5073	T	n: back	1
+5074	T	n: france	2
+5075	T	n: crime	1
+5076	T	n: president	1
+5077	T	n: force	2
+5078	T	a: happy	1
+5079	T	n: year	25
+5080	T	n: farmer	1
+5081	T	n: service	5
+5082	T	n: company	8
+5083	T	n: land	1
+5084	T	n: care	1
+5085	T	r: back	5
+5086	T	n: race	1
+5087	T	n: head	1
+5088	T	n: charge	1
+5089	T	n: leader	1
+5090	T	n: country	2
+5091	T	n: thing	2
+5092	T	n: today	2
+5093	T	n: book	1
+5094	T	n: price	1
+5095	T	n: home	1

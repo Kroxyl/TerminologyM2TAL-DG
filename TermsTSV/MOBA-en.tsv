@@ -1,0 +1,680 @@
+#	type	key	freq
+1	T	n: moba	351
+2	T	n: avatar	278
+3	T	nn: game avatar	198
+4	T	nn: moba game	183
+6	T	an: toxic player		96
+6	V[s]	acan: toxic and typical player	11
+6	V[s]	acan: toxic and normal player	2
+6	V[s]	acan: typical and toxic player	4
+8	T	nn: player skill		83
+8	V[s]	nnn: player base skill	7
+8	V[s]	nnn: player skill decomposition	27
+8	V[s]	nnn: player skill composition	7
+8	V[s]	nnn: player skill evaluation	3
+8	V[s]	nnn: player skill formation	3
+8	V[s]	nnn: player skill rating	3
+8	V[s]	nnn: player skill analysis	2
+10	T	nn: team composition	150
+12	T	n: dota2	132
+13	T	n: dota	61
+16	T	n: creeps	56
+20	T	nn: team formation	43
+24	T	npn: league of legend	117
+25	T	an: online game	74
+29	T	n: hots	36
+30	T	n: dots	38
+36	T	an: typical player	30
+38	T	n: gameplay	89
+43	T	nn: enemy team	28
+47	T	nn: team fight	27
+48	T	n: defense	26
+52	T	a: in-game	52
+53	T	nn: riot game	24
+55	T	an: blue team	24
+55	V[s]	acan: red and blue team	6
+61	T	nn: enemy hero	23
+66	T	an: tactical analysis	22
+81	T	an: late game	19
+84	T	nn: player behavior	18
+89	T	n: prize	17
+98	T	nn: champion attribute	17
+107	T	an: opposite team	15
+108	T	nn: play style	15
+114	T	nn: user report	15
+119	T	an: red team	14
+119	V[s]	acan: red and blue team	6
+123	T	an: experienced role	14
+123	V[gp]	an: inexperienced role	3
+124	T	n: minion	27
+129	T	n: mana	13
+130	T	n: creep	11
+132	T	an: easy mode	13
+133	T	an: red side	13
+135	T	an: blue side	13
+137	T	an: normal player	13
+138	T	nn: novice player	13
+140	T	n: lol	42
+141	T	nn: lol player	13
+142	T	nn: game match	12
+143	T	nn: enemy base	12
+145	T	n: noob	12
+158	T	n: mage	12
+165	T	n: matchmaking	23
+169	T	nn: skill rating		11
+170	T	an: winning rate		11
+170	V[s]	aan: low winning rate		3
+197	T	nn: enemy tower	10
+198	T	an: hard mode	10
+199	T	ann: high skill player	10
+210	T	nn: target selection	10
+216	T	n: gamers	10
+230	T	nn: opponent team	9
+232	T	nn: team role	9
+243	T	npn: amount of gold	9
+250	T	a: skillful	9
+255	T	nn: gameplay style	9
+257	T	an: neutral creeps	9
+261	T	nn: rating system	9
+261	V[s]	nnn: elo rating system	2
+266	T	n: anti-mage	9
+274	T	an: real-time strategy	25
+289	T	an: high damage	8
+293	T	n: toxicity	8
+296	T	an: opposing team	8
+300	T	nnn: champion base skill	8
+302	T	nn: team win	8
+302	V[s]	ann: red team win	3
+306	T	nn: expert player	8
+351	T	an: skilled player	7
+351	V[p]	an: unskilled player	4
+369	T	nn: enemy creeps		7
+370	T	ann: high skill level	7
+373	T	nn: game mechanic	7
+394	T	nn: health point	 7
+413	T	an: winning chance	6
+421	T	an: in-game period	6
+429	T	n: ganks	6
+430	T	nn: team base	6
+445	T	nn: game experience	6
+461	T	an: good decision	6
+478	T	n: gank	6
+487	T	an: mid game	6
+488	T	an: bottom lane	6
+490	T	nn: combat scenario	6
+506	T	an: rank level	12
+512	T	an: matchmaking system	11
+513	T	n: metagame	11
+514	T	nn: game mode	16
+528	T	n: meta	5
+537	T	npn: level of player	5
+539	T	an: red area	5
+546	T	nn: target game	5
+557	T	nn: ally hero	5
+562	T	an: online community	5
+567	T	nn: player statistic	5
+568	T	nn: team effectiveness	5
+569	T	n: griefing	5
+573	T	an: main characteristic	5
+600	T	nn: trash talk	5
+622	T	a: real-time	76
+624	T	nn: game state	9
+625	T	a: non-game	9
+626	T	an: rank gap	9
+628	T	an: anonymous player	9
+630	T	nn: lol match	4
+648	T	an: selected player	4
+681	T	an: neutral unit	 4
+682	T	n: screenshot	4
+687	T	nn: lol champion		4
+689	T	nn: dota map	4
+702	T	an: skilled champion	4
+704	T	nn: moba match	4
+717	T	n: troll	4
+720	T	n: jungler	4
+724	T	nn: tower range	4
+726	T	an: allied creeps	4
+728	T	ann: high damage rating	4
+731	T	an: powerful unit	4
+732	T	nn: hero selection	4
+736	T	ann: online team formation	4
+737	T	an: unskilled player	4
+747	T	n: offline	4
+748	T	nn: tournament mode	4
+752	T	nn: game highlight	4
+753	T	an: solo queue	4
+759	T	nn: team skill	4
+762	T	nnpn: base skill of player	8
+766	T	nn: game map	4
+774	T	an: strategic advantage	4
+780	T	nn: hit point	4
+780	V[s]	ann: low hit point	3
+806	T	an: major game	4
+807	T	ncnn: pick and ban phase	4
+819	T	nn: split push	4
+821	T	nn: target selector	4
+824	T	an: easy mode 4
+837	T	npn: set of action	4
+838	T	nn: stfu noob	4
+839	T	a: high-level	4
+839	V[mg]	an: high level	8
+839	V[m]	ann: high skill level	7
+841	T	nn: game tutorial	4
+866	T	n: assist	52
+869	T	nn: tower diving	 3
+875	T	an: blue area	3
+885	T	an: limited attack	3
+891	T	nn: phase transition	3
+892	T	nnn: player skill formation	3
+893	T	npan: gamers with similar skill	3
+903	T	an: incompetent player	3
+904	T	n: silencer	3
+905	T	an: special ability	3
+907	V[s]	nn: game match	12
+909	T	nn: health factor	3
+913	T	a: hybrid	3
+923	T	a: killable	3
+924	T	ncnn: agility and strength hero	3
+927	T	nn: game knowledge	3
+931	T	n: theorycraft	3
+936	T	an: top tier	3
+938	T	an: middle game	3
+938	T	an: end game	2
+939	T	npan: player with similar skill	3
+941	T	nn: chat volume	3
+945	T	ann: great escape capability	3
+955	T	npan: view of red team	3
+958	T	an: large damage 	3
+963	T	nnn: team composition analysis	3
+973	T	nn: team combat	3
+974	T	aan: good overall synergy	3
+992	T	ann: major game update	3
+1003	T	an: single hero	3
+1005	T	nn: mana resource	3
+1031	T	an: heavy damage		3	
+1050	T	n: winrate	3
+1056	T	nnn: team competition game	3
+1059	T	nnn: mana burn skill	3
+1076	T	n: griefers	3
+1104	T	nn: grief playing	3
+1105	T	ann: late game carry	3
+1106	T	nn: player role	3
+1122	T	an: average skill	3
+1124	T	nn: success factor	3
+1135	T	nn: role category	3
+1154	T	npn: trueskill of player	3
+1192	T	nnn: game avatar synergy	3
+1204	T	nn: avatar anti-mage	3
+1212	T	ann: individual skill level	3
+1223	T	nn: elo system	3
+1223	V[s]	nnn: elo rating system	2
+1224	T	npn: set of skill	3
+1224	V[s]	nn: skill set	2
+1232	T	npn: type of map	 3
+1233	T	an: middle lane	3
+1238	T	nn: hero status	3
+1283	T	npn: type of match	3
+1285	T	an: allied tower		3
+1286	T	npnpn: analysis of league of legend	3
+1287	T	ann: stealthy play style	3
+1289	T	an: competitive setting	3
+1292	T	nn: kda factor	3
+1297	T	nnn: tank carry hero	3
+1335	T	nn: dota game	3
+1341	T	an: real-time game	3
+1343	T	anan: high burst physical damage	 3
+1358	T	nn: trueskill score	3
+1365	T	npn: list of hero	3
+1366	T	an: special power	3
+1371	T	aan: low winning rate	3
+1387	T	npn: mechanic of game	3
+1387	V[s]	nn: game mechanic	7
+1394	T	nn: hero range	3
+1429	T	nn: game speed	3
+1431	T	an: losing team	3
+1440	T	n: junglers	3
+1444	T	an: specific role	3
+1445	T	nn: team synergy	3
+1453	T	an: video highlight	6
+1460	T	nnpn: skill level of player	3
+1461	T	nn: target destination	3
+1462	T	ann: low death rate	3
+1473	T	an: familiar hero	3
+1489	T	nn: warm-up effect	3
+1507	T	npn: level of synergy	 3
+1533	T	nn: report system	3
+1545	T	nn: dota match	5
+1546	T	an: favorite champion	5
+1549	T	an: in-game avatar	5
+1553	T	an: winning rate	 5
+1573	T	an: public matchmaking	2
+1614	T	nn: player satisfaction	2
+1617	T	nn: warm-up period	2
+1618	T	npnn: league of legend championship	2
+1667	T	an: random hero	2
+1680	T	nn: experience point	2
+1683	T	an: common technique	2
+1690	T	npn: strength of player	2
+1695	V[s]	an: simple game	4
+1696	T	nn: game goal	2
+1697	T	an: full game	2
+1698	T	nn: ai system	2
+1713	T	anpn: great amount of damage	2
+1720	T	an: complex gameplay	2
+1728	T	npan: champion with high control	 2
+1733	T	an: neutral creeps	2
+1750	T	nn: moba competition	2
+1759	T	npn: ability of champion	2
+1774	T	nn: reaction time	2
+1783	T	an: powerful item	2
+1797	T	nn: game record	2
+1798	T	an: active player	2
+1801	T	ann: official riot game	2
+1803	T	anpn: average skill of player	2
+1805	T	an: magic attacker	2
+1808	T	nn: jungle invasion	2
+1824	T	npan: champion with good control	 2
+1860	T	ann: low control rating	2
+1866	T	n: newbie	2
+1868	T	an: veteran player	2
+1886	T	an: weak hero	2
+1918	T	nn: champion level	2
+1939	T	nn: role attribute	2
+1963	T	an: main gameplay	2
+1983	T	an: good kda	2
+1992	T	an: single target	2
+2035	T	an: total damage	2
+2038	T	npn: middle of lane	2
+2039	T	nnn: team fight strategy	2
+2047	T	nn: game runtime		2
+2048	T	an: diverse skill	2
+2049	T	an: low health	2
+2050	T	an: specific champion	 2
+2066	T	an: small range	2
+2076	T	nnn: team skill level	 2
+2086	T	nn: user interface	2
+2096	T	an: blind mode	2
+2103	T	nn: opponent player	2
+2133	T	an: selected match	2
+2134	T	nn: team cooperation	2
+2139	T	nn: report noob	2
+2141	T	nn: team push	2
+2163	T	nn: game style	2
+2165	T	nn: item building	2
+2170	T	nn: player id	2
+2180	T	n: cheater	2
+2187	T	an: physical attacker	2
+2189	T	nn: game interface	2
+2207	T	nn: deal damage	2
+2211	T	n: matchup	2
+2213	T	n: aram	2
+2219	T	nn: movement system	2
+2228	T	n: strategy	2
+2231	T	anpn: specific skill of player	2
+2232	T	an: regular attack	2
+2240	T	nn: player ability	2
+2249	T	nn: kill streak	2
+2250	T	nn: game time	2
+2274	T	nn: chat room	2
+2275	T	an: average damage	2
+2279	T	nn: custom map	2
+2300	T	n: intercept	2
+2320	T	n: minion 2
+2332	T	n: area-of-effect	2
+2334	T	n: respawn	2
+2338	T	ann: top tier player	2
+2344	T	n: non-player	4
+2352	T	anpn: small number of assist	2
+2357	T	an: mobile device	2
+2358	T	an: powerful skill	2
+2361	T	an: single layer		2
+2377	T	n: falling	2
+2383	T	anpn: low number of kill	2
+2393	T	an: real-time reasoning	4
+2398	T	nn: time penalty	 2
+2399	T	a: character-level	2
+2400	T	an: main hero	2
+2413	T	an: low damage	2
+2416	T	nn: power play	2
+2420	T	ann: low level account	2
+2423	T	nn: bounty rune	2
+2426	T	nnn: elo rating system	2
+2438	T	an: balanced game	2
+2449	T	nn: hero unit	2
+2456	T	ann: low skill level	2
+2465	T	nn: skill set	2
+2471	T	ann: degrading champion status	2
+2472	T	nn: moba phase	2
+2487	T	ann: team-based role-playing game	2
+2488	T	anpn: high number of kill	2
+2494	T	nnpn: team composition of champion	2
+2510	T	npnn: league of legend match	2
+2512	T	an: abusive language	20
+2514	V[s]	aan: competitive video game	3
+2515	T	n: summoner	7
+2518	T	nn: team performance	29
+2523	T	an: early game	15
+2529	T	n: teamfights	3
+2529	V[m]+	nn: team fight	27
+2549	T	an: inexperienced role	3
+2550	T	an: esports game	 1	
+2551	T	n: late-game	3
+2551	V[mg]	an: late game	19
+2558	T	nn: skill level	37
+2558	V[s]	ann: low skill level	2
+2558	V[s]	ann: similar skill level	9
+2569	T	n: auto-attack	2
+2575	T	ann: large esport game	2
+2583	T	npn: co-op with ai	1
+2586	T	an: opponent base	2
+2595	T	n: laners	1
+2638	T	n: armory	1
+2650	T	an: esports journalist	1
+2651	T	a: supporting	1
+2652	T	n: mid-laner	1
+2663	T	an: strategic decision-making	2
+2669	T	n: high-rank	2
+2672	T	an: low kda	1
+2676	T	n: top-laners	2
+2689	T	anpn: average number of kill 2	
+2718	T	an: matchmaking rating	2
+2726	T	an: performer player	2
+2736	T	n: doublekills	1
+2788	T	n: last-hitting	1
+2796	T	n: team-fight	2
+2796	V[mg]+	nn: team fight	27
+2808	T	n: micro-transactions	 1
+2838	T	an: minion behavior	2
+2839	T	an: infernal shrine	1
+2846	T	n: counter-picking	1
+2853	T	nn: solo-queue mmr	2
+2861	T	an: three-lane map	1
+2862	T	npn: sub-genre of rts	 1
+2865	T	nn: dragon shire 1
+2869	T	n: aatrox	1
+2878	T	aan: massive-multiplayer online game	6
+2879	T	n: leveling	1
+2882	T	n: spotts	1
+2904	T	n: consumable	1
+2906	T	n: honors	1
+2921	T	a: totaldamagetaken	2
+2921	V[m]	an: total damage	2
+2925	T	an: moba community	2
+2936	T	n: videogames	1
+2936	V[m]+	an: video game	43
+2954	T	n: champlevel	1
+2954	V[m]	nn: champion level	2
+3028	T	n: shen	1
+3034	T	a: spamming	1
+3045	T	an: lane push	2
+3046	T	an: elo-like rating	1
+3071	T	an: aggressive play	2
+3075	T	n: competition 3	1
+3087	T	an: base damage	2
+3092	T	a: mid-game	2
+3092	V[m]	an: mid game	6
+3136	T	a: highly-ranked	 1
+3149	T	anpn: small pool of health	2
+3175	T	n: triplekills	1
+3224	T	an: live-streaming platform	2
+3238	T	a: ingame	2
+3271	T	n: undead	1
+3272	T	n: armor	1
+3283	T	n: warrior-mage	1
+3295	T	n: smurf	1
+3327	T	an: minion ai	1
+3338	T	n: gamebots	1
+3341	T	n: base-building 	1
+3342	T	n: mid-season	1
+3355	T	n: kill	55
+3356	T	n: positioning	20
+3358	T	an: individual player	10
+3364	T	n: agility	24
+3367	T	an: individual skill	8
+3372	T	n: turret	26
+3374	T	n: tutorial	22
+3377	T	an: physical damage	7
+3377	V[s]	nan: burst physical damage	6
+3384	T	an: competitive game	6
+3384	V[s]	aan: competitive video game	3
+3385	T	npn: amount of damage		6
+3394	T	n: chat	77
+3404	T	n: assassin	38
+3406	T	n: combat	45
+3409	T	n: cooperation	11
+3411	T	nn: team member	23
+3412	T	an: visual effect	4
+3414	T	n: hero	442
+3416	T	n: pick	32
+3423	T	n: enemy	212
+3424	T	n: highlight	87
+3429	T	n: interface	14
+3432	T	n: mechanic	36
+3448	T	n: server	11
+3450	T	a: skilled	18
+3460	T	n: carry	10
+3467	T	n: surrender	46
+3473	T	n: rune	6
+3474	T	n: feeder	6
+3477	T	a: passive	5
+3484	T	n: user	173
+3487	T	n: evolution	23
+3490	T	n: melee	5
+3509	T	n: mobility	11
+3511	T	an: bad game	2
+3516	T	n: entity	33
+3520	T	n: riot	50
+3521	T	n: teamwork	11
+3524	T	npn: lot of damage	2
+3526	T	n: aggro	2
+3530	T	n: skill	391
+3539	T	n: game	2103
+3552	T	nn: response time	4
+3555	T	n: stat	23
+3563	T	n: player	1781
+3573	T	n: tier	8
+3576	T	n: lane	89
+3578	T	n: mechanism	58
+3583	T	n: dungeon	2
+3586	T	n: duel	10	5
+3588	T	n: teammate	47
+3590	T	n: novice	16
+3591	T	n: tower	72
+3602	T	n: update	10
+3604	T	n: jungle	16
+3607	T	n: twitch	2
+3614	T	n: real-world	14
+3616	T	n: beginner	10
+3618	T	n: sentinel	2
+3623	T	n: input	28
+3626	T	n: match	610
+3634	T	a: hidden	4
+3643	T	n: progression	8
+3646	T	n: mute	1
+3651	T	n: strategy	154
+3653	T	n: technique	80
+3658	T	a: gold	5
+3672	T	n: draft	11
+3674	T	n: coop	1
+3679	T	n: decision-making	14
+3680	T	n: gold	62
+3692	T	n: team	887
+3697	T	an: main target	2
+3736	T	n: animation	5
+3740	T	n: glitch	1
+3746	T	n: ally	40
+3751	T	a: competitive	32
+3753	T	an: good game	5
+3762	T	n: champion	207
+3770	T	n: role	234
+3774	T	n: frame	46
+3778	T	r: solo	1
+3810	T	n: greed	12
+3811	T	n: opponent	73
+3812	T	n: base	106
+3822	T	n: item	67
+3847	T	a: ranking	14
+3859	T	n: experience	181
+3861	T	n: battle	97
+3865	T	n: potion	2
+3882	T	n: communication		9
+3885	T	n: spell	27
+3889	T	a: controlled	8
+3905	T	n: damage	91
+3918	T	n: strength	56
+3920	T	n: crystal	6
+3921	T	n: ability	77
+3922	T	n: obstacle	10
+3931	T	n: utility	23
+3934	T	n: level	206
+3962	T	a: powerful	15
+3966	T	n: cheating	3
+3968	T	n: battlefield	4
+3971	T	n: sustainability	1
+3972	T	n: traps	2
+3977	T	n: character	71
+3986	T	n: focus	21
+3990	T	n: leaver	2
+4003	T	n: hacker	1
+4020	T	an: wide range	6
+4021	T	n: buff	3
+4024	T	n: warrior	7
+4033	T	a: weak	14
+4037	T	n: weakness	15
+4057	T	n: resource	52
+4065	T	a: objective	24
+4068	T	a: invisible	2
+4086	T	n: fight	48
+4087	T	n: capture	2
+4096	T	n: arrow	2
+4101	T	a: bottom	14
+4104	T	n: effect	96
+4105	T	n: play	78	
+4124	T	n: object	12
+4125	T	n: impact	37
+4126	T	n: advantage	46
+4140	T	n: unit	73
+4163	T	n: range	48
+4167	T	n: farming	9
+4168	T	n: split	8
+4176	T	n: harassment	4
+4177	T	n: session	43
+4184	T	n: path	17
+4185	T	n: tank	11
+4223	T	n: healing	1
+4225	T	an: high level	8
+4236	T	a: blind	4
+4242	T	n: target	38
+4249	T	n: status	22
+4253	T	a: early	46
+4260	T	a: hard	43
+4264	T	n: movement	33
+4288	T	a: middle	12
+4290	T	n: rift	2
+4291	T	n: rank	12
+4306	T	n: commentator	5
+4307	T	n: tactic	9
+4308	T	n: message	31
+4315	T	n: death	69
+4319	T	a: easy	38
+4336	T	n: competition	43
+4345	T	n: class	32
+4346	T	n: fighter	7
+4353	T	n: starter	3
+4368	T	n: goal	59
+4386	T	n: community	50
+4398	T	n: bard	1
+4409	T	n: execution	4
+4427	T	n: scoreboard	1
+4433	T	n: killing	7
+4434	T	n: smoke	4
+4439	T	a: poor	11
+4443	T	n: connection	10
+4454	T	n: judgment	11
+4462	T	n: trigger	1
+4467	T	n: rule	31
+4475	T	n: world	99
+4481	T	a: full	20
+4484	T	n: master	8
+4490	T	n: report	80
+4496	T	n: greed	2
+4519	T	a: distant	1
+4520	T	n: support	44
+4536	T	a: close	22
+4546	T	n: dash	1
+4551	T	n: zone	6
+4572	T	n: point	65
+4582	T	n: reward	5
+4588	T	n: rush	2
+4596	T	n: location	8
+4605	T	n: stage	26
+4606	T	n: tournament	14
+4607	T	n: time	234
+4609	T	n: attack	28
+4610	T	n: script	4
+4611	T	n: group	78
+4619	T	n: bush	2
+4626	T	n: victim	16
+4630	T	n: field	18
+4641	T	n: wave	3
+4646	T	n: turn	7
+4647	T	a: open	13
+4662	T	a: green	3
+4663	T	n: ping	3
+4664	T	n: alert	1
+4672	T	n: chance	26
+4676	T	n: forest	4
+4683	T	n: victory	24
+4686	T	n: power	28
+4691	T	a: obvious	4
+4698	T	n: brain	3
+4703	T	a: safe	6
+4714	T	n: mistake	6
+4717	T	r: hard	6
+4724	T	n: train	9
+4725	T	a: straight	5
+4728	T	n: retreat	1
+4737	T	n: area	44
+4752	T	n: mark	10
+4757	T	n: viewer	2
+4758	T	a: clear	16
+4764	T	n: piece	8
+4771	T	n: disadvantage	1
+4778	T	n: spirit	4
+4785	T	n: protection	3
+4799	T	n: host	2
+4800	T	n: start	8
+4814	T	n: cost	17
+4818	T	n: increase	13
+4819	T	n: loser	1
+4820	T	n: timing	1
+4821	T	n: silver	1
+4828	T	n: winner	8
+4831	T	n: blue	2
+4832	T	n: shield	1
+4838	T	a: worth	7
+4848	T	n: flame	1
+4860	T	n: move	11
+4885	T	n: drop	2
+4889	T	n: heath	1
+4894	T	n: danger	4
+4903	T	a: free	4
+4924	T	n: energy	2
+4929	T	n: coach	3
+4936	T	n: equipment	3
+4938	T	a: slow	1
+4939	T	n: boost	1
+4943	T	n: farm	3
+4946	T	n: killer	1
+4948	T	n: recovery	2
+4998	T	n: castle	2
+5004	T	n: mission	1
+5007	T	n: ward	1
+5016	T	n: river	1
+5020	T	n: lead	2
+5026	T	n: spot	1
+5042	T	n: call	2
+5048	T	n: season	5
+5068	T	n: defeat	1
+5080	T	n: farmer	1
+5089	T	n: leader	1
