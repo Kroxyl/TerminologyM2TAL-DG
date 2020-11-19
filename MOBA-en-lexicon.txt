@@ -1,0 +1,644 @@
+moba 
+avatar 
+game avatar 
+moba game 
+toxic player 
+toxic and typical player 
+toxic and normal player 
+typical and toxic player 
+player skill 
+player base skill 
+player skill decomposition 
+player skill composition 
+player skill evaluation 
+player skill formation 
+player skill rating 
+player skill analysis 
+team composition 
+dota 
+creeps 
+team formation 
+league of legend 
+online game 
+hots 
+dot 
+typical player 
+gameplay 
+enemy team 
+team fight 
+defense 
+in - game 
+riot game 
+blue team 
+red and blue team 
+enemy hero 
+tactical analysis 
+late game 
+player behavior 
+prize 
+champion attribute 
+opposite team 
+play style 
+user report 
+red team 
+experienced role 
+inexperienced role 
+minion 
+mana 
+creep 
+easy mode 
+red side 
+blue side 
+normal player 
+novice player 
+lol 
+lol player 
+game match 
+enemy base 
+noob 
+mage 
+matchmaking 
+skill rating 
+win rate 
+low winning rate 
+enemy tower 
+hard mode 
+high skill player 
+target selection 
+gamer 
+opponent team 
+team role 
+amount of gold 
+skillful 
+gameplay style 
+neutral creeps 
+rating system 
+elo rating system 
+anti - mage 
+real - time strategy 
+high damage 
+toxicity 
+oppose team 
+champion base skill 
+team win 
+red team win 
+expert player 
+skilled player 
+unskilled player 
+enemy creeps 
+high skill level 
+game mechanic 
+health point 
+win chance 
+in - game period 
+gank 
+team base 
+game experience 
+good decision 
+mid game 
+bottom lane 
+combat scenario 
+rank level 
+matchmaking system 
+metagame 
+game mode 
+meta 
+level of player 
+red area 
+target game 
+ally hero 
+online community 
+player statistic 
+team effectiveness 
+griefe 
+main characteristic 
+trash talk 
+real - time 
+game state 
+non - game 
+rank gap 
+anonymous player 
+lol match 
+select player 
+neutral unit 
+screenshot 
+lol champion 
+dota map 
+skilled champion 
+moba match 
+troll 
+jungler 
+tower range 
+allied creeps 
+high damage rating 
+powerful unit 
+hero selection 
+online team formation 
+offline 
+tournament mode 
+game highlight 
+solo queue 
+team skill 
+base skill of player 
+game map 
+strategic advantage 
+hit point 
+low hit point 
+major game 
+pick and ban phase 
+split push 
+target selector 
+set of action 
+stfu noob 
+high - level 
+high level 
+game tutorial 
+assist 
+tower diving 
+blue area 
+limited attack 
+phase transition 
+gamer with similar skill 
+incompetent player 
+silencer 
+special ability 
+health factor 
+hybrid 
+killable 
+agility and strength hero 
+game knowledge 
+theorycraft 
+top tier 
+middle game 
+end game 
+player with similar skill 
+chat volume 
+great escape capability 
+view of red team 
+large damage 
+team composition analysis 
+team combat 
+good overall synergy 
+major game update 
+single hero 
+mana resource 
+heavy damage 
+winrate 
+team competition game 
+mana burn skill 
+griefer 
+grief playing 
+late game carry 
+player role 
+average skill 
+success factor 
+role category 
+trueskill of player 
+game avatar synergy 
+avatar anti - mage 
+individual skill level 
+elo system 
+set of skill 
+skill set 
+type of map 
+middle lane 
+hero status 
+type of match 
+allied tower 
+analysis of league of legend 
+stealthy play style 
+competitive setting 
+kda factor 
+tank carry hero 
+dota game 
+real - time game 
+high burst physical damage 
+trueskill score 
+list of hero 
+special power 
+mechanic of game 
+hero range 
+game speed 
+lose team 
+junglers 
+specific role 
+team synergy 
+video highlight 
+skill level of player 
+target destination 
+low death rate 
+familiar hero 
+warm - up effect 
+level of synergy 
+report system 
+dota match 
+favorite champion 
+in - game avatar 
+public matchmaking 
+player satisfaction 
+warm - up period 
+league of legend championship 
+random hero 
+experience point 
+common technique 
+strength of player 
+simple game 
+game goal 
+full game 
+ai system 
+great amount of damage 
+complex gameplay 
+champion with high control 
+moba competition 
+ability of champion 
+reaction time 
+powerful item 
+game record 
+active player 
+official riot game 
+average skill of player 
+magic attacker 
+jungle invasion 
+champion with good control 
+low control rating 
+newbie 
+veteran player 
+weak hero 
+champion level 
+role attribute 
+main gameplay 
+good kda 
+single target 
+total damage 
+middle of lane 
+team fight strategy 
+game runtime 
+diverse skill 
+low health 
+specific champion 
+small range 
+team skill level 
+user interface 
+blind mode 
+opponent player 
+select match 
+team cooperation 
+report noob 
+team push 
+game style 
+item building 
+player -PRON- would 
+cheater 
+physical attacker 
+game interface 
+deal damage 
+matchup 
+aram 
+movement system 
+strategy 
+specific skill of player 
+regular attack 
+player ability 
+kill streak 
+game time 
+chat room 
+average damage 
+custom map 
+intercept 
+area - of - effect 
+respawn 
+top tier player 
+non - player 
+small number of assist 
+mobile device 
+powerful skill 
+single layer 
+fall 
+low number of kill 
+real - time reasoning 
+time penalty 
+character - level 
+main hero 
+low damage 
+power play 
+low level account 
+bounty rune 
+balanced game 
+hero unit 
+low skill level 
+degrade champion status 
+moba phase 
+team - base role - play game 
+high number of kill 
+team composition of champion 
+league of legend match 
+abusive language 
+competitive video game 
+summoner 
+team performance 
+early game 
+teamfight 
+esports game 
+late - game 
+skill level 
+similar skill level 
+auto - attack 
+large esport game 
+co - op with ai 
+opponent base 
+laner 
+armory 
+esports journalist 
+support 
+mid - laner 
+strategic decision - making 
+high - rank 
+low kda 
+top - laner 
+average number of kill 
+matchmaking rating 
+performer player 
+doublekill 
+last - hitting 
+team - fight 
+micro - transaction 
+minion behavior 
+infernal shrine 
+counter - pick 
+solo - queue mmr 
+three - lane map 
+sub - genre of rts 
+dragon shire 
+aatrox 
+massive - multiplayer online game 
+level 
+spotts 
+consumable 
+honors 
+totaldamagetaken 
+moba community 
+videogame 
+video game 
+champlevel 
+shen 
+spamme 
+lane push 
+elo - like rating 
+aggressive play 
+competition 
+base damage 
+mid - game 
+highly - rank 
+small pool of health 
+triplekill 
+live - stream platform 
+ingame 
+undead 
+armor 
+warrior - mage 
+smurf 
+minion ai 
+gamebot 
+base - building 
+mid - season 
+kill 
+positioning 
+individual player 
+agility 
+individual skill 
+turret 
+tutorial 
+physical damage 
+burst physical damage 
+competitive game 
+amount of damage 
+chat 
+assassin 
+combat 
+cooperation 
+team member 
+visual effect 
+hero 
+pick 
+enemy 
+highlight 
+interface 
+mechanic 
+server 
+skilled 
+carry 
+surrender 
+rune 
+feeder 
+passive 
+user 
+evolution 
+melee 
+mobility 
+bad game 
+entity 
+riot 
+teamwork 
+lot of damage 
+aggro 
+skill 
+game 
+response time 
+stat 
+player 
+tier 
+lane 
+mechanism 
+dungeon 
+duel 
+teammate 
+novice 
+tower 
+update 
+jungle 
+twitch 
+real - world 
+beginner 
+sentinel 
+input 
+match 
+hide 
+progression 
+mute 
+technique 
+gold 
+draft 
+coop 
+decision - making 
+team 
+main target 
+animation 
+glitch 
+ally 
+competitive 
+good game 
+champion 
+role 
+frame 
+solo 
+greed 
+opponent 
+base 
+item 
+rank 
+experience 
+battle 
+potion 
+communication 
+spell 
+control 
+damage 
+strength 
+crystal 
+ability 
+obstacle 
+utility 
+powerful 
+cheat 
+battlefield 
+sustainability 
+trap 
+character 
+focus 
+leaver 
+hacker 
+wide range 
+buff 
+warrior 
+weak 
+weakness 
+resource 
+objective 
+invisible 
+fight 
+capture 
+arrow 
+bottom 
+effect 
+play 
+object 
+impact 
+advantage 
+unit 
+range 
+farming 
+split 
+harassment 
+session 
+path 
+tank 
+healing 
+blind 
+target 
+status 
+early 
+hard 
+movement 
+middle 
+rift 
+commentator 
+tactic 
+message 
+death 
+easy 
+class 
+fighter 
+starter 
+goal 
+community 
+bard 
+execution 
+scoreboard 
+smoke 
+poor 
+connection 
+judgment 
+trigger 
+rule 
+world 
+full 
+master 
+report 
+distant 
+close 
+dash 
+zone 
+point 
+reward 
+rush 
+location 
+stage 
+tournament 
+time 
+attack 
+script 
+group 
+bush 
+victim 
+field 
+wave 
+turn 
+open 
+green 
+ping 
+alert 
+chance 
+forest 
+victory 
+power 
+obvious 
+brain 
+safe 
+mistake 
+train 
+straight 
+retreat 
+area 
+mark 
+viewer 
+clear 
+piece 
+disadvantage 
+spirit 
+protection 
+host 
+start 
+cost 
+increase 
+loser 
+timing 
+silver 
+winner 
+blue 
+shield 
+worth 
+flame 
+move 
+drop 
+heath 
+danger 
+free 
+energy 
+coach 
+equipment 
+slow 
+boost 
+farm 
+killer 
+recovery 
+castle 
+mission 
+ward 
+river 
+lead 
+spot 
+call 
+season 
+defeat 
+farmer 
+leader 
