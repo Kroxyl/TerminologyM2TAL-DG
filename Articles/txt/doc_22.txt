@@ -363,6 +363,3 @@ https://github.com/JonahFarc/League-Champion-Recommender
 [19] S. Donaldson, “Mechanics and metagame: Exploring binary expertise
 in league of legends,” Games and Culture, vol. 12, no. 5, pp. 426–444,
 2017.
-[20] “Champion updates,” 2018. [Online]. Available:
-https://support-leagueoflegends.riotgames.com/hc/en-us/articles/
-202294884-Champion-Update-Schedule
