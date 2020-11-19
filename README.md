@@ -5,9 +5,11 @@ This repository implements two rule-based identification systems that tag a docu
 
 ### The IOB tagset for multiword terms :
 
-- B : Beginning of multiword term
-- I : Inside a multiword term (not at the beginning)
-- O : outside a term
+<ul>
+    <li>B : Beginning of multiword term</li>
+    <li>I : Inside a multiword term (not at the beginning)</li>
+    <li>O : outside a term</li>
+</ul>
 
 ## Run
 
@@ -22,17 +24,27 @@ The output txt file is stored in the /Corpus/ directory.
 
 ## Rule-based identification system 2 : 
 
-The second rule-based identification system is created with the simple framework for state-of-the-art NLP.
+The second rule-based identification system is created with the flair framework for state-of-the-art NLP.
 
 Check https://github.com/flairNLP/flair for more informations about this framework.
 
-First, we load our Training Data which come from our own sequence labeling Dataset (created with the first rule-based identification system). The column format is constitute by two column, the first column is the word itself and the second is the IOB-annotated tags for Terms. Empty line separates sentences. To read such a dataset, define the column structure as a dictionary and instantiate a "ColumnCorpus".
+First, we load our Training Data which come from our own Sequence Labeling Dataset (created with the first rule-based identification system). The column format is constituted by two columns. The first column is the word itself, the second is the IOB-annotated tags for Terms and an empty line separates sentences. To read such a dataset, we define the column structure as a dictionary and instantiate a "ColumnCorpus".
 
 This gives you a Corpus object that contains the train, dev and test splits, each has a list of Sentence.
 
-After that, we have to train our new Sequence Labeling Model.  We get the corpus, we initatiate that we want to predict the IOB tag, we make a tag dictionary from the corpus, we initialize the stacked embedding with GloVe and finally we initialize the sequence tagger, the trainer and we start the training. If you don't have cuda on your device, you must remove the "embeddings_storage_mode='gpu'" in the "train()" method.
+After that, we have to train our new Sequence Labeling Model. By order, we get the corpus, we initiate that we want to predict the IOB tag, we make a tag dictionary from the corpus, we initialize the stacked embedding with GloVe and finally we initialize the sequence tagger, the trainer and we start the training. If you don't have cuda on your device, you must remove the "embeddings_storage_mode='gpu'" in the "train()" method.
 
 Finally, once the model is trained you can load it to predict the class of new sentences.
+
+## The repository folder :
+
+/Articles/txt/ : initial textual articles data.<br/>
+/Corpus/ : The train, test and dev txt file annotated with IOB tagset for specific game terms.<br/>
+(/resources/taggers/example-pos/ : result of the last launch of the TerminologyProject.ipynb with training part, loss report, test comparaison and the identification system model ready to use with flair.) <br/>
+/sequencetag_result/ : save result of the training part with f1-score, loss report and test comparaison between the two identification system.<br/>
+/TermsTSV/ : tsv output file from TermSuite with the filtered Terms of our specific domain.<br/>
+MOBA-en-lexicon : list of terms filtered, on our specific domain.<br/>
+TerminologyProject.ipynb : python script with all the functions used.<br/>
 
 ## Next 
 
@@ -44,4 +56,6 @@ We have already extract automatically the terms from our corpus with TermSuite. 
 
 ## Created by
 
-Axel Didier - M2 TAL  /  Pierre Goncalves - M2 TAL
+Axel Didier - M2 TAL  /  Pierre Goncalves - M2 TAL<br/>
+https://github.com/Kroxyl/TerminologyM2TAL-DG/
+
