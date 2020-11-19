@@ -1,0 +1,1070 @@
+Performance Dynamics and Success
+in Online Games
+Anna Sapienza
+USC Information Sciences Institute
+Marina del Rey, California, 90292
+Hao Peng
+USC Information Sciences Institute
+Marina del Rey, California, 90292
+Emilio Ferrara
+USC Information Sciences Institute
+Marina del Rey, California, 90292
+Abstract—Online data provide a way to monitor how users
+behave in social systems like social networks and online games,
+and understand which features turn an ordinary individual into a
+successful one. Here, we propose to study individual performance
+and success in Multiplayer Online Battle Arena (MOBA) games.
+Our purpose is to identify those behaviors and playing styles
+that are characteristic of players with high skill level and that
+distinguish them from other players. To this aim, we study
+Defense of the ancient 2 (Dota 2), a popular MOBA game. Our
+findings highlight three main aspects to be successful in the game:
+(i) players need to have a warm-up period to enhance their
+performance in the game; (ii) having a long in-game experience
+does not necessarily translate in achieving better skills; but
+rather, (iii) players that reach high skill levels differentiate from
+others because of their aggressive playing strategy, which implies
+to kill opponents more often than cooperating with teammates,
+and trying to give an early end to the match.
+I. INTRODUCTION
+The increasing availability of online data provides a key
+way to monitor and study how users behave in online social
+systems and to understand which are the characteristics that
+drive users to success, e.g., having a popular account on Twitter, being an experienced user on StackExchange (collecting
+badges), or becoming an advanced player in online games. A
+key research question is to understand how these behavioral
+patterns and users’ performance are influenced: which are
+the major characteristics that bring users to perform better
+(reaching success)? Which characteristics have a bad influence
+on the user behavior (performance depletion)?
+Individual performance and success were previously studied in different contexts: individual impact in scientific research [1], [2], successful learning strategies in education [3],
+[4], online popularity [5]–[7], sport performance [8], etc.
+Recently, online platforms have attracted much attention from
+our research community, as they provide a way to study new
+aspects related to human behavior. This is the case for social
+media like Twitter, whose data can be studied to identify the
+mechanisms behind user influence and popularity [5], [9]–[11],
+Q&A networks as StackExchange [7], [12], [13], in which
+users acquire experience by collecting badges when fulfilling
+a specific task, and online games [14]–[16], where players
+increase their skills by playing individually or by working as
+a part of a team. Here, we focus on Multiplayer Online Battle
+Arena (MOBA), a popular game genre in which users fight
+with their teammates to conquer the opponent base [17], [18].
+In particular, we analyze a well-known MOBA game: Defense
+of the ancient 2 (Dota 2). This type of game provides indeed
+key insights on how users behave and improve their skills over
+time to reach success [19]–[22].
+By studying individual matches over time, we not only explore how players improve while playing consecutive matches,
+but also monitor how their performance changes based on the
+role they are impersonating [23]. In particular, we are interested in deepening our understanding of the way players either
+enhance or worsen their skills in the game. To this aim, we
+study actions of individual players in consecutive matches (i.e.
+sessions) to identify how and why their performance changes.
+We are indeed interested in addressing some of the following
+questions: how can we identify successful players? Are high
+skill levels only reached by long-time experienced players?
+What are the key features defining a successful player? What
+are the differences between high and low experience/skill
+players?
+Giving an answer to these questions could help to design
+new incentives (badges, rewards) with the aim of increasing
+player engagement in the game as well as providing useful
+recommendations to lower performer players to encourage
+them to change their attitude and achieve better results [24].
+The present paper is organized as follows: in §II we describe
+the data and the collection process used in the study; in §III
+we introduce the methods used to perform the analysis; in
+§IV we report the results of our study and compare low/high
+experience players and low/high skill players to understand
+which are the main characteristics of successful strategies in
+the game; in §V we comment the related work and provide
+a comparison with our results; finally, in §VI we draw the
+conclusions of our study, and describe the main findings and
+future work.
+II. DATA DESCRIPTION AND COLLECTION
+A. Dota 2
+Dota 2 is one of the most popular Multiplayer Online
+Battle Arena (MOBA) video games providing a combination
+of action, strategy and role play. It is played by millions of both
+professional and casual fans every day worldwide.12 A single
+match involves a dynamic and fast-paced battle between two
+teams of 5 players competing to collectively destroy the base
+1https://www.opendota.com/
+2https://www.dotabuff.com/
+arXiv:1801.09783v1 [cs.SI] 29 Jan 2018
+structure, i.e. the Ancient defended by the opposing team. Each
+player in a match controls one of the 113 characters, i.e. heroes
+available in the game. These heroes are an essential element
+of the game as having different combinations of heroes in the
+two opposing teams makes each match unique.
+Each hero is categorized, depending on its skills, in three
+separated groups, namely Strength, Agility and Intelligence,
+which in this paper we refer to as hero types. Strength heroes
+are strong warriors that can survive receiving more damage
+than others and can withstand longer battles. Agility heroes are
+known for their quick response and attack speed. Intelligence
+heroes often utilize their magical powers to enhance the
+attack against others and can also support their allies, e.g.,
+via healing or buffing skills, in different tasks. By design, a
+single hero cannot be perfect in all three dimensions, but the
+interplay between different types of heroes impacts the overall
+strategy and outcome of each match. On the battlefield, players
+accumulate experience and gold through a variety of actions
+(kill, assist, death, etc.) that can be later spent to acquire new
+skills to improve one’s hero and overtake the opponents.
+Players usually play several matches consecutively before
+taking an extended break. On average, each match lasts for 40
+minutes. According to different ways of assembling players for
+a competition,3
+all matches can be grouped into 8 different
+types, namely Public matchmaking, Practice, Tournament,
+Tutorial, Co-op with AI, Team match, Solo queue, Ranked
+matchmaking, and Solo Mid 1 vs 1. In this paper, we only
+focus on matches with Public or Ranked matchmaking to
+ensure the presence of 10 human players in each match.
+B. Data Collection and Preprocessing
+We collected 3,566,804 matches spanning from July 17,
+2013 to December 13, 2015 using the Dota 2 official API.4
+Due to data sparsity, we perform our analysis on 3,300,146
+matches played since May 2015. Each entry in our dataset
+contains match meta information, including start time, duration, lobby type (Ranked matchmaking, Public matchmaking,
+etc.) and winning status, and it also contains information about
+each player’s performance in that match, such as number of
+kills, assists, deaths, gold earned, etc.
+We preprocessed the collected data and selected all those
+matches for which we have access to complete information.
+In particular, we discarded all the matches characterized by
+one of the following cases:
+• Connection errors: some matches end earlier due to
+connection errors. In this case, the winning status related
+to the match corresponds to a null value, and the actions
+performed by the players will be only partially recorded.
+• Default players: not all the players allow to make
+their personal information public. In this case, a unique
+identifier is assigned to all these players, thus preventing
+their identification.
+• Leaver status: some players quit a match at the beginning, thus leaving the two opposing team unbalanced. In
+3https://dota2api.readthedocs.io/en/latest/responses.html#lobby-type
+4http://dota2api.readthedocs.io/en/latest/
+this case, the player’s feature fields (kills, assists, deaths,
+etc) will be 0.
+After this filtering, we collect all players that appear in the
+selected matches, which correspond to a total of 1,805,225
+players.
+Finally, we compute the distribution of the number of
+matches per user among the 1,805,225 selected players. The
+distribution, reported in Fig. 1, shows that almost 75% of
+the players participated to less than 10 matches. For our
+analysis, we require that each selected player played at least
+10 matches. The final number of player selected after applying
+this threshold is 460,026 over the 1.8 million initial ones.
+0 200 400 600 800 1000 1200 1400
+# of matches played per user
+100
+101
+102
+103
+104
+105
+106
+# of players
+Fig. 1. Distribution of the number of matches played by each user over the
+total 1,805,225 players selected after the data preprocessing step.
+III. METHODS
+With the aim of investigating how player’s performance
+evolves over time, we focus on two different aspects. First of
+all, we look at their performance in separated sessions: to this
+aim, we first grouped together matches that are played in sequence without extended breaks. Second, we are interested in
+understanding how players’ performance changes accordingly
+to the type of hero they select and if there is any preference in
+the hero type selection. Thus, we study player’s behaviors over
+time by dividing them in game sessions and further explore
+player’s performance based on the selected hero by looking at
+sessions characterized by the same hero type.
+A. Game Sessions
+We divide our dataset in time series of matches played
+by those players having more than 10 matches. The long
+sequence of each player’s ordered historical matches can be
+divided into short time game sessions, namely short periods
+of playing behavior without an extended break. In this work,
+we identify game sessions by examining the time intervals
+between consecutive matches against a predefined threshold.
+We indeed define a game session to be composed by several
+consecutive matches with no more than a 15-minute break
+between them. This threshold corresponds to the peak of the
+TABLE I
+NUMBER OF SESSIONS OF LENGTH BETWEEN 1 AND 5, DIVIDED BY HERO TYPES.
+Hero type Sessions of length 1 Length 2 Length 3 Length 4 Length 5
+Intelligence 4,310,247 288,211 34,375 5,860 1,233
+Agility 3,503,961 200,129 21,508 3,435 712
+Strength 3,375,104 184,659 18,845 2,920 577
+distribution of the time breaks between all the matches in
+our dataset. By dividing matches into sessions, we expect
+that users’ playing behavior, e.g. adopted strategies, may be
+different for matches in the same session. We report the
+distribution of the number of sessions with different lengths
+in Fig. 2. In the following, we will focus on the analysis
+of sessions whose length is between 1 and 5 matches. This
+amounts for over 90% of the total sessions.
+0 5 10 15 20 25 30
+session length
+100
+101
+102
+103
+104
+105
+106
+107
+108
+# of sessions
+Fig. 2. Distribution of the number of sessions of different lengths.
+B. Game Sessions for Hero Types
+A player must select a specific hero before starting a match.
+The decision is based upon compound factors: overall team
+formation and role balance, as well as player’s preferences.
+Although different heroes have different skill sets and abilities,
+heroes of the same type often have similar strengths and
+weaknesses. Thus, with the expectation that a player controlling heroes of different types in a session may have different
+performance, we further identify game sessions in which a
+player selected the same hero type in all matches of a single
+session. We report the number of sessions divided by hero
+type in Tab. I. We can observe that in general there is the
+tendency to use more Intelligence heroes which have a tactic
+and supporting role, followed by Agility and Strength heroes.
+C. TrueSkill
+Players in Dota 2 are ranked by using a Matchmaking Rating
+(MMR),5 whose value characterizes the skill level of a player.
+5https://dota2.gamepedia.com/Matchmaking Rating
+This value is used to generate the team in each game and it
+increases/decreases if a player wins/loses the game.
+In the available data, we do not have access to the information related to the official MMR of each player. For this
+reason, we choose to define the skill level of each player
+in our dataset by computing the player TrueSkill after each
+match. This computation allows us to characterize players by
+different skill levels. The TrueSkill is a rating system designed
+by Microsoft,6 whose aim is to rank players in online games
+according to their skill level. It was developed to be used for
+video game matchmaking on Xbox Live and it is based on
+the popular Elo rating system, used in professional chess.7
+Contrary to the Elo rating system, the TrueSkill is specifically
+created for games with more than two players, like MOBA
+games, as opposed to 1 vs 1 games.
+This method represents a player’s skill as normal distribution, characterized by two parameters: µ, i.e. the average skill
+of a player, and σ, i.e. the level of uncertainty in the player’s
+skill. To compute the TrueSkill of each player we rely on the
+open Python implementation of the trueskill library,8
+in which
+we use as starting values for each player the default values
+of the library: µ = 25 and σ =
+25
+3
+. Then, for each player,
+the results of all matches they played, as well as the TrueSkill
+scores of their opponents at the time of that match, are used to
+determine each player’s current TrueSkill score. These scores
+are finally used to group users and identify high/low skill ones.
+D. Experienced players vs performers
+With the aim of identifying the characteristics that make
+a player successful in the game, we divide players in two
+categories, i.e. high experience/skill players and low experience/skill players, according to two different metrics. In the
+first case, we divide the two groups of players by taking into
+account the total number of matches they played. We compute
+the distribution of the number of matches for all players having
+more than 10 matches and we respectively label as low and
+high experience players those falling in the 5th and the 95th
+percentile of the distribution.
+In the second case, we divide the two groups by taking
+into account their experience in terms of skill level in the
+game. Thus, we select the TrueSkill of each player having
+more than 10 matches, as defined in the previous section,
+and we compute the TrueSkill distribution. We respectively
+define, accordingly to the other group division, as low and
+6https://www.microsoft.com/en-us/research/project/
+trueskill-ranking-system/
+7https://en.wikipedia.org/wiki/Elo rating system
+8https://pypi.python.org/pypi/trueskill
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+0 10 20 30 40 50 60 70 80 90 100
+← assists
+kills →
+←
+deaths
+Intelligence
+0.000
+0.008
+0.016
+0.024
+0.032
+0.040
+0.048
+0.056
+0.064
+0.072
+0.080
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+0 10 20 30 40 50 60 70 80 90 100
+← assists
+kills →
+←
+deaths
+Agility
+0.000
+0.008
+0.016
+0.024
+0.032
+0.040
+0.048
+0.056
+0.064
+0.072
+0.080
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+0 10 20 30 40 50 60 70 80 90 100
+← assists
+kills →
+←
+deaths
+Strength
+0.000
+0.008
+0.016
+0.024
+0.032
+0.040
+0.048
+0.056
+0.064
+0.072
+0.080
+Fig. 3. Distribution of performed actions in a match divided by hero type. The three axes represent the percentages of kills, assists and deaths performed,
+while the color intensity represents the normalized number of matches for which a certain triplet is performed.
+1 2 3 4 5
+5.5
+6.0
+6.5
+7.0
+7.5
+8.0
+# of kills
+Strength
+1 2 3 4 5
+Agility
+1 2 3 4 5
+Intelligence
+1 2 3 4 5
+11.0
+11.5
+12.0
+12.5
+13.0
+13.5
+14.0
+# of assists
+1 2 3 4 5 1 2 3 4 5
+1 2 3 4 5
+match position
+6.6
+6.8
+7.0
+7.2
+7.4
+# of deaths
+1 2 3 4 5
+match position
+1 2 3 4 5
+match position
+1 matches 2 matches 3 matches 4 matches 5 matches
+Fig. 4. Mean and standard deviation of the number of kills, assists and deaths along sessions of different lengths (from 1 to 5) divided by hero type.
+high skill players those falling in the 5th and 95th percentile
+of the TrueSkill distribution. In the following section, we will
+report the results obtained by analyzing our dataset and we
+will compare the defined categorizations of players, to detect
+which characteristics make a player successful.
+IV. RESULTS
+A. Hero type characterization
+We start our analysis by characterizing the three hero types,
+Intelligence, Agility, and Strength and by studying how the
+players perform when using one of these heroes. We take
+into account both the hero type that is used by a certain
+player and the overall actions he/she performs in the match:
+number of kills, number of assists, and number of deaths.
+Fig. 3 shows the distribution of the number of actions in each
+match, in which we computed the percentages of kills, assists
+and deaths for each hero type. By comparing these ternary
+plots, we can characterize the different hero types, depending
+on the actions performed by players. The three distributions
+1 2 3 4 5
+5.5
+6.0
+6.5
+7.0
+7.5
+# of kills
+Strength
+1 2 3 4 5
+Agility
+1 2 3 4 5
+Intelligence
+1 2 3 4 5
+11.0
+11.5
+12.0
+12.5
+13.0
+13.5
+# of assists
+1 2 3 4 5 1 2 3 4 5
+1 2 3 4 5
+match position
+6.6
+6.8
+7.0
+7.2
+7.4
+# of deaths
+1 2 3 4 5
+match position
+1 2 3 4 5
+match position
+1 matches 2 matches 3 matches 4 matches 5 matches
+Fig. 5. Player’s performance in terms of number of kills, assists, and deaths over randomized sessions of length from 1 to 5. Each session is given by the
+random shuffle of its matches.
+indeed highlight the different roles of the hero types. The
+Agility hero’s distribution is more centered than the others.
+This is due to the fact that the kills performed by this hero
+type are more than in the other cases. This type of hero is
+indeed the one having the greatest offensive power. However,
+they also need support as they suffer a higher death rate in
+the first part of the game. On the contrary, the distributions
+related to both Intelligence and Strength heroes are similar.
+These distributions display higher number of assists and lower
+number of kills than the Agility heroes. This is due to the fact
+that Intelligence heroes usually have a support role, i.e., assist
+the team fight and keep allies alive. However, Strength heroes
+are characterized by lower death rates than Intelligence ones.
+They are indeed hard to kill and often start a team fight.
+B. The warm-up effect
+We are now interested in understanding how players perform over time, and if the use of a certain type of hero leads
+to better performance across consecutive matches. Thus, we
+divide player’s histories in separate sessions, as defined in §III,
+and we study sessions of different lengths: from 1 to 5. For
+each session of a given length, we compute the mean and the
+standard deviation of the number of kills, assists, and deaths,
+divided by hero type.
+The results are reported in Fig. 4, which provides a characterization of the hero type consistent with what we observed
+by looking at the ternary distributions over all the matches. On
+the one hand, players using Agility heroes perform a greater
+number of kills and lower number of assists and deaths if
+compared with the other two hero types. On the other hand,
+players using Strength and Intelligence hero types are more
+inclined in assisting during a team fight and sacrifice for the
+teammates (shown by the greater number of deaths).
+Moreover, these results show an interesting trend among the
+consecutive matches in a session: a warm-up effect. During the
+same session indeed, the performance of players increases and
+this is particularly evident in the last match of each session.
+This rise in player’s performance indicates that players warmup along the matches and increment the final number of actions
+of almost 10%. Another interesting feature is that the major
+increment occurs in the last match of the session. This could be
+interpreted by the fact that players, after the warm-up period,
+reach a satisfactory performance and thus decide to stop their
+playing session, i.e., “leaving the game as winners.”
+Finally, to verify the robustness of our results, we carry out
+our analysis on randomized sessions, which are computed by
+fixing the sessions of each player and shuffling at random the
+matches in the session [7], [13]. The results on the randomized
+data are shown in Fig. 5, where the characteristic warm-up
+effect is not anymore present. Therefore, the flat trend across
+matches in the random sessions suggests that the improvement
+we observed during sessions is a significant result.
+0.298
+0.300
+0.302
+0.304
+0.306
+0.308
+Percentage
+Strength
+0.306
+0.308
+0.310
+0.312
+0.314
+0.316
+0.318
+Percentage
+Agility
+High Exp.
+Low Exp.
+High TS
+Low TS
+0.378
+0.380
+0.382
+0.384
+0.386
+0.388
+0.390
+0.392
+Percentage
+Intelligence
+Fig. 6. Comparison between the percentage of hero types used by low/high
+experience players and low/high TrueSkill (TS) players. Each category,
+divided in the two groups (low/high), shows different preferences in the choice
+of the hero type.
+C. Experience players vs performer players
+In the last part of our analysis, we aim at identifying the
+strategies and features that make a player successful. For
+this purpose, we study players from two different angles
+by comparing experienced players with skilled players. As
+introduced in §III, we divide players into four groups: first we
+select low/high experienced players based on their seniority
+in terms of number of matches; then we select low/high skill
+players based on their TrueSkill scores, i.e. skill level.
+We compare these two groups of players (experienced vs
+skilled) by looking at their preferences when selecting an hero
+type. We compute the percentage of hero types selected by
+each player in the different categories and report in Fig. 6 the
+corresponding mean and standard error. The figure shows that
+the more experience a player has, the more he/she tends to
+prefer Intelligence and Agility roles, and thus both supporter
+and fighter heroes. However, this scenario is different when
+looking at the skill level of players. Players with high skill
+level play less supporter roles in proportion and prefer fighter
+hero types such as Agility and Strength heroes. This result also
+suggests that there is no direct correlation between successful
+(high skill) players and longtime (experienced) players.
+This discrepancy between experienced players and skilled
+players is also reflected in their strategies and actions during
+matches. In the first case, both low and high experience players
+show a distribution of performed actions which is consistent
+with the one of Fig. 3 computed over all the players in
+the dataset. There is no evident difference in the collective
+strategies of low and high experience players, thus supporting
+the conclusion that playing longer does not necessarily lead
+to be successful in the game.
+On the contrary, the comparison between performed actions
+during the matches played by low and high skill players
+highlights their discrepancies and characteristic features. As
+reported in Fig. 7a, low skill players are characterized by
+distributions that are skewed to the left side of the ternary
+plots, thus indicating that this group of players generally performs a low number of kills while prefers to assists teammates
+in combat. High skill players are instead characterized by
+distributions that are more centered in the ternary plots of
+Intelligence and Strength heroes, while in the case of Agility
+heroes the distribution tends to be skewed on the right part of
+the plot (cf. Fig. 7b). These features indicate that in general
+high skill players make more kills than other players, even
+in the case in which their role is to support the teammates.
+Moreover, when using Intelligence or Strength heroes they
+sacrifice (die) themselves less than low skill players.
+Finally, we investigate if the two categorizations of players
+(experience/skill) provide any other insight that could help in
+characterizing a successful player. We look at the total duration
+of the matches played by low/high experience players and
+low/high skill players, to highlight groups differences.
+TABLE II
+MEAN AND STANDARD ERROR OF THE MATCH DURATIONS DIVIDED BY
+LOW/HIGH EXPERIENCE PLAYERS AND LOW/HIGH TRUESKILL PLAYERS.
+Player group mean duration SE
+Low exp. players 2,532 s ±0.34 s
+High exp. players 2,507 s ±1.16 s
+Low TS players 2,532 s ±0.87 s
+High TS players 2,447 s ±1.05 s
+We computed mean and standard error over the four groups
+of players, which are reported in Tab. II. According to previous results on low/high experience players strategies, the
+difference displayed in the average duration of the matches
+between these two groups is marginal ('25s). On the contrary,
+high skill players display a bigger difference if compared with
+low skill players ('85s). In particular, players with higher
+skill level play shorter matches than those with low skill
+level, whose average duration is closer to the one related to
+low/high experienced players. A possible explanation for this
+phenomenon could rely on the more aggressive strategy that
+high skill players use. They indeed tend to perform more kills
+than others, even when they are interpreting support roles, and
+this playing style likely causes an early end to the matches.
+In conclusion, our findings delineate as successful players in
+Dota 2 the more individualistic players, i.e., those that prevail
+over others by killing more even when they should interpret a
+support role and try to end the match as soon as possible by
+conquering the opponent base thanks to power plays.
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+0 10 20 30 40 50 60 70 80 90 100
+← assists
+kills →
+←
+deaths
+Intelligence
+0.000
+0.008
+0.016
+0.024
+0.032
+0.040
+0.048
+0.056
+0.064
+0.072
+0.080
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+0 10 20 30 40 50 60 70 80 90 100
+← assists
+kills →
+←
+deaths
+Agility
+0.000
+0.008
+0.016
+0.024
+0.032
+0.040
+0.048
+0.056
+0.064
+0.072
+0.080
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+0 10 20 30 40 50 60 70 80 90 100
+← assists
+kills →
+←
+deaths
+Strength
+0.000
+0.008
+0.016
+0.024
+0.032
+0.040
+0.048
+0.056
+0.064
+0.072
+0.080
+(a) Low TrueSkill players
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+0 10 20 30 40 50 60 70 80 90 100
+← assists
+kills →
+←
+deaths
+Intelligence
+0.000
+0.008
+0.016
+0.024
+0.032
+0.040
+0.048
+0.056
+0.064
+0.072
+0.080
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+0 10 20 30 40 50 60 70 80 90 100
+← assists
+kills →
+←
+deaths
+Agility
+0.000
+0.008
+0.016
+0.024
+0.032
+0.040
+0.048
+0.056
+0.064
+0.072
+0.080
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+0 10 20 30 40 50 60 70 80 90 100
+← assists
+kills →
+←
+deaths
+Strength
+0.000
+0.008
+0.016
+0.024
+0.032
+0.040
+0.048
+0.056
+0.064
+0.072
+0.080
+(b) High TrueSkill players
+Fig. 7. Distribution of performed actions in a match divided by hero type and player’s skill level. The three axes represent the percentages of kills, assists
+and deaths, while the color intensity represents the normalized number of matches for which a certain triplet is performed.
+V. RELATED WORK
+A great amount of work has been devoted to analyze
+several facets in MOBA games to identify common behavioral
+patterns, their evolution as well as characteristics that bring a
+team in a match to be successful and win the game.
+Drachen and collaborators [19] explored how game behaviors change and affect team skill levels. They analyzed
+the spatio-temporal behaviors of teams during a match. They
+looked at the temporal distribution of the distances between
+players in the same team and how this distribution varies
+between high/low skill teams. Eggert et al. [23] were interested
+in classifying player’s behaviors via machine learning. These
+studies are focused on quantifying collective behaviors of
+teams in Dota 2 and relate these behaviors to player’s roles
+that are not the official hero types we used in our analysis.
+Other techniques were developed to detect and rank the
+features in a team fight that help to predict whether a team will
+win a match or not [20]–[22], [25]. In these studies, authors
+analyzed snapshots of a combat and described the action as a
+network, to extract common patterns leading to winning the
+match; the authors ranked factors that can be extrinsic to the
+game itself, by studying social ties of players in a team.
+We differentiate from these research directions as in the
+present paper we are mainly interested in providing an individual characterizations of players through both the performed
+actions and the interpreted role. Moreover, we define a player
+to be successful if his/her skill level (TrueSkill) is high, while
+in the existing literature the overall team level is analyzed and
+defined by the collective rate of victories/losses.
+VI. CONCLUSION
+Online platforms, such as social networks, Q&A sites, and
+online games, provide a wealth of information, whose details
+can help identifying how people behave in different contexts.
+In particular, they are a useful means to detect the major
+characteristics that turn an ordinary user in a successful one.
+Here, we analyzed multiplayer online battle arena (MOBA)
+games, and in particular Dota 2, with the main purpose
+of extracting the underlying characteristics that distinguish
+players with a low skill level from those that in the course
+of their gaming experience reached the higher skill level. We
+decided to focus on one important aspect of the game: the
+characters players impersonate, namely heroes. By following
+the official hero categorization of Dota 2, we divided the 113
+heroes of the game in three main types: Intelligence, Agility,
+and Strength. These three hero types define a character on the
+basis of their ability and role, from support roles (as heroes
+in the Intelligence group) to fighter roles (as Agility heroes).
+As a first step in our evaluation, we characterized these three
+hero types by looking at the way in which they are used by
+Dota 2 players. We observed that overall, Intelligence heroes
+are used more than the other two types, probably because this
+supporting role is seen as more central to the game dynamics,
+providing more flexible heroes that can be more enticing to
+play. We also showed that players use heroes according to
+their ability and strength: Intelligence heroes to assist, Strength
+heroes to start team fights as well as assisting teammates, and
+Agility heroes to kill enemies.
+One interesting result we discussed is that players need
+some time to warm up and increase their performance across
+matches. By inspecting players’ performance in consecutive
+matches, we found that the last match in a session corresponds
+to the one having higher performance in terms of number of
+actions (kills, assists, deaths). The robustness of this result
+is proved by randomizing the matches within sessions: the
+resulting null model does not display a significant ascending/descending trend — on the contrary it remains constant
+from one match to the next — corroborating our finding.
+Finally, we divided players by their experience (total number of matches played) in the game and by their skill level, by
+computing the so called TrueSkill. Within these two groups,
+we identified low/high experience players and low/high skill
+players. In-depth comparisons led to the conclusion that
+playing longer and thus having higher experience does not
+necessarily imply that one’s skill level will increase. This
+finding is supported by the analysis of the distributions
+of actions performed by players with different hero types.
+Low/high experience players exhibit distributions which are
+consistent with those computed over all the players in the
+dataset, and thus do not show a specific playing style. On
+the contrary, the investigation of low/high skill players led
+to the characterization of successful play styles. Successful
+players, which here correspond to those having high skill level
+(i.e., high TrueSkill), are aggressive players who prefer to kill
+enemies more than assisting teammates in a fight even if this is
+the role they are interpreting. This behavior leads these players
+to prefer the use of Agility and Strength hero types and to try
+to trigger an early end in the game with power plays.
+Future work will be devoted to further inspect the characteristics that make players successful. We will look for possible
+differences in the playing style of high skill players between
+Ranked and Public matches. This will help us understand if
+being part of a team of players of different levels could be an
+incentive for low skill players to perform better by learning
+from high skill players. Another possible direction will be to
+investigate how the TrueSkill of players evolves in time and
+if the playing styles of successful players we uncovered in the
+present work are constant or learned over time.
+ACKNOWLEDGMENT
+The authors are grateful to DARPA for support (grant
+#D16AP00115). This project does not necessarily reflect the
+position/policy of the Government; no official endorsement
+should be inferred. Approved for public release; unlimited
+distribution.
+REFERENCES
+[1] F. Radicchi, S. Fortunato, B. Markines, and A. Vespignani, “Diffusion
+of scientific credits and the ranking of scientists,” Physical Review E,
+vol. 80, no. 5, p. 056103, 2009.
+[2] R. Sinatra, D. Wang, P. Deville, C. Song, and A.-L. Barabasi, “Quan- ´
+tifying the evolution of individual scientific impact,” Science, vol. 354,
+no. 6312, p. aaf5239, 2016.
+[3] C. Romero and S. Ventura, “Data mining in education,” Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery, vol. 3, no. 1,
+pp. 12–27, 2013.
+[4] G. C. Rodi, V. Loreto, V. D. Servedio, and F. Tria, “Optimal learning
+paths in information networks,” Scientific reports, vol. 5, 2015.
+[5] S. Aral and D. Walker, “Identifying influential and susceptible members
+of social networks,” Science, vol. 337, no. 6092, pp. 337–341, 2012.
+[6] E. Ferrara, R. Interdonato, and A. Tagarelli, “Online popularity and
+topical interests through the lens of instagram,” in Proceedings of the
+25th conference on Hypertext and social media. ACM, 2014, pp. 24–34.
+[7] P. Singer, E. Ferrara, F. Kooti, M. Strohmaier, and K. Lerman, “Evidence
+of online performance deterioration in user sessions on reddit,” PloS one,
+vol. 11, no. 8, p. e0161636, 2016.
+[8] D. Memmert, K. A. Lemmink, and J. Sampaio, “Current approaches
+to tactical performance analyses in soccer using position data,” Sports
+Medicine, vol. 47, no. 1, pp. 1–10, 2017.
+[9] M. Cha, H. Haddadi, F. Benevenuto, and P. K. Gummadi, “Measuring
+user influence in twitter: The million follower fallacy.” Icwsm, vol. 10,
+no. 10-17, p. 30, 2010.
+[10] L. Hong, O. Dan, and B. D. Davison, “Predicting popular messages in
+twitter,” in Proceedings of the 20th international conference companion
+on World wide web. ACM, 2011, pp. 57–58.
+[11] F. Kooti, E. Moro, and K. Lerman, “Twitter session analytics: Profiling
+users short-term behavioral changes,” in International Conference on
+Social Informatics. Springer, 2016, pp. 71–86.
+[12] D. Movshovitz-Attias, Y. Movshovitz-Attias, P. Steenkiste, and
+C. Faloutsos, “Analysis of the reputation system and user contributions
+on a question answering website: Stackoverflow,” in Proceedings of
+the 2013 IEEE/ACM International Conference on Advances in Social
+Networks Analysis and Mining. ACM, 2013, pp. 886–893.
+[13] E. Ferrara, N. Alipourfard, K. Burghardt, C. Gopal, and K. Lerman,
+“Dynamics of content quality in collaborative knowledge production,”
+in International AAAI Conference on Web and Social Media, 2017.
+[14] J. Huang, T. Zimmermann, N. Nagapan, C. Harrison, and B. C. Phillips,
+“Mastering the art of war: how patterns of gameplay influence skill in
+halo,” in Proceedings of the SIGCHI Conference on Human Factors in
+Computing Systems. ACM, 2013, pp. 695–704.
+[15] S. Bardzell, J. Bardzell, T. Pace, and K. Reed, “Blissfully productive: grouping and cooperation in world of warcraft instance runs,”
+in Proceedings of the 2008 ACM conference on Computer supported
+cooperative work. ACM, 2008, pp. 357–360.
+[16] G. A. Benefield, C. Shen, and A. Leavitt, “Virtual team networks: How
+group social capital affects team success in a massively multiplayer
+online game,” in Proc. of the 19th Conference on Computer-Supported
+Cooperative Work & Social Computing. ACM, 2016, pp. 679–690.
+[17] N. Ducheneaut and R. J. Moore, “The social side of gaming: a study
+of interaction patterns in a massively multiplayer online game,” in
+Proceedings of the 2004 ACM conference on Computer supported
+cooperative work. ACM, 2004, pp. 360–369.
+[18] S. Ferrari, “From generative to conventional play: Moba and league of
+legends,” in Proceedings of DiGRA, 2013, pp. 1–17.
+[19] A. Drachen, M. Yancey, J. Maguire, D. Chu, I. Y. Wang, T. Mahlmann,
+M. Schubert, and D. Klabajan, “Skill-based differences in spatiotemporal team behaviour in defence of the ancients 2 (dota 2),” in Games
+media entertainment (GEM), 2014 IEEE. IEEE, 2014, pp. 1–8.
+[20] P. Yang, B. E. Harrison, and D. L. Roberts, “Identifying patterns in
+combat that are predictive of success in moba games.” in FDG, 2014.
+[21] N. Pobiedina, J. Neidhardt, M. d. C. C. Moreno, L. Grad-Gyenge, and
+H. Werthner, “On successful team formation: Statistical analysis of a
+multiplayer online game,” in Business Informatics (CBI), 2013 IEEE
+15th Conference on. IEEE, 2013, pp. 55–62.
+[22] N. Pobiedina, J. Neidhardt, M. d. C. Calatrava Moreno, and H. Werthner,
+“Ranking factors of team success,” in Proceedings of the 22nd International Conference on World Wide Web. ACM, 2013, pp. 1185–1194.
+[23] C. Eggert, M. Herrlich, J. Smeddinck, and R. Malaka, “Classification
+of player roles in the team-based multi-player game dota 2,” in International Conference on Entertainment Computing. Springer, 2015, pp.
+112–125.
+[24] S. Deterding, D. Dixon, R. Khaled, and L. Nacke, “From game design
+elements to gamefulness: defining gamification,” in Proceedings of the
+15th international academic MindTrek conference: Envisioning future
+media environments. ACM, 2011, pp. 9–15.
+[25] A. Sapienza, A. Bessi, and E. Ferrara, “Non-negative tensor factorization
+for human behavioral pattern mining in online games,” arXiv preprint
+arXiv:1702.05695, 2017.

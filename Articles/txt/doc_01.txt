@@ -1,0 +1,285 @@
+HAL Id: hal-01771253
+https://hal.inria.fr/hal-01771253
+Submitted on 19 Apr 2018
+HAL is a multi-disciplinary open access
+archive for the deposit and dissemination of scientific research documents, whether they are published or not. The documents may come from
+teaching and research institutions in France or
+abroad, or from public or private research centers.
+L’archive ouverte pluridisciplinaire HAL, est
+destinée au dépôt et à la diffusion de documents
+scientifiques de niveau recherche, publiés ou non,
+émanant des établissements d’enseignement et de
+recherche français ou étrangers, des laboratoires
+publics ou privés.
+Distributed under a Creative Commons Attribution| 4.0 International License
+An Analysis of DOTA2 Using Game
+Refinement Measure
+Long Zuo, Shuo Xiong, Hiroyuki Iida
+To cite this version:
+Long Zuo, Shuo Xiong, Hiroyuki Iida. An Analysis of DOTA2 Using Game Refinement Measure.
+16th International Conference on Entertainment Computing (ICEC), Sep 2017, Tsukuba City, Japan.
+pp.270-276, ff10.1007/978-3-319-66715-7_29ff. ffhal-01771253ff
+An Analysis of DOTA2?
+using Game Refinement Measure
+Long Zuo()
+1
+, Shuo Xiong()
+2
+, and Hiroyuki Iida()
+3
+School of Information Science,
+Japan Advanced Institute of Science and Technology
+1-1 Asahidai, Nomi, Ishikawa, Japan 923-1211
+{zuolong, xiongshuo, iida}@jaist.ac.jp1,2,3
+Abstract. DotA is one of the most attractive and influential MOBA
+games, which has been popular in many countries for over 10 years. It
+was designed for fun at first, however, after the emerge of DOTA2 it
+soon became the highest prize e-sports game. This paper analyzes the
+evolutionary changes of the DOTA2. The game refinement measure is
+employed for the assessment of game sophistication of DOTA2 series.
+The analyzing results show that the rules of DOTA2 have regularly been
+changed in its history to maintain an appropriate range of game refinement. We clearly see two directions during the evolutionary changes
+which are the skillfulness and popularity. Thus, the analysis makes it possible to overview these evolutionary changes of DOTA2 and find some
+drawbacks to be improved.
+Keywords: MOBA game. Game refinement theory. Evolutionary changes.
+DOTA2
+1 Introduction
+The rules of sports and mind sports have been elaborated in its long history
+to be more sophisticated and fascinating. It is interesting to know their characteristics and evolutionary changes using a measurement of game sophistication,
+which have recently been reported. For example, in the domain of sports, soccer
+and basketball [1], volleyball [2], table tennis and badminton [3], baseball [4]
+and boxing [5] have their own unique histories of the rules change to be more
+sophisticated. In the domain of mind sports, chess [6], Mah Jong [7] and shogi [8]
+have also a similar way. These reports indicate that the rules of sports and mind
+sports have been changed to be more sophisticated, but at the comfortable level.
+This may relate to the flow theory [9]. DOTA2 is a free-to-play MOBA video
+game developed and published by Valve Corporation. The game was released for
+Microsoft Windows, OS X, and Linux in July 2013, following a Windows-only
+public beta testing phase that began in 2011. DOTA2 is one of the most actively
+? DOTA2
+R
+is a registered trademark. All intellectual property rights in and to the
+game are owned by Valve Corporation.
+played games on Steam, with maximum peaks of over a million concurrent players. The game follows the same paradigm of a similar game, which was inspired
+from the original DotA map. Both games follow the same idea of leveling of a
+character, gaining items and hunting down non-player controlled monsters and
+player-controlled heroes with the ultimate goal of destroying the opponent’s base.
+A match ends when one side breaches the opponent’s stronghold and destroys
+the Ancient therein. In this study we focus mainly on the domain of e-sports
+and have chosen DOTA2 as a benchmark. One of the big issues in our society is
+the online gaming addiction on youth since many teenagers spend more than 15
+hours a day online games [10]. However, little is known about the degree of game
+sophistication of e-sports. Therefore, we investigate the evolutionary changes of
+DOTA2 with the following two research questions:
+– What is the degree of game sophistication of DOTA2 series?
+– What is the most remarkable change in the history of DOTA2 series?
+The structure of this paper is as follows. Section 2 presents our assessment
+methodology with a focus on game refinement theory. In Section 3 the game
+refinement theory is applied to DOTA2 for its assessment and the results are
+discussed. Finally, concluding remarks are given in Section 4.
+2 Assessment Methodology
+DOTA2 is a game with complex game information, so we need to consider
+the essential game progress for this game. During the in-game period, there
+are totally 3 game information progresses. One is the gold progress, another
+two are the experience progress and killing progress. Thus, we need to figure
+out an appropriate game progress model of DOTA2 to apply game refinement
+theory. Even though DOTA2 is not a score limited game, we can still clearly
+find a conspicuous scoring board of killing at the top of the interface. This is the
+only scoring information that two teams both know during the in-game period
+and they do not know the exact gold and experience the opponent achieved. The
+“game progress” is twofold [11]. One is game speed or scoring rate, while another
+one is game information progress with a focus on the game outcome. In sports
+such as soccer and basketball, the scoring rate is calculated by two factors: (1)
+the goal, i.e., total score and (2) time or steps to achieve the goal. Thus, the game
+speed is given by the average number of successful shoots divided by the average
+number of shoot attempts. On the other hand, “game information progress”
+presents how certain is the result of the game in a certain time or steps. Let K
+and T be the average number of successful killings and the average number of
+attempt per game, respectively. If one knows the game information progress, for
+example after the game, the game progress x(t) will be given as a linear function
+of time t with 0 ≤ t ≤ T and 0 ≤ x(t) ≤ K, as shown in Eq. (1).
+x(t) = K
+T
+t (1)
+However, the game information progress given by Eq. (1) is usually unknown
+during the in-game period. Hence, the game information progress is reasonably
+assumed to be exponential or so. This is because the game outcome is uncertain
+until the very end of game in many games. Hence, a realistic model of game
+information progress is given by Eq. (2).
+x(t) = K(
+t
+T
+)
+n
+(2)
+Here n stands for a constant parameter which is given based on the perspective
+of an observer in the game under consideration. Thus, the acceleration of game
+information progress is obtained by deriving Eq. (2) twice. Solving it at the end
+of the game (t = T), the equation becomes
+x
+00(T) = Kn(n − 1)
+T n
+t
+n−2 =
+K
+T2
+n(n − 1)
+It is assumed in the current model that the game information progress in
+any type of games is happening in our minds. We do not know yet about the
+physics in our minds, but it is likely that the acceleration of information progress
+is related to the force in mind. Hence, it is reasonably expected that the larger
+the value K
+T 2 is is, the more the game becomes exciting due to the uncertainty
+of game outcome. Thus, we apply its root square
+√
+K
+T
+, as a game refinement
+measure (say GR). We show, in Table 1, several sophisticated games including
+chess and Go from boardgames, basketball and soccer from sports and DotA
+from MOBA games [12]. We see that sophisticated games have a similar GR
+value which we recognize a zone value between 0.07 and 0.08. This indicates the
+same or similar degree of game sophistication where players may feel the same
+level of engagement or excitement regardless of different type of games.
+Table 1. Measures of game refinement for various type of games
+Game G T GR
+Chess [6] 35 80 0.074
+Go [6] 250 208 0.076
+Basketball [3] 36.38 82.01 0.073
+Soccer [3] 2.64 22 0.073
+Badminton [3] 46.34 79.34 0.086
+Table Tennis [3] 54.86 96.47 0.077
+DotA 6.80 [12] 68.6 106.2 0.078
+3 Analysis and Discussion
+This section presents the analyzing results of DOTA2 series using the game
+refinement measure and discusses its rule changes with a focus on prize in a
+championship.
+3.1 Analyzing Results
+To obtain the latest GR of DOTA2 series, we collect the data from the
+historical TI championships. For this purpose, we download all the replay of
+the final to calculate its GR values. We show, in Table 2, GR value of each TI
+championship, together with prize money compared [13]. Table 2 and Figure 1
+Table 2. Measures of game refinement for DOTA2 series and prize at TI championship
+Year Championship K T GR Prize (US dollars)
+2011 TI1 51.3 93.0 0.077 1,600,000
+2012 TI2 32.5 76.3 0.075 1,600,000
+2013 TI3 36.6 81.8 0.074 2,874,380
+2014 TI4 30.0 77.3 0.071 10,925,709
+2015 TI5 39.8 89.4 0.074 18,429,613
+2016 TI6 54.0 94.3 0.078 20,746,930
+shows that from 2011 to 2014 GR value decreases. The rules of DOTA2 have
+been changed for that period to be more competitive as the prize became higher.
+However, such rule changes (decreasing of GR value) made DOTA2 boring for
+the viewers.1 On the other hand, the designer of DOTA2 has attempted many
+rule changes with expectation that DOTA2 would have more uncertainty while
+adding new items and incorporating the unexpected factors which mean that a
+lower rating team would win against a higher rating team with higher probability
+than before. Thus, after 2014 until now, GR values are increasing.
+3.2 Rule Changes in 2011-2013: Towards More Skillful
+The TI championship series is the most significant and profitable annual
+event for DOTA2 since 2011 [14]. The game designer has attempted to modify
+the rules as described in Table 2. In 2011, Smoke was introduced for DOTA2
+Ver. 6.70. The Smoke of Deceit is an item purchasable at the Main Shop, under
+Consumables. It turns the user and nearby ally heroes invisible, letting them slip
+by wards and creeps undetected. Upon activation, the user and all nearby allied
+player-controlled units gain invisibility and bonus movement speed for a brief
+time. Thus, many new tactics were explored after the emerge of Smoke items.
+Then the team behavior became conservative after the only three Smoke items
+were included during the in-game period. In 2012 the nerfed numerous heroes
+in Ver. 6.74 has established the foundation for the TI championship to enhance
+the game rigorism since DOTA2 has become a game to be played not only for
+fun but also for prize seriously. The appearance of the new captain mode in
+2013 of Ver. 6.79 has contributed to maintain the fairness at the initial with the
+expectation that the rule of ban and pick system greatly would influence the
+1 Actually many people complained about the conservative game progress.
+Fig. 1. GR values and prize pool of DOTA2 in 2011-2016
+game result. For both teams, it is no longer easy to choose an unbalanced hero
+and relatively hard to successfully kill the enemy as before. For the period 2011-
+2013, the average number of killing, denoted as K in the game progress model,
+has decreased year by year. This implies that GR value has become lower. As
+a result DOTA2 has become more skillful and competitive. Note that DOTA2
+mainly focused on hero development and less gank or battle.
+3.3 Rule Changes in 2014-2016: Towards More Popular
+A highly skill-based game would not become popular since skill itself is unfriendly to the beginners. In 2014 the new rune system in Ver. 6.82 came out and
+added bounty rune. Runes are special boosters that spawn on the game map.
+Picking up a non-bounty rune grants the player a powerful effect for a short
+time. Runes spawn at two points in the river. The emerge of bounty rune makes
+the supporter or carry get money easier and the player can purchase the items
+earlier than before. This also accelerates the game progress. In 2015 the game
+designer reworked the gold and experience mechanism in Ver. 6.84. The new
+mechanism encouraged two teams to take part in more battle activities as they
+can get more gold and experience than before. The new rules focus more on gank
+and push issue instead of hero development. Another interesting mechanism of
+scan appeared in 2016 of Ver. 6.87 and we can comprehend this mechanism as a
+strategic skill for both teams. Players can use the Scan ability on top of the minimap UI to detect any enemy heroes in an area. This mechanism greatly made
+the game more exciting and added an extra level of uncertainty as the players do
+not know the exact number of enemies. To summarize all these new mechanisms
+accelerated the game progress and enhanced the uncertainty during the in-game
+period. The new mechanism offers more uncertainty for both teams to win or
+make mistake in the game. Then, the game has become more uncertain until the
+very end of the game. Thus, we see that GR value has increased after 2014 and
+it is supposed that DOTA2 will become more and more popular in the future.
+We see that the balance between skillfulness and popularity is so important for
+the survival of a game.
+3.4 High Prize
+As we have mentioned above, DOTA2 has over one million concurrent players
+while being the most profitable sports in the world. It seems that DotA was first
+designed only for fun, however, with the contributions of sponsors and game
+designer, DOTA2 has become a main trend of e-sports. The dynamic changes
+of each version and high prize made DOTA2 the most successful and profitable
+e-sports even in its short history. Now DOTA2 has lack of popularity as this
+game is still unfriendly to the novice players and has a relatively complex game
+information to learn, as there are totally over 110 heroes and 150 items. However,
+compared with other sports, we see that DOTA2 is now at the peak, as shown
+in Table 3 [15].
+Table 3. Tournament prize in sports, mind sports and e-sports compared
+Event Sports Prize (US dollars) 1st Prize
+Australia Open Tennis 35,530,000 1,040,000
+NBA Basketball 14,000,000 4,100,000
+FIFA Club World Cup Soccer 28,000,000 5,490,000
+Ing Cup Go 650,000 400,000
+S6 League of Legends 5,070,000 2,130,000
+TI 6 DOTA2 20,746,930 9,140,000
+4 Concluding Remarks
+In this study we evaluated the DOTA2 series using the game refinement measurement. The results indicate that DOTA2 has a similar zone value with sophisticated sports and boardgames. In addition, DOTA2 championship of every
+year during 2011-2016 was analyzed. The results show that the game refinement
+value has stayed within 0.071-0.077, which is slightly lower than DotA. The prize
+of the championship has strongly influenced the development of DOTA2. Higher
+prize enforced the players to be more conservative and the game refinement value
+became lower which implies that DOTA2 became more skillful. However, such a
+direction of game evolution was not accepted in DOTA2 community due to the
+lack of entertainment. Later, the direction of DOTA2 evolution was shifted to be
+more popular while taking stochastic elements into consideration. Thus we see
+that a good balance between skillfulness and popularity is essential to survive.
+References
+1. Sutiono, A. P., Purwarianti, A., Iida, H. (2014, July). A mathematical model of game
+refinement. In International Conference on Intelligent Technologies for Interactive
+Entertainment (pp. 148-151). Springer International Publishing.
+2. Takeuchi, J., Ramadan, R., Iida, H. (2014). Game refinement theory and its application to Volleyball. Research Report 2014-GI-31 (3), Information Processing Society
+of Japan, 1-6.
+3. Nossal, N., Iida, H. (2014, October). Game refinement theory and its application to
+score limit games. In Games Media Entertainment (GEM), 2014 IEEE (pp. 1-3).
+IEEE.
+4. Yuranana, K., Panumate, C., Iida, H., Tanaka, K. (2016). Measuring Sophistication
+of Sports Games: The First Result from Baseball.
+5. Panumate, C., Iida, H. An Approach to Quantifying Boxing’s Entertainment.
+6. Cincotti, A., Iida, H., Yoshimura, J. (2007). Refinement and complexity in the evolution of chess. In Proceedings of the 10th International Conference on COmputer
+Science and Informatics (pp. 650-654).
+7. Iida, H., Takahara, K., Nagashima, J., Kajihara, Y., Hashimoto, T. (2004, September). An application of game-refinement theory to Mah Jong. In International Conference on Entertainment Computing (pp. 333-338). Springer Berlin Heidelberg.
+8. Iida, H., Takeshita, N., Yoshimura, J. (2003). A metric for entertainment of
+boardgames: its implication for evolution of chess variants. In Entertainment Computing (pp. 65-72). Springer US.
+9. Csikszentmihalyi, M. (1990). Flow. The Psychology of Optimal Experience. New
+York (HarperPerennial) 1990.
+10. Perrin, A., Duggan, M. (2015). Americans’ Internet Access: 2000–2015: As Internet
+Use Nears Saturation for Some Groups, a Look at Patterns of Adoption. [Pew
+Internet project data memo].
+11. M´ajek, P., Iida, H. (2004). Uncertainty of game outcome. In 3rd International
+Conference on Global Research and Education in Intelligent Systems (pp. 171-180).
+12. Xiong, S., Zuo, L., Iida, H. (2014). Quantifying engagement of electronic sports
+game. Advances in Social and Behavioral Sciences, 5, 37-42.
+13. e-Sports Earnings. Top Games of 2016. (2017), [Online].
+http://www.esportsearnings.com/history/2016/games
+14. GAMEPEDIA. DOTA2Wiki. (2017), [Online].
+http://DOTA2.gamepedia.com/DOTA2Wiki
+15. List of prizes, medals and awards. (2017, June 14). [Online].
+https://en.wikipedia.org/wiki/Listofprizes,medalsandawards

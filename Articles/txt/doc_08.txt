@@ -1,0 +1,870 @@
+Non-negative Tensor Factorization for Human Behavioral
+Paern Mining in Online Games
+Anna Sapienza
+University of Southern California
+Information Sciences Institute
+annas@isi.edu
+Alessandro Bessi
+University of Southern California
+Information Sciences Institute
+bessi@isi.edu
+Emilio Ferrara
+University of Southern California
+Information Sciences Institute
+emiliofe@usc.edu
+ABSTRACT
+Multiplayer online bale arena has become a popular game genre.
+It also received increasing aention from our research community
+because they provide a wealth of information about human interactions and behaviors. A major problem is extracting meaningful
+paerns of activity from this type of data, in a way that is also
+easy to interpret. Here, we propose to exploit tensor decomposition
+techniques, and in particular Non-negative Tensor Factorization, to
+discover hidden correlated behavioral paerns of play in a popular
+game: League of Legends. We rst collect the entire gaming history
+of a group of about one thousand players, totaling roughly 100K
+matches. By applying our methodological framework, we then separate players into groups that exhibit similar features and playing
+strategies, as well as similar temporal trajectories, i.e., behavioral
+progressions over the course of their gaming history: this will allow
+us to investigate how players learn and improve their skills.
+CCS CONCEPTS
+•Information systems→Massively multiplayer online games;
+Data mining; •Computing methodologies → Factorization
+methods; •eory of computation → Unsupervised learning
+and clustering;
+KEYWORDS
+Non-negative tensor factorization, temporal and topological paern
+mining, human behavior, multiplayer online game
+ACM Reference format:
+Anna Sapienza, Alessandro Bessi, and Emilio Ferrara. 2017. Non-negative
+Tensor Factorization for Human Behavioral Paern Mining in Online Games.
+In Proceedings of ACM KDD 2017, Nova Scotia, Canada, August 2017 (KDD’17),
+9 pages.
+DOI: 10.475/123 4
+1 INTRODUCTION
+Multiplayer Online Bale Arena (MOBA) is a genre of strategy
+online games that has drawn growing aention and has become
+extremely popular. MOBA consist of match-based games, where
+players, divided in two opposing teams, compete against each other.
+Each player during the match controls a single character (a.k.a.,
+hero), having a specic role and abilities.
+Permission to make digital or hard copies of part or all of this work for personal or
+classroom use is granted without fee provided that copies are not made or distributed
+for prot or commercial advantage and that copies bear this notice and the full citation
+on the rst page. Copyrights for third-party components of this work must be honored.
+For all other uses, contact the owner/author(s).
+KDD’17, Nova Scotia, Canada
+© 2017 Copyright held by the owner/author(s). 123-4567-24-567/08/06. . . $15.00
+DOI: 10.475/123 4
+e main goal in each match is to destroy the enemy team’s base,
+while enhancing the player level, increasing the abilities of the
+controlled character, and cooperating with one’s own teammates.
+is genre of games, including Heroes of the Storm, Dota 2, and
+League of Legends, has aracted researchers from dierent elds,
+especially because they provide a unique way to study the inuence of role-playing in competitive games [7, 8], the impact of
+cooperation [2, 15] versus individual player aitudes [20], social
+behaviors [6, 16, 27], user commitment [4], etc.
+e analysis of MOBA games also allows for the discovery of
+useful information to study the social dynamics of player communities. For example, by extracting players’ social activities and
+relations, researchers addressed issues such as gender gap [23, 24]
+and improved the user experience [28].
+One advantage of analyzing players’ records in online games is
+the possibility of monitoring how their behaviors evolve over time.
+e temporal dimension exhibited by such data enables the study
+of the evolution of player performance, specically how players
+learn, adapt, and modify their playing strategies over time.
+We propose to study both the temporal and social dynamics of
+players in MOBA games at once. Here, we will focus on the analysis
+of League of Legends (LoL), a popular MOBA game. Our goal will
+be that of identifying dierent groups of players with common
+strategies, such as collaborative versus individualist players, and
+understanding how these groups of players behave in time, i.e., how
+their strategies evolve over time.
+To this aim, we take advantage of Non-negative Tensor Factorization (NTF) [3, 19] techniques, which derive from multi-linear
+algebra. Non-negative tensor factorization allows to identify correlation in the data at dierent levels [14]: on the one hand, the
+application of the NTF helps in the identication of hidden topological structures in the data, like groups or communities, which
+are easy to interpret as they reect individuals’ social dynamics [9].
+On the other hand, these topological structures share correlated
+activity paerns [22, 26]. Our purpose is therefore to leverage NTF
+to detect groups of players characterized by similar features and
+strategies as well as their temporal trajectories, i.e., their evolution.
+Contributions
+rough the lens of NTF, we study the gaming history of about
+one thousand League of Legends players accounting for a total of
+roughly 100K matches. Our analysis will:
+• Highlight the existence of an underlying structure in the
+data, that allows us to divide players in groups characterized by similar features and having correlated temporal
+behaviors;
+arXiv:1702.05695v1 [cs.LG] 19 Feb 2017
+KDD’17, August 2017, Nova Scotia, Canada Anna Sapienza, Alessandro Bessi, and Emilio Ferrara
+• Provide an interpretation of the components extracted by
+the NTF;
+• Validate the interpretation of the NTF results by analyzing
+the uncovered groups and their evolution over time;
+• Discover, by analyzing the temporal components, that players’ playing strategies are consistent over time;
+• Provide and validate an explanation for players behavioral
+stability, namely that the design of the game strongly impacts team formation in each match, thus manipulating
+the team’s probability of victory.
+Table 1: Notation used throughout the text.
+Notation Denition
+X constant
+x scalar
+x vector
+X matrix
+xij matrix entry
+X tensor
+xijk entry of a three-dimensional tensor
+◦ outer product
+2 METHODOLOGY
+e extraction of meaningful paerns of behavior in online games
+can be carried out by taking full advantage of tensor decomposition
+techniques. ese provide a way to disentangle the temporal and
+topological characteristics of the studied system. is is achieved
+by performing a dimensionality reduction on the original system.
+Let us consider a dataset composed by users (i.e., players), whose
+characteristics (i.e., features) evolve over time. To perform the
+decomposition of such dataset, we need to represent it as a tensor
+(i.e., a multi-dimensional array). is can be done by assigning
+to each dimension of the tensor the dierent dimensions of the
+data, namely users, features, and time. In this context, the time
+axis corresponds to LoL matches. Following the notation reported
+in Table 1, we thus dene a three-dimensional array, denoted as
+X ∈ R
+I×J×K , where I is the number of users, J is the number of
+features, and K is the number of time steps (i.e., played matches).
+In this formulation, the entry xijk of the tensor corresponds to the
+entry related to the i-th user in the j-th feature at the k-th match
+in her/his gaming history.
+Once the dataset is represented in the tensor form, we can apply
+tensor decomposition techniques to perform a dimensionality reduction on the data. Here, we focus on the Non-negative Tensor
+Factorization (NTF) which is given by the PARAFAC/CANDECOMP
+decomposition with non-negative constraints [25]. e NTF approximates the tensor X into the sum of rank-one tensors, called
+components:
+X ≈
+Õ
+R
+r=1
+λr ar ◦ br ◦ cr , (1)
+where R is the rank of the tensor, λr are the values of the tensor
+core L = diaд(λ), and the outer product ar ◦ br ◦ cr identies the
+component r, with r = 1, . . . , R.
+e vectors ar, br and cr respectively provide the level of membership of the users to the component r, the level of membership
+of the features to the component r, and the temporal activation of
+the component r. ese vectors can be encoded in three matrices
+A ∈ R
+I×R, B ∈ R
+J×R, and C ∈ R
+K×R, called factor matrices, whose
+r-th columns coincide to the vectors ar, br and cr . erefore, the
+approximation in Eq.(1) can be rewrien in the Kruskal form [13]
+as
+X ≈ JL;A, B, CK .
+To obtain the factor matrices, and thus the approximated tensor,
+we need to solve an optimization problem of the form:
+min kX − JL;A, B, CKk
+2
+F
+s.t. λ,A, B, C ≥ 0
+where k · kF is the Frobenius norm, and a non-negativity constraints
+has been imposed on the factor matrices. ere exist several algorithms to solve this optimization problem. Here, we rely on the
+Alternating Non-negative Least Squares (ANLS) [10], combined
+with the Block Principal Pivoting (BPP) method, developed by [12].
+To nd the best approximation, we run several simulations for
+each rank value. To assess the suitable number of components,
+i.e., rank, we use the Core Consistency Diagnostic (CORCONDIA)
+by [1]: this method allows us to calculate the value of the core
+consistency for each simulation. In the present work, we run 5
+simulations for each rank and look at the change in the slope of the
+core consistency curve to select a suitable number of components
+R.
+In particular, the core consistency values provide an evaluation
+of the closeness of the computed decomposition to the ideal one.
+is is done by comparing the core tensor L of the decomposition
+to a super-diagonal tensor G, i.e., a tensor having entries equal to 1
+on the diagonal and 0 otherwise.
+erefore, the core consistency between L and G is dened as:
+cc = 100
+1 −
+ÍR
+l=1
+ÍR
+m=1
+ÍR
+n=1
+(λlmn − дlmn)
+2
+R
+!
+,
+where λlmn are the entries of the core tensor L ∈ R
+R×R×R and
+дlmn are the entries of the ideal core G ∈ R
+R×R×R.
+e core consistency has an upper bound: its values cannot
+exceed 100. As a result, high values of the core consistency mean
+high similarity between the cores, while low values indicate that the
+model selected could be problematic. Finally, the core consistency
+can assume negative values, thus indicating that the model selected
+is inappropriate. In the Results section (see §4) we will discuss
+the optimal number of components as discovered by the the Core
+Consistency Diagnostic.
+Once the number of components and the corresponding factor
+matrices are identied, we can analyze the information provided
+by the factor matrices. By the study of the matrices A and B, we
+can respectively dene the level of membership of each user to
+a specic component, as well as the level of membership of each
+feature to the components. It is worth noting that NTF allows users
+(or features) to belong to several components leading to overlapping
+groups, but also allows users (or features) to have a low level of
+membership such that it could be not enough to label users (or
+features) as members of a specic component.
+Non-negative Tensor Factorization for Human Behavioral Paern Mining in Online Games KDD’17, August 2017, Nova Scotia, Canada
+e are two possible strategies to dene whether a user (analogously for features) belongs to a component: either we accumulate the membership of a component until the 95% of its norm is
+reached [26]; or, we compute an intra-component k-means with
+k = 2 clusters [9], i.e., for each component we divide the users
+in two groups: those who belong to the specic component, and
+those who do not. ese methods allow to identify user clusters
+that might overlap. However, the use of such methods could lead
+to having users that do not belong to any component.
+In this work, we use the rst of the two methods to analyze the
+level of membership of the features, provided by the matrix B. is
+is done to detect the features having a key role in the dierent
+components. is decision is justied by our expectation that, in
+League of Legends (and in MOBA games in general), players can
+exhibit dierent strategies during each match, reecting dierent
+personal goals: for example, a user may try to kill as many enemies
+as possible to earn a great amount of gold; this however would
+potentially incur in risking her/his hero’s death more frequently;
+an alternative could be avoiding to get the hero killed too oen
+by helping (assisting) other teammates, which however incurs in
+earning less gold at the end of the match.
+However, since our aim is to identify groups of users with dierent behaviors, we decided to study the user membership as follows.
+We consider the components of A as observations recorded for each
+user, and we t the k-means algorithm by imposing k = R, i.e., we
+want to obtain one cluster of users for each component. In this way,
+the users are divided in k disjoint clusters.
+Finally, we can recover the temporal activation of each component in the columns of the factor matrix C. is information can
+be used to investigate the evolution of each extracted behavior.
+3 DATA COLLECTION AND PROCESSING
+League of Legends
+To extract meaningful paerns related to how people behave in
+online platforms, and in particular to detect groups of users characterized by similar aitudes and characteristics, we tested the
+non-negative tensor factorization on a dataset of a MOBA game:
+League of Legends (LoL). League of legends is a match-based game
+developed by Riot Games, in which each player, i.e. user, controls
+a champion characterized by specic abilities and ght, together
+with other players, against a team of other players. e nal goal
+is to defeat the adversary team in an arena. Each champion starts
+the match with a low strength level which increases by killing adversaries, helping members of the team in kills, i.e., assists, and
+performing other actions. During the match, each champion can
+be killed many times, i.e., number of deaths. e player can earn
+gold (i.e., the LoL currency) by performing some actions, such as
+killing or assisting in kills, and can use the earned gold to improve
+the abilities of the champion.
+We collected the LoL data by means of the Riot Games API,1
+which provides metadata related to each match, including players’
+performance, such as number of assists, kills, deaths, etc. Each
+player is identied by a unique label and each match is marked by
+temporal information, such as match datetime and duration.
+1hps://developer.riotgames.com/
+e League of Legends Dataset
+e dataset analyzed in the present work consists of 961 players,
+and the complete game history of their rst 100 matches played
+exclusively in one specic same bale arena. We decided to focus
+on a specic bale arena to minimize the variability in players’
+behaviors (and their evolution) induced by dierent game scenarios.
+To this purpose, we selected the most popular LoL bale arena,
+namely the Summoner’s Ri (map id=11). is is (by a large margin)
+the most played bale arena in the game; its choice provided us
+with a signicant amount of players who played this scenario at
+least 100 times. We decided to set this threshold because we wanted
+to guarantee that a sucient number of matches were played by
+each single individual to capture a paern of temporal behavior
+evolution. 100 matches resulted in a good trade-o between the
+number of users (nearly one thousand) and the number of total
+matches (nearly 100K) yielded by the selected threshold.
+Feature Selection
+For each match, the Riot Games API returns a very large number
+of features (50+) associated with the performance of each user
+involved in that match.2 Not all these features are predictive of
+player’s game performance or behavior, and many of these features
+are highly correlated one another. To identify informative features,
+we designed a simple machine learning task: predicting whether
+a user had won a given match, given the vector of 50+ features
+describing her/his performance in that match.
+We use Decision Trees for this simple prediction task due to
+its ease of interpretation: feature can be ranked according to the
+information gain yielded by their addition to the model. e best
+model, which obtains a prediction accuracy above 80%, selects the
+following four features as responsible for over 99% of the information gain: (1) number of assists, (2) number of kills, (3) number
+of deaths, and (4) gold earned. We retain these four features and
+discard all others in the rest of the analysis. e nal tensor is
+composed by I = 961 users, J = 4 features, and K = 100 time steps.
+e selected features are characterized by dierent ranges of
+values, thus the need to normalize them. Given the vector xf
+related
+to the feature f , we normalize each entry i of the vector as
+xˆf ,i =
+xf ,i − xmin
+xmax − xmin
+,
+where xmin and xmax respectively are the minimum and maximum
+values of the vector xf
+.
+4 RESULTS
+Our League of Legends data is now represented as a tensor X I×J×K ,
+where I = 961, J = 4, and K = 100. erefore, the resulting threeway tensor has dimensions related to the players, the selected
+features, and the time steps, which here coincide with the matches.
+Once the tensor is created, we compute its approximation Xapp ,
+by applying NTF.
+To ensure of selecting the best approximation, we run 5 simulations of the optimization problem with non-negative constraints
+and we repeat this procedure while varying the nal number of
+components r, i.e., the rank. We performed the simulations for the
+2hps://developer.riotgames.com/api/methods
+KDD’17, August 2017, Nova Scotia, Canada Anna Sapienza, Alessandro Bessi, and Emilio Ferrara
+0 1 2 3
+Feature
+0
+1
+2
+Component #
+Feature membership
+0.0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+Figure 1: Feature membership in the components: we report
+the matrix B in which we zero-out the entries which are not
+included in the 95% of the norm of the component. Here, the
+colorbar indicates the level of membership of each feature
+to the three dierent components. e features are respectively: assists (0), deaths (1), kills (2), and gold (3).
+rank valuesr = 1, . . . , 10 and selected the suitable rank on the basis
+of the results provided by the Core Consistency Diagnostic: the
+number of components that yields the largest knee in the slope
+of the core consistency curve is R = 3. We select this value of
+components for the following analysis. By xing the number of
+components, we then select the best approximation, by choosing
+the one corresponding to the maximum value of core consistency
+for the selected rank R.
+e approximated tensor is the output of the NTF and it is summarized in the factor matrices, as
+Xapp = JA, B, CK .
+We rst analyze the results provided in the matrix B, which are
+shown in Fig. 1. Here, we report the values of the matrix B that
+have a key role in the components. To this aim, for each component
+we sort their squared values in descending order, sum them (starting from the highest value) until we reach the 95% of the overall
+component norm, and set the remaining values equal to zero. e
+result of this procedure, shown in Fig. 1, highlights the features
+that are involved in each component. Here, the features are marked
+as follows:
+• 0: number of assists;
+• 1: number of deaths;
+• 2: number of kills;
+• 3: amount of earned gold.
+e results provided by studying the factor B are reported in
+Tab. 2, where we marked all the features that are involved in a certain component. As an example, the component 0 is characterized
+by the features related to the assists and the earned gold.
+Once the components are characterized through the features
+having the highest memberships, we analyze the results related to
+Table 2: Features involved in each component.
+Assists Deaths Kills Gold
+Component 0 X X
+Component 1 X X
+Component 2 X X X
+the users. e user memberships to each component are summarized in the factor matrix A. As we have explained in Sec. §2, we
+nd the users belonging to each component by taking advantage of
+a k-means method with a number of clusters equal to the number of
+components, k = 3 in this case. is assumption is also supported
+by the Silhouee scores, computed for several values of k. In particular, for k = 3 the score is equal to 0.35, while by increasing the
+number of clusters the score decreases, assuming values equal to
+0.32 and 0.29 respectively for k = 4 and k = 5 and stabilizing below
+0.29 for k > 5. us, by xing k = 3 the method assigns a unique
+label to each user and divides them into three disjoint groups.
+As we can observe from Fig. 2(le), the k-means with k = 3
+nds three clusters of users, which are disjoint in the component
+space, i.e., given a user i its coordinates in the component space
+are given by the entries in the columns of the factor matrix A.
+is grouping allows to identify the users whose membership to a
+specic component is higher than to the others. Clusters 0, 1, and 2
+respectively contain 411, 304, and 246 users. Fig. 2(right) shows the
+Silhouee proles of the three clusters, proportional to their sizes.
+e dierence in the level of membership of users belonging
+to the dierent clusters is clear if we look at the values of A and
+how they are modulated in time. is is possible by computing
+for each r-th component the product P = ar c
+T
+r ∈ R
+I×K , which
+represents the membership of each user to the r-th component
+modulated over time by the temporal activity of the r-th component.
+In Fig. 3, we report the average membership score over time and
+the related standard error (represented by error bars), computed
+by taking into account the users belonging to the same cluster
+in the three components. We can observe how each cluster is
+systematically characterized by an overall level of membership
+to one specic component that is much greater than to the other
+components. Fig. 3.a demonstrates the strong relation between
+Cluster 0 and Component 1 (cf. black squares), Fig. 3.b shows the
+strong relation between Cluster 1 and Component 2 (cf. dark red
+circles), while Fig. 3.c exhibits the strong relation between Cluster 2
+and Component 0 (cf., dark green triangles). It is worth noting that
+there is an high gap between the average memberships over time to
+the cluster-related component and the remaining two components.
+is paern indicates that:
+• Users belonging to Cluster 0 and thus to Component 1 are
+strongly characterized by the features kills and earned gold;
+• Users in Cluster 1 and thus belonging to Component 2 are
+characterized by deaths, kills, and earned gold;
+• Users belonging to Cluster 2 and Component 0 are strongly
+characterized by assists and earned gold.
+rough the analysis of NTF results, we are able not only to
+identify the features that play a key role in a certain component,
+but we can easily nd the user membership to the component.
+is enables to link each user in the component to the features
+Non-negative Tensor Factorization for Human Behavioral Paern Mining in Online Games KDD’17, August 2017, Nova Scotia, Canada
+0.0 0.02 0.04 0.06 0.08
+Component 0
+0.0
+0.02
+0.04
+0.06
+0.08
+Component 1
+Player membership
+Cluster 0
+Cluster 1
+Cluster 2
+-0.1 0 0.1 0.2 0.3 0.4 0.5 0.6
+coefficient values
+clusters
+0
+1
+2
+Silhouette score
+Figure 2: K-means results: the le gure shows the 2-dimensional projection of the three clusters identied by the k-means.
+Each dot represents a player in its corresponding cluster, and the dot’s coordinates are given by the rst two columns of the
+matrix A. e right gure shows the Silhouette scores of the users belonging to the three clusters. e red line identies the
+nal Silhouette score of 0.35, and the width of the Silhouette proles indicates the size of the corresponding clusters.
+that characterize the strategy used in the game. An interpretation
+for these results is indeed that dierent groups of users, jointly
+identied by NTF and k-means, are characterized by a playing
+behavior which is dierent from group to group. In particular, some
+users, such as those related to Component 0, tend to collaborate
+more than others with their teammates, as they prefer to assists in
+ghting an enemy rather than killing him directly. Other users (e.g.,
+Component 1) are prone to perform individual actions, focusing on
+personal goals, such as earning a greater amount of gold, which
+can be spent to upgrade the player’s champion abilities. Finally, in
+Component 2 we detect a group of users that performs individual
+actions, such as a high number of kills, but are signicantly more
+likely to cause their hero to die during these actions. is might
+pinpoint to a group of users characterized by an overall lower
+performance if compared with the other players.
+Validation
+To validate the results obtained via NTF and the related interpretation, we selected the players in each cluster, and then we computed
+the mean and standard error of the dierent feature values at each
+time step (i.e., each match).
+We show the results in Fig. 4, where each plot is related to a
+specic feature, namely (a) number of assists, (b) number of deaths,
+(c) number of kills, and (d) amount of earned gold. e results
+conrms the hypothesis and interpretation derived by the NTF
+analysis: Cluster 0 (cf., blue squares) is composed by players whose
+major behavior dynamic over time is summarized by performing a
+high number of kills and earning at the same time a greater amount
+of gold than other players (as we mentioned earlier, the amount of
+gold is proportional to the number of kills, which here serves as a
+further sanity check). Cluster 1 (cf., red circles) consists of players
+that obtain a number of kills comparable to the users in Cluster
+0, however their higher-than-average number of deaths causes
+them to systematically collect less gold (if compared with the other
+two clusters). Finally, Cluster 2 involves players characterized by
+stronger social behavior, resulting in collaboration with the other
+team members, as conveyed by the larger number of assists and
+smaller number of kills. is strategy allows players in Cluster 2 to
+collect a good amount of gold and at the same time to keep a low
+level of deaths.
+One of the strengths of using a technique such as NTF is that we
+can disentangle the topological characteristics in the data, such as
+group of users characterized by similar features, from the temporal
+behaviors. e temporal information is indeed contained in the
+matrix C, whose columns represent the timeseries of the temporal
+activation of each component, from which we can extract some
+meaningful interpretation of the evolution of players’ behaviors.
+We expect that by testing dierent strategies, players can modify
+or adapt their way of playing to achieve beer performances. is
+fact would be described by a change (such as an abrupt jump) in
+the temporal activity of a component, meaning that the component
+would activate or deactivate at a certain time.
+However, by the analysis of the factor matrix C, we can notice
+that each component is systematically active over time, i.e., despite
+dierent levels of activation, no signicant behavioral change is
+noticeable in the behavioral trajectories of the players over the
+course of their 100 matches.
+KDD’17, August 2017, Nova Scotia, Canada Anna Sapienza, Alessandro Bessi, and Emilio Ferrara
+0 20 40 60 80 100
+Time step
+0.0015
+0.0020
+0.0025
+0.0030
+0.0035
+0.0040
+0.0045
+Membership level
+(a) Cluster 0
+Component 0 Component 1 Component 2
+0 20 40 60 80 100
+Time step
+0.0020
+0.0025
+0.0030
+0.0035
+0.0040
+0.0045
+0.0050
+0.0055
+Membership level
+(b) Cluster 1
+Component 0 Component 1 Component 2
+0 20 40 60 80 100
+Time step
+0.0015
+0.0020
+0.0025
+0.0030
+0.0035
+0.0040
+0.0045
+0.0050
+0.0055
+Membership level
+(c) Cluster 2
+Component 0 Component 1 Component 2
+Figure 3: Membership modulated in time. e gures display the product ar c
+T
+r
+, which is the membership of users
+modulated in time. e product is computed by separately
+taking into account the users belonging to the dierent clusters. For each cluster we report the mean of the users membership to each component over time, and the related standard error, marked with an error bar. Dierent shades of
+blue for cluster 0, red for cluster 1, and green for cluster 2
+are assigned to distinguish the components. 0 20 40 60 80 100
+Time step
+0.16
+0.18
+0.20
+0.22
+0.24
+0.26
+0.28
+0.30
+Assists #
+(a) Assists
+Cluster 0 Cluster 1 Cluster 2
+0 20 40 60 80 100
+Time step
+0.20
+0.22
+0.24
+0.26
+0.28
+0.30
+0.32
+0.34
+Deaths #
+(b) Deaths
+Cluster 0 Cluster 1 Cluster 2
+0 20 40 60 80 100
+Time step
+0.06
+0.08
+0.10
+0.12
+0.14
+0.16
+0.18
+0.20
+Kills #
+(c) Kills
+Cluster 0 Cluster 1 Cluster 2
+0 20 40 60 80 100
+Time step
+0.26
+0.27
+0.28
+0.29
+0.30
+0.31
+0.32
+0.33
+0.34
+0.35
+Gold earned
+(d) Gold
+Cluster 0 Cluster 1 Cluster 2
+Figure 4: Mean feature values and related standard errors
+over time. e dierent subgures show the player performance related to a certain feature over time. We computed
+the mean and the standard error over the values related to
+users belonging to the same cluster. Clusters are marked by
+a unique symbol and color, which is maintained in all the
+gures, to highlight the dierent cluster characteristics.
+Non-negative Tensor Factorization for Human Behavioral Paern Mining in Online Games KDD’17, August 2017, Nova Scotia, Canada
+0 20 40 60 80 100
+Time step
+0.35
+0.40
+0.45
+0.50
+0.55
+0.60
+0.65
+0.70
+Component activation
+Temporal activity
+Component 0 Component 1 Component 2
+Figure 5: Temporal activity of each component. e values
+displayed in the gure are the one present in the columns of
+the factor matrix C. e dierent markers characterize the
+dierent components, accordingly to the clusters colouring.
+is result, illustrated in Fig. 5, suggests that the group of users
+characterized by a specic strategy (i.e., one of the three leading
+strategies we highlighted above) is consistent over time; in other
+words, players are reluctant to continuously in changing their gaming behavior and strategy, even if that could occasionally entail a
+benet.
+We found an explanation for this phenomenon, which we suspect is related to the game design. League of Legends is based on
+a mathematical framework, that at the beginning of each match
+compares the players’ skills to create the opposing teams as follows.
+Each player in LoL is characterized by an Elo-like rating3 which
+represents the player skill level, based on the performances in the
+previous matches. us, the resulting matchmaking rating is used
+by the system in assembling the teams and creating a game in which
+both teams have an equal chance of winning.4
+Considering the LoL game design, we then compute the probability distribution of match winning for all players in each cluster
+identied by NTF. In Fig. 6, we report the Kernel Density Estimation
+(KDE) for the distribution of the victories in each cluster. e KDE
+estimates the probability density function of the feature winner
+of each player involved in a certain cluster. is binary feature is
+equal to 1 if a player wins a match, and 0 otherwise.
+By looking at the density function for each cluster, it appears
+that the distributions are centered around 0.5, suggesting that each
+player at the beginning of each match has roughly a 50% probability
+of winning or losing the match. However, closer inspection shows
+that these distributions are slightly skewed: Cluster 0 leans toward
+values slightly higher than 0.5, suggesting that the individualist
+strategy (aiming for a larger number of kills and less assists), on
+the long run yields marginally more victories than the cooperative
+strategy of Cluster 2. We veried, using a pairwise two-tailed ttest, that these distributions are indeed statistically signicantly
+dierent (all p-values ≤ 10−3
+).
+3hps://en.wikipedia.org/wiki/Elo rating system
+4hps://support.riotgames.com /hc/en-us/articles/201752954-Matchmaking-Guide
+0.2 0.3 0.4 0.5 0.6 0.7 0.8
+victories
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+density
+Kernel Density Estimation (KDE)
+Cluster 0
+Cluster 1
+Cluster 2
+Figure 6: Kernel Density Estimation (KDE) computed on the
+values related to the feature winner (binary feature equal to
+1 if a player wins the match and equal to 0 if a player loses).
+e gure shows the probability density function for each
+cluster. We maintained the color code used throughout the
+text to discriminate the dierent clusters.
+In conclusion, the League of Legends game design, and in particular the method used to create the opposing teams of a match,
+strongly aects the matches outcomes. Each user has roughly the
+same probability of winning a match, which is largely independent
+from the strategy used by players. Marginal changes can be noticed
+thanks to our NTF analysis that would otherwise get lost in the
+aggregated statistical analysis if oblivious of the social and temporal
+behavioral dynamics. We suggest that players have not incentives
+to change their natural behavior as they likely perceive to achieve
+the same winning performances of players characterized by a dierent strategy. is explains the temporal activity paerns discovered
+by NTF and their continuous and almost constant activation over
+time.
+5 RELATED WORK
+Several facets of League of Legends, including players behaviors,
+expertise, and features have been already investigated [5, 17]. Many
+works are focused on the analysis of League of Legends team composition. In [21], the authors analyze player behaviors by developing
+a framework based on unsupervised learning techniques to discover behavior clusters in the data. In particular, they try to learn
+the optimal team composition and demonstrate how the result of
+matches can be predicted on the basis of the features characterizing
+the team. In our work, we used the winning prediction task to
+determine the most informative features that characterize players
+behaviors.
+In [15] the authors study the social interactions and organization paerns of LoL players, to understand how collaboration arise
+during MOBA games. ey collected a dataset based on interviews
+of experienced LoL players and found that team members collaborate and coordinate to reach the same goal and increase their
+performance in the game.
+KDD’17, August 2017, Nova Scotia, Canada Anna Sapienza, Alessandro Bessi, and Emilio Ferrara
+Other studies of LoL are focused on the analysis of specic game
+features, such as the usage of dierent characters (i.e., champions) [18], or the player choice of a specic role with respect to the
+one selected by the other team members [11]. e main goal in
+these studies is to investigate how roles and specic features have
+an impact on the players’ performance, to recommend team design
+and evaluations that can be used by players when selecting a character. Our study, however, discovers in an unsupervised fashion
+the playing behaviors and the players’ roles during the matches:
+we believe that our strategy could enrich the insights that game
+designers and analysts need to improve the game experience.
+It is also worth noting that most of the existing studies are mainly
+focused on the analysis of LoL from a team-based perspective, to
+characterize groups performance. In the present work, we investigated individual player behaviors, and how that related to player
+performances at the level of single matches. In our analysis, we
+also highlighted the crucial importance of the temporal dimension.
+We monitored the evolution of features over time, to determine
+whether and how players learn or modify their strategy, and to
+detect if a common activity paern can be found.
+6 CONCLUSIONS
+League of Legends is a multiplayer online bale game in which two
+teams ght each other to destroy the respective enemy base. We
+collected data related to League of Legends matches and player performances with the aim of extracting meaningful information about
+human behavioral paerns. For this purpose, we took advantage of
+tensor decomposition techniques, a well established mathematical
+framework that is successfully applied to many research problems.
+In particular, we used the non-negative tensor factorization (NTF).
+e advantage of using such a technique lies in the opportunity
+of disentangling the topological and temporal characteristics in the
+data, and exploring and validating them separately.
+Here, we analyzed a dataset composed by nearly one thousand
+players, characterized by dierent features, e.g. number of kills,
+number of deaths, etc., which varies over time, from match to match.
+We represented the data as a tensor and we applied NTF to extract
+the factor matrices related to the players, the features, and the
+temporal activities.
+e analysis of the NTF outcome and the application of clustering
+methods, such as the k-means, highlighted the presence in the
+data of several groups of players, characterized by a correlated
+behavior in time and topology. In particular, players belonging to
+the same component (cluster) are characterized by similar features
+and activation over time.
+We carried out the analysis of the topological characteristics
+of each group of player by looking at the features highlighted by
+NTF, and comparing the interpretation derived by these results
+with the original data. We found good agreement between the NTF
+output and the characteristics of the discovered groups of players
+in the original data. erefore, NTF successfully identied groups
+of distinct behaviors in the data that can be interpreted as dierent
+player strategies.
+It would be expected that dierent strategies (e.g., collaborative
+vs. individualist playing) would lead to diverse performances (e.g.,
+aecting the winning/losing ratio). However, by investigating the
+temporal activity paerns of the player groups, we found that
+they are mainly characterized by a constant behavior and that are
+active continuously over time. us, the analysis of the temporal
+activation of the NTF components stressed the reluctance of players
+to adapt their strategy and gaming behavior over time.
+is nding might be due to the game design of League of Legends: the team formation in the game is based on a mathematical
+rule which aims at contrasting teams with comparable skills, thus
+yielding the same prior probability of victory to each team.
+We conrmed this fact by computing the Kernel Density Estimation over the feature winner for each player, divided by clusters. Only marginal, yet statistically signicant, dierence emerged,
+which are likely not perceivable by the players. us, players are
+not incentivized to changing their strategy with another one.
+In conclusion, the techniques and approaches used in this work
+are promising, and open new questions about human behaviors
+in multiplayer online games. Future work will be devoted to the
+analysis of additional game datasets with the aim of exploring behavioral paerns in dierent scenarios. e main goal would be to
+investigate if it is possible to nudge players to change their strategies by the use of incentives, such as rewards, and high percentage
+of victory.
+ACKNOWLEDGMENTS
+e authors are grateful to DARPA for support (grant #D16AP00115).
+is project does not necessarily reect the position/policy of the
+Government; no ocial endorsement should be inferred. Approved
+for public release; unlimited distribution.
+REFERENCES
+[1] Rasmus Bro and Henk AL Kiers. 2003. A new ecient method for determining
+the number of components in PARAFAC models. Journal of chemometrics 17, 5
+(2003), 274–286. Denition of the core consistency diagnostic.
+[2] Barry Brown and Marek Bell. 2004. CSCW at play:’there’as a collaborative virtual
+environment. In Proceedings of the 2004 ACM conference on Computer supported
+cooperative work. ACM, 350–359.
+[3] Andrzej Cichocki, Rafal Zdunek, Anh Huy Phan, and Shun-ichi Amari. 2009.
+Nonnegative matrix and tensor factorizations: applications to exploratory multiway data analysis and blind source separation. John Wiley & Sons.
+[4] Laura Dabbish, Robert Kraut, and Jordan Paon. 2012. Communication and
+commitment in an online game team. In Proceedings of the SIGCHI conference on
+human factors in computing systems. ACM, 879–888.
+[5] Sco Donaldson. 2015. Mechanics and Metagame Exploring Binary Expertise in
+League of Legends. Games and Culture (2015), 1555412015590063.
+[6] Nicolas Ducheneaut and Robert J Moore. 2004. e social side of gaming: a study
+of interaction paerns in a massively multiplayer online game. In Proceedings of
+the 2004 ACM conference on Computer supported cooperative work. ACM, 360–369.
+[7] Simon Ferrari. 2013. From generative to conventional play: Moba and league of
+legends. In Proceedings of DiGRA. 1–17.
+[8] Chek Yang Foo and Elina MI Koivisto. 2004. Dening grief play in MMORPGs:
+player and developer perceptions. In Proceedings of the 2004 ACM SIGCHI International Conference on Advances in computer entertainment technology. ACM,
+245–250.
+[9] Laetitia Gauvin, Andre Panisson, and Ciro Cauto. 2014. Detecting the commu- ´
+nity structure and activity paerns of temporal networks: a non-negative tensor
+factorization approach. PloS one 9, 1 (2014), e86028.
+[10] Hyunsoo Kim, Haesun Park, and Lars Elden. 2007. Non-negative tensor factor- ´
+ization based on alternating large-scale non-negativity-constrained least squares.
+In 2007 IEEE 7th International Symposium on BioInformatics and BioEngineering.
+IEEE, 1147–1151. NTF algorithm based on ANLS + regularization.
+[11] Jooyeon Kim, Brian C Keegan, Sungjoon Park, and Alice Oh. 2016. e
+Prociency-Congruency Dilemma: Virtual Team Design and Performance in
+Multiplayer Online Games. In Proceedings of the 2016 CHI Conference on Human
+Factors in Computing Systems. ACM, 4351–4365.
+[12] Jingu Kim and Haesun Park. 2012. Fast nonnegative tensor factorization with
+an active-set-like method. In High-Performance Scientic Computing. Springer,
+Non-negative Tensor Factorization for Human Behavioral Paern Mining in Online Games KDD’17, August 2017, Nova Scotia, Canada
+311–326. NTF computed by ANLS and BPP algorithms.
+[13] Tamara Gibson Kolda. 2006. Multilinear operators for higher-order decompositions.
+United States. Department of Energy. Denition of Kruskal operator + its
+properties it’s used to dene the PARAFAC decomposition.
+[14] Tamara G Kolda and Bre W Bader. 2009. Tensor decompositions and applications. SIAM review 51, 3 (2009), 455–500. Overview of higher-order tensors and
+their decompositions. properties, decomposition models, sowares.
+[15] Yubo Kou and Xinning Gui. 2014. Playing with strangers: Understanding temporary teams in League of Legends. In Proceedings of the rst ACM SIGCHI annual
+symposium on Computer-human interaction in play. ACM, 161–169.
+[16] Yubo Kou and Bonnie Nardi. 2013. Regulating anti-social behavior on the Internet:
+e example of League of Legends. (2013).
+[17] Yubo Kou and Bonnie A Nardi. 2014. Governance in League of Legends: A hybrid
+system.. In FDG.
+[18] Choong-Soo Lee and Ivan Ramler. 2015. Investigating the impact of game
+features and content on champion usage in league of legends. Proceedings of the
+Foundation of Digital Games (2015).
+[19] Lek-Heng Lim and Pierre Comon. 2009. Nonnegative approximations of nonnegative tensors. Journal of chemometrics 23, 7-8 (2009), 432–441. PARAFAC
+degeneracy and the existence of a solution for the nonnegative case.
+[20] Tinnawat Nuangjumnong. 2014. e eects of gameplay on leadership behaviors:
+An empirical study on leadership behaviors and roles in multiplayer online bale
+arena games. In Cyberworlds (CW), 2014 International Conference on. IEEE, 300–
+307.
+[21] Hao Yi Ong, Sunil Deolalikar, and Mark Peng. 2015. Player Behavior and Optimal
+Team Composition for Online Multiplayer Games. arXiv preprint arXiv:1503.02230
+(2015).
+[22] Andre Panisson, Laetitia Gauvin, Marco aggioo, and Ciro Cauto. 2014. ´
+Mining concurrent topical activity in microblog streams. arXiv preprint
+arXiv:1403.1403 (2014).
+[23] Rabindra Ratan, Tracy Kennedy, and Dmitri Williams. 2012. League of gendered
+game play behaviors: examining instrumental vs identity-relevant avatar choices.
+Meaningful Play 13 (2012).
+[24] Rabindra A Ratan, Nicholas Taylor, Jameson Hogan, Tracy Kennedy, and Dmitri
+Williams. 2015. Stand by your man: An examination of gender disparity in
+League of Legends. Games and Culture 10, 5 (2015), 438–462.
+[25] Jean-Philip Royer, Nadege irion-Moreau, and Pierre Comon. 2011. Computing
+the polyadic decomposition of nonnegative third order tensors. Signal Processing
+91, 9 (2011), 2159–2171. Preconditionated nonlinear conjugate gradient algorithms. Add nonnegative constraints to parafac model by using adamard product
+of the components.
+[26] Anna Sapienza, Joseph Wu, Laetitia Gauvin, Ciro Cauto, and others. 2015.
+Detecting Anomalies in Time-varying Networks using Tensor Decomposition.
+In 2015 IEEE International Conference on Data Mining Workshop (ICDMW). IEEE,
+516–523.
+[27] Kenneth B Shores, Yilin He, Kristina L Swanenburg, Robert Kraut, and John
+Riedl. 2014. e identication of deviance and its impact on retention in a multiplayer game. In Proceedings of the 17th ACM conference on Computer supported
+cooperative work & social computing. ACM, 1356–1365.
+[28] Maxime Veron, Olivier Marin, and S ´ ebastien Monnet. 2014. Matchmaking in ´
+multi-player on-line games: studying user traces to improve the user experience.
+In Proceedings of Network and Operating System Support on Digital Audio and
+Video Workshop. ACM, 7.

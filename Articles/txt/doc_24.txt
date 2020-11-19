@@ -1,0 +1,753 @@
+Interpretable Real-Time Win Prediction for Honor of Kings – a
+Popular Mobile MOBA Esport
+Zelong Yang
+Tsinghua-Berkeley Shenzhen
+Institute, Tsinghua University
+yangzelong14@gmail.com
+Zhufeng Pan
+University of California, Los Angeles
+panzhufeng@cs.ucla.edu
+Yan Wang
+AI Lab, Tencent Inc.
+brandenwang@tencent.com
+Deng Cai
+e Chinese University of Hong Kong
+thisisjcykcd@gmail.com
+Shuming Shi
+AI Lab, Tencent Inc.
+shumingshi@tencent.com
+Shao-Lun Huang
+Tsinghua-Berkeley Shenzhen
+Institute, Tsinghua University
+shaolun.huang@sz.tsinghua.edu.cn
+Xiaojiang Liu
+AI Lab, Tencent Inc.
+kieranliu@tencent.com
+ABSTRACT
+With the rapid prevalence and explosive development of MOBA
+esports (Multiplayer Online Bale Arena electronic sports), many
+research eorts have been devoted to automatically predicting the
+game results (win predictions). While this task has great potential
+in various applications such as esports live streaming and game
+commentator AI systems, previous studies suer from two major
+limitations: 1) insucient real-time input features and high-quality
+training data; 2) non-interpretable inference processes of the blackbox prediction models. To mitigate these issues, we collect and release a large-scale dataset that contains real-time game records with
+rich input features of the popular MOBA game Honor of Kings. For
+interpretable predictions, we propose a Two-Stage Spatial-Temporal
+Network (TSSTN) that can not only provide accurate real-time win
+predictions but also aribute the ultimate prediction results to the
+contributions of dierent features for interpretability. Experiment
+results and applications in real-world live streaming scenarios show
+that the proposed TSSTN model is eective both in prediction accuracy and interpretability.
+CCS CONCEPTS
+•Applied computing → Forecasting;
+KEYWORDS
+datasets, MOBA esports, win prediction, interpretable
+1 INTRODUCTION
+Nowadays, MOBA esports have become increasingly popular. For
+example, one of the world’s three most popular and highest-grossing
+MOBA games Honor of Kings (HoK, whose international version
+is named Arena of Valor) is aracting more than 80 million daily
+active players and 200 million monthly active players1
+. Other popular MOBA games DotA II and LoL also have tens of millions of
+1hps://en.wikipedia.org/wiki/Honor of Kings
+Figure 1: Application of a non-interpretable prediction
+model in the LoL 2019 World Championship live streaming.
+Due to the lack of interpretability, the commentators can
+merely make simple comments like “Now the win probability of the Blue Team is 80%”.
+players worldwide. In the last King Pro League Fall 2019 tournament for HoK, the prize pool reached 1.13 million dollars2
+. Due
+to the enormous popularity of MOBA esports, related industries
+such as esports live streaming and game commentator AI systems
+have emerged with increasingly huge amounts of prot. Under the
+circumstances, much research [3, 9, 13, 17, 23, 25] has been done
+for automatic MOBA esports win predictions.
+Although some progress has been made, existing studies on
+MOBA esports win predictions are limited in terms of the following
+two aspects.
+First, previous studies have limited scope of applications because
+of their input feature designs. Specically, most existing MOBA esports datasets [3, 13, 17, 19] only support pre-game win predictions
+because only pre-game features such as team compositions (hero
+selections) are included. However, real-time predictions are more
+informative and useful in practice. Other MOBA esports datasets
+suer from insucient real-time features. For example, the dataset
+of [25] only contains three real-time features: gold, experience, and
+death. e lack of sucient discriminative features can limit the
+prediction accuracy, impeding the usage in practice.
+2hps://liquipedia.net/arenaofvalor/King Pro League/2019/Fall
+arXiv:2008.06313v2 [cs.AI] 4 Sep 2020
+Second, current win prediction models for MOBA esports [8, 26]
+are black-box neural models that mix dierent features in the same
+vector space, which can not provide any clue as to why the prediction is made. e lack of interpretability dramatically limits
+their applications in industry scenarios such as esports live streaming. As one can see in Figure 1, the non-interpretable prediction
+model used in LoL 2019 World Championship can only give the
+win probabilities of the two teams (80% and 20%). Since the game
+commentators are not aware of the underlying reasons for the prediction results, they can merely make some simple comments such
+as “Now the win probability of the Blue Team is 80.0%” which is
+dull and non-informative. In contrast, once we can provide more
+interpretable predictions such as: {WinProbBlue: 80.0%, Factor
+1: towers, Factor 2: team compositions}, more aractive comments can be made such as: “e Blue Team destroyed three towers
+in the past ve minutes and thus accumulated a huge advantage in
+terms of vision. Besides, with a more powerful team composition, they
+now have a very high win probability of 80.0%.”
+To address the above problems, we collect and release a largescale dataset that contains abundant real-time game records of the
+popular MOBA game HoK. A critical characteristic of these game
+records is that they are played by highly-skilled human players (top
+1% according to the game leaderboard). Since matches with higher
+skill levels result in fewer random factors [3, 25], the collected
+dataset is more predictable and thus can result in more reliable
+models. e dataset covers 184,362 real human games, and the
+real-time game records are collected every 30 seconds, generating
+5,253,661 data-frames in total. For each data-frame, the most discriminative and human-perceptible features are included, such as
+teams’ accumulated gold, kill-counts, and tower-counts.
+With the collected dataset above, we propose a Two-Stage SpatialTemporal Network (TSSTN), which gives not only the accurate win
+predictions but also human-interpretable intermediate results. In
+the rst Spatial-stage, features are grouped into six distinct feature
+groups and projected onto six separate representation spaces. Upon
+these spaces, we build six Spatial-models that take individual feature
+groups as input only and make the respective win predictions. en,
+through a deep investigation of MOBA games, we nd that the same
+features are not invariantly important throughout the games due to
+the dierent happening time of important in-game events. To beer
+model this “temporal” characteristic, in the second stage (Temporalstage) we assign six time-variant weights to the six Spatial-models,
+and the ultimate win prediction is made through the weighted
+combination of Spatial-models outputs.
+e proposed TSSTN model is interpretable in that it separates
+the eects of features’ values and importance to decouple their
+contributions: 1) e Spatial-models outputs are independent
+win predictions based on single feature groups, which indicate the
+two teams’ win-or-lose likelihood in the domains of dierent
+feature groups (Spatial-domains). 2) e six time-variant weights
+of the Temporal-stage represent the relative importance of different feature groups at specic time-points. 3) e product of
+the Spatial-models output and its time-variant weight denotes
+the contribution of the single feature group to the ultimate win
+prediction.
+Figure 2: Intermediate prediction results in an HoK game.
+is gure shows the importance weights and contributions
+of six feature groups in the example game at 5 minutes and
+15 minutes.
+It is worth noting that high importance does not necessarily
+lead to a large contribution. For example, team gold is a highimportance feature at most time-points, but its contribution will
+still be insignicant if the two teams have approximate amounts
+of gold at the current time-point. On the other hand, features
+with relatively low importance could still make a non-negligible
+contribution if the Spatial-model’s distinct prediction output is high
+enough.
+Figure 2 is an illustration of the interpretable intermediate results given by the TSSTN model. As shown, our system gives
+information about the importance weights and contributions of
+the six feature groups to explain the underlying reasons for the
+ultimate predictions. At 5.0 minutes, the most contributed feature
+groups are Gold, Kill, and Tower, as the pure coral bars show; at
+15.0 minutes, the most contributed features change to Gold, Soldier,
+and Wild Resource, as the hatched coral bars show. In this example,
+the Gold feature’s importance and contribution decrease as the
+match progresses, while other features’ (such as Tower and Soldier)
+contributions and importance increase as the match goes on.
+Experiments show that the TSSTN model gives accurate realtime win predictions as well as human-interpretable intermediate
+results for the popular MOBA game HoK. Besides, the TSSTN model
+has already been implemented in a real-world AI commentator
+system to provide human-interpretable prediction results.
+e contributions of our work are summarized as follows:
+• A large-scale HoK dataset for real-time MOBA esports
+win prediction is collected and utilized to train reliable
+prediction models. is dataset will be publicly released
+so that other researchers could reproduce our work and
+carry out their ideas on MOBA esports
+• A Two-Stage Spatial-Temporal Network (TSSTN) is proposed
+to make real-time interpretable win predictions by aributing the predictions to the contributions of dierent features.
+• Experiment results and applications in a real-world AI
+commentator system demonstrate the eectiveness and
+interpretability of the proposed TSSTN model.
+2 RELATED WORK
+Due to the high demand of game result forecasts, much research has
+been done to predict the results of the games, both for traditional
+2
+sports and MOBA esports. In this section, we introduce some
+related work on the topic of game result predictions, including
+traditional sports win predictions, MOBA esports pre-game win
+predictions, and MOBA esports real-time win predictions.
+2.1 Traditional Sports Win Prediction
+Due to the high demand from related industries, there have been
+many studies aiming to predict the winners of traditional sports,
+such as basketball [11, 12, 18], football [4, 14], and others [1, 21].
+In these works, the authors rst collect their datasets containing
+pre-game or real-time information, then build models to predict
+the results based on their selected features. ese models prove to
+be useful to some extent, but there are two issues that need to be
+stressed. Firstly, to make sure that the games are of the same skill
+level, the datasets should contain games in the same professional
+competitions, such as NBA (National Basketball Association) for
+basketball and NFL (National Football League) for football. However,
+the amount of such sports competitions’ data is way insucient to
+train reliable models, considering the limited number of matches
+every year. Secondly, there are too many o-game variables in
+traditional sports, such as weather conditions. erefore it is hard
+to comprehensively and objectively choose the suitable features.
+2.2 MOBA Esports Pre-Game Win Prediction
+MOBA esports games, on the other hand, are naturally suitable
+for the task of result prediction. For one thing, huge amounts of
+structured non-privacy game data can be easily collected from the
+game database to train reliable models; for the other, the variables
+in MOBA esports are relatively fewer and easier to obtain. With
+the rapid development and prevalence of MOBA esports, much
+research has been done to predict the results of MOBA esports
+games, such as [6, 15]. Among these works, [3] rst starts the
+research on MOBA esports result predictions, then [9, 13, 19] follow
+this work to make pre-game win predictions. Semenov et al. [2016]
+and Wang et al. [2018] suggest several machine learning methods to
+predict the MOBA esports using pre-game information such as team
+compositions. Chen et al. [2018] study the synergy and restrain
+relations among heroes. ese works, however, lack real-time data,
+which limits their usages.
+2.3 MOBA Esports Real-Time Win Prediction
+Yang et al. [2016] rst use real-time data to predict the results of
+MOBA esports. However, their training data and selected features
+are insucient (just less than one-third of the training data contains real-time information, and only three real-time features are
+collected). Besides, the results of this work are non-interpretable,
+which further limits their use. Hodge et al. [2017] use game data
+of dierent skill levels to mitigate the ineciency of training data.
+[10] is aimed at predicting the events inside the games such as
+hero deaths. Demediuk et al. [2019] use unsupervised learning
+technologies to explore the roles of heroes in MOBA esports.
+Another type of research on esports win predictions is to train
+game AI using reinforcement learning technologies, such as [20]
+for StarCra II, [26, 27] for Honor of Kings, and [16] for DotA II.
+Trained appropriately, value-based reinforcement learning models
+are capable of giving real-valued win prediction results. Although
+Table 1: An example data-frame at time 9.5 minutes.
+time: 9.5
+win side: · · · middleTowerCnt: 3
+lose side: crystalTowerCnt: 3
+hero id: AD:
+52, 96, 56, 23, 31 alive: true
+hero: id: 31
+52: Raider: · · ·
+profession: mage AP: · · ·
+deadCnt: 3 overlord: 0
+assistCnt: 1 darkTyrant: 0
+killCnt: 0 numOverlord: 0
+gold: 3338 numDarkTyrant: 0
+96: · · · numTyrant: 0
+56: · · · numRedBuf: 0
+23: · · · numBlueBuf: 0
+31: · · · soldierDist:
+teamGold: 23884 lower: 8544
+kill: 6 upper: 8932
+participation: 0.67 middle: 7273
+towerCnt: 7
+these game AI models can give real-time win predictions, they are
+black-box models without any interpretability.
+Based on these previous works, our work utilizes sucient
+MOBA esports data with diverse real-time features and designs
+a TSSTN model to give reliable and interpretable prediction results.
+Our work has already been implemented in a real AI commentator
+system for HoK. To the best of our knowledge, our work is among
+the initial aempts to realize interpretable prediction models for
+MOBA esports win predictions.
+3 DATASET
+HoK is a mobile MOBA game that enjoys great popularity globally.
+In HoK, two teams of ve heroes combat against each other to
+destroy the “Crystal” (home base) of the rival team for victory. A
+detailed game introduction can be found at [24].
+Based on the game seings, we collect the anonymized information of all the 184,362 games that happened within a randomly
+chosen day in June 2019 from the ocial game database. Prior
+experiments for data scale indicate that one day’s data is sucient
+for our task. Please note that to ensure the quality of games, only
+“Conquerors”-level games whose participants are top 1% players are
+collected (according to [3, 25]). To reduce the redundancy of the
+dataset, we extract the features every half minute. It means that
+a 15-minute game will transform to 30 data-frames in the collection process, and we obtain 5,253,661 data-frames in total. In each
+data-frame, 96 features from the game process are extracted, which
+include sucient information that we think is helpful for the win
+prediction. Aside from some obviously useful information such as
+gold, kill-count, and tower-count of each team, we also calculate
+some potentially helpful features, such as soldiers’ distances to the
+3
+Figure 3: e owchart of the proposed TSSTN model. e le part displays the data collection and feature selection procedures. e middle part is the Spatial-stage. Each Spatial-model is designed for one feature group to give individual prediction
+(win-score). e right part shows the Temporal-stage. e time-dependent importance weights combine with Spatial-models’
+outputs to give the ultimate win prediction. e middle part (Spatial-stage) consists of two kinds of Spatial-models: feedforward networks and logistic regression models. For feed-forward Spatial-models, the features (including time) are converted
+into embedding vectors as input; for logistic regression Spatial-models, the input features are scalars.
+rival “Crystal”, bu information, and wild resource occupancy. An
+illustration of one data-frame is shown in Table 1, where elds of
+dierent layers are separated using indents, and repeated elds are
+omied using ellipses.
+In order to facilitate the future study of MOBA esports win
+predictions, this dataset will be publicly released. 3
+4 MODEL
+In this section, we introduce the Two-Stage Spatial-Temporal Network (TSSTN) model for interpretable real-time MOBA esports win
+predictions. In the rst Spatial-stage, we categorize the features
+into six feature groups: Gold, Kill, Tower, Wild Resource, Soldier, and
+Heroes. en we project them onto dierent representation spaces.
+Upon each space, a Spatial-model is built to compute a win-score
+si ∈ [−1.0, 1.0] that represents the win-or-lose likelihood prediction based on this feature group. Since each Spatial-model is not
+aware of the features in other feature groups, its output (win-score)
+can be regarded as the independent win prediction of the team
+in each specic feature domain. Moreover, these spaces (feature
+groups) are neither equally important with each other (in spatialdimensions) nor invariantly important throughout the games (in
+temporal-dimensions). For example, feature group Soldier (soldiers’
+distances to the rival Crystal) becomes more and more important
+because soldiers become more and more potent as the games go on.
+To beer model the temporal variance of feature groups’ relative importance, in the second Temporal-stage we assign a time-variant and
+learnable weight to each Spatial-model. Finally, the inner product
+of the win-score vector s = [s1,s2, ...,s6] and the time-dependent
+importance weight vector w
+t = [w
+t
+1
+,w
+t
+2
+, ...,w
+t
+6
+]
+T
+is the ultimate
+prediction result F
+t
+. Figure 3 demonstrates the owchart of the
+proposed TSSTN model.
+In this two-stage architecture, some intermediate results can help
+interpret the ultimate win predictions. 1) e weight vector w
+t
+at
+3 e full dataset will be released in the camera-ready version.
+time t reveals the relative importance of the feature groups at that
+time. It varies over time because feature groups are not invariantly
+important at dierent game processes. 2) e product w
+t
+i
+· si of
+feature group xi
+’s importance weight w
+t
+i
+and win-score si directly
+contributes to the ultimate win prediction F
+t
+as F
+t =
+Í
+i w
+t
+i
+· si
+.
+erefore, we refer to the value ofw
+t
+i
+·si as the contribution of feature
+group xi
+. is contribution reveals the eects of two teams’ feature
+dierences and features’ importance on the ultimate prediction
+result. Based on this scheme, we can easily explain how the ultimate
+win prediction F
+t
+is made according to the above interpretable
+information. In previous studies, this information is hidden in the
+entangled parameters of the “black-box” models, and there is no
+way we can interpret them.
+4.1 Feature Selection
+As for the feature selections for the TSSTN model, we select 11
+types of features in every data-frame and classify these features
+into six feature groups:
+• Gold: e dierence in the accumulated amounts of gold
+between the two teams. Gold can be used to purchase
+more powerful equipment to enhance the aributes (such
+as health-point, aack, and defence) of the heroes.
+• Kill: e dierence in the kill-counts of the two teams. By
+killing the rival heroes, extra gold and experience can be
+obtained to purchase equipment and level up, respectively.
+• Tower: e dierence in the numbers of existing defence
+towers, including three kinds of towers (front, middle, and
+Crystal towers). Defence towers can hold back the rival
+heroes and soldiers as well as provide vision.
+• Wild Resource: e dierence of the wild resources, including two types of wild monsters: Dark Tyrants and
+Overlords. By killing these monsters, the whole team obtain bus that can provide extra gold, experience, and
+aributes.
+4
+• Soldier: e soldiers’ distances to the opponent “Crystal”,
+including the distances in the three lanes (top, middle, and
+boom lanes). Soldiers are useful in terms of destroying
+towers, which are unavoidable obstacles to get to the rival
+“Crystal”. As the game goes on, the soldiers will become
+more and more potent according to the MOBA game settings.
+• Heroes: e id of heroes selected by the players. Since
+there are certain restrain and synergy relations among
+heroes, this information can be utilized to improve the
+prediction accuracy before and during the games.
+As the input of the TSSTN model, dierent feature groups will be
+preprocessed in dierent manners according to their Spatial-models.
+As the middle part of Figure 3 shows, the rst three numerical
+feature groups will be normalized using min and max feature values,
+and the rest three categorical feature groups will be converted into
+embedding vectors.
+4.2 Spatial-Stage
+As mentioned above, the Spatial-stage consists of three logistic
+regression models and three feed-forward neural networks called
+Spatial-models. We use logistic regression models for numerical
+feature groups (Gold, Kill, and Tower), and use two-hidden-layer
+feed-forward neural networks for categorical feature groups (Wild
+Resource, Soldier, and Heroes). For Spatial-model i, the input consists
+of its corresponding feature group xi
+introduced in Section 4.1 and
+the current game time t. e output of Spatial-model i is a winscore si(xi
+,t) ∈ [−1.0, 1.0], representing the win-or-lose likelihood
+prediction based on the single feature group’s value dierence.
+Note that although adopting more sophisticated Spatial-model
+architectures for dierent feature groups is possible to improve the
+overall prediction accuracy further, it is not the primary purpose
+of this study. We want to focus on the interpretability of MOBA
+esports win predictions, so we choose simple-architecture networks
+(logistic regression models and feed-forward networks) for the
+feature groups. In real-world scenarios, one can deliberately design
+dierent model-architectures for dierent feature groups.
+4.3 Temporal-Stage
+e Temporal-stage consists of six time-dependent weights, which
+reect the relative importance of the six feature groups at dierent
+game processes. Given the win-score vector s(x,t) at time-point
+t provided by the Spatial-stage (where vector x represents the six
+feature groups), the Temporal-stage calculates the ultimate win
+prediction F
+t using the linear combination of importance weights
+w
+t
+and win-scores s(x,t):
+F
+t = w
+t
+· s(x,t) =
+Õ
+d
+i
+w
+t
+i
+si(xi
+,t)
+where d denotes the number of feature groups. Since the weightsw
+t
+represent the relative importance of feature groups at time-point t,
+we apply the so f tmax function to normalize the importance weight
+w
+t
+i
+for each feature group:
+w
+t
+i =
+expθ
+t
+i
+Í
+j
+expθ
+t
+j
+,
+so that the weight w
+t
+i
+satisfy:
+Õ
+d
+i
+w
+t
+i = 1, w
+t
+i >= 0.
+4.4 Training
+To optimize the parameters in the Spatial-stage and the Temporalstage, we train the Spatial-models and importance weight vectors
+using cross-entropy loss and back-propagation technologies. By
+experiments, we nd that there is lile dierence as to train the two
+stages simultaneously or separately. In the following experiments,
+we choose to train the two stages simultaneously.
+5 EXPERIMENTS
+5.1 Experimental Settings
+We conduct experiments on the dataset mentioned above. 10,000
+games from the dataset are randomly selected as the test set. 90%
+of the rest 174,362 games are set as the training set and the rest 10%
+as the validation set.
+e parameters of the TSSTN model are as follows. In the Spatialstage, the Spatial-models for numerical feature groups Gold, Kill,
+and Tower are logistic regression models with tanh as the non-linear
+function; the Spatial-models for other categorical groups Wild Resource, Soldier, and Heroes are two-hidden-layer feed-forward neural
+networks with dimensions (256, 16), (256, 16) and (128, 16), respectively. Before the input layer, the feature values (including time) are
+normalized using min and max values (for logistic regressions) or
+preprocessed into embedding vectors (for feed-forward networks)
+as the middle part of Figure 3 shows. For feed-forward network
+Spatial-models, aer each hidden-layer, we use leaky ReLU function
+with parameter 0.01 as the non-linear function and add dropout
+layer with rate 0.2 to mitigate overing. Aer the output layers
+of the feed-forward network Spatial-models, we use tanh functions
+to rectify the Spatial-models’ outputs (win-scores) to be among
+[−1.0, 1.0] to represent win-or-lose likelihood.
+5.2 Compared Methods
+In order to thoroughly evaluate the aforementioned TSSTN model,
+we compare it with two baselines:
+• Heuristic: Intuitively, “gold” is one of the most decisive
+features for the ultimate win predictions, so the Heuristic
+model predicts the game based on the dierence of the
+accumulated gold between the two teams. e team with
+more gold will be predicted as the winner.
+• Fully-Connected: A fully-connected neural network that
+takes all the six feature groups as the input. Before the input layer, the features are preprocessed in the same manner
+as the TSSTN model. We design four hidden layers for this
+model with dimensions 1024, 4096, 512 and 64, respectively.
+Aer each hidden layer, we add leaky ReLU function as the
+non-linear layer and add dropout layer in order to mitigate
+overing. Aer the output layer, a tanh function is used
+to give the ultimate win predictions. e seings of the
+leaky ReLU layers and dropout rates are identical to those
+of the TSSTN model introduced in Subsection 5.1.
+5
+Table 2: e accuracy (%) of the three prediction models at
+ve equidistant time-points.
+Models 0 min (std) 5 min (std) 10 min (std) 15 min (std) 20 min+ (std)
+Heuristic 50.0 (0.00) 69.2 (0.00) 78.4 (0.00) 73.0 (0.00) 63.0 (0.00)
+Fully-Connected 54.7 (0.43) 69.3 (0.23) 79.3 (0.12) 75.0 (0.23) 70.0 (0.57)
+TSSTN 54.6 (0.36) 69.2 (0.05) 78.5 (0.05) 73.4 (0.09) 67.8 (0.32)
+Figure 4: e average prediction accuracy of the three HoK
+experts and the two automatic prediction models at nine
+equidistant time-points.
+e prediction accuracy of the single-feature-group based prediction models (Spatial-models, such as the prediction model depending on the “Heroes” features only) are elaborated in Subsection
+5.5. ese Spatial-models are separately discussed since they utilize
+less input information than the three aforementioned models.
+5.3 Evaluation Metrics
+e prediction accuracy at dierent game time-points is adopted as
+the automatic evaluation metrics. Although real-valued winning
+probabilities can be provided by the TSSTN model and the FullyConnected Network, we only consider the prediction accuracy of
+the binary win-or-lose results for the test games. To beer evaluate
+how well the proposed TSSTN model predicts the game-winner, we
+also recruit three human experts to manually predict the winner
+of each game given the test game data. All these experts rank
+top 0.1% in the ladder tournament of HoK according to the game
+leaderboard. e game experts are given access to the real games
+so they can explore the whole game states and extract their own
+features and conclusions, and are asked to predict the winners of
+the games every 2.5 minutes based on the bale situations and their
+experience. Note that since it is an impossible task to annotate all
+the 10,000 games in the test set manually due to the limitation of
+resources, we randomly choose 200 test games for each time-point
+for human annotation.
+5.4 Results
+e average prediction accuracy at ve equidistant time-points
+is shown in Table 2. e Fully-Connected Network achieves the
+best performance in terms of the prediction accuracy at these ve
+time-points. e prediction accuracy of the TSSTN model is higher
+than the Heuristic model but a lile lower than the Fully-Connected
+Network, since we sacrice the coupling information among the
+six feature groups to some extent for interpretability. e accuracy
+of the Heuristic model at 0.0 minute is 50.0% since when the two
+teams have equal gold, the Heuristic model predicts the winner
+stochastically. Please note that human experts’ prediction results
+are not included in Table 2 due to the dierence of the test sets (200
+games versus 10,000). e comparison between HoK experts and
+the proposed TSSTN model is separately shown in Figure 4.
+Figure 4 shows the comparisons of the prediction accuracy among
+human experts and two prediction models, one interpretable model
+TSSTN and one non-interpretable model Fully-Connected Network.
+Although the accuracy of the TSSTN model is slightly lower than
+that of the Fully-Connected Network, it is obviously higher than
+that of human experts at time-points 0.0, 17.5, and 20.0. Intuitively,
+predictions at these three time-points are dicult for human experts because many features that are decisive most of the time are
+not signicant enough at these time-points. For example, “gold” is
+a decisive feature at most time-points. However, at the beginnings
+of the games (0.0 minute), the two teams have equal gold; and gold
+is no longer essential aer 17.5 minutes because players already
+accumulated enough gold at that time.
+At time-point 0.0 minute, the HoK experts appear to have low prediction accuracy, which is because: before the games start, human
+experts can only “guess” the results based on prior-game information like team compositions, which is quite inaccurate compared
+with the prediction results of the automatic methods.
+As shown in Table 2 and Figure 4, the prediction accuracy of
+both the human experts and the automatic methods drops aer
+12.5 minutes, which is because: 1) In the late-game stages, both
+the levels and equipment of the two teams reach the maximum.
+erefore the results of the games are more and more aected
+by random factors like the players’ accidental mistakes. is fact
+makes the late-stage games harder to predict. 2) Since the games
+are not equal-duration, games that are easier to predict oen end
+before late-game stages, therefore the test data-frames are harder to
+predict at late-game stages time-points, resulting in this prediction
+accuracy drop.
+5.5 Further Analysis
+More information about the proposed TSSTN model can be revealed
+by the six Spatial-models’ individual prediction accuracy and the
+corresponding importance weights, as shown in Figure 6. At timepoint 0.0 minute of the games, the only Spatial-model with a nontrivial (larger than 50%) prediction accuracy is Spatial-model Heroes;
+accordingly, the only non-zero importance weight is also Heroes,
+as shown in the right part of Figure 6. As the games go on, the
+most accurate Spatial-model is Gold, which is also reected in its
+high importance weights. Aer 12.0 minutes in the games, both
+the prediction accuracy and importance weight of Gold begin to
+drop. is phenomenon might happen because extra gold above
+some certain threshold becomes useless due to the limited package
+space for equipment in the late-game stages. Aer 20.0 minutes
+in the games, the prediction accuracy of the Spatial-model Soldier
+surpasses that of the Spatial-model Gold, so is its corresponding
+importance weight.
+e six Spatial-models’ importance weights and prediction accuracy changes are consistent with our intuition. For example, since
+the team composition information (Heroes) is xed throughout each
+6
+Figure 5: An example HoK game in which an AI commentator system gives real-time comments as the game progresses. Among
+these comments, the win prediction related ones are supported by the proposed TSSTN model. e upper le part of this gure
+shows the win probability curves of the Blue Team and the Red Team throughout the game. e lower le, upper right and
+lower right parts show three screenshots in which the AI commentator system utilizes the interpretable intermediate results
+of the proposed TSSTN model to generate its comments.
+Figure 6: Six Spatial-models’ average prediction accuracy
+and importance weights in the rst 20 minutes of the games.
+game, the prediction accuracy of the Spatial-model Heroes is almost
+impervious to time, as the le part of Figure 6 shows. Moreover,
+since the dierence in team compositions has relatively limited in-
+uence on the game results, the corresponding prediction accuracy
+of Spatial-model Heroes is only slightly above 50.0%. e Spatialmodel Wild Resource only becomes valid aer 8.0 minutes in the
+games, since its features “Overlord” and “Dark Tyrant” only change
+aer 8.0 and 10.0 minutes, respectively. e Spatial-model Soldier
+(soldiers’ distances to the rival Crystal) becomes more signicant
+aer 19.0 minutes compared to other Spatial-models, since soldiers
+become more and more potent and important in the late-game
+stages in most MOBA esports, especially HoK.
+5.6 Interpretability
+e proposed TSSTN model now serves as an essential module of
+an AI commentator system4
+for HoK. Having been deployed for two
+months (since April 2020), this AI commentator can automatically
+generate real-time comments for HoK games, and a large part of
+its comments rely on the interpretable prediction results of the
+proposed TSSTN model. To illustrate the interpretability of the
+proposed TSSTN model, we exhibit a live-streaming game as an
+example, as Figure 5 shows.
+Specically, the upper le part of this gure shows two real-time
+win probability curves for the two teams provided by the TSSTN
+model. en the screenshots of three time-points in the live game
+are exhibited in the lower le, upper right and lower right parts, respectively. In the screenshots, the Chinese subtitles in white are real
+comments generated by the aforementioned HoK AI commentator
+system, and the corresponding English translations are provided
+below. At time-point 1 (game time 0:03), since it is the beginning
+of the game, the TSSTN model predicts that the Blue Team’s win
+probability is 54.4% based on the team composition (Heroes) information only, so the AI commentator generates a comment “e
+game starts! e team composition of the Blue Team is in advantage;
+therefore, they get a win probability of 54.4%”. en, at time-point 2
+4A live-streaming video record of this system can be found at hps://www.bilibili.
+com/video/BV1sK411W7JH, and its English-subtitled record version can be found
+at hps://drive.google.com/drive/folders/1oYT8DDlHOcA7 OXdyr4X3ErNDJXFN734?
+usp=sharing. Our module works at game time 3:57, 5:04, and 8:25 in this record.
+7
+(game time 2:11), due to the disadvantages in Gold and Kill, the Red
+Team’s win probability drops to 36.2%, and the contributions of
+feature groups “Gold” and “Kill” to the win prediction are -0.187 and
+-0.073, respectively. So the AI commentator generates a comment
+“e Red Team is at a disadvantage in terms of gold and kill-count. AI
+predicts that the Red Teams win probability is only 36.2%”. Finally,
+at time-point 3 (game time 9:44), the Red Team reverses the win
+probability to 56.2%. is prediction is made based mainly on the
+dierence of “Gold”, “Wild Resource”, and “Tower” between the
+two teams, so the AI generates the comment “With a real mess and
+bad start, the Red Team catches up gradually to kill more Tyrants and
+destroy more towers, thereby they accumulate an advantage in terms
+of Gold. Currently, their win probability has grown to 56.2%.”
+Obviously, without the interpretable results, commentators can
+only make some trivial comments without any araction to the
+audience. For example, at time-point 3, one can only comment “Now
+the Red team reverses its situation and has a win probability of 56.2%”,
+which is less informative than the interpretable one made by the AI
+commentator with the help of the TSSTN model. Currently, the AI
+commentator generates 157.2 comments per game on average, and
+a large part of them depend on the proposed TSSTN model with
+a relatively even distribution over the six feature groups. is is
+a very signicant characteristic that makes our AI commentator
+system dierent from other non-interpretable-prediction based
+systems.
+6 CONCLUSION
+In this paper, we propose to predict the results of MOBA esports
+games in an interpretable way. A large-scale HoK dataset which
+contains abundant real-time MOBA game records is collected and
+released to facilitate this study. Based on this dataset, we further
+propose a Two-Stage Spatial-Temporal Network (TSSTN) that can
+give interpretable intermediate results as well as reliable ultimate
+win predictions. e core idea of this model structure is to separate the eects of features’ value dierences and features’ relative
+importance in order to decouple the contributions of dierent features. Our interpretable results can be utilized in various scenarios
+and promote the development of related industries. For example,
+the proposed TSSTN model has already been implemented in an
+AI commentator system for HoK and achieves good performance.
+Our next goal is to construct automatic metrics to quantitatively
+evaluate the competence of dierent interpretable methods for
+MOBA esports win predictions. Further research can be done on
+improving the prediction accuracy and exploring the applications
+of interpretable prediction models in dierent industries.
+REFERENCES
+[1] Aniket Bhawkar, Bhumi Patel, and Prasad Mahajan. Predicting the winner of
+Indian Premier League match: A Comparative Study. ().
+[2] Zhengxing Chen, Yuyu Xu, Truong-Huy D Nguyen, Yizhou Sun, and Magy Seif ElNasr. 2018. Modeling Game Avatar Synergy and Opposition through Embedding
+in Multiplayer Online Bale Arena Games. arXiv preprint arXiv:1803.10402
+(2018).
+[3] Kevin Conley and Daniel Perry. 2013. How does he saw me? a recommendation
+engine for picking heroes in dota 2. Np, nd Web 7 (2013).
+[4] Dursun Delen, Douglas Cogdell, and Nihat Kasap. 2012. A comparative analysis
+of data mining methods in predicting NCAA bowl outcomes. International
+Journal of Forecasting 28, 2 (2012), 543–552.
+[5] Simon Demediuk, Peter York, Anders Drachen, James Alfred Walker, and Florian
+Block. 2019. Role Identication for Accurate Analysis in Dota 2. In Proceedings of
+the AAAI Conference on Articial Intelligence and Interactive Digital Entertainment,
+Vol. 15. 130–138.
+[6] Victoria Hodge, Sam Devlin, Nicholas Sephton, Florian Block, Peter Cowling, and
+Anders Drachen. 2019. Win Prediction in Multi-Player Esports: Live Professional
+Match Prediction. IEEE Transactions on Games (2019).
+[7] Victoria Hodge, Sam Devlin, Nicholas Sephton, Florian Block, Anders Drachen,
+and Peter Cowling. 2017. Win prediction in esports: Mixed-rank match prediction
+in multi-player online bale arena games. arXiv preprint arXiv:1711.06498 (2017).
+[8] Daniel R Jiang, Emmanuel Ekwedike, and Han Liu. 2018. Feedback-based tree
+search for reinforcement learning. arXiv preprint arXiv:1805.05935 (2018).
+[9] K Kalyanaraman. 2014. To win or not to win? A prediction model to determine
+the outcome of a DotA2 match. Technical Report. Technical report, University of
+California San Diego.
+[10] Adam Katona, Ryan Spick, Victoria Hodge, Simon Demediuk, Florian Block,
+Anders Drachen, and James Alfred Walker. 2019. Time to Die: Death Prediction
+in Dota 2 using Deep Learning. arXiv preprint arXiv:1906.03939 (2019).
+[11] Varol Onur Kayhan and Alison Watkins. 2018. A data snapshot approach for
+making real-time predictions in basketball. Big data 6, 2 (2018), 96–112.
+[12] Varol Onur Kayhan and Alison Watkins. 2019. Predicting the point spread in
+professional basketball in real time: a data snapshot approach. Journal of Business
+Analytics 2, 1 (2019), 63–73.
+[13] Nicholas Kinkade, L Jolla, and K Lim. 2015. Dota 2 win prediction. Univ Calif 1
+(2015), 1–13.
+[14] Carson K Leung and Kyle W Joseph. 2014. Sports data mining: predicting results
+for the college football games. Procedia Computer Science 35 (2014), 710–719.
+[15] Ilya Makarov, Dmitry Savostyanov, Boris Litvyakov, and Dmitry I Ignatov. 2017.
+Predicting Winning Team and Probabilistic Ratings in Dota 2 and CounterStrike: Global Oensive Video Games. In International Conference on Analysis
+of Images, Social Networks and Texts. Springer, 183–196.
+[16] OpenAI. 2018. OpenAI Five. hps://blog.openai.com/openai-ve/. (2018).
+[17] Aleksandr Semenov, Peter Romov, Sergey Korolev, Daniil Yashkov, and Kirill
+Neklyudov. 2016. Performance of machine learning algorithms in predicting
+game outcome from dras in Dota 2. In International Conference on Analysis of
+Images, Social Networks and Texts. Springer, 26–37.
+[18] Kai Song, Yiran Gao, and Jian Shi. 2020. Making real-time predictions for NBA
+basketball games by combining the historical data and bookmakers being line.
+Physica A: Statistical Mechanics and its Applications (2020), 124411.
+[19] Kuangyan Song, Tianyi Zhang, and Chao Ma. 2015. Predicting the winning side
+of DotA2. Technical Report. Technical report, Stanford University.
+[20] Peng Sun, Xinghai Sun, Lei Han, Jiechao Xiong, Qing Wang, Bo Li, Yang Zheng, Ji
+Liu, Yongsheng Liu, Han Liu, and others. 2018. Tstarbots: Defeating the cheating
+level builtin ai in starcra ii in the full game. arXiv preprint arXiv:1809.07193
+(2018).
+[21] C Soto Valero. 2016. Predicting Win-Loss outcomes in MLB regular season
+games–A comparative study using data mining methods. International Journal
+of Computer Science in Sport 15, 2 (2016), 91–112.
+[22] Nanzhi Wang, Lin Li, Linlong Xiao, Guocai Yang, and Yue Zhou. 2018. Outcome
+prediction of DOTA2 using machine learning methods. In Proceedings of 2018
+International Conference on Mathematics and Articial Intelligence. ACM, 61–67.
+[23] Tian Wang. 2018. Predictive Analysis on eSports Games: A Case Study on League
+of Legends (LoL) eSports Tournaments. (2018).
+[24] Wikipedia. 2019. Honor of Kings — Wikipedia, e Free Encyclopedia. hps:
+//en.wikipedia.org/wiki/Honor of Kings. (2019). hps://en.wikipedia.org/wiki/
+Honor of Kings [Online; accessed 15-November-2019].
+[25] Yifan Yang, Tian Qin, and Yu-Heng Lei. 2016. Real-time esports match result
+prediction. arXiv preprint arXiv:1701.03162 (2016).
+[26] Deheng Ye, Zhao Liu, Mingfei Sun, Bei Shi, Peilin Zhao, Hao Wu, Hongsheng
+Yu, Shaojie Yang, Xipeng Wu, Qingwei Guo, Qiaobo Chen, Yinyuting Yin, Hao
+Zhang, Tengfei Shi, Liang Wang, Qiang Fu, Wei Yang, and Lanxiao Huang. 2019.
+Mastering Complex Control in MOBA Games with Deep Reinforcement Learning.
+(2019). arXiv:arXiv:1912.09729
+[27] Zhijian Zhang, Haozheng Li, Luo Zhang, Tianyin Zheng, Ting Zhang, Xiong
+Hao, Xiaoxin Chen, Min Chen, Fangxu Xiao, and Wei Zhou. 2019. Hierarchical Reinforcement Learning for Multi-agent MOBA Game. arXiv preprint
+arXiv:1901.08004 (2019).
+8

@@ -1,0 +1,1082 @@
+Automatic Player Identification in Dota 2
+Sizhe Yuen
+Maritime Engineering
+University of Southampton,
+UK
+sizhe1007@gmail.com
+John D. Thomson
+School of Computer Science
+University of St Andrews, UK
+j.thomson@st-andrews.ac.uk
+Oliver Don
+don@olli.me.uk
+ABSTRACT
+Dota 2 is a popular, multiplayer online video game. Like many
+online games, players are mostly anonymous, being tied only
+to online accounts which can be readily obtained, sold and
+shared between multiple people. This makes it difficult to
+track or ban players who exhibit unwanted behavior online. In
+this paper, we present a machine learning approach to identify
+players based a ‘digital fingerprint’ of how they play the game,
+rather than by account. We use data on mouse movements, ingame statistics and game strategy extracted from match replays
+and show that for best results, all of these are necessary. We
+are able to obtain an accuracy of prediction of 95% for the
+problem of predicting if two different matches were played by
+the same player.
+Author Keywords
+Machine learning; online games; identification; digital
+forensics;
+INTRODUCTION
+Dota 2 is a popular, multiplayer online video game. Like
+many online games, players are mostly anonymous, being tied
+only to online accounts which can be readily obtained, sold
+and shared between multiple people. This paper presents an
+automatic way of identifying a player by establishing a ‘digital
+fingerprint’ based on how a player plays the game rather than
+relying on account information. It shows that incorporating
+game-centric information into the model is necessary for the
+best performance, when compared to existing context free
+digital forensic techniques which rely on mouse movements.
+Using a combination of game information and mouse movement analysis, we are able to identify if two different matches
+were played by the same player with an an accuracy of 95%.
+We believe this is an interesting result in itself, but it also has
+real world utility. The anonymity of online gaming and the
+ease of obtaining new accounts often leads to unwanted behavior by a minority of players. This can manifest in a number
+of ways: abusive communication, cheating and matchmaking
+manipulation. Unchecked abusive communication often manifests itself in terms of sexist and homophobic abuse, which
+leads to an unpleasant and hostile game environment. Matchmaking manipulation occurs when a player uses a different
+account (usually purchased illegally) with a different skill rating than the player has themselves. This leads to unbalanced
+games.
+This presents a challenge for the developer of these games:
+simply banning accounts often does not work. As Dota 2 is a
+free to play multiplayer game, identifying players is especially
+challenging. A single person can create multiple accounts
+anonymously merely by providing different email addresses.
+As a result, unwanted displayed by some players towards one
+another [16] and the rise of illegitimate secondary markets
+to sell accounts with higher ranks present a serious problem.
+Players who are banned from the game for bad behavior may
+continue to play using a fresh account. Additionally, without
+the ability to verify and link a person to an account, it is easy
+for players to cheat in amateur online tournaments by playing
+in the place of another player. A lot of manual effort and luck
+is required to determine if someone cheated this way. In a
+recent example, a player was caught cheating in the $30,000
+CSL Dota 2 tournament for college students. The cheater was
+only caught after officials were tipped off [19] due to obviously
+strange behavior. By using machine learning techniques to
+identify the players based on their behavior, cases like this
+would be easily identifiable and solvable.
+Learning player identity by their behavior in order to take
+action against them is also more effective compared to taking
+action based on account names, IP addresses or hardware ID
+bans. Players can just buy or create new accounts if their
+original one is banned; IP addresses are rarely static [24] due
+to NAT gateways and banning a range of address may lead to
+banning innocent players; Hardware ID bans may be effective
+in the short term, but hardware can still change hands between
+people. A system which can recognise player behavior can
+be more effective in the longer term, especially as we explore
+from a low-level and fine-grained view of the data rather than
+high-level behavioral elements.
+BACKGROUND
+Dota 2
+Defence of the Ancients (Dota) 2 [2] is a popular free-toplay multiplayer online battle arena (MOBA) video game
+developed by Valve Corporation. In Dota 2, the player controls
+a single hero as part of a team of five players competing
+against an opponent team. Each hero has their own unique
+abilities and characteristics, for example some heroes focus on
+dealing damage with spells and abilities, while other heroes
+use passive abilities to augment their attacks. To win, the
+team must destroy the opponent’s base structure, known as
+the Ancient, located deep in the opponent controlled side of
+the map. The map is split into three lanes, with towers that
+must be destroyed in succession. Weaker, uncontrollable units
+1
+arXiv:2008.12401v1 [cs.AI] 27 Aug 2020
+Figure 1: Representation of the map in Dota 2.
+called creeps periodically spawn from a team’s Ancient and
+travel down the three lanes. Heroes gain experience when
+nearby creeps and heroes on the opposing team die. A hero
+then gains levels with experience, increasing the hero’s powers
+and abilities.
+Additionally, heroes gain gold throughout a match which can
+be used to purchase items. Items provide powerful bonuses
+and abilities to a hero. Every hero has 6 slots in their inventory
+in which they can place purchased items. Items can also be
+placed in the stash or backpack, but do not provide any bonuses
+when placed there. Gold is gained from multiple sources, most
+notably by getting the killing blow on creeps, killing opponent
+heroes, destroying opponent buildings and passively over time.
+The map in Dota 2 is asymmetrical and split in half for the
+two teams: Radiant and Dire. Figure 1 shows a representation
+of what the map looks like. Playing on different sides leads
+to slightly different strategies due to the asymmetry. The
+explanation of other more complicated mechanics in the game,
+such as the neutral jungle creeps and runes are omitted as they
+do not form any part of the features or data extracted in this
+work.
+Related work
+Starcraft 2 player identification
+The problem of player identification based on play style and
+behavior has been explored before in the game of Starcraft 2.
+Liu et al. [17] first looked at using machine learning algorithms
+to identify a Starcraft 2 player from features extracted from
+match replays and followed up with further research [18]
+on predicting a player’s next actions based on their previous
+actions in the match.
+Their work has a similar goal to ours to predict players based
+on behavioral data. However, our work differs in multiple
+ways. Firstly, the gameplay for Starcraft 2 and Dota 2 are
+different as the player controls a large number of units in the
+former and only one in the latter. This means the features used
+for player prediction in Starcraft focused more heavily on the
+strategy and build order of players rather than fine grained
+data such as mouse movement. Secondly, Liu et al. focussed
+on the classification from a fixed pool of players. While we
+also do the same, we go further and look at classifying pairs
+of matches belonging to the same player. This allows our
+predictions to be much more general and not need to be retrained on every new pool of players in the dataset.
+Dota 2
+There has been a variety of previous work in data analysis on
+Dota 2. Much of the growing research in Dota 2 comes from
+the wealth of data provided from the replay system, which
+ranges from the positions of each player’s mouse cursor to the
+health points of each creep entity.
+One area of exploration with Dota 2 data is the classification
+of player roles. As Dota 2 is a team game, each player on
+the team typically fulfils a certain role in a match, similar to
+traditional sports. Gao et al. [13] presented positive results
+in the identification of both the hero and role that a player
+played using a mix of performance data and behavioral data
+that involved ability and item usage. Eggert et al. [10] took
+a further step in feature generation for role classification by
+constructing complex attributes using low-level data from a
+parsed replay of a match. This included features such as player
+positional movement and damage done during teamfights.
+Data analysis in Dota 2 does not only involve analysis of ingame data using replays. Hodge et al. [14] used a mix of
+pre-match draft data such as the history of a player’s performance on different heroes and in-game data of game states
+at different sliding window intervals to predict the outcome
+of unseen matches. Taking match outcome prediction further,
+Yang et al. [26] were able to predict match outcomes in realtime as the match progressed, to get the probabilities of each
+team winning at every minute of a match. For real-time data,
+they showed data from later stages of a match were much more
+informative, as early portions of a match were often similar
+to other matches. Their work was compared with work from
+Conley and Perry [7], whose focus was in creating an engine
+for hero pick recommendations based on win predictions, and
+with work from Kinkade and Lim [15], who also investigated
+combinations of in-game statistics and draft picks outcome
+prediction. Drachen et al. [9] studied how team behavior varied as a function of player skill, specifically on the movement
+and positioning of heroes by players as spatial-temporal data.
+This contrasts with most other studies, which have focused on
+only temporal data like the gold and XP per minute statistics.
+There is also existing research that uses qualitative data rather
+than quantitative data. Nuangjumnong and Mitomo [20] conducted a survey on players which showed correlation between
+the leadership style of players and the role they played in the
+team. Summerville et al. [23] studied the drafting phase of the
+game to find common trends and predict the draft sequence.
+In particular, because the draft sequence was described as a
+list of words, they chose to use a one-hot encoding with a
+categorical cross-entropy loss to encode the hero names.
+Other video games
+Player behaviour in video games has often been modelled
+to gather meaningful data for further analysis. Pfau et al.
+[21] applied machine learning techniques to construct deep
+2
+player behaviour models in the video game Lineage II. These
+models can be applied in online crime detection for cheating
+and for autonomous testing of the game. Bakkes et al. [5]
+provided approaches to player behavioural modelling with the
+goals of improving game AI and improving game development.
+Drachen et al. [8] developed in-depth behavioural models for
+players in the video game Destiny to identify distinct playstyles and profiles players can be clustered into.
+Mouse dynamics
+In research unrelated to Dota 2, many studies have investigated
+the area of using mouse dynamics to detect user identity. This
+is a behavioral biometric technology that analyses different
+mouse movement attributes, such as the velocity or curvature of the mouse cursor. A significant portion of Dota 2’s
+gameplay revolves around the use of mouse clicks and movements, combined with occasional key presses. Bhatnagar et al.
+[6] compared the use of mouse and keyboard dynamics as a
+biometric technique and stated that keystroke dynamics have
+lower predictive accuracy, but mouse dynamics data tends to
+be inconsistent and error prone due to the varied hardware
+input devices.
+Mouse movement data extraction can be done explicity by
+using a predefined activity, or implicity by monitoring typical
+activity without a specified task [11]. For example, Gambao
+and Fred [12] used a simple memory game to extract their data.
+This method allows for well-defined actions. Feher et al. [11]
+went further by categorising mouse movement features into
+distinct hierarchies, which allowed for precise categorisation
+of various different types of mouse movement. Their results
+were compared with a histogram based method from Awad
+and Traore [4] of aggregating different types of mouse action
+and obtained noteworthy improvement in the accuracy of their
+models.
+METHODOLOGY
+In this paper, we investigated the use of three different featuresets to determine who the player is. Each featureset explores
+a different aspect of the game, to see which aspects have a
+greater effect in predicting players. The mouse movement
+features are fine-grained biometric features that directly capture player behavior based on how they move their mouse.
+The game statistics features are higher level results of player
+behavior. For example, an aggressive player may tend towards higher kill/death statistics compared to a more passive
+player. Finally, the itemization features capture both strategy
+and gameplay behavior of players. Players typically have
+strategies (or builds) that they use on the same hero which is
+reflected in the items they buy. The position of the items in
+the inventory also indicate specific player behavior based on
+their personal keyboard bindings for the game.
+The features are used both individually and in combination
+with the other features on three different machine learning
+models (logistic regression, random forest classifier and multilayer perceptron) to find the best model and feature combination for predicting player behavior.
+Data collection and processing
+A combination of the OpenDota [3] API and Valve’s official
+API was used to download replays. In particular, the OpenDota
+API allowed many aspects of the replays to be controlled, such
+as the game mode and hero id, leading to less random variables.
+The following list of parameters were used for our datasets:
+• Game mode: All pick
+• Team: Radiant
+• Date: Before 18 November 2018 (to avoid changes from
+patch 7.20 affecting some of the existing work)
+• Hero id: Constant as the same hero was used for all the
+datasets
+Match replays were parsed using clarity, an open source parser
+developed by Martin Schrodt [22]. It allowed fine grained data
+to be extracted from each replay on each game tick. After the
+data was extracted, more processing was done to encode the
+data into useful features to create our dataset.
+Mouse movement features
+The mouse movement features extracted from the Dota 2
+match replays followed the concept by Feher et al [11] on
+forming a hierarchy of atomic actions such as left click or
+mouse move and complex actions made up of multiple atomic
+actions, such as mouse drag. As the data available from replays are less granular and do not contain specific data such
+as mouse click down and mouse click up, the addition of
+keyboard presses were combined to form the complex mouse
+actions in this work. Two classes of mouse actions are defined:
+atomic and complex.
+Atomic mouse actions
+The four atomic mouse actions are as follows:
+1. Mouse movement sequence
+2. Attack command
+3. Move command
+4. Spell cast command
+A mouse movement sequence is defined as a sequence of positions. Rather than using a fixed interval of time, a threshold τ
+is defined to end the sequence if no change in cursor position
+has occurred within the threshold time. This more naturally
+records a sequence of mouse movements to not break up a
+sequence in order to fit within a fixed time interval. A larger
+threshold increases the average number of actions in the sequence. A threshold of 500 milliseconds was used in Feher
+et al.’s [11] study. This was reduced to 300 milliseconds for
+capturing Dota 2 mouse features as it was found a 500 millisecond threshold created fewer and longer mouse movement
+sequences than expected.
+Each movement sequence consisted of three vectors of length
+n, where n is the number of game ticks:
+• t = {ti}
+n
+i=1
+- The game tick
+• x = {xi}
+n
+i=1
+- The x coordinate sampled on game tick ti
+• y = {yi}
+n
+i=1
+- The y coordinate sampled on game tick ti
+3
+Feature Definition
+Angle of movement θi = arctan(
+δy1
+δx1
+) +
+i
+∑
+j=1
+δ θj
+Curvature c =
+δ θ
+δs
+Rate of change of curvature ∆c =
+δc
+δs
+Horizontal velocity Vx =
+δx
+δt
+Vertical velocity Vy =
+δy
+δt
+Velocity V =
+q
+δV2
+x +δV2
+y
+Acceleration V
+0 =
+δV
+δt
+Jerk V
+00 =
+δV
+0
+δt
+Angular velocity w =
+δ θt
+δt
+Table 1: Basic mouse movement features.
+n can vary between different movement sequences for longer
+or shorter sequences. These vectors are further processed to
+give the list of mouse movement features shown in table 1,
+based on Gambao and Fred’s [12] features.
+The other three atomic actions consist simply of the game
+tick, x and y coordinate. They represent in-game intent of the
+mouse movement. For example if a player right-clicks on the
+terrain, it is a move action to move their character, but if a
+player right-clicks an enemy entity, it is an attack action.
+Complex mouse actions
+The combination of a mouse movement sequence and one of
+the three command actions creates a complex mouse action.
+There are three complex mouse actions, each corresponding
+to their respective atomic command. Complex mouse actions
+represent a mouse movement sequence leading up to a command. Each of the three complex actions are recorded in the
+same way, but record different kinds of data. For example, the
+complex move action will be recorded throughout a match,
+while the complex spell cast action will typically occur only
+during teamfights.
+In addition to the features mentioned in table 1, two more
+features are included for complex mouse actions:
+• tn - The number of game ticks between the last mouse
+position of the movement sequence and mouse position of
+the command.
+• d - The distance travelled between the last mouse positions
+of the movement sequence and mouse position of the command
+Finally, because the feature vectors for a mouse movement
+sequence are of varying length, some statistical values must be
+taken. The minimum, maximum, mean and standard deviation
+are used leading to a total of 38 features for complex mouse
+action.
+Game statistic features
+In-game statistics are a useful way to determine player performance in Dota 2. Many community websites [1, 3] track these
+statistics to let players view the performances of their match
+history. Many existing studies [14, 15, 25, 26] also use these
+features, especially for predicting performance of teams and
+players.
+The statistics extracted for this work are:
+• Kills
+• Assists
+• Deaths
+• Gold per minute
+• XP per minute
+• CS (creep score) per
+minute
+• Denies
+• Actions per minute
+• Move commands on target per minute
+• Move commands on position per minute
+• Attack commands on target per minute
+• Attack commands on position per minute
+• Spell cast commands on
+target per minute
+• Spell cast commands on
+position per minute
+• Spell cast commands
+with no target per minute
+• Hold position commands
+per minute
+Most of the statistics are taken as per minute average rather
+than total, because they can vary greatly depending on the
+length of the game. In general, the game statistics are strong indicators of performance as winning teams usually have higher
+gold and XP numbers. They can also provide behavioral information, for example aggressive players may often get more
+kills than more passive players, they may get more deaths as
+a result as well. Further, there are a few different methods
+for players to accomplish the same action, which can be revealed based on whether they use commands on targets or on
+positions.
+Itemization features
+The items a player buys on their hero had been shown by
+Eggert et al. and Gao et al. as a strong indicator of the hero
+selection and role of the player. By itself, itemization is likely
+not enough to tell the difference between players, as multiple
+players on the same hero are very likely to buy the same
+items. However, items can be placed into different inventory
+positions, which becomes a more personal choice by players.
+Moreover, many items in Dota 2 have active abilities. The
+inventory positions of the item therefore can reflect a player’s
+keyboard bindings. It is not possible to extract a player’s
+personal settings from a replay, so using item positions are a
+4
+Figure 2: Representation of an inventory with items in Dota
+2. The letters next to the items are bound to that inventory
+position and indicate the key to press to activate that item.
+close approximate. Figure 2 shows how the items are placed
+in different slots with associated key bindings.
+The inventories are sampled once at the beginning of a match
+and once at the end to prevent variance. Items sampled at
+the beginning will not be affected by variables such as performance as the game has just started. Items sampled at the end
+are similar, as most items that players want will have already
+been purchased and are less affected by the flow of the match.
+The items and their positions are then encoded with multiple
+methods: feature hashing, one-hot encoding, selective one-hot
+encoding and item difference.
+Selective one-hot encoding only used a small subset of items
+deemed more useful for player prediction. Two subsets were
+chosen, starting items and boots. There are only a small
+number of items a player can buy at the start of a match,
+which restricts the number of items from about 300 to 30
+when looking at only starting items. This reduces the large
+number of features that one-hot encoding generates (∼ 300
+items × 6 inventory locations) to a reasonable number. Boots
+are a special case of items as almost all heroes will buy some
+form of boots. There are 6 types of boots in the game, most
+of which have an active ability. Because different boots have
+different abilities, but all give an important movement speed
+increase the player characters, different players are likely to
+choose different types of boots based on their personal playstyle. Furthermore, the active ability makes the position of
+the boots in the inventory an important attribute we can take
+advantage of. This allowed for precise identification of both
+the type of boots and the inventory positions they occupy as
+data.
+EXPERIMENTS
+Two different experiments were done to explore the problem
+of predicting player identity in Dota 2 based on the features
+discussed earlier. A dataset comprising of 93 players with 356
+matches was created. There was a mix of number of matches
+per player, with some players having 10 matches in the dataset
+while others only had 1 or 2 matches. The goal was to see if
+we could successfully identify one player out of the pool of
+players in the dataset given a single match.
+The second experiment took a more generic approach. Rather
+than predict out of a static pool of players, the goal was to
+identify if two matches belonged to the same player or not.
+Attack
+Model
+Attack
+actions
+Move
+Model
+Move
+actions
+Spell
+Model
+Spell
+actions
+Stats
+Model
+Game
+statistics
+Items
+Model Itemization
+Match MLP Prediction
+Figure 3: Classifying a single match with multiple different
+features.
+In this approach, there is no concept of individual players,
+only the binary choice of whether the two given matches were
+played by the same person. A combination of pairs of matches
+were created from the original dataset, which gave 3071 combinations where two matches belonged to the same player.
+The number of combinations where two matches belonged to
+different players was much larger, but was randomly filtered
+down to 3071 to ensure no bias towards the negative samples.
+The features used in the second experiment differed slightly
+from the first experiment because all matches have different
+lengths, making it difficult to compare the features from two
+matches without further modification. Further statistics are
+calculated for each mouse movement feature over the entire
+match. For example, the horizontal velocity of a mouse action
+creates four features: the mean, standard deviation, minimum
+and maximum horizontal velocity of each individual mouse
+action. There are many drawbacks to this approach, most
+notably the loss of data from taking an average of averages,
+as the thousands of mouse actions are reduced to only a small
+number of statistics. To alleviate this issue, matches are split
+up into portions for each portion to have its own statistics. This
+also allows each individual portion to be analysed. However,
+this method is not scalable, as more portions means more
+features, leading to the curse of dimensionality.
+Experimental design
+The mouse movement, game statistic and itemization features
+were explored both separately and together to identify their
+performance in player prediction. It was assumed that in
+the dataset, all replays that were downloaded from the same
+account were matches by the same player.
+As the different features had different dimensions, each were
+evaluated with separate models, with the results of each model
+combined using a simple multi-layer perceptron with 1 hidden
+layer. Figure 3 shows how matches split up into each feature
+and model separately before being combined. A multi-layer
+perceptron is used as the combination step so it can learn
+the relative weights for each feature, rather than use them all
+equally in a voting scheme or set arbitrary weights to them.
+Further, this approach is modular and allows features to be
+added or removed easily to test the performance of different
+combinations of features.
+5
+Logistic
+Regression
+Random
+Forest
+Multi-layer
+Perceptron
+0.6
+0.65
+0.7
+0.75
+Accuracy rate
+Accuracy of mouse movement actions
+Attack actions Move actions Cast actions
+Figure 4: Accuracy of individual types of complex mouse
+action. It can be seen that attack actions are the most useful
+for player prediction across all three models.
+Logistic
+Regression
+Random
+Forest
+Multi-layer
+Perceptron
+0.2
+0.4
+0.6
+0.8
+1
+Metric rate
+Matches with mouse movements features
+Accuracy Precision Recall
+Figure 5: Results of classifying each match with all three types
+of mouse actions combined.
+Accuracy, precision and recall metrics were gathered using a
+5-fold cross validation. Accuracy measures the overall performance of a model by computing the number of correct
+predictions over the total number of predictions. Precision and
+recall and complementary metrics that measure the relevance
+of predictions, with precision taking into account false positive
+results and recall taking into account false negative results.
+precision =
+true positives
+true positives+false positives
+recall =
+true positives
+true positives+false negatives
+Three different models were chosen based on models that
+previous work found successful. The three models are logistic
+regression, random forest classifier and multi-layer perceptron.
+RESULTS
+Player identification (experiment 1)
+Mouse movement features
+First, the mouse movement features were evaluated individually to give an indication as to which type of complex mouse
+action is more informative for player prediction. Figure 4
+shows that mouse movements following an attack action were
+the most predictive, with movements following a spell cast being the least predictive. It is important to note the distribution
+of complex mouse actions are not equal, with an average of
+20%, 78% and 2% for attack, move and cast actions respectively. This directly affects the number of data points available
+for training and testing.
+Taking this into account, complex attack actions make a strong
+case for being the most effective at predicting player behavior,
+as they are less common, but more predictive than complex
+move actions. Complex move actions seem to be too common
+to be a strong indicator for player behavior. They are sent in
+the order of a few thousand commands in every match, due to
+how movement and positioning are fundamental parts of Dota
+2’s gameplay. This commonality can lead to difficulty in distinguishing between different players, especially when players
+are sending move commands multiple times a second, making
+the mouse movement sequence very short. Complex spell
+actions should follow the pattern for complex attack actions,
+since they are also rare and unique compared to move actions.
+However, it seems their rarity (2%) affects their usefulness.
+When looking at the mouse actions used together in figure
+5, we can see the differences between each machine learning model clearly. The random forest classifier has perfect
+precision but low recall, indicating a lack of false positives
+predicted. From the test set, we found 0 false positives and
+a large proportion of false negative predictions. There are
+still true positive predictions, so the model is not predicting
+only negatives, but is highly biased towards it. This suggests a
+specific player’s (the positive sample) behavior is difficult to
+differentiate from another player in most cases, but when it is
+detected it is very obviously from the specific player.
+The performance of logistic regression was quite noteworthy
+as it matches the neural network in all three performance
+metrics. This is an improvement compared to using individual
+complex mouse actions. This also shows that the combining
+network was able to learn useful weights to apply to each of
+the three logistic regression models and such a mixture of
+different complex mouse action types are more useful than
+each mouse action alone.
+Game statistic features
+Using game statistic features gave a set of different results
+compared to using mouse action features, with the neural network performing poorly and the other two models achieving
+very high accuracies. As shown in figure 6, the random forest
+classifier had perfect results. To confirm this, we ran further
+cross validation with varying values of k up to 12 for additional trials. It was found that the accuracy only fell twice,
+at k = 2 to 0.95 and at k = 8 to 0.98. This gives the strong
+performance merit, suggesting there exists a combination of
+rules in a decision tree for player in-game statistics that easily
+identify players uniquely.
+Itemization features
+Each encoding method of itemization gave different performances, with the random forest classifier and multi-layer perceptron giving the same pattern for each encoding method, as
+shown in figure 7. Firstly, encoding with boots only data had
+6
+Logistic
+Regression
+Random
+Forest
+Multi-layer
+Perceptron
+0.2
+0.4
+0.6
+0.8
+1
+Metric rate
+Matches with game statistic features
+Accuracy Precision Recall
+Figure 6: Results of classifying each match with game statistics.
+the lowest accuracy of all the encoding methods. This makes
+sense as it uses strictly less items compared to other encoding methods. This represented a trade-off for computation of
+features and accuracy. For comparison, the one-hot encoding
+of only starting items gets 4%, 6% and 7% more accuracy for
+each model respectively, but uses 186 features compared to
+the 42 features of encoding only boots data.
+We also found a small improvement from using starting items
+only compared to using all items with one-hot encoding. Recall that the encoding of all items is sampled twice in a match,
+once at the beginning and once at the end. The close performance of the two encoding methods suggests a few things.
+Firstly, the massive increase in binary features does not heavily impact performance. The encoding of all items contains
+about 9 times the number of features (281 items vs 31 items)
+but the accuracy deviates by less than 5%. Secondly, though
+the starting items do not have the second sample of items at
+the end of the match, it still predicts better in two of the three
+machine learning models. This shows the items locations of
+at the start of a match is more useful in player prediction than
+at the end of a match. This makes sense from the game’s
+perspective, as items a player buys throughout a match is often
+dependent on the strategy, composition and context of their
+team, the opposing team and how well they are doing, so there
+is more variance in end of match items compared to the start of
+matches. Further, many matches end before a player finishes
+buying all items they need, so item locations recorded at the
+end of a match could be temporary and different from other
+matches by the same player, depending on the context of the
+match.
+Combined features
+Combining the features together gave mixed results in most
+cases. There were some improvements in specific cases, but
+there were also cases where performance decreased.
+Logistic regression was able to predict well in general, with
+the combination of game statistics and boots achieving 99%
+accuracy. There was also an interesting anomaly in combining
+mouse movement, game statistics and one-hot encoding of
+all items that had a drastic reduction in accuracy. This may
+be due to the combination of one-hot encoding of items and
+Logistic
+Regression
+Random
+Forest
+Multi-layer
+Perceptron
+0.8
+0.85
+0.9
+0.95
+1
+Accuracy rate
+Accuracy of itemization features
+Items hashed One-hot encoding
+Starting items Boots only
+Figure 7: Results of classifying each match with itemization
+features.
+mouse movement being a bad combination, as it was the only
+other combination that had lower than 90% accuracy.
+The random forest classifier showed reduced accuracy in most
+combinations using mouse movements compared to using the
+features alone. For example, the various itemization encoding
+methods had about 85-90% accuracy and game statistics had
+close to 100%. However, when any of these features are combined with the mouse movement data, the accuracy drops. It
+can also be seen in table 2 that the combination of itemization
+and game statistics do well, so it is only the mouse movement
+features that is an issue for this model. Recall that the precision for using mouse movement features in the random forest
+classifier was extremely high with low recall, which reduced
+its accuracy. The lack of accuracy even when combined with
+accurate features such as game statistics shows that it is not
+enough to combine all features together, and bad features add
+a lot of noise to the random forest model.
+Finally, the multi-layer perceptron was able to combine features together better. Though it performed poorly using only
+statistics, the addition of mouse movements and itemization
+features were able to help boost its accuracy. Interestingly, the
+better individually performing item encoding methods were
+not always better than others when combined with other features. For example, using mouse features with the hashed
+items and mouse features with boots only gave similar accuracy, even though the hashed encoding was more accurate
+alone compared to the boots only feature.
+Same player identification (experiment 2)
+Mouse movement features
+Figure 8 shows the performance of the three machine learning
+methods. In general, logistic regression performs much worse
+for this problem, regardless of how the match is split into
+time-slices. This shows the non-linear nature of this problem
+compared to the first one. Splitting the match into multiple
+time-slices doesn’t help or hinder the accuracy for logistic
+regression, which shows it is unlikely an issue of too many
+features affecting the performance, otherwise a greater fall in
+accuracy would be expected from figure 9.
+7
+Models
+Features Logistic
+Regression
+Random
+Forest
+Multi-layer
+Perceptron
+Mouse + Stats 0.959 0.597 0.738
+Mouse + Items hashed 0.919 0.646 0.909
+Mouse + Items one-hot 0.888 0.606 0.939
+Mouse + Starting items 0.918 0.617 0.919
+Mouse + Boots only 0.911 0.857 0.908
+Stats + Items hashed 0.969 0.990 0.868
+Stats + Items one-hot 0.969 0.979 0.939
+Stats + Starting items 0.959 1.0 0.929
+Stats + Boots only 0.99 0.959 0.859
+Mouse + Stats + Items
+hashed
+0.949 0.636 0.808
+Mouse + Stats + Items
+one-hot
+0.726 0.769 0.919
+Mouse + Stats + Starting
+items
+0.959 0.586 0.929
+Mouse + Stats + Boots
+only
+0.959 0.615 0.928
+Table 2: Accuracy of each model on each feature combination.
+The accuracies highlighted in red are of particular interest for
+discussion.
+The overall accuracies of all three models were also lower
+compared to the first problem, which shows the difficulty of
+this problem in comparison, when there is not a small and
+limited pool of players.
+Moreover, using additional time-slices caused less accurate
+predictions, which suggests the existence of noise when the
+featureset is repeated for each time-slice. Both the random
+forest classifier and multi-layer perceptron lost accuracy as
+a match was sliced into more parts and used together. This
+shows that although slicing gives more fine-grained data, the
+additional noise is detrimental to player prediction. We also
+found that each individual time-slice has little effect on the
+accuracy of predictions, as figure 10 show little performance
+difference between each individual time slice. This is rather unexpected, since the strategy and gameplay in different phases
+Logistic
+Regression
+Random
+Forest
+Multi-layer
+Perceptron
+0.4
+0.6
+0.8
+1
+Metric rate
+Pairs of matches with mouse movement features
+Accuracy Precision Recall
+Figure 8: Accuracy, precision and recall of using mouse movement features only when classifying pairs of matches.
+Logistic
+Regression
+Random
+Forest
+Multi-layer
+Perceptron
+0.4
+0.6
+0.8
+1
+Accuracy rate
+Accuracy of using multiple time-slices
+1 time-slice 2 time-slices
+3 time-slices 5 time-slices
+Figure 9: Accuracy of mouse movement features when a
+match is split into a different number of time-slices. More timeslices means a greater number of features, as the featureset is
+repeated for each time-slice.
+1 2 3 4 5
+0.5
+0.6
+0.7
+0.8
+Time-slice of match
+Accuracy rate
+Accuracy of individual time-slices
+Logistic Regression Random Forest
+Multi-layer Perceptron
+Figure 10: Accuracy for mouse movement features on individual portions of a match.
+of a Dota 2 game change, so one would expect the mouse
+movement behavior of players to change as well.
+Game statistic features
+Figure 13 shows the correlation matrix between pairs of
+matches by the same player. We can see how each statistic feature of one match is correlated to the statistic feature
+of another match from the same player. For instance, the CS,
+denies, gold per minute, XP per minute and CS per minute
+statistics are well correlated with each other, even across different matches. It would be expected for these numbers to
+be correlated in the same match, as creeps directly affect the
+gold and XP gained by heroes. However, seeing the statistics
+continue this trend across different matches suggest they are
+also tied to specific player behavior.
+It should be noted that the correlation matrix is mirrored across
+the diagonal. This is a result of the combination step, where
+matches are combined into pairs of {match0, match1} and
+{match1, match0} and should not be taken as a meaningful result. Due to the way the clarity parser runs through matches
+chronologically, a bug in the library prevented us from split8
+Logistic
+Regression
+Random
+Forest
+Multi-layer
+Perceptron
+0.4
+0.6
+0.8
+1
+Accuracy rate
+Accuracy with itemization features on pairs of matches
+Hashed items One-hot Starting items
+Boots only Item differences
+Figure 11: Accuracy for game itemization features when classifying if two matches belong to the same player.
+ting up a match into time-slices like the mouse movement
+feature for game statistics.
+Once again, the random forest classifier performs the best
+when using the game statistic features, showing a strong correlation between game statistics and player prediction using
+decision tree based models. This seems to be due to decisions
+tree being able to determine ranges for statistics for player
+prediction. For example if one statistic is always in a similar
+range across multiple games, it is likely to be the same player.
+Itemization features
+Figure 11 shows the accuracy with different itemization encodings and features. For these features, using only boots was the
+best indicator for random forest and multi-layer perceptron,
+while the item differences were best for the logistic regression model. Once again, logistic regression did not have good
+results compared to the other models. The only exception
+is the item difference method of encoding. This is a bit of
+an anomaly, as the trend suggests logistic regression is not
+suitable for this classification task.
+The difference between the item difference encoding and all
+other features is that features are not duplicated for the pair of
+matches. For all other features, the features for both matches
+are used together, to see if features across the two matches may
+be correlated. The game statistic features shown earlier display
+this kind of correlation. However for the item difference, the
+presence or absence of the same item on an inventory slot
+is encoded and so there is no duplication of features. This
+contrast reduces the complexity of the feature, which allowed
+the logistic regression model to perform comparably to the
+other two models where all other features could not.
+The one-hot encoding of all items performed similarly to the
+one-hot encoding of only starting items. This was surprising
+because the one-hot encoding of all items contained 250 more
+items, which translates to 1500 more binary features. As was
+the case in the last experiment, the increased number of binary
+features had little effect on the performance of the models.
+The gap between the two methods is smaller than previously,
+which means just using starting items to differentiate between
+two players is more difficult than identifying a single player.
+Starting
+items
+only
+Mouse
++ items
+Stats +
+items
+Mouse
++ stats
++ items
+Mouse
++ stats
+0.8
+0.85
+0.9
+0.95
+Metric rate
+Combining features a random forest model
+Accuracy Precision Recall
+Figure 12: Performance increases as different features are
+combined with the starting item feature for the random forest
+classifier.
+This suggests a more diverse pool of players leads to more
+similarity in starting items between any two players.
+Combined features
+Strong results were found for combining features together,
+unlike the first experiment. All three models were able to find
+improvements from using the different features together. For
+instance, the logistic regression model could not accurately
+predict if two matches belonged to the same player for all
+features except for the item difference feature. However, when
+combining the item difference feature with the poor performing mouse movement and game statistic features, we were
+able to get up to 10% higher accuracy on certain combinations.
+For the multi-layer perceptron, we found precision generally
+increased with more featuresets at the cost of recall. This led
+to a smaller increase in accuracy of 5-7%. The high precision
+is more beneficial compared to high recall because less false
+positives means predictions for two matches belonging to the
+same player are more unlikely to be wrong, even if we may
+miss some predictions due to false negatives.
+We found the random forest classifier was able to achieve the
+highest accuracies in this problem when multiple features are
+combined together. Figure 12 shows the improvement we
+found. The model was able to go from 81% correct predictions using only starting items to 91%-95% correct predictions
+from a combinations of starting items and other features. The
+highest 95% accuracy came from a combination of starting
+items, game statistics and mouse movement features.
+FUTURE WORK
+Fine grained information on mouse movement features
+Although we have been successful in using mouse movement
+features to predict players with good results, there are still
+many details that are unknown. For example, although we take
+a number of attributes for each mouse movement sequence
+recorded, the context such as target entity or current hero properties are not recorded. Including the context for each mouse
+movement would allow us to learn if certain actions under
+certain circumstances are more indicative of player behavior.
+9
+Figure 13: Correlation matrix for pairs by the same players
+Multiple heroes from the same player
+In this paper, we focused our research on the exploration and
+combinations of features and models for player prediction so
+we kept the hero used constant throughout the experiments.
+The same methodology is likely to work on different heroes,
+but it is not known how it would work in a dataset that contained multiple heroes. This is because the difference in playstyle of different heroes would interfere with the difference
+in player behavior, so it would be interesting to see how this
+work could be extended to a multi-class classification of this
+case.
+Deep Learning
+Our work primarily used traditional machine learning models
+such as logistic regression and random forest classifiers. With
+the increasing popularity and performance of deep neural networks, it would be interesting to compare how a accurate a
+deep learning model could predict players compared to these
+traditional machine learning models.
+Automated detection tool
+Finally, because we have found strong results for classifying
+with random forest classifiers, our models can be applied to
+create a real world tool for automatic detection. The tool can
+be prototyped to accept replays and return predictions. Successful prototyping with a high accuracy and high precision
+can lead to the tool being used in online tournaments as a
+method to prevent cheating. The creation of such a tool will
+also help to refine the model by exposing it to a much larger
+variety of players and matches.
+CONCLUSION
+This work explores the extraction and use of various features
+from Dota 2 match replays, in combination with mouse tracking techniques, to predict who the player is based on their
+in-game behavior. We explore two approaches to this problem.
+Firstly, we predict identity from specific player from a pool
+of players. For this approach, we find that the use of game
+statistics with a random forest classifier can achieve high prediction rates but it could not combine poor features with good
+features without losing a lot of accuracy.
+Our second, more universal approach centres around matching
+(or otherwise) players from two different matches from the set
+of all players. This approach is more generalizable to the large
+player-base. We find the combination of game starting items,
+mouse movements and game statistics using a random forest
+classifier can produce an accuracy of 95%.
+REFERENCES
+1. 2018a. DOTABUFF - Dota 2 Statistics.
+https://www.dotabuff.com/. (2018). Last accessed Oct
+2018.
+2. 2018b. Dota 2. Game [PC]. (2018). Valve Corporation,
+Washington, U.S. Last played Nov 2018.
+3. 2018. The OpenDota Project. https://github.com/odota.
+(2018). Last accessed Nov 2018.
+4. Ahmed Awad and Issa Traore. 2007. A New Biometric
+Technology Based on Mouse Dynamics. Dependable and
+Secure Computing, IEEE Transactions on 4 (08 2007),
+10
+165–179. DOI:
+http://dx.doi.org/10.1109/TDSC.2007.70207
+5. Sander Bakkes, Pieter Spronck, and Giel van Lankveld.
+2012. Player behavioural modelling for video games.
+Entertainment Computing 3 (2012), 71–79.
+6. Monika Bhatnagar, Raina K. Jain, and Nilam S. Khairnar.
+2013. A Survey on Behavioural Biometric Techniques:
+Mouse vs Keyboard Dynamics. International Journal of
+Computer Applications (2013).
+7. Kevin Conley and Daniel Perry. 2013. How Does He Saw
+Me? A Recommendation Engine for Picking Heroes in
+Dota 2. Course Project, Stanford University. (2013).
+8. Anders Drachen, James Green, Chester Gray, Elie Harik,
+Patty Lu, Rafet Sifa, and Diego Klabjan. 2016. Guns and
+Guardians: Comparative Cluster Analysis and Behavioral
+Profiling in Destiny. DOI:
+http://dx.doi.org/10.1109/CIG.2016.7860423
+9. A. Drachen, M. Yancey, J. Maguire, D. Chu, I. Y. Wang,
+T. Mahlmann, M. Schubert, and D. Klabajan. 2014.
+Skill-based differences in spatio-temporal team behaviour
+in defence of the Ancients 2 (DotA 2). In 2014 IEEE
+Games Media Entertainment. 1–8.
+10. Christoph Eggert, Marc Herrlich, Jan Smeddinck, and
+Rainer Malaka. 2015. Classification of Player Roles in
+the Team-Based Multi-player Game Dota 2. In 14th
+International Conference on Entertainment Computing
+(ICEC) (Entertainment Computing - ICEC 2015),
+Konstantinos Chorianopoulos, Monica Divitini,
+Jannicke Baalsrud Hauge, Letizia Jaccheri, and Rainer
+Malaka (Eds.), Vol. LNCS-9353. Springer International
+Publishing, Trondheim, Norway, 112–125. DOI:
+http://dx.doi.org/10.1007/978-3-319-24589-8_9 Part 1:
+Full papers.
+11. Clint Feher, Yuval Elovici, Robert Moskovitch, Lior
+Rokach, and Alon Schclar. 2012. User Identity
+Verification via Mouse Dynamics. Inf. Sci. 201 (10 2012),
+19–36. DOI:
+http://dx.doi.org/10.1016/j.ins.2012.02.066
+12. Hugo Gamboa and Ana L. N. Fred. 2004. A Behavioural
+Biometric System Based on Human Computer
+Interaction, Vol. 5404.
+13. Lynn Gao, James Judd, Dave Wong, and Jamie Lowder.
+2013. Classifying Dota 2 Hero Characters Based on
+Player Style and Performance. University of Utah Course
+on ML (2013).
+14. Victoria Hodge, Sam Devlin, Nick Sephton, Florian
+Block, Anders Drachen, and Peter Cowling. 2017. Win
+Prediction in Esports: Mixed-Rank Match Prediction in
+Multi-player Online Battle Arena Games. arXiv preprint
+arXiv:1711.06498 (2017).
+15. Nicholas Kinkade and Kyung yul Kevin Lim. 2015. Dota
+2 Win Prediction. Course project, University of
+California, San Diego. (2015).
+16. Haewoon Kwak, Jeremy Blackburn, and Seungyeop Han.
+2015. Exploring Cyberbullying and Other Toxic Behavior
+in Team Competition Online Games. In Proceedings of
+the 33rd Annual ACM Conference on Human Factors in
+Computing Systems (CHI ’15). ACM, New York, NY,
+USA, 3739–3748. DOI:
+http://dx.doi.org/10.1145/2702123.2702529
+17. Siming Liu, Christopher Ballinger, and Sushil J. Louis.
+2013. Player Identification from RTS Game Replays.
+28th International Conference on Computer and Their
+Applications (2013), 313–318.
+18. Siming Liu, Christopher Ballinger, and Sushil J. Louis.
+2014. Identifying Players and Predicting Actions from
+RTS Game Replays. (2014).
+19. Alan Nguyen. 2018. Unversity of Georgia Player Banned.
+https://cstarleague.com/dota2/news_articles/762.
+(2018).
+20. Tinnawat Nuangjumnong and Hitoshi Mitomo. 2012.
+Leadership development through online gaming. (11
+2012).
+21. Johannes Pfau, Jan David Smeddinck, and Rainer Malaka.
+2018. Towards Deep Player Behavior Models in
+MMORPGs. In Proceedings of the 2018 Annual
+Symposium on Computer-Human Interaction in Play
+(CHI PLAY ’18). ACM, New York, NY, USA, 381–392.
+DOI:http://dx.doi.org/10.1145/3242671.3242706
+22. Martin Schrodt. 2018. Clarity.
+https://github.com/skadistats/clarity. (2018). Last
+accessed Dec 2018.
+23. Adam Summerville, Michael Cook, and Ben Steenhuisen.
+2016. Draft-Analysis of the Ancients: Predicting Draft
+Picks in DotA 2 using Machine Learning. (2016).
+https://aaai.org/ocs/index.php/AIIDE/AIIDE16/paper/
+view/14075
+24. Yinglian Xie, Fang Yu, Kannan Achan, Eliot Gillum,
+Moises Goldszmidt, and Ted Wobber. 2007. How
+Dynamic Are IP Addresses?. In Proceedings of the 2007
+Conference on Applications, Technologies, Architectures,
+and Protocols for Computer Communications
+(SIGCOMM ’07). ACM, New York, NY, USA, 301–312.
+DOI:http://dx.doi.org/10.1145/1282380.1282415
+25. Pu Yang, Brent Harrison, and David L. Roberts. 2014.
+Identifying Patterns in Combat that are Predictive of
+Success in MOBA Games. Proc. of Foundarions of
+Digital Games (FDG’14) (2014).
+26. Yifan Yang, Tian Qin, and Yu-Heng Lei. 2016. Real-time
+eSports Match Result Prediction. Neural Information
+Processing Systems (2016).
+11

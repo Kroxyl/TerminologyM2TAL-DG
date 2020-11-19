@@ -1,0 +1,555 @@
+HAL Id: hal-01771292
+https://hal.inria.fr/hal-01771292
+Submitted on 19 Apr 2018
+HAL is a multi-disciplinary open access
+archive for the deposit and dissemination of scientific research documents, whether they are published or not. The documents may come from
+teaching and research institutions in France or
+abroad, or from public or private research centers.
+L’archive ouverte pluridisciplinaire HAL, est
+destinée au dépôt et à la diffusion de documents
+scientifiques de niveau recherche, publiés ou non,
+émanant des établissements d’enseignement et de
+recherche français ou étrangers, des laboratoires
+publics ou privés.
+Distributed under a Creative Commons Attribution| 4.0 International License
+Possible Interpretations for Game Refinement Measure
+Shuo Xiong, Long Zuo, Hiroyuki Iida
+To cite this version:
+Shuo Xiong, Long Zuo, Hiroyuki Iida. Possible Interpretations for Game Refinement Measure. 16th
+International Conference on Entertainment Computing (ICEC), Sep 2017, Tsukuba City, Japan.
+pp.322-334, ff10.1007/978-3-319-66715-7_35ff. ffhal-01771292ff
+Possible Interpretations for Game Refinement
+Measure
+Shuo Xiong()
+1 Long Zuo()
+2 and Hiroyuki Iida()
+3
+Japan Advanced Institute of Science and Technology
+1-1 Asahidai, Nomi, Ishikawa, Japan 923-1211
+xiongshuo@jaist.ac.jp1
+zuolong@jaist.ac.jp2
+iida@jaist.ac.jp3
+Abstract. This paper explores possible interpretations for game refinement measure which has been successfully used to quantify the game
+sophistication of various types of games such as boardgames and sports.
+It presents a brief sketch of game refinement theory with a focus on
+its early works with boardgames, expansion into continuous movement
+games such as sports, and a bridge between sports and boardgames. It
+then highlights the bridging idea while considering possible interpretations for game refinement measure, and the meaning of game refinement
+measure is discussed with a focus on the skill and chance aspects in
+game playing. It enables to have a new perspective of game refinement
+theory. Moreover, an example of interpretation for game refinement measure from boardgames and continuous movement games such as MOBA
+game is shown. The interpretation is well fitting to our intuition as game
+players and spectators.
+Keyword: Game refinement measure. Game progress model. Boardgame.
+Continuous movement game, sports, MOBA game
+1 Introduction
+Game theory is a discipline which stands from the game player’s point of view
+with a focus on how to win a game. However, game designers would consider
+another important aspect: how to make a game more attractive. With such
+motivation, a new game theory from the game designer’s point of view, called
+game refinement theory [2, 3] was proposed in the early 2000s. von Neumann [4]
+was a pioneer who formed the foundation for the modern game theory, which has
+widely been applied in various fields. For example, Shannon [5] and Turing [6]
+proposed the basic framework for computer chess that is the minimax gametree search, being inspired by the concept of minimax equilibrium [4], typical
+framework of computer chess called game-tree search was proposed by Shannon
+[5] and Turing [6], respectively.
+One direction with game theory was to find the best move in a game or
+to ensure the possibility of winning the game based on the understanding of
+current positions. Another direction with game refinement theory was to assess
+the attractiveness or sophistication of a game. In particular, game refinement
+theory gives a measure to quantify the sophistication of a game. This enables
+to obtain the deep insight into the current game and improve the quality of the
+game [7, 8].
+The measure of game refinement can also be used to obtain the deep insight
+into the history of games. For example, it is observed that the evolution of chess
+has two different directions: one is to increase the search-space complexity and
+another one is to shift to the comfortable degree of game refinement measure [9].
+Hence, it gives a reasonable look on the evolution of specific game variants.
+In another way, game refinement theory provides us with another viewpoint
+of games from the entertainment aspect while game theory helps us understand
+about the game’s mechanism itself. From that viewpoint, we can extend the idea
+of game refinement into other domains in human life such as sports games, video
+games, education or business. The possibility of extension comes from the core
+idea of game refinement theory that is quantifying the engagement. In many
+activities of human, the engagement is usually used as one of the important
+standards to evaluate the effectiveness of those activities.
+Game refinement theory has been widely applied to many different types
+of games with the promising results. However, the theory has just one decade
+history, which may not be established yet. This paper explores possible interpretations for game refinement measure. It highlights the bridging idea between
+boardgames and continuous movement games like sports. Thus the meaning of
+game refinement measure is discussed with a focus on the skill and chance aspects
+in game playing. It will enable to have a new perspective of game refinement theory. Moreover, an example of interpretation for game refinement measure from
+boardgames and continuous movement games such as MOBA game is shown.
+2 An Overview of Game Refinement Theory
+In this section an overview of game refinement theory is presented. The model
+of game refinement was first investigated in the domain of boardgames such as
+chess, later expanded into continuous movement games such as sports games
+and video games while considering the gap between boardgames and continuous
+movement games.
+2.1 Original Model
+We review the early work of game refinement theory from [2]. The decision
+space is the minimal search space without forecasting. It provides the common
+measures for almost all boardgames. The dynamics of decision options in the
+decision space has been investigated and it is observed that this dynamics is a
+key factor for game entertainment. Thus a measure of the refinement in games
+was proposed [3].
+Later, the following works are sketched from [7, 10] that expands the model
+of game refinement which was cultivated in the domain of boardgames into
+continuous movement games such as sports games and video games.
+The game progress is twofold. One is game speed or scoring rate, while another one is game information progress with a focus on the game outcome. Game
+information progress presents the degree of certainty of a game’s result in time
+or in steps. Having full information of the game progress, i.e. after its conclusion,
+game progress x(t) will be given as a linear function of time t with 0 ≤ t ≤ tk
+and 0 ≤ x(t) ≤ x(tk), as shown in Eq. (1).
+x(t) = x(tk)
+tk
+t (1)
+However, the game information progress given by Eq. (1) is unknown during
+the in-game period. The presence of uncertainty during the game, often until
+the final moments of a game, reasonably renders game progress as exponential.
+Hence, a realistic model of game information progress is given by Eq. (2).
+x(t) = x(tk)( t
+tk
+)
+n
+(2)
+Here n stands for a constant parameter which is given based on the perspective of
+an observer of the game considered. Only a very boring game would progress in
+a linear function, however, and most of course do not. Therefore, it is reasonable
+to assume a parameter n, based on the perception of game progress prior to
+completion. If the information of the game is completely known (i.e., after the
+end of the game) and the value of n is 1, the game progress curve appears
+as a straight line. In most games, especially in competitive ones, much of the
+information is incomplete, the value of n cannot be assumed, and therefore game
+progress is a steep curve until its completion, along with x(tk), tk, x(t) and t,
+just prior to game’s end.
+Then acceleration of game information progress is obtained by deriving Eq. (2)
+twice. Solving it at t = tk, we have Eq. (3).
+x
+00(tk) = x(tk)
+(tk)
+n
+(tk)
+n−2 n(n − 1) = x(tk)
+(tk)
+2
+n(n − 1) (3)
+It is assumed in the current model that game information progress in any type
+of game is encoded and transported in our brains. We do not yet know about
+the physics of information in the brain, but it is likely that the acceleration
+of information progress is subject to the forces and laws of physics. Too little
+game information acceleration may be easy for human observers and players to
+compute, and becomes boring. In contrast, too much game information acceleration surpasses the entertaining range and will be frustration, and at some points
+beyond that could become overwhelming and incomprehensible.
+Therefore, we expect that the larger the value x(tk)
+(tk)
+2 is, the more the game
+becomes exciting, due in part to the uncertainty of game outcome. Thus, we
+use its root square,
+√
+x(tk)
+tk
+, as a game refinement measure for the game under
+consideration. We call it R value for short as shown in Eq. (4).
+R =
+p
+x(tk)
+tk
+p
+n(n − 1) = C
+p
+x(tk)
+tk
+(4)
+2.2 A Bridge between Sports and Boardgames
+Here we consider the gap of game refinement model between boardgames and
+sports games. We review the observation from [10]. One round in boardgames
+can be illustrated as decision tree. At each depth of the game tree, one will
+choose a move and the game will progress. Figure 1 illustrates one level of game
+tree. The distance d, which has been shown in Figure 1, can be found by using
+simple Pythagoras theorem, thus resulting in d =
+√
+∆l2 + 1.
+Fig. 1. Illustration of one level of game tree [10]
+Assuming that the approximate value of horizontal difference between nodes
+is B
+2
+, then we can make a substitution and get d =
+q
+(
+B
+2
+)
+2 + 1. Here B stands
+for the average branching factor of a game tree. The game progress for one game
+is the total level of game tree times d. For the meantime, we do not consider
+∆t2 because the value (∆t2 = 1) is assumed to be much smaller compared to
+B. The game length will be normalized by the average game length D, then the
+game progress x(t) is given by x(t) = t
+D
+· d =
+t
+D
+q
+(
+B
+2
+)
+2 =
+Bt
+2D
+. Then, in general
+we have Eq. (5).
+x(t) = c
+B
+D
+t (5)
+where c is a different constant which depends on the game considered. However,
+we manage to explain how to obtain the game information progress value itself.
+The game progress in the domain of boardgames forms a linear graph with the
+maximum value x(t) of B. Assuming 1
+c = 1, then we have a realistic game
+progress model for boardgames, which is given by
+x(t) = B(
+t
+D
+)
+n
+. (6)
+We show, in Table 1, measures of game refinement for various games [11, 12,
+13]. From the results, we conjecture the relation between the measure of game
+refinement and game sophistication, as stated in Remark 1.
+1
+In this study we concern about this assumption.
+Remark 1. Sophisticated games have a common factor (i.e., same degree of informatical acceleration value, say 0.07-0.08) to feel engaged or excited regardless
+of different type of games.
+Table 1. Measures of game refinement for various types of games
+Game x(tk) tk R
+Chess 35 80 0.074
+Shogi 80 115 0.078
+Go 250 208 0.076
+Basketball 36.38 82.01 0.073
+Soccer 2.64 22 0.073
+Badminton 46.336 79.344 0.086
+Table tennis 54.863 96.465 0.077
+DotA ver 6.80 68.6 106.2 0.078
+StarCraft II Terran 1.64 16 0.081
+The king of the fighters 98 14.6 36.7 0.104
+3 Game Refinement Measure Revisited
+It seems that the bridge between boardgame and continuous movement game
+was successfully built. However, we claim that it is not yet completed. For this
+purpose we detail the problem while considering the meaning of parameter c in
+Eq. (5).
+3.1 Possible Interpretations for Game Refinement Measure
+For the sports games such as soccer, all the attempted shots or successful
+shots (goals) are parts of the strategy to win the match, so they are an integral part of the game. In the domain of video games such as StarCraft II, the
+branching factor was calculated only by reasonable strategies to be considered
+as part of the winning [12]. This suggests that parameter c in Eq. (5) is a key
+factor when considering the gap between boardgames and continuous movement
+games. It also indicates that the parameter c can be replaced with p
+n(n − 1)
+in Eq. (4).
+From Eq. (5) we obtain the measure of game refinement for boardgame as
+shown in Eq. (7).
+R =
+√
+cB
+D
+(
+1
+B
+≤ c ≤ 1) (7)
+Where we have cB = B when c = 1, and cB = 1 when c =
+1
+B
+. Hence, the
+assumption c = 1 means that we focus on a specific level of players or a certain
+property of the game under consideration. When we focus on a certain level of
+players like masters in boardgames, the crucial factor is the game property. If a
+Fig. 2. A model of candidate move selection based on skill and chance [14]
+game is skillful, the parameter c will decrease, whereas if the game is stochastic,
+c will increase. This is because it is usually hard in such a stochastic game to
+distinguish only fewer good candidates among all possible moves. On the other
+hands, it would be possible in boardgames like chess for masters to identify a few
+plausible moves. Note that continuous movement games such as sports games
+are basically stochastic when compared with boardgames.
+Remark 2. The parameter c = 1 in Eq. (5) means that the game under consideration is assumed to be insufficiently deterministic to identify plausible candidates.
+We show from [14], in Figure 2, a model of move candidate selection based
+on skill and chance. This illustration shows that skillful players would consider a
+set (say b) of fewer plausible candidates among all possible moves (say B) to find
+a move to play. For example, in chess where B = 35 and D = 80, when assuming
+c = 1, then R = 0.074. On the other hands, as suggested in [15] [14], masters
+in sophisticated boardgames would consider a very few moves on average in
+their look-ahead thinking framework. An estimation of the number of plausible
+candidates as a function of the strength of players (say s) may be given by
+Eq. (8) [3].
+b = B
+1
+s (1 ≤ s ∈ N) (8)
+Let us consider the sports case with consideration on such a parameter. Like
+the boardgame case, we may have a parameter (say Cs), as shown in Eq. (9).
+R = Cs
+√
+G
+T
+(9)
+Here we suspect that Cs may depend on the skill of teams. For the analysis,
+many data from soccer leagues with different ranking were collected. We show,
+in Table 2, measures of game refinement for each soccer league together with
+the average number of goals (G) and shots attempts (T) per game. Two typical
+groups are compared. The first group is clearly stronger than the second groups.
+England Premier League (EPL), Primera division de Liga (LIGA) and Serie
+A in the first group are the higher ranking leagues, whereas Chinese Football
+Association Super League (CSL) in the second group is the lower ranking league
+[16]. We notice from the results in Table 2 that when two similar-level teams
+play each other in their leagues R value is quite similar. Thus, we assume Cs = 1
+in this study.
+Table 2. Measures of game refinement for each league football match
+G T R
+EPL (2016) 2.84 25.6 0.066
+LIGA(2016) 2.75 23.6 0.070
+Serie A (2016) 2.77 25.4 0.065
+CSL (2014) 2.75 24.6 0.067
+CSL (2015) 2.80 24.6 0.068
+CSL (2016) 2.67 24.6 0.066
+We show, in Figure 3, the relationship between the parameter c and chanceand-skill aspect. Note that we assume the estimation of the plausible candidates
+as described in Eq. (8). From Figure 3 we conjecture that the parameter c relates
+Fig. 3. The parameter c and chance-and-skill aspect of games
+to the strength of players or the difficulty of a game, as stated in Remark 3.
+Remark 3. The value of parameter c should be lower in the case where the game
+under consideration is simple to identify fewer plausible candidates or the case
+where players are very skillful like grandmasters.
+Using the estimation of plausible candidates as shown in Eq. (8), we obtain
+game refinement measures as described in Table 3.
+We here summarize the meaning of game refinement measure.
+– In a game where its game refinement measure is higher than the zone value
+(0.07-0.08), people may feel more entertaining. This is because the game is
+too stochastic or players are too weak to identify fewer plausible candidates.
+Table 3. Measures of game refinement for boardgames with different parameters
+R (c = 1) R (cB = b, s = 2)
+Chess 0.074 0.030
+Shogi 0.078 0.026
+Go 0.076 0.019
+– The game with a zone value of game refinement measure has a good balance
+between chance and skill, in which people may feel comfortable and then the
+game is sophisticated or fascinating.
+– In a game where its game refinement measure is smaller than the zone value,
+people may feel less entertaining. This is because the game is too simple or
+players are too strong to experience harmonic uncertainty during the game
+playing. In this situation the game tends to be competitive [17].
+3.2 Relative Game Refinement Measure
+The game refinement theory is basically used to evaluate the property (sophistication) of games with a focus on the game outcome uncertainty. Let us
+consider the individual match analysis using game refinement measure [18] [19].
+Since each match has an independent game process, game refinement measure
+can be applied.
+We demonstrate an analysis of two extreme conditions and special cases. The
+first example is The 2014 World Cup semi-final [20]: Germany vs. Brazil, where
+the number of goals G = 8 and the number of shot attempts T = 31. When
+focusing on this match, R value is given by Eq. (10).
+R =
+√
+G
+T
+=
+√
+8
+31
+= 0.091 (10)
+In fact, this match was not a well balanced. Brazil had 1 goal, whereas Germany
+had 7 goals. Individually, game refinement measure for Brazil (say RB) and
+Brazil (say RG) is given in Eq. (11) and Eq. (12), respectively.
+RB =
+√
+1
+31
+= 0.032 (11)
+RG =
+√
+7
+31
+= 0.085 (12)
+Apparently, the R value of Germany is higher than Brazil, which means that
+Germany had better playing skill. Even more we need to know the psychological
+meaning of game refinement value for each team’s perception. Then the relative
+game refinement measure for Brazil (say Rr) is given by Eq. (13).
+Rr = R ×
+RB
+RG
+= 0.091 ×
+0.032
+0.085
+= 0.034 (13)
+Similarly, the relative game refinement measure for Germany is given by Eq. (14).
+Rr = R ×
+RG
+RB
+= 0.091 ×
+0.085
+0.032
+= 0.242 (14)
+From Eq. (13) and Eq. (14) we see that from Germany’s perspective, people
+can enjoy the game for fun. Meanwhile from Brazil’s perspective, people may feel
+very tough and they must seriously face the game progress. Larger R value means
+higher fun, whereas smaller R value means more serious or competitiveness.
+Illustration in Figure 4 shows the relation between R value and balance between
+skill and chance in boardgames as well as continuous movement games.
+Fig. 4. An illustration of the meaning of game refinement measure
+3.3 Analysis of MOBA Games
+Multi-player On-line Battle Arena (MOBA) [21] is the most popular game
+type, in which a player controls a single character at one of two teams. MOBA
+game is a typical continuous movement game. The objective is to destroy the
+opponent team’s main structure with the assistance of periodically spawned computer controlled units. Player characters typically have various abilities and advantages that improve over the course of a game and that contribute to a team’s
+overall strategy. Mainly in the world market, it was followed by three spiritual
+successors: “League of Legends” (LOL), “Defense of the Ancients” (DotA) and
+“Heroes of the Storm” (HotS) [22].
+The game progress model of MOBA is given by the average number of successful killing heroes and destroying fortress (say K) over the average number of
+attempts per game (say A) [13]. Hence, the game refinement measure of MOBA
+is given by Eq. (15).
+R =
+√
+K
+A
+(15)
+The measures of game refinement for various MOBA games are shown in Table 4.
+Because of the game battle system and macro mechanism, in DotA and LOL
+one tower equals to 1 kill, and in HotS one castle equals to 4 kills [22]. For
+killing tendency A, any tower or castle as 1 attempt is calculated. It is found
+that R-value of sophisticated games is located somewhere between 0.07 to 0.08
+[2] [10]. Distinctly, we notice that the game refinement value in LOL battle is so
+high. It means that LOL will be too excited with high entertainment and low
+competitiveness.
+Table 4. Measures of game refinement for three MOBA games
+map or version K A R
+HotS Blackheart’s bay 70.90 80.10 0.105
+Sky temple 77.68 79.90 0.110
+Dragon Shire 63.90 88.80 0.090
+Tomb of the SQ 75.00 98.00 0.088
+Infernal shrines 63.08 93.00 0.085
+Cursed hollow 69.55 100.70 0.083
+Battlefield of eternity 99.30 168.8 0.082
+Garden of terror 68.83 88.90 0.093
+Haunted mines 55.68 78.10 0.096
+DotA Version 6.48 69.2 110.8 0.075
+Version 6.51 68.4 110.2 0.074
+Version 6.59 69.8 110.0 0.076
+Version 6.61 70.0 111.6 0.075
+Version 6.64 68.4 110.4 0.075
+Version 6.69 67.8 108.4 0.076
+Version 6.74 62.4 102.6 0.077
+Version 6.77 62.8 102.8 0.077
+Version 6.80 68.6 106.2 0.078
+LOL Version 6.6 37.65 44.26 0.138
+Below we summarize the entertaining and competitiveness aspect of MOBA
+games based on the game refinement values.
+DotA: DotA is a very stable game, also it is a typical “G-T Model” (continuous movement games), for each version R-values are all seated between 0.07
+to 0.08. Therefore, DotA is a well designed game with a good balance between
+entertainment and competitiveness, which is suited for competitions. For the activity population, DotA2 has 7.9 million per month all over the world [23]. The
+measure of game refinement indicates that DotA is the most successful and well
+balanced MOBA game in the world.
+LOL: Generally, R-value in LOL is too high, whereas DotA is almost in the
+window value. It means that DotA fits for setting as e-sports competition, but
+LOL is suited to enjoy for entertainment. DotA has powerful skill and more visual
+impact for each hero, which cares more about management and running. Players
+need to make a stable and safe environment to carry and develop. Gank usually
+happens during the whole game. Generally, a DotA game may spend about 50
+minutes but LOL usually takes around 30 minutes. LOL provides players with
+a new style of MOBA game that spends less time for each game and forms a
+fast rhythm. For the activity population, LOL has 67 million per month all over
+the world [23]. The rhythm of LOL is faster and its game refinement is higher
+than others. This implies that LOL is able to attract more children, female or
+beginners who prefer to play it because of the higher entertainment property [1].
+HotS: For HotS, the most important point is large-scale team combat and the
+game rhythm is much higher than DotA or LOL. As a new game, HotS still
+has some insufficient aspects. According to Table 4, the most interesting and
+exciting map is ‘Sky temple’. ‘Battlefield of eternity’ and ‘Cursed hollow’ have
+the highest level competitiveness. However, the game refinement measures of
+HotS are higher than 0.08, which means that compared with DotA, HotS is not
+so suitable for e-sports competition. Also some serious mechanism issue existed
+in HotS, DotA focuses on the ana-phase period during the game, but the core
+mechanism in HotS is wild monster. For this reason, the game depth of HotS
+is less than DotA and gets a larger R-value. Therefore, HotS cares more about
+teamwork than personal operation and game awareness, then we can only find
+valid data about the population of HotS in US server is 0.13 million, the expected
+number all over the world will not be larger than DotA2. Nevertheless, the fun
+of HotS is not derived only from the battle. The various heroes and their talents
+can provide a lot of enjoyment for Blizzard fans. In addition, they can design
+maps which become more interesting and well balanced. Also the design group
+of HotS needs to revise the game mechanism.
+All property of these three MOBA games can be shown as Figure 5.
+Fig. 5. Entertainment and competition property of three MOBA games
+4 Concluding Remarks
+The notion of game progress and game information progress model for continuous movement games was introduced in the development of game refinement
+measure. It seemed to be a successful bridge between continuous movement
+games like sports and boardgames. However, this paper claimed with a focus
+on the parameter c in the game progress model for boardgames.
+The parameter c relates to the game balance. The condition c = 1 corresponds to the case where the game is more chance-based one. If the parameter c
+becomes lower, the game will be more skill-based one. Moreover, a new perspective of game refinement measure was obtained. Higher (lower) R value means
+more entertaining (competitive), whereas 0.07-0.08 should be a comfortable zone
+due to its good balance between skill and chance in game playing. The analysis
+of popular MOBA games using game refinement measure supports the observation. The concept of relative game refinement measure was proposed to focus
+on individual team performance in two team sports such as soccer. The game
+refinement measure has been used to quantify the game sophistication for the
+game under consideration. However, we considered the possibility of quantifying
+the game sophistication from the viewpoint of individual team.
+Acknowledgements This research is funded by a grant from the Japan Society
+for the Promotion of Science (JSPS), within the framework of the Grant-in-Aid
+for Challenging Exploratory Research (grant number 26540189) and Grant-inAid for JSPS Fellow.
+References
+1. Gaudiosi, J. (2012). Riot games’ league of legends officially becomes most played
+PC game in the world. Forbes.
+2. Iida, H., Takahara, K., Nagashima, J., Kajihara, Y. and Hashimoto, T. (2004). An
+application of game-refinement theory to Mah Jong. In International Conference on
+Entertainment Computing, pp.333–338. Springer Berlin Heidelberg.
+3. Iida, H., Takeshita, N. and Yoshimura, J. (2003). A metric for entertainment of
+boardgames: its implication for evolution of chess variants. In Entertainment Computing, pp.65–72. Springer US.
+4. Neumann, J. (1928). Zur theorie der gesellschaftsspiele. Mathematische Annalen,
+100(1):295—320.
+5. Shannon, C. E. (1988). Programming a computer for playing chess. In Computer
+chess compendium, pp.2–13. Springer New York.
+6. Turing, A. (1953). Chess. part of the collection Digital Computers Applied to Games.
+In Bertram Vivian Bowden (editor), Faster Than Thought, a symposium on digital
+computing machines.
+7. Panumate, C., Xiong, S. and Iida, H. (2015) “An Approach to Quantifying Pokemon’s Entertainment Impact with Focus on Battle”, 3rd International Conference
+on Applied Computing and Information Technology/2nd International Conference
+on Computational Science and Intelligence, Okayama, pp. 60–66.
+8. Punyawee, A., Panumate, C. and Iida, H. (2016). Finding Comfortable Settings of
+Snake Game Using Game Refinement Measurement. In International Conference on
+Computer Science and its Applications, pp.66–73. Springer Singapore.
+9. Cincotti, A., Iida, H., and Yoshimura, J. (2007). Refinement and complexity in the
+evolution of chess. In Proceedings of the 10th International Conference on Computer
+Science and Informatics, pp.650–654.
+10. Sutiono, A. P., Purwarianti, A. and Iida, H. (2014). A mathematical model of game
+refinement. In International Conference on Intelligent Technologies for Interactive
+Entertainment, pp.148–151. Springer International Publishing.
+11. Nossal, N. Expansion of game refinement theory into continuous movement games
+with consideration on functional brain measurement. Ph.D. Thesis, Japan Advanced
+Institution of Science and Technology, 2015.
+12. Xiong, S. and Iida, H. (2014). Attractiveness of real time strategy games. In 2nd
+International Conference on Systems and Informatics (ICSAI), pp.271–276. IEEE.
+13. Xiong, S., Zuo, L., Chiewvanichakorn, R. and Iida, H. (2014). Quantifying engagement of various games. In The 19th Game Programming Workshop, pp.101–106.
+Information Processing Society of Japan.
+14. Iida, H. (2008). Fairness, judges and thrill in games. IPSJ-SIG-GI Technical Report,
+28, pp.61–68.
+15. De Groot, A. D. (1965). Thought and choice in chess. Mouton Publishers.
+16. Ranking data of soccer league,[online]. http://goal.sports.163.com, URL accessed,
+2017
+17. Xiong, S., Tiwary, P. P. and Iida, H. (2016). Solving the Sophistication-Population
+Paradox of Game Refinement Theory. In International Conference on Entertainment
+Computing, pp.266–271. Springer International Publishing.
+18. Prasertsakul, P., Iida, H. and Kondo, T. (2016). Boring game identification: case
+study using popular sports games. In SICE Annual Conference, Society of Instrument
+and Control Engineers.
+19. Panumate, C. and Iida, H. (2016). Quantifying Enjoyment of Individual Match
+in Games. In The Annual Conference on Engineering and Applied Science, Higher
+Education Forum.
+20. Groll, A., Schauberger, G. and Tutz, G. (2014). Brazil or Germany-who will win the
+trophy? Prediction of the FIFA World Cup 2014 based on team-specific regularized
+Poisson regression.
+21. Johnson, D., Nacke, L. E. and Wyeth, P. (2015). All about that base: differing
+player experiences in video game genres and the unique case of moba games. In
+Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing
+Systems, pp.2265–2274.
+22. Xiong, S., Zahi, H., Zuo, L., Wu, M. and Iida, H. (2015). Analysis of the ”Heroes
+of the Storm”. International Journal on Advances in Computer Science, 4(6):79–82.
+23. Minotti, M. (2015). Comparing MOBAs: League of Legends vs. DOTA2 vs. Smite
+vs. Heroes of the Storm, [online]. http://venturebeat.com/2015/07/15/comparingmobas-league-of-legends-vs-dota-2-vs-smite-vs-heroes-of-the-storm/
