@@ -5,6 +5,12 @@ This repository implements two rule-based identification systems that tag a docu
 
 ### The IOB tagset for multiword terms :
 
+<ul>
+    <li>B : Beginning of multiword term</li>
+    <li>I : Inside a multiword term (not at the beginning)</li>
+    <li>O : outside a term</li>
+</ul>
+
 - B : Beginning of multiword term
 - I : Inside a multiword term (not at the beginning)
 - O : outside a term
@@ -36,13 +42,13 @@ Finally, once the model is trained you can load it to predict the class of new s
 
 ## The repository folder :
 
-/Articles/txt/ : initial textual articles data.
-/Corpus/ : The train, test and dev txt file annotated with IOB tagset for specific game terms.
-(/resources/taggers/example-pos/ : result of the last launch of the TerminologyProject.ipynb with training part, loss report, test comparaison and the identification system model ready to use with flair.) 
-/sequencetag_result/ : save result of the training part with f1-score, loss report and test comparaison between the two rule-based identification system.
-/TermsTSV/ : tsv output file from TermSuite with the filtered Terms of our specific domain.
-MOBA-en-lexicon : list of terms filtered, on our specific domain.
-TerminologyProject.ipynb : python script with all the functions used.
+/Articles/txt/ : initial textual articles data.<br/>
+/Corpus/ : The train, test and dev txt file annotated with IOB tagset for specific game terms.<br/>
+(/resources/taggers/example-pos/ : result of the last launch of the TerminologyProject.ipynb with training part, loss report, test comparaison and the identification system model ready to use with flair.) <br/>
+/sequencetag_result/ : save result of the training part with f1-score, loss report and test comparaison between the two rule-based identification system.<br/>
+/TermsTSV/ : tsv output file from TermSuite with the filtered Terms of our specific domain.<br/>
+MOBA-en-lexicon : list of terms filtered, on our specific domain.<br/>
+TerminologyProject.ipynb : python script with all the functions used.<br/>
 
 ## Next 
 
