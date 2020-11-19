@@ -11,10 +11,6 @@ This repository implements two rule-based identification systems that tag a docu
     <li>O : outside a term</li>
 </ul>
 
-- B : Beginning of multiword term
-- I : Inside a multiword term (not at the beginning)
-- O : outside a term
-
 ## Run
 
 To run this project, you just have to open the TerminologyProject.ipynb in jupyter notebook and run all the cells.
@@ -45,7 +41,7 @@ Finally, once the model is trained you can load it to predict the class of new s
 /Articles/txt/ : initial textual articles data.<br/>
 /Corpus/ : The train, test and dev txt file annotated with IOB tagset for specific game terms.<br/>
 (/resources/taggers/example-pos/ : result of the last launch of the TerminologyProject.ipynb with training part, loss report, test comparaison and the identification system model ready to use with flair.) <br/>
-/sequencetag_result/ : save result of the training part with f1-score, loss report and test comparaison between the two rule-based identification system.<br/>
+/sequencetag_result/ : save result of the training part with f1-score, loss report and test comparaison between the two identification system.<br/>
 /TermsTSV/ : tsv output file from TermSuite with the filtered Terms of our specific domain.<br/>
 MOBA-en-lexicon : list of terms filtered, on our specific domain.<br/>
 TerminologyProject.ipynb : python script with all the functions used.<br/>
@@ -60,6 +56,6 @@ We have already extract automatically the terms from our corpus with TermSuite. 
 
 ## Created by
 
-Axel Didier - M2 TAL  /  Pierre Goncalves - M2 TAL
+Axel Didier - M2 TAL  /  Pierre Goncalves - M2 TAL<br/>
 https://github.com/Kroxyl/TerminologyM2TAL-DG/
 
