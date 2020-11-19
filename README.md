@@ -34,6 +34,16 @@ After that, we have to train our new Sequence Labeling Model. By order, we get t
 
 Finally, once the model is trained you can load it to predict the class of new sentences.
 
+## The repository folder :
+
+/Articles/txt/ : initial textual articles data.
+/Corpus/ : The train, test and dev txt file annotated with IOB tagset for specific game terms.
+(/resources/taggers/example-pos/ : result of the last launch of the TerminologyProject.ipynb with training part, loss report, test comparaison and the identification system model ready to use with flair.) 
+/sequencetag_result/ : save result of the training part with f1-score, loss report and test comparaison between the two rule-based identification system.
+/TermsTSV/ : tsv output file from TermSuite with the filtered Terms of our specific domain.
+MOBA-en-lexicon : list of terms filtered, on our specific domain.
+TerminologyProject.ipynb : python script with all the functions used.
+
 ## Next 
 
 For now, our corpus is only 30 articles. You can increase the number by adding .txt files in the /Articles/txt/ directory.
@@ -45,3 +55,5 @@ We have already extract automatically the terms from our corpus with TermSuite. 
 ## Created by
 
 Axel Didier - M2 TAL  /  Pierre Goncalves - M2 TAL
+https://github.com/Kroxyl/TerminologyM2TAL-DG/
+
