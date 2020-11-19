@@ -22,7 +22,7 @@ The output txt file is stored in the /Corpus/ directory.
 
 ## Rule-based identification system 2 : 
 
-The second rule-based identification system is created with the simple framework for state-of-the-art NLP.
+The second rule-based identification system is created with the flair framework for state-of-the-art NLP.
 
 Check https://github.com/flairNLP/flair for more informations about this framework.
 
